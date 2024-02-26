@@ -1,0 +1,623 @@
+Module Cuti
+
+#1. Cuti Rehat,Kecemasan dan Sakit
+	#1. Cuti Rehat 
+		#1. HRMIS 
+			1. HRMIS can "generate" leave related record.
+		#2. System
+			1. System can "update" "Maklumat Cuti Kakitangan".
+		#3. Urus Setia Cuti
+			#1. Function List
+				1. "US Cuti" can "view" "Senarai Cuti Kakitangan".
+				
+			#2. Function View Details
+				1. "US Cuti" can "view" "Butiran Cuti Kakitangan".
+		#4. Kakitangan
+			#1. Function List
+				1. "Kakitangan" can "view" "Senarai Cuti Kakitangan" , only for that particular clinic.
+			#2. Fucntion View Details
+				1. "Kakitangan" can "view" "Butiran Cuti Kakitangan" for selected record. 
+				
+#2. Gantian Cuti Rehat
+	#1. Pengumpulan Cuti Rehat
+		#1. Kakitangan 
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat", only for that particular employee.
+			
+			#2. Function Add Application
+				1.	"Kakitangan" can "add" new application detaiils.
+			
+			#3. Function View Details 
+				1. "Kakitangan" can "view" selected application details.'
+				2. "Kakitangan" can "view" "Semak Status Penyokongan Permohonan Dari Ketua Seksyen".
+					IF support status == "TIDAK SOKONG", the application end.
+					 
+					IF support status == "SOKONG", proceed to next level.
+				3. "Kakitangan" can "view" "Semak Status Kelulusan Permohonan Dari Pengarah Bahagian".
+				4. "Kakitangan" can "view" "Semak Status Semakan Permohonan " from 'US Cuti'.
+				5. "Kakitangan" can "view" "Semak Status Pengesahan Permohonan" from 'US Cuti'.
+				6. "Kakitangan" can "view" "Semak Keputusan Permohonan".
+				
+		#2. Ketua Seksyen 
+			#1. Function Listing
+				1. "KS" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat".
+				
+			#2. Function View Details 
+				1. "KS" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application.
+				2. "KS" can "support" "Status Penyokong Permohonan Dari Ketua Seksyen" for selected application by updating status to either 'SOKONG/TIDAK SOKONG'.
+		
+		#3. Pengarah Bahagian 
+			#1. Function Listing 
+				1. "PB" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat".
+				
+			#2. Function View Details 
+				1. "PB" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application.
+				2. "PB" can "view" "Semak Status Penyokongan Permohonan Dari Ketua Seksyen"
+				3. "PB" can "approve" "Status Kelulusan Pemohonan" for selected application by updating status to either 'LULUS/TIDAK LULUS'.
+			
+		#4. Urus Setia 
+				#1. Function Listing 
+					1. "US Cuti" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application.
+				
+				#2. Function View Details 
+					1. "US Cuti" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application.
+					2. "US Cuti" can "view" "Semak Status Penyokongan Permohonan Dari Ketua Seksyen".
+					
+					IF support status == "TIDAK SOKONG", the application end.
+					IF support status == "SOKONG", proceed to next level.
+					3. "US Cuti" can "view" "Semak Status Kelulusan Permohonan Dari Pengarah Bahagian".
+					IF approval status == "TIDAK LULUS", the application end.
+					IF approval status == "LULUS", proceed to next level
+					4.  "US Cuti" can "verify" "Status Semakan Permohonan" for selected application by updating status to either 'SEMAK/TIDAK SEMAK'.
+					5.  "US Cuti" can "confirm" "Status Pengesahan Permohonan" for selected application by updating status to either 'SAH/TIDAK SAH'.
+				
+					IF confirmation status == "TIDAK SAH", the application end.
+					IF confirmation status == "SAH",proceed to next level.
+					
+					6. "US Cuti" can "update" employee's details related to leave.
+					7. "US Cuti" can "update" overall status of the selected application.
+				
+		#5. System
+				1. System can "update" employee's details.
+				
+	#2. Gantian Cuti Rehat
+		#1. Urus Setia Cuti 
+			#1. Function Listing
+				1. "US Cuti" can "view" "Senarai Kakitangan Yang Akan Bersara/Meninggal Dunia/Pengeluaran Awal".
+			
+			#2. Function View Details
+				1. "US Cuti" can "view" "Butiran Kakitangan" dan leave-related record for selected employee.
+				2. "US Cuti" can "view" "Baki Cuti" and its details for selected employees.
+				3. "US Cuti" can "view" "Status Pernah Mengambilan GCR"
+				
+				IF haveTakenGCR == "true", max is 80 days.
+				IF haveTakenGCR == "false", max is 160 days.
+				4. "US Cuti" can "view" "Baki Cuti Maksimum".
+				5. "US Cuti" can "view" "Nilai GCR" since the system auto calculate it.
+				
+				6. "US Cuti" can "view" "Status Semakan Kriteria untuk GCR".
+				7. "US Cuti" can "view" deduction details based on preset rules.
+				
+				IF is deduction==true
+				8. "US Cuti" can "update" GCR based on deduction details.
+				9. "US Cuti" can "update" overall status of the record.
+				
+		#2. Kakitangan
+			#1. Function Listing 
+				1."Kakitangan" can "view" overall status of the record.
+		#3. System 
+			1. System can "calculate" "Nilai GCR".
+			2. System can "verify" against preset rule for selected application by updating status to either 'SEMAK/TIDAK SEMAK'.
+			3. System can "view" deduction details based on preset rule.
+
+			IF deduction == TRUE
+			   
+			IF deduction == FALSE
+	#3. Permohonan Pengeluaran Awal GCR.
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Permohonan Pengeluaran GCR Awal", only for that particular employee.
+			#2. Function Add Application 
+				1. "Kakitangan" can "add" new record for "Permohonan Pengeluaran GCR Awal".
+				
+			#3. Function View Details 
+				1. "Kakitangan" can "view" "Senarai Permohonan Pengeluaran GCR Awal" for selected application.
+				2. "Kakitangan" can "view" "Status Penyokong Permohonan dari Pengarah Bahagian/Negeri".
+				3. "Kakitangan" can "view" "Status Semakan Kelayakan" from 'US Cuti'.
+				4. "Kakitangan" can "view" "Status Pengesahan Kelayakan" from 'US Cuti'.
+				
+				IF confirmation status  == "TIDAK SAH", application end.
+				IF confirmation status  == "SAH", application proceed to next level. 
+				
+				5. "Kakitangan" can "view" "Status Perakuan Pemohonan" from 'US Integriti'.
+				IF cerfification status  == "TIDAK AKU", application end.
+				IF certification status  == "AKU", the application proceed to next level.
+				
+				6. "Kakitangan" can "view" "Status Pelulusan Pemohonan" from "KP".
+				7. "Kakitangan" can "view" overall status for the application.
+				
+		#2. Pengarah Bahagian/Negeri
+			#1. Function Listing
+				1. "PN" can "view" "Senarai Permohonan Pengeluaran GCR Awal".
+			#2. Function View Details.
+				1. "PN" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application.
+				2. "PN" can "support" "Status Penyokongan Permohonan".
+				
+		#3. Urus Setia 
+			#1. Function Listing
+				1. "US Cuti" can "view" "Senarai Permohonan Pengeluaran GCR Awal".
+			#2. Function View Details.
+				1. "US Cuti" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application.
+				2. "US Cuti" can "support" "Status Penyokongan Permohonan".
+				3. "US Cuti" can "confirm" "Status Pengesahan Permohonan".
+				4. "US Cuti" can "view" "Status Perakuan Permohonan" from 'US Integriti'. 
+					IF certification status == "TIDAK AKU", application end.
+					IF certification status == "AKU", the application proceed to the next level.					
+				5. "US Cuti" can "view" "Status Pelulusan Permohonan" from 'Ketua Pengarah'.
+					IF approval status == "TIDAK LULUS", application end.
+					IF approval status == "LULUS", the application proceed to the next level.
+				6. "US Cuti" can "view" "Pengiraan Pengumpulan GCR".
+				7. "US Cuti" can "verity" "Pengiraan Bayaran GCR".
+				8. "US Cuti" can "update" overall status for the application.
+					
+		#4. Urus Setia Integriti
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Permohonan Pengeluaran GCR Awal".
+			#2. Function View Details.
+				1. "US Integriti" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application.
+				2. "US Integriti" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri"
+				3. "US Integriti" can "view" "Status Semakan Kelayakan"
+				4. "US Integriti" can "view" "Status Pengesahan Permohonan".
+				5. "US Integriti" can "certify" "Status Perakuan Permohonan" for selected application and by updating status to either 'AKU/TIDAK AKU'.
+				
+		#5. Ketua Pengarah
+			#1. Function Listing
+				1. "KP" can "view" "Senarai Permohonan Pengeluaran GCR Awal".
+			#2. Function View Details.
+				1. "KP" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application.
+				2. "KP" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri"
+				3. "KP" can "view" "Status Semakan Kelayakan" from 'US Cuti'.
+				4. "KP" can "view" "Status Pengesahan Permohonan" from 'US Cuti'.
+				5. "KP" can "view" "Status Perakuan Permohonan" from 'US Integriti'.
+				6. "KP" can "certify" "Status Pelulusan Permohonan" for selected application and by updating status to either 'LULUS/TIDAK LULUS'.
+					
+		#6. System
+			1. System "notify" "Keputusan Permohonan Gagal".
+			2. System "calculate" "Pengiraan Pengumpulan GCR mengikut kiraan".
+			
+#3. Permohonan Cuti
+	#1. Permohonan Cuti Gantian
+	#2. Permohonan Cuti Tanpa Rekod
+		notes: Both shares the same flows and number of roles.
+		
+		#1.Kakitangan
+		    #1. Function Listing 
+				1. "Kakitangan" can "view" "Senarai Rekod Permohonan Cuti", only for particular employee.
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan Cuti"
+				2. "Kakitangan" can "confirm" "Pengesahan Maklumat Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'.
+				
+			#3. Function View Details
+				1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "Kakitangan" can "view" "Pengesahan Maklumat Permohonan".
+				3. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'PN'.
+				4. "Kakitangan" can "view" "Status Semakan Permohonan" from 'US Cuti'.
+				5. "Kakitangan" can "view" "Status Pengesahan Permohonan" from 'US Cuti'.
+					IF confirmation status == "TIDAK SAH", then application end.
+					IF confirmation status == "SAH", proceed to next level.
+				6. "Kakitangan" can "view" "Senarai Penyokong dan Pelulus".
+				7. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					IF support status == " TIDAK SOKONG", then application end.
+					IF support status == "SOKONG", proceed to next level.
+				8. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+					IF approval status == "TIDAK LULUS", application end. 
+					IF approval status == "LULUS",proceed to next level.
+				9. "Kakitangan" can "view" overall status of the application.
+				
+		#2.Pengarah Bahagian/Negeri 
+			#1. Function Listing
+				1. "PN" can "view" "Senarai Rekod Permohonan Cuti".
+				
+			#2. Function View Details 
+				1. "PN" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "PN" can "view" "Status Pengesahan Maklumat Permohonan".
+				3. "PN" can "support" "Status Penyokongan Permohonan" by updating the support status either 'SOKONG/TIDAK SOKONG'.
+				
+		#3. Urus Setia
+			#1. Function Listing
+				1."US Cuti" can "view" "Senarai Rekod Permohonan Cuti".
+				
+			#2. Function View Details 
+				1. "US Cuti" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "US Cuti" can "view" "Pengesahan Maklumat Permohonan".
+				3. "US Cuti" can "view" "Status Penyokongan Permohonan" from 'PN'.
+				4. "US Cuti" can "verify" "Status Semakan Permohonan" by updating the verification status either 'SEMAK/TIDAK SEMAK'.
+				5. "US Cuti" can "confirm" "Status Pengesahan Permohonan" by updating the confirmation status either 'SAH/TIDAK SAH'.
+					IF confirmation status == "TIDAK SAH", then application end.
+					IF confirmation status == "SAH", proceed to next level.
+				6. "US Cuti" can "update" "Senarai Penyokong dan Pelulus" by adding supporter and approval.
+				7. "US Cuti" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					IF support status == " TIDAK SOKONG", then application end.
+					IF support status == "SOKONG", proceed to next level.
+				8. "US Cuti" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+					IF approval status == "TIDAK LULUS", application end. 
+					IF approval status == "LULUS",proceed to next level.
+				9. "US Cuti" can "update" "Maklumat Kakitangan".
+				10. "US Cuti" can "update" overall status of the application.
+			
+			
+		#4. Penyokong 
+			#1. Function Listing
+				1. "Penyokong" can "view" "Senarai Rekod Permohonan Cuti".
+				
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "Penyokong" can "view" "Pengesahan Maklumat Permohonan".
+				3. "Penyokong" can "view" "Status Penyokongan Permohonan" from 'PN'.
+				4. "Penyokong" can "VIEW" "Status Semakan Permohonan" from 'US Cuti'.
+				5. "Penyokong" can "confirm" "Status Pengesahan Permohonan" from 'US Cuti'.
+					IF confirmation status == "TIDAK SAH", then application end.
+					IF confirmation status == "SAH", proceed to next level.
+				6. "Penyokong" can "view" "Senarai Penyokong dan Pelulus" 
+				7. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'.
+				
+		#5. Pelulus
+			#1. Function Listing
+				1. "Pelulus" can "view" "Senarai Rekod Permohonan Cuti".
+				
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "Pelulus" can "view" "Pengesahan Maklumat Permohonan".
+				3. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'PN'.
+				4. "Pelulus" can "VIEW" "Status Semakan Permohonan" from 'US Cuti'.
+				5. "Pelulus" can "confirm" "Status Pengesahan Permohonan" from 'US Cuti'.
+					IF confirmation status == "TIDAK SAH", then application end.
+					IF confirmation status == "SAH", proceed to next level.
+				6. "Pelulus" can "view" "Senarai Penyokong dan Pelulus" 
+				7. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+				8. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'.
+				
+		#6. System 
+			1. System can "notify" "Kakitangan" that application is failed through email.
+			2. System can "update" "Maklumat Kakitangan".
+		
+	#3. Permohonan Cuti Separuh Gaji
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senerai Rekod Permohonan", only for themselves.
+			#2. Function Add Application 
+				1. "Kakitangan" can "add" "Butiran Rekod Permohonan".
+				2. "Kakitangan" can "confirm" "Pengesahan Butiran Maklumat dan Permohonan" by updating the confirmation status  eithre to "SAH/TIDAK SAH"
+				
+			#3. Function View Details 
+				1. "Kakitangan" can  "view" "Butiran Rekod Permohonan" for selected application.
+				2. "Kakitangan" can "view" "Status Pengesahan Butiran Maklumat dan Permohonan".
+				3. "Kakitangan" can "view" "Status Penyokongan Dari Pengaraha Bahagian/Negeri".
+				
+				IF more than 14 days.
+				4. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				5. "Kakitangan" can "view" "Status Permohonan dari Urus Setia".
+					IF confirmation status == "TIDAK LULUS", application end there.
+					IF confirmation status == "LULUS", proceed to next level.
+				6."Kakitangan" can "view" overall status for the application.
+				
+				IF less than 14 days:
+				4. "Kakitangan" can  "view" "Status Pengesahan dari Urus Setia".
+					IF confirmation status == "TIDAK SAH", application end there.
+					IF confirmation status == "SAH", 
+				5. "Kakitangan"can "view" "Status Pelulusan dari Pengarah Bahagian/Negeri".
+				6."Kakitangan" can "view" overall status for the application. 
+		#2. Pengarah Bahagian/Negeri
+			#1. Function Listing
+				1. "PN" can "view" "Senarai Rekod Permohonan" for all staffs.
+				
+			#2. Function View Details
+				1. "PN" can "view" "Butiran Rekod Permohonan" for selected application.
+				2. "PN" can "view" "Status Pengeshan Butiran Maklumat dan Permohonan".
+				3. "PN" can "support" "Status Penyokong Permohonan dari Ketua Bahagian/Negeri" by updating the support status either to 'SOKONG/TIDAK SOKONG'.
+		#3. Urus Setia 
+			#1. Function Listing 
+				1. "US Cuti" can "view" "Senarai Rekod Permohonan" for all staffs.
+				
+			#2. Function View Details
+				1. "US Cuti" can "view" "Butiran Rekod Permohonan" for selected application.
+				2. "US Cuti" can "view" "Status Pengesahan Maklumat dan Permohonan".
+				3. "US Cuti" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri".
+				
+				IF more than 14 days
+				4. "US Cuti" can "add" "Keputusan Mesyuarat".
+				5. "US Cuti" can "approve" "Status Permohonan dari Urus Setia" by updating the meeting result to either 'LULUS/TIDAK LULUS'.
+					IF confirmation status == "TIDAK LULUS", application end there.
+					IF confirmation status == "LULUS", proceed to next level.
+				6. "US Cuti" can "update" overall status for the application.
+					
+				IF less than 14days.
+				4. "US Cuti" can "confirm" "Status Pengesahan dari Urus Setia" by updating the confirmation status to either 'SEMAK/TIDAK SEMAK'.
+					IF confirmation status == "TIDAK SAH", application end there.
+					IF confirmation status == "SAH", 
+				5. "US Cuti" can "view" "Status Pelulusan dari Pengarah Bahagian/Negeri".
+				6. "US Cuti" can "update" overall status for the application. 
+		#4. Ketua Pengarah 
+			#1. Function Listing 
+				1. "KP" can "view" "Senarai Rekod Permohonan" for all staffs.
+				
+			#2. Fucntion View Details
+				1. "KP" can "view" "Butiran Rekod Permohonan" for selected application.
+				2. "KP" can "view" "Status Pengesahan Maklumat dan Permohonan".
+				3. "KP" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri".
+				
+				IF less than 14days.
+				4. "KP" can "view" "Status Pengesahan dari Urus Setia".
+				    IF confirmation status == "TIDAK SAH", application end there.
+					IF confirmation status == "SAH", 
+				5."KP" can "approve" "Status Kelulusan dari Ketua Pengarah" by updating the approval status to either 'LULUS/TIDAK LULUS'.
+				
+		#5. System 
+			1. System can "notify" "Keputusan Permohonan Gagal ke Kakitangan".
+			2. System can "update" "Maklumat Kakitangan"
+			3. System can "notify" "Keputusan Permohonan ke Kakitangan."
+			
+	#4. Permohonan Cuti Tanpa Gaji
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Permohonan", only for themselves.
+				
+			#2. Function Add Application 
+				1. "Kakitangan" can "add" "Butiran Maklumat Permohonan" and its supporting documents.
+				2. "Kakitangan" can "confirm" "Pengesahan Maklumat Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'.
+				
+			#3. Function View Details
+				1. "Kakitangan" can "view" "Butiran Maklumat Permohonan" for selected application.
+				2. "Kakitangan" can "download" "Dokumen Sokongan".
+				3. "Kakitangan" can "view" "Status Pengesahan Maklumat Permohonan".
+				4. "Kakitangan" can "view" "Status Penyokongan Permohonan dari 'PN'".
+					IF support status == "TIDAK SOKONG", application end.
+				    IF support status == "SOKONG", proceed to next level.
+				5. "Kakitangan" can "view" "Status Semakan Kelayakan Permohonan Cuti"
+				6. "Kakitangan" can "view" "Status Pengesahan Permohonan dari Urus Setia".
+				    IF confirmation status  == "TIDAK SAH", application end.
+					IF confirmation status  == "SAH", proceed to next level.
+				7. "Kakitangan" can "view" "Status Penyokongan dari Pengarah Khidmat Pengurusan".
+					IF support status  == "TIDAK SOKONG", application end.
+					IF support status  == "SOKONG", proceed to next level.
+				8. "Kakitangan" can "view" "Status Kelulusan dari Ketua Pengarah".
+					IF approval status == "TIDAK LULUS", application end.
+					IF approval status == "LULUS", proceed to next level.
+				9. "Kakitangan" can "view" overall status for the application.	
+				
+		#2. Pengarah Bahagian/Negeri
+			#1. Function Listing
+				1. "PN" can "view" "Senarai Rekod Permohonan" for all the applicant.
+				
+			#2. Function View Details 
+				1. "PN" can "view" "Butiran Maklumat Permohonan" for selected applicant.
+				2. "PN" can "downlaod" "Dokumen Sokongan".
+				3. "PN" can "support" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri" by updating support status either to 'SOKONG/TIDAK SOKONG'.
+					IF support status == "TIDAK SOKONG", application end.
+				    IF support status == "SOKONG", proceed to next level.
+				4. "PN" can "update" kelayakan cuti rehat terkini.
+				
+		#3. Urus Setia 
+			#1. Function Listing
+				1. "US Cuti" can "view" "Senarai Rekod Permohonan" from all the applicant.
+				
+			#2. Function View Details 
+				1. "US Cuti" can "view" "Butiran Maklumat Permohonan" for selected application.
+				2. "US Cuti" can "download" "Dokumen Sokongan".
+				3. "US Cuti" can "view" "Status Pengesahan Maklumat Permohonan".
+				4. "US Cuti" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri".
+				   IF support status  == "TIDAK LULUS", application end.
+				   IF support status  == "LULUS", proceed to the next level.
+				5. "US Cuti" can "certify" "Status Semakan Kelayakan Permohonan Cuti" by updating certification status to either 'SEMAK/TIDAK SEMAK'.
+				6. "US Cuti" can "confirm" "Status Pengesahan Permohonan Cuti" by updating confirmation status to either 'SAH/TIDAK SAH'.
+				    IF confirmation Status == "TIDAK SAH", application end.
+					IF confirmation Status == "SAH",proceed to next level.
+				7. "US Cuti" can "view" "Status Penyokongan Permohonan dari Pengarah Khidmat Pengurusan".
+					IF support status == "TIDAK SOKONG", application end.
+					IF support status == "SOKONG", proceed to next level.
+				8. "US Cuti" can "view" "Status Kelulusan Permohonan dari Ketua Pengarah". 
+					IF approval status == "TIDAK LULUS", application end.
+					IF approval status == "LULUS", proceed to next level.
+				9."US Cuti" can "update" overall status for the application.
+				
+		#4. Pengarah Khidmat Pengurusan 
+			#1. Function Listing 
+				1. "PKP" can "view" "Senarai Rekod Permohonan" from all the applicants.
+				
+			#2. Function View Details 
+				1. "PKP" can "view" "Butiran Maklumat Permohonan" for all the applicants.
+				2. "PKP" can "download" "Dokumen Sokongan".
+				3. "PKP" can "view" "Status Pengesahan Maklumat Permohonan".
+				4. "PKP" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri".
+				5. "PKP" can "view" "Status Semakan Kelayakan Permohonan Cuti".
+				6. "PKP" can "view" "Status Pengesahan Maklumat Permohonan Cuti"
+				7. "PKP" can "support" "Status Penyokongan Permohonan" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+				
+		#5. Ketua Pengarah 
+			#1. Function Listing 
+				1. "KP" can "view" "Senarai Rekod Permohonan" from all the applicants.
+				
+			#2. Function View Details 
+				1. "KP" can "view" "Butiran Maklumat Permohonan" for all the applicants.
+				2. "KP" can "download" "Dokumen Sokongan".
+				3. "KP" can "view" "Status Pengesahan Maklumat Permohonan".
+				4. "KP" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri".
+				5. "KP" can "view" "Status Semakan Kelayakan Permohonan Cuti".
+				6. "KP" can "view" "Status Pengesahan Maklumat Permohonan Cuti"
+				6. "KP" can "view" "Status Penyokongan Maklumat Permohonan Cuti dari Pengarah Khidmat Pengurusan".
+				7. "KP" can "approve" "Status Kelulusan Permohonan" by updating approval status to either 'LULUS/TIDAK LULUS'.
+				
+		#6. System 
+			1. System can "update" employee's details.
+			2. System can "notify" employee about the application.
+			3. System can "notify" employee about the application status if failed.
+
+	#5. Permohonan Menggunakan Cuti Bersalin Awal
+	#6. Permohonan Cuti Bersalin Pegawai Perkhidmatan Awam 
+		Notes: Both have the same roles and flow. 
+			#1. Kakitangan
+				#1. Function Listing
+					1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for that particular applicant.
+				#2. Function Add Application 
+					1. "Kakitangan" can "add" "Butiran Permohonan Cuti".
+					2. "Kakitangan" can "upload" "Dokumen Perakuan Bersalin".
+				#3. Function View Details 
+					1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application.
+					2. "Kakitangan" can "download" "Dokumen Perakuan Bersalin".
+					3. "Kakitangan" can "view" "Status Semakan Permohonan".
+					4. "Kakitangan" can "view" "Status Kelulusan Pengarah Khidmat Pengurusan".
+						IF approval status == "TIDAK LULUS", application end here.
+						IF approval status == "LULUS", proceed to next level.
+					5. "Kakitangan" can "view" overall status of the application.
+					
+			#2. Urus Setia
+				#1. Function Listing
+					1.  "US Cuti" can "view" "Senarai Rekod Permohonan " for every applicants.
+				#2. Function View Details
+					1. "US Cuti" can "view" "Butiran Permohonan Cuti" for selected application.
+					2. "US Cuti" can "download" "Dokumen Perakuan Bersalin".
+					3. "US Cuti" can "verify" "Status Semakan Permohonan" by updating verification status to either 'SEMAK/TIDAK SEMAK'.
+					4. "US Cuti" can "view" "Status Kelulusan Pengarah Khidmat Pengurusan".
+						IF approval status == "TIDAK LULUS", application end here.
+						IF approval status == "LULUS", proceed to next level.
+					5. "US Cuti" can "update" overall status of the application. 
+					
+			#3. Pengarah Khidmat Pengurusan
+				#1. Function Listing 
+					1."PKP" can "view" "Senarai Rekod Permohonan " for every applicants.
+				#2. Function View Details 
+					1. "PKP" can "view" "Butiran Permohonan Cuti" for selected application.
+					2. "PKP" can "download" "Dokumen Perakuan Bersalin".
+					3. "PKP" can "view" "Status Semakan Permohonan"
+					4. "PKP" can "approve" "Status Kelulusan Pengarah Khidmat Pengurusan" by updating the approval status to either 'LULUS/TIDAK LULUS'.
+					
+			#4. System
+				1.  System can "update" "Maklumat Kakitangan".
+			
+	#8. Permohonan Cuti Haji
+	#9. Permohonan Cuti Kuarantin, Arahan Bekerja dari Rumah 
+		Notes: Both have the same roles and flow
+		#1. Kakitangan
+			#1. Function Listing 
+				1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for the particular applicant.
+				
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan Cuti".
+				2. "Kakitangan" can "upload" "Dokumen Sokong".
+				
+			#3. Function View Details
+				1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "Kakitangan" can "download" "Dokumen Sokongan".
+				3. "Kakitangan" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian".
+				4. "Kakitangan" can "view" "Status Semakan dari Urus Setia".
+				5. "Kakitangan" can "view" "Status Kelulusan dari Pengarah Khidmat Pengurusan"
+				6. "Kakitangan" can "view" overall application status.
+				
+		#2. Pengarah Negeri/Bahagian
+			#1. Function Listing 
+				1. "PN" can "view" "Senarai Rekod Permohonan" for all applicant.
+				
+			#2. Function View Details 
+				1. "PN" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "PN" can "download" "Dokumen Sokongan".
+				3. "PN" can "support" "Status Penyokongan Pengarah Negeri/Bahagian" by updating the support status either to 'SOKONG/TIDAK SOKONG'.	
+			
+			
+		#3. Urus Setia 
+			#1. Function Listing 
+				1. "US Cuti" can "view" "Senarai Rekod Permohonan" for all applicant.
+			#2. Function View Details
+				1. "US Cuti" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "US Cuti" can "download" "Dokumen Sokongan".
+				3. "US Cuti" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian".
+				4. "US Cuti" can "verify" "Status Semakan dari Urus Setia" by updating the verification status either to 'SEMAK/TIDAK SEMAK'.
+				5. "US Cuti" can "view" "Status Kelulusan dari Pengarah Khidmat Pengurusan".
+				6. "US Cuti" can "view" overall application status.
+		
+		#4. Pengarah Khidmat Pengurusan 
+			#1. Function Listing 
+				1. "PKP" can "view" "Senarai Rekod Permohonan" for all applicant.
+			#2. Function View Details
+				1. "PKP" can "view" "Butiran Permohonan Cuti" for selected application.
+				2. "PKP" can "download" "Dokumen Sokongan".
+				3. "PKP" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian".
+				4. "PKP" can "view" "Status Pengesahan dari Urus Setia".
+				5. "PKP" can "approve" "Status Kelulusan dari Pengarah Khidmat Pengurusan".
+				
+		#5. System
+			1. System can "notify" application fail to the user.
+			2. System can "update" employee's details.
+			3. System can "notify" application status to the user.
+	
+	#7.  Permohonan Cuti Haji
+	#10. Permohonan Cuti Menjaga Anak Tanpa Gaji
+	#11. Permohonan Cuti Kursus Sambilan (CKS)
+	#12. Perakuan tidak hadir ke pejabat atas-atas sebab kecemasan.
+	#13. Permohonan Cuti Lanjutan (Separuh Gaji/Tanpa Gaji)
+	#14. Permohonan Cuti Tanpa Gaji Mengikut Pasangan
+	#15. Permohonan Cuti Penyakit Barah dan Kusta
+	#16. Permohonan Cuti Penyakit Tibi
+		Notes: Both have the same roles
+			#1. Kakitangan
+				#1. Function Listing
+					1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for all applicant.
+					
+				#2. Function Add Application
+					1. "Kakitangan" can "view" "Butiran Rekod Permohonan" for selected applicant.
+					2. "Kakitangan" can "confirm" "Status Pengesahan Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'.
+				#3. Function View Detail
+					1. "Kakitangan" can "view" "Butiran Rekod Permohonan" for selected applicant.
+					2. "Kakitangan" can "view" "Status Pengesahan Permohonan".
+					3. "Kakitangan" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+						IF support status == "TIDAK SOKONG", the applicant end there.
+						IF support status == "SOKONG", proceed to next level.
+					4. "Kakitangan" can "view" "Status Semakan Permohonan dari Urus Setia".
+					5. "Kakitangan" can "view" "Status Pengesahan Permohonan dari Urus Setia".
+						IF confirmation status == "TIDAK SAH", the applicant end there.
+						IF confirmation status == "SAH", proceed to next level.
+					6. "Kakitangan" can "view" "Status Pelulusan Permohonan dari Pengarah Khidmat Pengurusan".
+						IF approval status == "TIDAK LULUS", the applicant end,
+						IF approval status == "LULUS", proceed to next level.
+					7. "Kakitangan" can "view" overall status of the application.
+					
+ 			#2. Pengarah Negeri/Bahagian 
+				#1. Function Listing 
+					1. "PN" can "view" "Senarai Rekod Permohonan" for all applicant.
+				#2. Function View Details
+					1. "PN" can "view" "Butiran Rekod Permohonan" for selected applicant.
+					2. "PN" can "view" "Status Pengesahan Permohonan".
+					3. "PN" can "support" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian" by updating the support status to either 'SOKONG/TIDAK SOKONG'.
+				
+			#3. Urus Setia 
+				#1. Function Listing 
+					1. "US Cuti" can "view" "Senarai Rekod Permohonan" for all applicant.
+				#2. Function View Details 
+					1. "US Cuti" can "view" "Butiran Rekod Permohonan" for selected applicant.
+					2. "US Cuti" can "view" "Status Pengesahan Permohonan".
+					3. "US Cuti" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+						IF support status == "TIDAK SOKONG", the applicant end there.
+						IF support status == "SOKONG", proceed to next level.
+					4. "US Cuti" can "verify" "Status Semakan Permohonan dari Urus Setia" by updating the verification status to either 'SEMAK/TIDAK SEMAK'.
+					5. "US Cuti" can "confirm" "Status Pengesahan Permohonan dari Urus Setia" by updating the confirmation status to either 'SAH/TIDAK SAH'.
+						IF confirmation status == "TIDAK SAH", the applicant end there.
+						IF confirmation status == "SAH", proceed to next level.
+					6. "US Cuti" can "view" "Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan".
+						IF approval status == "TIDAK LULUS", the applicant end,
+						IF approval status == "LULUS", proceed to next level.
+					7. "US Cuti" can "update" overall status of the application.
+			#4. Pengarah Khidmat Pengurusan 
+				#1. Function Listing
+					1. "PKP" can "view" "Senarai Rekod Permohonan" for all applicant.
+				#2. Function View Details 
+					1. "PKP" can "view" "Butiran Rekod Permohonan" for selected applicant.
+					2. "PKP" can "view" "Status Pengesahan Permohonan".
+					3. "PKP" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+						IF support status == "TIDAK SOKONG", the applicant end there.
+						IF support status == "SOKONG", proceed to next level.
+					4. "PKP" can "view" "Status Semakan Permohonan dari Urus Setia".
+					5. "PKP" can "view" "Status Pengesahan Permohonan dari Urus Setia".
+						IF confirmation status == "TIDAK SAH", the applicant end there.
+						IF confirmation status == "SAH", proceed to next level.
+					6. "PKP" can "view" "Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan" by updating approval status to either 'LULUS/TIDAK LULUS'.
+			#5. System
+		

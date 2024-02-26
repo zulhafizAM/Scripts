@@ -1,0 +1,185 @@
+﻿1. "Calon" can "view" "Senarai Permohonan" for particular candidates. ['Calon', 'view', 'Senarai Permohonan', 'Kakitangan Kontrak']
+1. "Calon" can "add" "Butiran Permohonan". ['Calon', 'add', 'Butiran Permohonan', 'Kakitangan Kontrak']
+1. "Calon" can "view" "Butiran Permohonan" for selected application. ['Calon', 'view', 'Butiran Permohonan', 'Kakitangan Kontrak']
+2. "Calon" can "view" "Status Semakan Maklumat Calon". ['Calon', 'view', 'Status Semakan Maklumat Calon', 'Kakitangan Kontrak']
+3. "Calon" can "view" "Status memenuhi kriteria". ['Calon', 'view', 'Status memenuhi kriteria', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF "Memenuhi Kriteria"== false,
+
+4. "Calon" can "update" "Butiran Permohonan". ['Calon', 'update', 'Butiran Permohonan', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF "Memenuhi kriteria" == true
+
+5. "Calon" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['Calon', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Kakitangan Kontrak']
+
+IF STATEMENT
+6. "Calon" can "view" "Status Pengesahan Permohonan" from "Pelulus" ONLY IF "SOKONG";
+
+7. "Calon" can "view" "ID Kakitangan". ['Calon', 'view', 'ID Kakitangan', 'Kakitangan Kontrak']
+1. "US" can "view" "Senarai Permohonan" for involves in all candidates. ['US', 'view', 'Senarai Permohonan', 'Kakitangan Kontrak']
+1. "US" can "view" "Butiran Permohonan" for selected application. ['US', 'view', 'Butiran Permohonan', 'Kakitangan Kontrak']
+2. "US" can "verify" "Maklumat Calon" by updating the verification status either to 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Maklumat Calon', 'SEMAK/TIDAK SEMAK', 'Kakitangan Kontrak']
+3. "US" can "update" "Memenuhi Kriteria". ['US', 'update', 'Memenuhi Kriteria', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF "Memenuhi Kriteria"== false, calon will be asked to "update" their details.
+
+
+IF STATEMENT
+IF "Memenuhi kriteria" == true
+
+4. "US" can "update" "approver" and "supporter" into the application. ['US', 'update', 'approver', 'supporter', 'Kakitangan Kontrak']
+5. "US" can "support" "Status Permohonan" by updating the supportation status either to 'SOKONG/TIDAK SOKONG'. ['US', 'support', 'Status Permohonan', 'SOKONG/TIDAK SOKONG', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to the next level.
+
+6. "US" can "approve" "Status Permohonan" by updating the appproval status either to 'LULUS/TIDAK LULUS'. ['US', 'approve', 'Status Permohonan', 'LULUS/TIDAK LULUS', 'Kakitangan Kontrak']
+7. "US" can "view" "ID Kakitangan". ['US', 'view', 'ID Kakitangan', 'Kakitangan Kontrak']
+8. "US" can "update" "Maklumat Kakitangan". ['US', 'update', 'Maklumat Kakitangan', 'Kakitangan Kontrak']
+1. "Penyokong" can "view" "Senarai Permohonan" for involves in all candidates. ['Penyokong', 'view', 'Senarai Permohonan', 'Kakitangan Kontrak']
+1. "Penyokong" can "view" "Butiran Permohonan" for selected application. ['Penyokong', 'view', 'Butiran Permohonan', 'Kakitangan Kontrak']
+2. "Penyokong" can "view" "Status Semakan Maklumat Calon". ['Penyokong', 'view', 'Status Semakan Maklumat Calon', 'Kakitangan Kontrak']
+3. "Penyokong" can "view" "Memenuhi Kriteria". ['Penyokong', 'view', 'Memenuhi Kriteria', 'Kakitangan Kontrak']
+4. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Kakitangan Kontrak']
+1. "Pelulus" can "view" "Senarai Permohonan" for involves in all candidates. ['Pelulus', 'view', 'Senarai Permohonan', 'Kakitangan Kontrak']
+1. "Pelulus" can "view" "Butiran Permohonan" for selected application. ['Pelulus', 'view', 'Butiran Permohonan', 'Kakitangan Kontrak']
+2. "Pelulus" can "view" "Status Semakan Maklumat Calon". ['Pelulus', 'view', 'Status Semakan Maklumat Calon', 'Kakitangan Kontrak']
+3. "Pelulus" can "view" "Memenuhi Kriteria". ['Pelulus', 'view', 'Memenuhi Kriteria', 'Kakitangan Kontrak']
+4. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['Pelulus', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Kakitangan Kontrak']
+5. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan Permohonan', 'LULUS/TIDAK LULUS', 'Kakitangan Kontrak']
+
+IGNORE
+1. System can "generate" employeeId/employeeNumber. ['generate', 'Kakitangan Kontrak']
+
+
+IGNORE
+2. System can "update" "Maklumat kakitangan". ['update', 'Maklumat kakitangan', 'Kakitangan Kontrak']
+
+
+IGNORE
+1. System can "update" "maklumat kakitangan kontrak". ['update', 'maklumat kakitangan kontrak', 'Kakitangan Kontrak']
+
+
+IGNORE
+2. System send "notify" 2 months before the contract end to 'US'. ['notify', 'US', 'Kakitangan Kontrak']
+
+
+IGNORE
+4. System can "update" "Maklumat Penamatan Kakitangan". ['update', 'Maklumat Penamatan Kakitangan', 'Kakitangan Kontrak']
+
+
+IGNORE
+5. System can "generate" "Kontrak Perjanjian Yang Baru". ['generate', 'Kontrak Perjanjian Yang Baru', 'Kakitangan Kontrak']
+
+
+IGNORE
+6. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Kakitangan Kontrak']
+
+1. "US" can "view" "senarai kakitangan akan tamat kontrak". ['US', 'view', 'senarai kakitangan akan tamat kontrak', 'Kakitangan Kontrak']
+1. "US" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee. ['US', 'view', 'Butiran Kakitangan yang akan tamat kontrak', 'Kakitangan Kontrak']
+2. "US" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Kakitangan Kontrak']
+3. "US" can "confirm" "Status Pengesahan Pemohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Pemohonan', 'SAH/TIDAK SAH', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", letter of termination of contract.
+
+
+IF STATEMENT
+IF confirmation status == "SAH",
+
+4. "US" can "update" "approver" and "supporter" into the application. ['US', 'update', 'approver', 'supporter', 'Kakitangan Kontrak']
+5. "US" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['US', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG",the application proceed to next level.
+
+6. "US" can "view" "Status Kelulusan Permohonan" from 'Pelulus'. ['US', 'view', 'Status Kelulusan Permohonan', 'Pelulus', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", the application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", the application proceed to next level.
+
+7. "US" can "view" the "Borang Perjanjian". ['US', 'view', 'Borang Perjanjian', 'Kakitangan Kontrak']
+8. "US" can "confirm" the "Status Pengesahan Borang Perjanjian" by updating the confirmation status either to 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Borang Perjanjian', 'SAH/TIDAK SAH', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", "Kakitangan" can "update" "borang perjanjian"
+
+
+IF STATEMENT
+IF confirmation status == "SAH", the application proceed to next level.
+
+
+FIX
+9. "US" can "update" the overall status of the application. ['US', 'update', 'the overall status of the application.', 'Kakitangan Kontrak']
+
+1. "Kakitangan" can "view" "Senarai Kakitangan Yang akan Tamat Kontrak". ['Kakitangan', 'view', 'Senarai Kakitangan Yang akan Tamat Kontrak', 'Kakitangan Kontrak']
+1. "Kakitangan" can "view" "Butiran Kakitangan Yamg akan tamat kontrak". ['Kakitangan', 'view', 'Butiran Kakitangan Yamg akan tamat kontrak', 'Kakitangan Kontrak']
+2. "Kakitangan" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Kakitangan Kontrak']
+3. "Kakitangan" can "view" "Status Pengesahan Pemohonan". ['Kakitangan', 'view', 'Status Pengesahan Pemohonan', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", letter of termination of contract.
+
+
+IF STATEMENT
+IF confirmation status == "SAH".
+
+4. "Kakitangan" can "view" "approver" and "supporter" into the application. ['Kakitangan', 'view', 'approver', 'supporter', 'Kakitangan Kontrak']
+5. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['Kakitangan', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG",the application proceed to next level.
+
+6. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'. ['Kakitangan', 'view', 'Status Kelulusan Permohonan', 'Pelulus', 'Kakitangan Kontrak']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", the application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", the application proceed to next level.
+
+7. "Kakitangan" can "update" "Borang Perjanjian". ['Kakitangan', 'update', 'Borang Perjanjian', 'Kakitangan Kontrak']
+8. "Kakitangan" can "view" "Status Pengesahan Borang Perjanjian". ['Kakitangan', 'view', 'Status Pengesahan Borang Perjanjian', 'Kakitangan Kontrak']
+
+FIX
+9. "Kakitangan" can "view" the overall status of the application. ['Kakitangan', 'view', 'the overall status of the application.', 'Kakitangan Kontrak']
+
+10."Kakitangan" can "download" "Surat Kontrak Perjanjian Baru". ['Kakitangan', 'download', 'Surat Kontrak Perjanjian Baru', 'Kakitangan Kontrak']
+1. "PN" can "view" "senarai kakitangan akan tamat kontrak". ['PN', 'view', 'senarai kakitangan akan tamat kontrak', 'Kakitangan Kontrak']
+1. "PN" can "view" "Butiran kakitangan akan tamat kontrak" for selected employee. ['PN', 'view', 'Butiran kakitangan akan tamat kontrak', 'Kakitangan Kontrak']
+2. "PN" can "certify" "Status Perakuan dari Pengarah Bahagian/Negeri" by updating the certification status either to 'AKU/TIDAK AKU'. ['PN', 'certify', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'AKU/TIDAK AKU', 'Kakitangan Kontrak']
+1. "Penyokong" can "view" "senarai kakitangan akan tamat kontrak". ['Penyokong', 'view', 'senarai kakitangan akan tamat kontrak', 'Kakitangan Kontrak']
+1. "Penyokong" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee. ['Penyokong', 'view', 'Butiran Kakitangan yang akan tamat kontrak', 'Kakitangan Kontrak']
+2. "Penyokong" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Penyokong', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Kakitangan Kontrak']
+3. "Penyokong" can "view" "Status Pengesahan " from 'US'. ['Penyokong', 'view', 'Status Pengesahan ', 'US', 'Kakitangan Kontrak']
+4. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Kakitangan Kontrak']
+1. "Pelulus" can "view" "senarai kakitangan akan tamat kontrak". ['Pelulus', 'view', 'senarai kakitangan akan tamat kontrak', 'Kakitangan Kontrak']
+1. "Pelulus" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee. ['Pelulus', 'view', 'Butiran Kakitangan yang akan tamat kontrak', 'Kakitangan Kontrak']
+2. "Pelulus" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Pelulus', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Kakitangan Kontrak']
+3. "Pelulus" can "view" "Status Pengesahan Pemohonan" from 'US'. ['Pelulus', 'view', 'Status Pengesahan Pemohonan', 'US', 'Kakitangan Kontrak']
+4. "Pelulus" can "view" "Status Penyokongan Pemohonan" from 'Penyokong'. ['Pelulus', 'view', 'Status Penyokongan Pemohonan', 'Penyokong', 'Kakitangan Kontrak']
+5. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan Permohonan', 'LULUS/TIDAK LULUS', 'Kakitangan Kontrak']
+			},
+		])
+	}
+}

@@ -1,0 +1,49 @@
+code:::description
+0:::Tiada Maklumat
+1:::Doktor Falsafah (Ph.D)
+2:::Lepasan Sarjana
+3:::Sarjana Perubatan
+4:::Sarjana Sains
+5:::Sarjana Sastera
+6:::Sarjana Persuratan
+7:::Ijazah Sarjana Muda dengan Kepujian
+8:::Ijazah Sarjana Muda
+9:::Diploma Lepasan Ijazah
+10:::Diploma Lanjutan
+11:::Diploma
+12:::Sijil
+13:::STPM dan Setaraf
+14:::SPM dan Setaraf
+15:::PMR dan Setaraf
+16:::Sekolah Rendah
+17:::Taman Asuhan/Prasekolah
+19:::Matrikulasi
+20:::Sarjana 
+21:::Sekolah Menengah
+22:::Sekolah Khas
+23:::SPVM 
+24:::"Sijil Kekompetenan Penjaga Jentera A0,A1,A4-2,A4-1,A4"
+25:::"Sijil Kekompetenan Penjaga Jentera B0-2,B0-1,B0,B1,B4"
+26:::"Sijil Kekompetenan Pendawai Elektrik PW1,PW2,PW3,PW4,PW5,PW6"
+27:::Sijil Kecekapan Pemandu Enjin Pembakaran Dalam (IC) Gred I/II
+28:::Sijil kecekapan Pemandu Enjin Stim/Dandang Gred I/II
+29:::Sijil Kemahiran MLVK - Tahap 1
+30:::Sijil Kemahiran MLVK - Tahap 2
+31:::Sijil Kemahiran MLVK - Tahap 3
+32:::Sijil Kemahiran MLVK - Tahap 4
+33:::Sijil Kemahiran MLVK - Tahap 5
+34:::Sijil Kemahiran Bukan MLVK - Asas
+35:::Sijil Kemahiran Bukan MLVK - Pertengahan
+36:::Sijil Kemahiran Bukan MLVK - Lanjutan
+37:::Sijil Kemahiran Bukan Teknikal < 3 Bulan
+38:::Sijil Kemahiran Bukan Teknikal > 3 - 6 Bulan
+39:::Sijil Kemahiran Bukan Teknikal > 6 - 12 Bulan
+40:::Sijil Kemahiran Bukan Teknikal > 12 Bulan
+41:::Sijil Kemahiran Malaysia (SKM) Tahap 1
+42:::Sijil Kemahiran Malaysia (SKM) Tahap 2
+43:::Sijil Kemahiran Malaysia (SKM) Tahap 3
+44:::Diploma Kemahiran Malaysia (DKM) Tahap 4
+45:::Diploma Lanjutan Kemahiran Malaysia (DLKM) Tahap 5
+46:::Sarjana Sains Sosial
+98:::Tiada Pendidikan Formal
+99:::Lain-Lain

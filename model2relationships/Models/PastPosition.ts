@@ -1,0 +1,80 @@
+﻿import { BaseModel, HasMany, column, hasMany } from '@ioc:Adonis/Lucid/Orm';
+import CamelCaseNamingStrategy from 'App/Strategies/CamelCaseNamingStrategy';
+import { DateTime } from 'luxon';
+import Employee from 'App/Models/Employee';
+import Position from 'App/Models/Position';
+import Grade from 'App/Models/Grade';
+
+export default class PastPosition extends BaseModel {
+    public static table = 'pastPositions';
+    public static primaryKey = 'id';
+    public static incrementing = false;
+
+    public static namingStrategy = new CamelCaseNamingStrategy();
+
+    @column({ isPrimary: true, columnName: 'id', serializeAs: null })
+    public id: bigint;
+
+    @column({ columnName: 'employeeId', serializeAs: null })
+    public employeeId: bigint;
+
+    @column({ columnName: 'positionId', serializeAs: null })
+    public positionId: bigint;
+
+    @column({ columnName: 'gradeId', serializeAs: null })
+    public gradeId: bigint;
+
+    @column.dateTime({ columnName: 'startDate' })
+    public startDate: DateTime;
+
+    @column.dateTime({ columnName: 'endDate' })
+    public endDate: DateTime;
+
+    @column({ columnName: 'active', serializeAs: null })
+    public active: boolean;
+
+    @column({ columnName: 'createdBy', serializeAs: null })
+    public createdBy: string;
+
+    @column.dateTime({
+        columnName: 'createdAt',
+        autoCreate: true,
+        serializeAs: null,
+    })
+    public createdAt: DateTime;
+
+    @column({ columnName: 'modifiedBy', serializeAs: null })
+    public modifiedBy: string;
+
+    @column.dateTime({
+        columnName: 'modifiedAt',
+        autoCreate: true,
+        autoUpdate: true,
+        serializeAs: null,
+    })
+    public modifiedAt: DateTime;
+
+    @hasMany(() => Employee, {
+        foreignKey: 'employeeId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public employee: HasMany<typeof Employee>;
+
+    @hasMany(() => Position, {
+        foreignKey: 'positionId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public position: HasMany<typeof Position>;
+
+    @hasMany(() => Grade, {
+        foreignKey: 'gradeId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public grade: HasMany<typeof Grade>;
+}

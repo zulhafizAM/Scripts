@@ -1,0 +1,108 @@
+﻿
+FIX
+1."US" "add" meeting result. ['US', 'add', 'meeting result.', 'Gaji']
+
+1. "PKP" "confirm" timetable for "Pergerakan Gaji". ['PKP', 'confirm', 'Pergerakan Gaji', 'Gaji']
+
+IGNORE
+1. Create timetable for "Pergerakan Gaji Kakitangan". ['Pergerakan Gaji Kakitangan', 'Gaji']
+
+
+FIX
+2. Create "surat Pergerakan Gaji" and email to "Kakitangan". ['surat Pergerakan Gaji', 'Kakitangan', '".', 'Gaji']
+
+
+IGNORE
+#1. Function manage salary and allowance for each employee monthly. ['Gaji']
+
+
+IGNORE
+1. System create list of employee involved in "Perubahan Gaji dan Elaun-elaun". ['Perubahan Gaji dan Elaun-elaun', 'Gaji']
+
+
+IGNORE
+2. System notified 'US'. ['US', 'Gaji']
+
+
+IGNORE
+3. System sent the data through API to SAGA. ['Gaji']
+
+
+IGNORE
+4. System generate pay slip and email the "Kakitangan". ['kakitangan', 'Gaji']
+
+
+FIX
+1. "US" "view", search list of employee involved. ['US', 'view', 'search list of employee involved.', 'Gaji']
+
+2. "US" "edit" employee's details that involves in "Perubahan Gaji dan Elaun-elaun". ['US', 'edit', 'Perubahan Gaji dan Elaun-elaun', 'Gaji']
+
+FIX
+3. "US" "download" employee's pay slip. ['US', 'download', "employee's pay slip.", 'Gaji']
+
+
+FIX
+1. "PKP" "view", search the list of employee involved. ['PKP', 'view', 'search the list of employee involved.', 'Gaji']
+
+
+FIX
+2. "PKP" "edit" status to approve the list of employee involved. ['PKP', 'edit', 'status to approve the list of employee involved.', 'Gaji']
+
+
+IGNORE
+#1. Function manage salary deduction for employee monthly. ['Gaji']
+
+
+IGNORE
+1. System create list of employee involved in "pemotongan gaji secara bulanan". ['pemotongan gaji secara bulanan', 'Gaji']
+
+
+IGNORE
+2. System notified 'US'. ['US', 'Gaji']
+
+
+IGNORE
+3. System generate "surat pemotongan gaji" and email to the employee. ['surat pemotongan gaji', 'Gaji']
+
+1. "US" "view", filter and search list of employee involved in "Pemotongan Gaji Secara Bulanan". ['US', 'view', 'Pemotongan Gaji Secara Bulanan', 'Gaji']
+2. "US" "edit" employee's details that involved in "Pemotongan Gaji". ['US', 'edit', 'Pemotongan Gaji', 'Gaji']
+
+FIX
+3. "US" "download" employee's pay slip. ['US', 'download', "employee's pay slip.", 'Gaji']
+
+
+FIX
+1. "PKP" "view", search the list of employee involved. ['PKP', 'view', 'search the list of employee involved.', 'Gaji']
+
+
+FIX
+2. "PKP" "edit" status to approve the list of employee involved. ['PKP', 'edit', 'status to approve the list of employee involved.', 'Gaji']
+
+
+IGNORE
+#1. Function Final Salary for will be retired employee. ['Gaji']
+
+
+IGNORE
+1. System create list of employee that will be retired regardless of either forced, voluntary or other types of retirements. ['Gaji']
+
+
+IGNORE
+2. System generate pay slip and email the "Kakitangan". ['kakitangan', 'Gaji']
+
+
+FIX
+1. "US" "view", filter and search list of employee that will be retired. ['US', 'view', 'filter and search list of employee that will be retired.', 'Gaji']
+
+
+FIX
+2. "US" "update" salary details (included loan and elaun). ['US', 'update', 'salary details (included loan and elaun).', 'Gaji']
+
+
+FIX
+3. "US" "download" employee's pay slip. ['US', 'download', "employee's pay slip.", 'Gaji']
+
+			},
+		])
+	}
+}

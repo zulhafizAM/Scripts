@@ -1,0 +1,933 @@
+code:::description
+0:::Tiada Bidang
+10100:::Pengangkutan
+10101:::Pengurusan Pengangkutan
+10102:::Chartered Institute of Transportation
+10103:::Hidraulik & Hidrologi
+10104:::Sains Kemanusiaan 
+10105:::Sains Perancangan Pelancongan 
+10106:::Pendidikan Vokasional 
+10107:::Kejuruteraan Kawalan & Pengautomatan 
+10108:::Pembangunan Manusia 
+10109:::Sains (Pembangunan) 
+10110:::Radiografi
+10111:::Politik Antarabangsa
+10112:::Health & Physical Education
+10113:::Exercise Physiology and Physical Fitness 
+10114:::Health Promotion and Disease Prevention 
+10115:::Management  And Tourism
+10200:::Penerbangan
+10201:::Pengurusan Penerbangan
+10202:::Perancangan Lapangan Terbang
+10300:::Marin
+10301:::Pengurusan Pelabuhan
+10302:::Pengurusan Perkapalan
+11030:::Hal Ehwal Maritim
+20100:::Sastera
+20101:::Pentadbiran Kesusasteraan
+20102:::Kesusasteraan
+20103:::Sastera dan Sains Sosial
+20104:::Kesusasteraan Bahasa Inggeris
+20105:::Liberal Art
+20200:::Sains Sosial
+20201:::Sains Kemasyarakatan dan Kemanusiaan
+20202:::Sosiologi
+20203:::Antropology
+20204:::Sains Pembangunan
+20205:::Sains Pembangunan Manusia
+20206:::Ilmu Kemanusiaan
+20207:::Pembangunan dan Pentadbiran Sosiologi
+20208:::Antropologi / Sosiologi
+20209:::Sains Politik
+20210:::Pengajian Pembangunan
+20211:::Falsafah
+20212:::Politik dan Pemerintahan
+20213:::Khidmat Sosial
+20214:::Sains Kesetiausahaan
+20215:::Pendidikan (TESOL) 
+20216:::Perlindungan Kanak-Kanak
+20217:::Pengurusan Persekitaran 
+20218:::Ekologi
+20219:::Bahasa Inggeris 
+20220:::Bahasa Arab 
+20221:::Undang-undang
+20224:::TESL
+20225:::Pengurusan Pusat Sumber Maklumat
+20226:::Kejuruteraan Elektronik Telekomunikasi
+20227:::Senireka Grafik (Grafik Berkomputer)
+20300:::Kesenian / Kebudayaan
+20301:::Perfileman
+20302:::Seni Lakon
+20303:::Seni Halus
+20304:::Seni Lukis
+20305:::Muzik
+20306:::Drama / Teater
+20307:::Senimatografi
+20308:::Seni Tari
+20309:::Penulisan Kreatif
+20310:::Hiasan Dalaman
+20311:::Fotografi
+20312:::Senireka Industri
+20313:::Seni Tembikar
+20400:::Sejarah
+20401:::Pengajian Melayu
+20500:::Geografi
+20600:::Pengajian Bahasa
+20601:::Pengajian Bahasa Melayu
+20602:::Pengajian Bahasa Inggeris
+20603:::Pengajian Bahasa Cina
+20604:::Pengajian Bahasa Tamil
+20605:::Pengajian Bahasa Arab
+20606:::Pengajian Bahasa Jepun
+20607:::Terjemahan dan Intepretasi
+20700:::Komunikasi
+20701:::Komunikasi Massa
+20702:::Kewartawanan
+20703:::Percetakan / Grafik
+20704:::Komunikasi Organisasi
+20705:::Pengurusan Komunikasi
+20800:::Sains Perpustakaan
+20801:::Kajian Perpustakaan
+20900:::Psikologi / Kaunseling
+20901:::Kaunseling
+20902:::Psikologi
+20903:::Sains Kognitif
+20904:::Hubungan Industri
+20905:::Psikologi Industri & Organisasi
+20906:::Psikometrik
+20907:::Psikologi Tingkahlaku & Sosial
+20908:::Psikologi Klinikal
+21000:::Arkib
+21001:::Rekod dan Arkib
+21002:::Pemeliharaan Rekod dan Bahan Sejarah
+21003:::Pengurusan Muzium
+30100:::Kimia
+30101:::Kimia Analisis
+30102:::Kimia Industri
+30103:::Kimia Industri dan Petroleum
+30104:::Kimia Sumber
+30105:::Kimia Gunaan
+30106:::Kimia dan Teknologi Bahan Api
+30107:::Kimia Polimer
+30108:::Kimia Fizikal
+30109:::Sains Kimia dan Teknologi
+30110:::Geokimia
+30111:::Sains & Teknologi Polimer
+30200:::Fizik
+30201:::Fizik Gunaan
+30202:::Geofizik
+30203:::Fizik Industri
+30204:::Fizik Kesihatan
+30205:::Fizik Nuklear
+30207:::Fizik Perubatan
+30300:::Biologi
+30301:::Mikrobiologi
+30302:::Biokimia
+30303:::Biologi Persekitaran
+30304:::Biologi Gunaan
+30305:::Biologi Akuatik
+30306:::Biologi Sel dan Molekul  
+30307:::Biologi Pemeliharaan dan Ekologi
+30308:::Biologi / Biokimia / Mikrobiologi
+30309:::Sains Kajihayat
+30310:::Genetik
+30311:::Biofizik
+30312:::Sastera (Sejarah)
+30313:::Sains Sosial (Antropologi dan Sosiologi)
+30330:::Sosiologi Luar Bandar
+30331:::Pembangunan Belia dan Komuniti
+30332:::Pengurusan Kemudahan
+30333:::Pendidikan
+30334:::Pentadbiran Pendidikan
+30335:::Sains Pengguna
+30400:::Matematik
+30401:::Statistik
+30402:::Aktuari
+30403:::Matematik / Statistik / Fizik
+30404:::Pengiraan Matematik dan CAGD
+30405:::Statistik Gunaan Penyelidikan
+30406:::Sains Matematik dan Komputer
+30407:::Matematik Industri
+30408:::Matematik dan Ekonomi
+30409:::Statistik dan Komputer
+30410:::Matematik / Penyelidikan Operasi
+30411:::Pengiraan Matematik dan Geometri
+30412:::Matematik Gunaan
+30413:::Matematik Aktuari dan Statistik
+30500:::Pemakanan
+30501:::Teknologi Makanan
+30502:::Dietetik
+30503:::Sains dan Teknologi Makanan 
+30504:::Pemakanan dan Kesihatan Komuniti
+30600:::Bioteknologi
+30601:::Bioteknologi Sumber
+30700:::Sains
+30701:::Sains Forensik
+30702:::Sains Galian
+30703:::Sains Industri
+30704:::Sains Nuklear
+30705:::Sains Angkasa Lepas
+30706:::Sains Material
+30707:::Sains Tanah
+30708:::Sains Bahan
+30709:::Sains Sukan
+30710:::Sains Alam Sekitar
+30711:::Sains dan Pengurusan Sumber Bumi
+30712:::Sains dan Pengurusan Sumber Tumbuhan
+30715:::Sains Bahan dan Kayu
+30716:::Sains dan Sumber Alam
+30717:::Oceanography
+30718:::Sains Fizikal
+30719:::Sains Polimer
+30720:::Geodasi / Astronomi
+30721:::Sains Gunaan
+30781:::Pengurusan Sumber Asli
+30782:::Sains Ketenteraan / Military Science
+30800:::Geologi
+30801:::Geologi Gunaan
+30900:::Meteorologi
+31000:::Zoologi
+31001:::Sains Haiwan
+31100:::Geoinformation System
+31200:::Rekabentuk Perusahaan
+31300:::Sains Kesihatan Awam
+31303:::Sains Perpustakaan & Sistem Maklumat 
+31304:::Perancangan Bandar
+31400:::Botani
+31401:::Pathologi Tumbuhan
+31402:::Entomologi Tumbuhan
+31403:::Parasitologi Gunaan
+31404:::Bakterialogi
+31499:::Teknologi Elektronik
+31500:::Teknologi
+31501:::Teknologi Polimer
+31502:::Teknologi Kayu / Kertas
+31503:::Teknologi Kawalan Mutu
+31504:::Teknologi Makmal
+31505:::Teknologi Makmal Perubatan
+31507:::Teknologi Perabut
+31508:::Teknologi Percetakan
+31509:::Teknologi Tekstil
+31510:::Teknologi Gas
+31512:::Teknologi Industri Galian
+31525:::Technology Acquisition
+31526:::Tekstil dan Pakaian
+31600:::Perlombongan / Mining
+40100:::Teknologi dan Pendidikan
+40200:::Sains dan Pendidikan
+40300:::Pendidikan (Kaunseling)
+40305:::Teknologi Pendidikan
+40306:::Technical Education And Vocational Training (TEVT)
+40307:::Training Delivery
+40308:::Sistem Penilaian
+40309:::Pembangunan Kurikulum
+40310:::Teknik Pengajaran Dan Pembelajaran
+40311:::Adult Education/ Training
+40312:::Pengurusan Pendidikan
+40313:::Analisis Strategi Dan Keselamatan
+40314:::Pengurusan dan Kepimpinan Pendidikan
+40400:::Pendidikan Gunaan
+40500:::Sains Komputer dan Pendidikan
+40600:::Pengurusan Dan Pentadbiran
+40601:::Pengurusan (Kepimpinan)
+40603:::Pengurusan Pengetahuan
+40604:::Pengurusan Polisi Awam
+40605:::Perhubungan Awam
+40606:::Perhubungan Korporat
+40700:::Pendidikan Konservasi
+40800:::Pendidikan Pengembangan
+40900:::Pendidikan Teknik & Vokasional
+50100:::Ekonomi
+50101:::Ekonomi Pembangunan
+50102:::Ekonomi Antarabangsa / International Economic
+50103:::Ekonomi Pertanian
+50104:::Ekonomi dan Pentadbiran
+50105:::Ekonomi dan Pembangunan / Perancangan
+50106:::Ekonomi dan Industri
+50107:::Ekonomi dan Perniagaan Antarabangsa
+50108:::Ekonomi dan Perniagaan
+50109:::Pengurusan Sumber Ekonomi
+50110:::Ekonometrik / Econometric
+50111:::Sains Ekonomi Sumber
+50112:::Ekonomi (Kewangan)
+50113:::Ekonomi Polisi Awam
+50114:::Ekonomi Gunaan
+50115:::Ekonomi Tanah
+50116:::Ekonomi Statistik
+50117:::Ekonomi Bangunan
+50118:::Ekonomi Rumahtangga
+50119:::Ekonomi dan Analisis Ekonomi
+50120:::Analisa Ekonomi / Kewangan
+50121:::Financial Economics
+50201:::Bioekonomi / Bioeconomics
+50301:::Entrepreneurial Economics
+50303:::Ekonomi Makro / Macroeconomics
+50304:::Ekonomi (Kewangan Islam)
+50305:::Ekonomi dan Pentadbiran Muamalat
+50306:::Pengurusan Ekonomi
+60100:::Sains Komputer
+60101:::Sains Maklumat
+60102:::Komputer Industri
+60103:::Kejuruteraan Perisian
+60104:::Pengkomputeran Saintifik
+60105:::Sains Komputer dan Matematik
+60106:::Animasi
+60107:::Grafik
+60108:::Perisian Komputer
+60200:::Komunikasi Data
+60300:::Pangkalan Data
+60304:::Database Design & Architecture
+60305:::Database Administration
+60306:::Database Warehouse
+60307:::Database Planning
+60308:::Database Development
+60309:::Data Mining
+60310:::Data Migration
+60400:::Sistem Maklumat
+60401:::Sains dan Pengurusan Sistem
+60402:::Pengurusan Maklumat / Information Management
+60403:::Teknologi Maklumat
+60404:::Teknologi Sistem
+60405:::Teknologi Bangunan
+60406:::Kesetiausahaan 
+60420:::System Architecture
+60421:::System Design
+60422:::Software/ Tool/ Programming Development Specialist
+60423:::Software Quality Assurance
+60424:::Usability Requirement Analysis
+60425:::Usability Evaluation
+60426:::Website Specialism
+60427:::Mobile Application Development
+60428:::Cloud Computing
+60446:::Management of IT (MIT)
+60472:::Management Information System - System Integration
+60473:::Information System Analysis
+60474:::Network Planning
+60500:::Sistem Sokongan Keputusan
+60600:::Penyelidikan Operasi
+60700:::Kepintaran Buatan
+60800:::Multimedia
+60900:::Rangkaian Komputer
+61006:::Business Analysis and Information System
+61007:::System / Software / Application Development
+61008:::System / Software / Application Integration
+61009:::Network Architecture (Planning & Design)
+61010:::Network Configuration and Performance Management
+61011:::Network Control & Operation
+61012:::Network Support
+61013:::ICT Platform
+61014:::Network Administration
+61015:::Unified Communications
+61016:::Facilities Management
+61017:::Internet Services
+61018:::Computer System and Communication
+61301:::Data Center Management
+61302:::Configuration Management
+61303:::Operational Risk Management
+61304:::Storage Capacity & System Performance Management
+61305:::Service Level Management
+61306:::ICT Asset Management (Data Center)
+61307:::System Administration
+61308:::Hardware / Software Specialist
+61400:::Keselamatan ICT
+61401:::ICT Security Governance
+61402:::ICT Security Assessment & Audit
+61403:::ICT Security Incident Management
+61404:::Secured System Development
+61405:::Physical & Environment Security
+61406:::Information / Database Security
+61407:::Infrastructure Security (Network / ICT Asset)
+61408:::Business Continuity
+61500:::Big Data
+61501:::Data Analytic
+61502:::Predictive Analysis
+61503:::Open Data
+61550:::Enterprise Architecture (EA)
+70100:::Pertanian
+70101:::Sains Pertanian
+70102:::Kultura Kebunan
+70103:::Hortikultur
+70104:::Agronomi
+70105:::Pengurusan Pertanian
+70106:::Pengurusan Perladangan
+70107:::Perlindungan Hasil Tanaman
+70108:::Pengurusan Pantai
+70200:::Perikanan
+70201:::Sains Perikanan
+70202:::Sains Samudera
+70203:::Akuakultur
+70300:::Perhutanan
+70301:::Sains Perhutanan
+70302:::Sumber Marin
+70400:::Veterinar
+70401:::Sains Veterinar
+70402:::Perubatan Veterinar
+70403:::Kesihatan Haiwan dan Penternakan
+70500:::Sistem Saliran dan Perparitan
+70600:::Pengurusan Hidupan Liar
+70700:::Pengurusan Taman Negara
+70800:::Kajian Pengembangan
+80100:::Pelancongan
+80101:::Pengurusan Pelancongan
+80200:::Pengurusan Hotel
+80201:::Pengurusan Hotel dan Pelancongan
+80202:::Pengurusan Hotel dan Katering
+80300:::Pengurusan Taman dan Rekreasi
+80400:::Pengurusan Rumput Taman
+80500:::Pengurusan Taman Laut
+80600:::Pengurusan Hotel dan Resort
+90000:::Pengurusan Kejuruteraan (Engineering Management)
+90100:::Kejuruteraan Awam
+90101:::Kejuruteraan Bangunan
+90102:::Kejuruteraan Rekabentuk dan Awam
+90103:::Kejuruteraan Perkhidmatan Bangunan
+90104:::Kejuruteraan Rekabentuk
+90105:::Sains Kejuruteraan Awam   
+90106:::Kejuruteraan Struktur
+90107:::Kejuruteraan Binaan
+90108:::Kejuruteraan Mekanikal & Sistem Pembuatan 
+90109:::Kejuruteraan Bahan 
+90180:::Radio Frequency  Engineering
+90200:::Kejuruteraan Mekanikal / Jentera
+90201:::Kejuruteraan Mekanikal (Sistem)
+90202:::Kejuruteraan Kajiterbang
+90203:::Kawalan Trafik Udara
+90204:::Kejuruteraan Mekanikal (Pembuatan)
+90205:::Kejuruteraan Mekanikal (Perkapalan)
+90206:::Kejuruteraan Automotif
+90207:::Kejuruteraan Mekanikal (Penyaman Udara)
+90208:::Kejuruteraan Mekanikal
+90209:::Sains Kejuruteraan Mekanikal
+90210:::Kejuruteraan Automobil
+90211:::Kejuruteraan Lebuhraya
+90212:::Kejuruteraan Mekanikal (Automotif)
+90213:::Kejuruteraan Mekanikal (Industri)
+90275:::Perkhidmatan Elektrikal &Penyelenggaraan Mekanikal
+90300:::Kejuruteraan Elektrik
+90301:::Kejuruteraan Elektrik (Kuasa)
+90302:::Kejuruteraan Elektrik (Perhubungan)
+90303:::Kejuruteraan Elektrik (Instrumen)
+90304:::Kejuruteraan Elektrik & Elektronik
+90305:::Kejuruteraan Elektrik (Elektronik)
+90306:::Kejuruteraan Elektrik dan Sistem
+90307:::Elektronik dan Elektrikal
+90308:::Kejuruteraan Elektrikal
+90309:::Kejuruteraan Elektrik dan Teknologi
+90400:::Kejuruteraan Kimia
+90401:::Kejuruteraan Polimer
+90402:::Kejuruteraan Petroleum
+90403:::Kejuruteraan Gas
+90404:::Kejuruteraan Bioproses
+90405:::Kejuruteraan Bahan dan Sumber
+90406:::Kejuruteraan Material
+90407:::Kejuruteraan Minyak dan Gas
+90408:::Kejuruteraan Kimia dan Polimer
+90409:::Kejuruteraan Proses
+90410:::Kejuruteraan Seramik
+90411:::Kejuruteraan Mineral
+90412:::Kejuruteraan Material / Teknologi
+90413:::Kejuruteraan Industri
+90414:::Kejuruteraan Industri / Teknologi
+90415:::Kejuruteraan Sumber Mineral
+90416:::Kejuruteraan Biokimia
+90500:::Kejuruteraan Pertanian
+90600:::Kejuruteraan Pengeluaran
+90601:::Kejuruteraan Teknologi
+90628:::Product Development
+90700:::Kejuruteraan Maritim
+90701:::Kejuruteraan Nautikal
+90800:::Kejuruteraan Alam Sekitar
+90900:::Kejuruteraan Elektronik
+90901:::Kejuruteraan Komputer
+90902:::Kejuruteraan Telekomunikasi
+90903:::Teknologi Komputer
+90904:::Kejuruteraan Elektronik - Komuniti
+90905:::Kejuruteraan Komputer Perhubungan
+90906:::Kejuruteraan Mekatronik
+90907:::Kejuruteraan Komputer dan Maklumat
+90908:::Robotik / CAD / CAM
+90909:::Sains Kejuruteraan Elektronik
+90910:::Sains Kejuruteraan Komputer
+90911:::Kejuruteraan Elektronik - Komputer
+90912:::Kejuruteraan Robotik dan Kawalan
+90913:::Kejuruteraan Hydraulic
+90915:::Teknologi Maklumat & Komunikasi
+90940:::Telekomunikasi dan Informasi (ICT)
+91000:::Kejuruteran Air / Sungai
+91100:::Kejuruteraan Metareologi
+91200:::Kejuruteraan Kayu
+100400:::Sains Kepolisian
+100401:::Ingenieurwissenchaftten 
+100402:::Geoteknik 
+100403:::Electronique ET Communucations 
+100500:::Pengurusan Pemulihan
+100600:::Pengurusan Penjara
+100700:::Pengurusan Keselamatan
+100701:::Zon Bebas
+100702:::Anti Lambak
+100703:::Skrutini
+100704:::Sistem Harmonisasi
+100705:::Pencegahan
+100706:::Risikan
+100707:::Siasatan
+100708:::Pengurusan Anjing
+100709:::Forensik dan Sains Siasatan
+100800:::Pendakwaan
+100900:::Tatacara Mahkamah
+10210:::Advance Gas Turbine Engine
+10211:::Allison & PT6 Series Engine
+110005:::Land Laws
+110100:::Undang-Undang Kriminal
+110101:::Kriminalogi
+110102:::LLB
+110103:::LLM
+110105:::Jurisprudence
+110200:::Undang-Undang Komersial
+110201:::Jenayah Perdagangan
+110202:::Polisi Keselamatan
+110203:::Penguatkuasaan
+110204:::Pengurusan Pertahanan Dan Keselamatan
+110205:::Analisis  Strategi Dan Keselamatan
+110206:::Pengurusan Projek (Pertahanan)
+110207:::Keselamatan Dalam Negeri
+110208:::Comparative Laws
+110209:::Pengajian Jenayah
+110210:::Undang-undang Perubatan
+110211:::Undang-undang Syariah
+110300:::Undang-Undang Laut
+110301:::Perundangan Ketenteraan
+111000:::Tindakan Sibil
+111100:::Undang-undang Sivil
+120100:::Pengurusan
+120101:::Pentadbiran Awam
+120102:::Pentadbiran dan Polisi Awam
+120103:::Perancangan dan Pengurusan Pembangunan
+120104:::Pengurusan Kesihatan
+120105:::Pengurusan Pembangunan Masyarakat
+120106:::Pengurusan Kualiti
+120107:::Pengurusan Projek
+120108:::Pentadbiran Sosial
+120109:::Pengurusan Awam
+120110:::Sains Pengurusan
+120111:::Pengurusan Sumber Manusia
+120112:::Kajian Pembangunan
+120113:::Pengurusan Pembinaan
+120114:::Pengurusan Strategik
+120115:::Pengurusan Islam
+120116:::Pengurusan Perhubungan
+120117:::Sains Manusia
+120200:::Sumber Manusia
+120201:::Kajian Perburuhan
+120202:::Keselamatan dan Kesihatan Pekerjaan
+120203:::Pembangunan Sumber Manusia
+120300:::Organisasi
+120301:::Pengurusan Organisasi
+120302:::Pengurusan Operasi
+120303:::Pengurusan Korporat
+120304:::Pengurusan Sukan
+120305:::Pengurusan Sistem Pejabat
+120307:::Organizational Behaviour
+120309:::International Organization
+120400:::Pengurusan Eksekutif
+120403:::Venture Capital
+120510:::Pengurusan Risiko
+120511:::Project and Strategic Management
+130100:::Perancangan Bandar dan Wilayah
+130101:::Perancangan Wilayah dan Komuniti
+130102:::Perancangan Persekitaran
+130103:::Rural Policy and Management
+130106:::Perancangan Bandar (Town Planning)
+130200:::Pengurusan Tanah
+130204:::Pengurusan Tanah Bandar / Urban Land Management
+130300:::Kajian Perbandaran
+130301:::Urban Environmental Planning
+130400:::Pentadbiran dan Pembangunan Tanah
+130402:::Undang-undang Tanah Pengurusan Sumber Tanah
+130403:::Pengurusan Sumber Tanah
+140100:::Draughting
+140200:::Elektromekanikal
+140300:::Automotif
+140400:::Teknologi Plastik
+140500:::Teknologi Audio Visual
+140600:::Elektronik Digital
+140601:::Elektronik Industri
+140700:::Intrumentasi Industri
+140800:::NC Mould / Die Making
+140900:::Teknologi Percetakan / Penerbitan
+141000:::Teknologi Laser dan Fiber Optik 
+141100:::Teknologi Pembungkusan
+141200:::Teknologi Peti Sejuk dan Pendingin
+141300:::Mesin kayu
+141301:::Mesin dan Peralatan
+141400:::Sistem Grafik
+141500:::Welding
+141600:::Precision Machining
+141700:::Mekatronik
+141800:::Peralatan Tri-Axia
+141900:::Teknologi Dandang (Boiler)
+142000:::Electrical Wireman
+142100:::Seramik
+142200:::Komposit
+142300:::Teknologi Automobil
+142400:::General Mechanic
+142500:::General Machining
+142600:::Industrial Standardization
+142700:::Radio and TV Electronic Service
+142800:::Lokomotif / Railway
+142801:::Railway (Rolling Stock)
+142802:::Railway (Railroad Construction)
+150100:::Perniagaan
+150101:::Pengajian Perniagaan
+150102:::Sains Perniagaan Tani
+150103:::Perniagaan Tani
+150104:::Pentadbiran Perniagaan
+150105:::Perniagaan Antarabangsa
+150106:::Perniagaan Operasi
+150107:::Pengajian Perniagaan (Pengangkutan)
+150108:::Pengajian Perniagaan (Pemasaran)
+150109:::Pengajian Perniagaan (Insurans)
+150110:::Pengajian Perniagaan (Kewangan)
+150111:::Pengurusan Perniagaan
+150112:::Pengajian Komersial
+150113:::Pengurusan Perniagaan (Perakaunan)
+150114:::Pengurusan Perniagaan (Ekonomi)
+150115:::Pengurusan Perniagaan (Pelaburan)
+150116:::Pengurusan Perniagaan (Kewangan)
+150118:::Perdagangan
+150119:::Business Computing
+150120:::Perdagangan Antarabangsa
+150200:::Pemasaran
+150201:::Institute of Marketing (UK)
+150202:::Pemasaran Antarabangsa
+150203:::Pengiklanan
+150204:::Commercialisation
+150300:::Pengurusan Perindustrian
+150301:::Pengurusan Industri Kecil & Sederhana
+150302:::Pembangunan Industri
+150303:::Perindustrian
+150304:::Pergudangan
+150305:::Gudang Pengilangan Berlesen
+150306:::Kedai Bebas Cukai
+150307:::Pengurusan Industri/Teknologi Industri
+150308:::Pengurusan Inovasi/Kreativiti/Pembangunan Produk
+150309:::Renewable Energy Technology
+150400:::Keusahawanan / Entrepreneurship
+150401:::Pengajian Usahawan
+150402:::Technopreneurship
+150403:::Agribusiness
+150404:::Agricultural Economics
+150405:::Eco-Pelancongan
+150406:::E-Dagang
+150500:::Pengurusan Harta
+150501:::Penilaian Harta Benda
+150502:::Pengurusan Hartanah - Harta
+150503:::Pengurusan Harta Benda (Estate)
+150504:::Pengurusan Harta Tanah
+150507:::Intellectual Property
+150600:::Pengurusan Teknologi
+150601:::Polisi Sains dan Teknologi
+150700:::Import
+150800:::Eksport
+150900:::Perjenisan
+150901:::Perkhidmatan Teknik
+150902:::Pengurusan Perjenisan
+150903:::Pengurusan Penilaian
+150904:::Perjenisan dan Penilaian
+150905:::Perjenisan / Penilaian Kayu
+150906:::Perjenisan / Penilaian Tekstil
+150907:::Perjenisan / Penilaian Barangan
+150908:::Perjenisan / Penilaian Kereta Motor
+150909:::Perjenisan / Penilaian Kaca
+150910:::Perjenisan / Penilaian Barang Elektrik
+160100:::Pengajian Islam
+160101:::Syariah
+160102:::Usulluddin
+160103:::Pentadbiran Islam
+160104:::Feqah
+160105:::Ilmu Wahyu dan Warisan Islam
+160106:::Tamadun Islam
+160107:::Falsafah Islam
+160108:::Ekonomi Islam
+160109:::Al Quran Wal Qiraat
+160110:::Metodologi Dakwah
+160111:::Ulumul Quran Wal Qiraat
+160112:::Komunikasi Dakwah
+160200:::Pengajian Am
+160201:::Pengajian Asia Tenggara
+160210:::Pengajian Kependudukan
+170100:::Perubatan
+170101:::Penyakit Dalaman
+170102:::Perubatan Keluarga
+170103:::MRCP
+170104:::Gastroenterology / Hepatology
+170105:::Nephrology
+170106:::Rheumatology
+170107:::Neurology
+170108:::Cardiology
+170109:::Clinical Geariatric
+170110:::Adult / Pediatric Infectionous Diseases
+170111:::Heametology
+170112:::Nefrology
+170113:::Dermatology
+170114:::Fisiology
+170115:::Urology
+170116:::Oncology & Radiotheraphy
+170120:::Fisioterapi
+170200:::Pembedahan
+170201:::Surgeri Am
+170202:::FRCS
+170203:::Pediatric Surgery
+170204:::Cardiothoracic Surgery
+170205:::Neurosurgery
+170206:::Hepatobiliary Surgery
+170207:::Plastic Surgery
+170208:::Vascular Surgery
+170209:::Micro and Hand Surgery
+170210:::Endocrine Surgery
+170300:::Obstetrik & Ginekologi
+170301:::Obstetrik & Ginekologi Lanjutan
+170302:::MRCOG
+170303:::Minimally Invasive Surgery
+170304:::Gynaeoncology
+170305:::Infertility
+170306:::Urogynaecology
+170307:::Foetus Medicine
+170400:::Paediatric
+170401:::Paediatric Oncology / Haematology
+170402:::Paediatric Neurology
+170403:::Paediatric Nephorology
+170404:::Paediatric Intensive Care
+170405:::Genetic Clinical
+170406:::Neonatalogy
+170407:::Paediatric  Infection Diseases
+170408:::Paediatric Respitory Medicine
+170409:::Paediatric Gastroenterology
+170500:::Anaesthesia
+170501:::Anestesiology
+170502:::Care Medicine
+170503:::Paediatric Anaesthesia
+170504:::Cardiac Anaesthesia
+170505:::Neurosurgical / Trauma Anaesthesia
+170506:::Cardiothorasic Anaesthesia
+170507:::Pain Management
+170600:::Psikiatri
+170601:::Psikiatri
+170602:::Forensic Psychiatry
+170603:::Rehabilitation Psychiatry
+170604:::Psychogeriatric
+170605:::Liasion Psychiatry
+170701:::Otorinolaringolory
+170702:::Head and Neck Surgery
+170703:::Paeditric Otolaryngology
+170704:::Skull Base Surgery
+170800:::Opthalmology
+170801:::PT Opthalmology
+170802:::Occuloplastic Surgery
+170803:::Vitro-Retinal Ophtalmology
+170804:::Paediatric Opthamology
+170805:::Optometri
+170900:::Orthopaedik
+170901:::Orthopaedik Lanjutan
+170902:::Spinal Surgery
+170903:::Total Joint Replacement
+170904:::Surgery
+170905:::Sports Medicine
+170906:::Paediatric Orthopedic
+171000:::Radiology
+171002:::FRCR
+171003:::Paediatric Radiology
+171004:::Uroradiology
+171005:::Radiotheraphy
+171100:::Patologi
+171101:::Haematopathology
+171102:::Neurophatology
+171103:::Renal Pathology
+171200:::Pentadbiran Perubatan Hospital
+171201:::Hospital Administration
+171202:::Public Health
+171203:::Community Health
+171204:::Community Rehabilitation
+171300:::Kesihatan Awam
+171301:::Toxicology
+171302:::Epidemiology
+171303:::Biostatistics
+171304:::Family Health
+171305:::Food Safety
+171306:::Occupational Health
+171307:::Environmental Health
+171308:::Health Service Management
+171309:::Health Economics
+171400:::Pergigian
+171401:::Orthodontics
+171402:::Periodontics
+171403:::Oral Surgery
+171404:::Paedodontics
+171405:::"Oral Medicine, Oral Pathology"
+171406:::Pergigian Masyarakat
+171500:::Kawalan Penyakit
+171502:::Tropical Medicine & Health
+171503:::Clinical Virology
+171504:::Medical Microbiology
+171505:::Gerontology
+171506:::Community Mental Health
+171600:::Farmasi
+171601:::Farmasi Sains
+171602:::Teknologi Analisis
+171603:::Regulatory Farmaseutikal
+171604:::Farmakologi
+171701:::Pengajar Kejururawatan
+171702:::Pengajar X-Ray
+171703:::Pengajar Physiotherapy
+171704:::Kejururawatan
+171705:::Audiology
+171706:::Pertuturan
+171707:::Sains Bioperubatan
+171708:::Imunologi Perubatan
+180100:::Pengurusan Alam Sekitar
+180101:::Pengurusan Bioteknologi
+180102:::Pengurusan Sisa
+180103:::Polisi Alam sekitar
+180104:::Pengurusan Teknologi Hijau
+180105:::Agroteknologi
+180200:::Penilaian Impak Alam Sekitar
+180300:::Pengurusan Bahan Buangan
+180400:::Kawalan Pencemaran
+190100:::Kewangan
+190101:::Kewangan dan Bank
+190102:::Pengurusan Kewangan
+190103:::Pengurusan Risiko Kewangan
+190123:::Kewangan Antarabangsa
+190124:::Kewangan Islam
+190300:::Perakaunan
+190301:::Associate of The Chartered Association
+190303:::Malaysians Association Certification
+190304:::Chartered Association of Certification
+190305:::Perdagangan (Perakaunan)
+190306:::Accounting
+190307:::Perakaunan Kewangan
+190308:::Perakaunan Sektor Awam
+190400:::Percukaian
+190401:::Cukai Dalaman
+190402:::Eksais
+190403:::Cukai Jualan
+190405:::Cukai Perkhidmatan
+190406:::CJP / VAT
+190500:::Perancangan Korporat
+190600:::Pengurusan Bank
+190601:::Pengurusan Hartanah - Bank
+190602:::Perbankan
+190603:::Perbankan Islam
+190700:::Pengurusan Dana dan Stok
+190800:::Audit
+190900:::Peruncitan
+191000:::Insurans
+191001:::Pengurusan Risiko dan Insurans
+191002:::Australia Insurance Institute
+191003:::Chartered Insurance Institute
+191004:::Malaysian Insurance Institute
+191006:::Islamic Finance & Insurance
+191100:::Pengurusan Koperasi
+191200:::ICSA
+200100:::Senibina
+200101:::Naval Architecture
+200102:::Architecture Drafting
+200110:::Pembinaan dan Bangunan
+200200:::Lanskap
+200201:::Seni Rupa Bumi
+200300:::Ukur Tanah
+200301:::Geoinfomatik
+200302:::Topologi
+200400:::Ukur Bahan
+200401:::Ukur Bahan dan Bangunan
+200500:::Bangunan
+200501:::Ukur Bangunan
+200600:::Penilaian
+200601:::Technology Valuation
+20314:::Chinese Languange and Culture
+20608:::Pengajian Bahasa Perancis
+210100:::Hubungan Antarabangsa
+210101:::International Telation/Affairs
+210102:::Organisasi Antarabangsa
+210103:::Undang-Undang Antarabangsa
+210104:::Keselamatan Antarabangsa
+210200:::Pengajian Antarabangsa
+210300:::Perundingan Antarabangsa
+210301:::Business Information Technology
+210302:::Komunikasi Korporat
+210304:::Soil & Atmospheric Sciences 
+210305:::Atmospheric Sciences 
+210306:::Seismology 
+210307:::Kajisawat Motor (Petrol & Diesel)
+210308:::Process Safety - QRA
+210309:::Terotechnology 
+210310:::Kejuruteraan Pembuatan
+210311:::Kejuruteraan Aeroangkasa
+210312:::Kejuruteraan Pengangkutan
+210313:::Kejuruteraan Perhubungan (Information Engineering)
+210314:::Antenna & Microwave Propagation
+210315:::Kejuruteraan Metallurgy
+210316:::Kejuruteraan Aeronautik dan Astronautik
+210400:::Kesetiausahaan Eksekutif
+210401:::Aerodynamic
+210402:::Pengajaran Bahasa Inggeris
+210601:::Foreign Policy Affairs
+210602:::Perolehan
+30208:::Nanoscience and Technology
+40602:::Pengurusan Media
+40610:::Kebombaan
+40611:::International Economic and Development Studies
+40612:::Sitologi
+40613:::Penyediaan Makanan
+40614:::Kemahiran Hidup
+40615:::Foreign Going Ship
+40616:::Land and Hydrographic Surveying
+40617:::Perubahan Iklim
+40618:::Pendidikan Jasmani
+40619:::Chartered Financial Analyst (CFA)
+40620:::Pendidikan Seni
+40621:::Komunikasi Media
+40622:::Bahasa Cina
+40623:::Rehabitation Science
+40624:::Linguistik
+40625:::Kesusasteraan Melayu
+40626:::Curriculum and Instruction
+40627:::Pendidikan Khas
+40628:::Pendidikan Awal Kanak-Kanak
+40629:::Pendidikan Islam
+4063:::Penyeliaan Makanan & Minuman F&B
+40630:::Bahasa
+40631:::Pendidikan Kesihatan
+40632:::Bahasa Melayu
+40633:::Statistik dan Matematik
+40634:::Pentadbiran
+40635:::Pembinaan dan Penyelenggaraan Mesin
+40636:::Alam Sekitar
+40637:::Pemulihan Carakerja
+40638:::Distributed Computing
+40639:::Biokeselamatan / Pengurusan Biokeselamatan
+40640:::Pengurusan Perkhidmatan Pelanggan
+40641:::Kejuruteraan Nuklear
+40642:::Kejuruteraan Tenaga dan Teknologi Nuklear
+40644:::Pramusaji
+40645:::Able Seafarers Engine
+40646:::Sastera dan Sains Kemasyarakatan
+40647:::Teknologi Elektrik
+40648:::Polisi Awam dan Kepimpinan
+40649:::Art Design and Creative Multimedia
+40650:::Teknologi Pembuatan (Perkakasan-Alat Pemotong)
+40651:::Pengajian India
+40652:::Pendidikan Moral
+40653:::Pengajian Matematik Dan Kajian Tempatan
+40654:::Sustainable Development Management
+40655:::Sivik dan Kewarganegaraan
+40656:::English Literature
+40657:::Pengeluaran Tanaman
+40658:::Informatik Kesihatan
+40659:::Pengajian Gender
+40660:::Oftalmologi
+40661:::Reka Bentuk Dan Teknologi
+40662:::Energy and Resources
+40663:::Penulisan Skrin
+40664:::Family Development
+9999:::Lain-Lain
+99999:::Tiada Minor

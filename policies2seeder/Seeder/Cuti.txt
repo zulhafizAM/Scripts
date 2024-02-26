@@ -1,0 +1,781 @@
+﻿
+IGNORE
+1. HRMIS can "generate" leave related record. ['generate', 'Cuti']
+
+
+IGNORE
+1. System can "update" "Maklumat Cuti Kakitangan". ['update', 'Maklumat Cuti Kakitangan', 'Cuti']
+
+1. "US" can "view" "Senarai Cuti Kakitangan". ['US', 'view', 'Senarai Cuti Kakitangan', 'Cuti']
+1. "US" can "view" "Butiran Cuti Kakitangan". ['US', 'view', 'Butiran Cuti Kakitangan', 'Cuti']
+1. "Kakitangan" can "view" "Senarai Cuti Kakitangan" , only for that particular clinic. ['Kakitangan', 'view', 'Senarai Cuti Kakitangan', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Cuti Kakitangan" for selected record. ['Kakitangan', 'view', 'Butiran Cuti Kakitangan', 'Cuti']
+1. "Kakitangan" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat", only for that particular employee. ['Kakitangan', 'view', 'Senarai Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+
+FIX
+1. "Kakitangan" can "add" new application detaiils. ['Kakitangan', 'add', 'new application detaiils.', 'Cuti']
+
+2. "Kakitangan" can "view" "Semak Status Penyokongan Permohonan Dari Ketua Seksyen". ['Kakitangan', 'view', 'Semak Status Penyokongan Permohonan Dari Ketua Seksyen', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+3. "Kakitangan" can "view" "Semak Status Kelulusan Permohonan Dari Pengarah Bahagian". ['Kakitangan', 'view', 'Semak Status Kelulusan Permohonan Dari Pengarah Bahagian', 'Cuti']
+4. "Kakitangan" can "view" "Semak Status Semakan Permohonan " from 'US'. ['Kakitangan', 'view', 'Semak Status Semakan Permohonan ', 'US', 'Cuti']
+5. "Kakitangan" can "view" "Semak Status Pengesahan Permohonan" from 'US'. ['Kakitangan', 'view', 'Semak Status Pengesahan Permohonan', 'US', 'Cuti']
+6. "Kakitangan" can "view" "Semak Keputusan Permohonan". ['Kakitangan', 'view', 'Semak Keputusan Permohonan', 'Cuti']
+1. "KS" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat". ['KS', 'view', 'Senarai Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+1. "KS" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application. ['KS', 'view', 'Butiran Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+2. "KS" can "support" "Status Penyokong Permohonan Dari Ketua Seksyen" for selected application by updating status to either 'SOKONG/TIDAK SOKONG'. ['KS', 'support', 'Status Penyokong Permohonan Dari Ketua Seksyen', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "PB" can "view" "Senarai Permohonan Pengumpulan Cuti Rehat". ['PB', 'view', 'Senarai Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+1. "PB" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application. ['PB', 'view', 'Butiran Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+3. "PB" can "approve" "Status Kelulusan Pemohonan" for selected application by updating status to either 'LULUS/TIDAK LULUS'. ['PB', 'approve', 'Status Kelulusan Pemohonan', 'LULUS/TIDAK LULUS', 'Cuti']
+1. "US" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application. ['US', 'view', 'Butiran Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+1. "US" can "view" "Butiran Permohonan Pengumpulan Cuti Rehat" for selected application. ['US', 'view', 'Butiran Permohonan Pengumpulan Cuti Rehat', 'Cuti']
+2. "US" can "view" "Semak Status Penyokongan Permohonan Dari Ketua Seksyen". ['US', 'view', 'Semak Status Penyokongan Permohonan Dari Ketua Seksyen', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+3. "US" can "view" "Semak Status Kelulusan Permohonan Dari Pengarah Bahagian". ['US', 'view', 'Semak Status Kelulusan Permohonan Dari Pengarah Bahagian', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", the application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level
+
+4. "US" can "verify" "Status Semakan Permohonan" for selected application by updating status to either 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Permohonan', 'SEMAK/TIDAK SEMAK', 'Cuti']
+5. "US" can "confirm" "Status Pengesahan Permohonan" for selected application by updating status to either 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Permohonan', 'SAH/TIDAK SAH', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", the application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH",proceed to next level.
+
+
+FIX
+6. "US" can "update" employee's details related to leave. ['US', 'update', "employee's details related to leave.", 'Cuti']
+
+
+FIX
+7. "US" can "update" overall status of the selected application. ['US', 'update', 'overall status of the selected application.', 'Cuti']
+
+
+IGNORE
+1. System can "update" employee's details. ['update', 'Cuti']
+
+1. "US" can "view" "Senarai Kakitangan Yang Akan Bersara/Meninggal Dunia/Pengeluaran Awal". ['US', 'view', 'Senarai Kakitangan Yang Akan Bersara/Meninggal Dunia/Pengeluaran Awal', 'Cuti']
+1. "US" can "view" "Butiran Kakitangan" dan leave-related record for selected employee. ['US', 'view', 'Butiran Kakitangan', 'Cuti']
+2. "US" can "view" "Baki Cuti" and its details for selected employees. ['US', 'view', 'Baki Cuti', 'Cuti']
+
+IF STATEMENT
+IF haveTakenGCR == "true", max is 80 days. ['true', 'Cuti']
+
+
+IF STATEMENT
+IF haveTakenGCR == "false", max is 160 days. ['false', 'Cuti']
+
+4. "US" can "view" "Baki Cuti Maksimum". ['US', 'view', 'Baki Cuti Maksimum', 'Cuti']
+5. "US" can "view" "Nilai GCR" since the system auto calculate it. ['US', 'view', 'Nilai GCR', 'Cuti']
+6. "US" can "view" "Status Semakan Kriteria untuk GCR". ['US', 'view', 'Status Semakan Kriteria untuk GCR', 'Cuti']
+
+FIX
+7. "US" can "view" deduction details based on preset rules. ['US', 'view', 'deduction details based on preset rules.', 'Cuti']
+
+
+IF STATEMENT
+IF is deduction==true
+
+
+FIX
+8. "US" can "update" GCR based on deduction details. ['US', 'update', 'GCR based on deduction details.', 'Cuti']
+
+
+FIX
+9. "US" can "update" overall status of the record. ['US', 'update', 'overall status of the record.', 'Cuti']
+
+
+FIX
+1."Kakitangan" can "view" overall status of the record. ['Kakitangan', 'view', 'overall status of the record.', 'Cuti']
+
+
+IGNORE
+1. System can "calculate" "Nilai GCR". ['calculate', 'Nilai GCR', 'Cuti']
+
+
+IGNORE
+2. System can "verify" against preset rule for selected application by updating status to either 'SEMAK/TIDAK SEMAK'. ['verify', 'SEMAK/TIDAK SEMAK', 'Cuti']
+
+
+IGNORE
+3. System can "view" deduction details based on preset rule. ['view', 'Cuti']
+
+
+IF STATEMENT
+IF deduction == TRUE
+
+
+IF STATEMENT
+IF deduction == FALSE
+
+
+IGNORE
+#3. Permohonan Pengeluaran Awal GCR. ['Cuti']
+
+1. "Kakitangan" can "view" "Senarai Permohonan Pengeluaran GCR Awal", only for that particular employee. ['Kakitangan', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+1. "Kakitangan" can "add" new record for "Permohonan Pengeluaran GCR Awal". ['Kakitangan', 'add', 'Permohonan Pengeluaran GCR Awal', 'Cuti']
+1. "Kakitangan" can "view" "Senarai Permohonan Pengeluaran GCR Awal" for selected application. ['Kakitangan', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+2. "Kakitangan" can "view" "Status Penyokong Permohonan dari Pengarah Bahagian/Negeri". ['Kakitangan', 'view', 'Status Penyokong Permohonan dari Pengarah Bahagian/Negeri', 'Cuti']
+3. "Kakitangan" can "view" "Status Semakan Kelayakan" from 'US'. ['Kakitangan', 'view', 'Status Semakan Kelayakan', 'US', 'Cuti']
+4. "Kakitangan" can "view" "Status Pengesahan Kelayakan" from 'US'. ['Kakitangan', 'view', 'Status Pengesahan Kelayakan', 'US', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", application proceed to next level.
+
+5. "Kakitangan" can "view" "Status Perakuan Pemohonan" from "US Integriti". ['Kakitangan', 'view', 'Status Perakuan Pemohonan', 'US Integriti', 'Cuti']
+
+IF STATEMENT
+IF cerfification status == "TIDAK AKU", application end.
+
+
+IF STATEMENT
+IF certification status == "AKU", the application proceed to next level.
+
+6. "Kakitangan" can "view" "Status Pelulusan Pemohonan" from "KP". ['Kakitangan', 'view', 'Status Pelulusan Pemohonan', 'KP', 'Cuti']
+
+FIX
+7. "Kakitangan" can "view" overall status for the application. ['Kakitangan', 'view', 'overall status for the application.', 'Cuti']
+
+1. "PN" can "view" "Senarai Permohonan Pengeluaran GCR Awal". ['PN', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+
+IGNORE
+#2. Function View Details. ['Cuti']
+
+1. "PN" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application. ['PN', 'view', 'Butiran Permohonan Pengeluaran GCR Awal', 'Cuti']
+2. "PN" can "support" "Status Penyokongan Permohonan". ['PN', 'support', 'Status Penyokongan Permohonan', 'Cuti']
+1. "US" can "view" "Senarai Permohonan Pengeluaran GCR Awal". ['US', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+
+IGNORE
+#2. Function View Details. ['Cuti']
+
+1. "US" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application. ['US', 'view', 'Butiran Permohonan Pengeluaran GCR Awal', 'Cuti']
+2. "US" can "support" "Status Penyokongan Permohonan". ['US', 'support', 'Status Penyokongan Permohonan', 'Cuti']
+3. "US" can "confirm" "Status Pengesahan Permohonan". ['US', 'confirm', 'Status Pengesahan Permohonan', 'Cuti']
+4. "US" can "view" "Status Perakuan Permohonan" from "US Integriti". ['US', 'view', 'Status Perakuan Permohonan', 'US Integriti', 'Cuti']
+
+IF STATEMENT
+IF certification status == "TIDAK AKU", application end.
+
+
+IF STATEMENT
+IF certification status == "AKU", the application proceed to the next level.
+
+5. "US" can "view" "Status Pelulusan Permohonan" from "Ketua Pengarah". ['US', 'view', 'Status Pelulusan Permohonan', 'Ketua Pengarah', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", the application proceed to the next level.
+
+6. "US" can "view" "Pengiraan Pengumpulan GCR". ['US', 'view', 'Pengiraan Pengumpulan GCR', 'Cuti']
+7. "US" can "verity" "Pengiraan Bayaran GCR". ['US', 'verity', 'Pengiraan Bayaran GCR', 'Cuti']
+
+FIX
+8. "US" can "update" overall status for the application. ['US', 'update', 'overall status for the application.', 'Cuti']
+
+1. "US Integriti" can "view" "Senarai Permohonan Pengeluaran GCR Awal". ['US Integriti', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+
+IGNORE
+#2. Function View Details. ['Cuti']
+
+1. "US Integriti" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application. ['US Integriti', 'view', 'Butiran Permohonan Pengeluaran GCR Awal', 'Cuti']
+4. "US Integriti" can "view" "Status Pengesahan Permohonan". ['US Integriti', 'view', 'Status Pengesahan Permohonan', 'Cuti']
+1. "KP" can "view" "Senarai Permohonan Pengeluaran GCR Awal". ['KP', 'view', 'Senarai Permohonan Pengeluaran GCR Awal', 'Cuti']
+
+IGNORE
+#2. Function View Details. ['Cuti']
+
+1. "KP" can "view" "Butiran Permohonan Pengeluaran GCR Awal" for selected application. ['KP', 'view', 'Butiran Permohonan Pengeluaran GCR Awal', 'Cuti']
+3. "KP" can "view" "Status Semakan Kelayakan" from 'US'. ['KP', 'view', 'Status Semakan Kelayakan', 'US', 'Cuti']
+4. "KP" can "view" "Status Pengesahan Permohonan" from 'US'. ['KP', 'view', 'Status Pengesahan Permohonan', 'US', 'Cuti']
+5. "KP" can "view" "Status Perakuan Permohonan" from "US Integriti". ['KP', 'view', 'Status Perakuan Permohonan', 'US Integriti', 'Cuti']
+
+IGNORE
+1. System "notify" "Keputusan Permohonan Gagal". ['notify', 'Keputusan Permohonan Gagal', 'Cuti']
+
+
+IGNORE
+2. System "calculate" "Pengiraan Pengumpulan GCR mengikut kiraan". ['calculate', 'Pengiraan Pengumpulan GCR mengikut kiraan', 'Cuti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Permohonan Cuti", only for particular employee. ['Kakitangan', 'view', 'Senarai Rekod Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "confirm" "Pengesahan Maklumat Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'. ['kakitangan', 'confirm', 'Pengesahan Maklumat Permohonan', 'SAH/TIDAK SAH', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application. ['Kakitangan', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "view" "Pengesahan Maklumat Permohonan". ['kakitangan', 'view', 'Pengesahan Maklumat Permohonan', 'Cuti']
+3. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'PN'. ['Kakitangan', 'view', 'Status Penyokongan Permohonan', 'PN', 'Cuti']
+4. "Kakitangan" can "view" "Status Semakan Permohonan" from 'US'. ['Kakitangan', 'view', 'Status Semakan Permohonan', 'US', 'Cuti']
+5. "Kakitangan" can "view" "Status Pengesahan Permohonan" from 'US'. ['Kakitangan', 'view', 'Status Pengesahan Permohonan', 'US', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", then application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+6. "Kakitangan" can "view" "Senarai Penyokong dan Pelulus". ['Kakitangan', 'view', 'Senarai Penyokong dan Pelulus', 'Cuti']
+7. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['Kakitangan', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Cuti']
+
+IF STATEMENT
+IF support status == " TIDAK SOKONG", then application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+8. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'. ['Kakitangan', 'view', 'Status Kelulusan Permohonan', 'Pelulus', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS",proceed to next level.
+
+
+FIX
+9. "Kakitangan" can "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Cuti']
+
+1. "PN" can "view" "Senarai Rekod Permohonan Cuti". ['PN', 'view', 'Senarai Rekod Permohonan Cuti', 'Cuti']
+1. "PN" can "view" "Butiran Permohonan Cuti" for selected application. ['PN', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "PN" can "view" "Status Pengesahan Maklumat Permohonan". ['PN', 'view', 'Status Pengesahan Maklumat Permohonan', 'Cuti']
+3. "PN" can "support" "Status Penyokongan Permohonan" by updating the support status either 'SOKONG/TIDAK SOKONG'. ['PN', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1."US" can "view" "Senarai Rekod Permohonan Cuti". ['US', 'view', 'Senarai Rekod Permohonan Cuti', 'Cuti']
+1. "US" can "view" "Butiran Permohonan Cuti" for selected application. ['US', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "US" can "view" "Pengesahan Maklumat Permohonan". ['US', 'view', 'Pengesahan Maklumat Permohonan', 'Cuti']
+3. "US" can "view" "Status Penyokongan Permohonan" from 'PN'. ['US', 'view', 'Status Penyokongan Permohonan', 'PN', 'Cuti']
+4. "US" can "verify" "Status Semakan Permohonan" by updating the verification status either 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Permohonan', 'SEMAK/TIDAK SEMAK', 'Cuti']
+5. "US" can "confirm" "Status Pengesahan Permohonan" by updating the confirmation status either 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Permohonan', 'SAH/TIDAK SAH', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", then application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+6. "US" can "update" "Senarai Penyokong dan Pelulus" by adding supporter and approval. ['US', 'update', 'Senarai Penyokong dan Pelulus', 'Cuti']
+7. "US" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['US', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Cuti']
+
+IF STATEMENT
+IF support status == " TIDAK SOKONG", then application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+8. "US" can "view" "Status Kelulusan Permohonan" from 'Pelulus'. ['US', 'view', 'Status Kelulusan Permohonan', 'Pelulus', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS",proceed to next level.
+
+9. "US" can "update" "Maklumat Kakitangan". ['US', 'update', 'Maklumat Kakitangan', 'Cuti']
+
+FIX
+10. "US" can "update" overall status of the application. ['US', 'update', 'overall status of the application.', 'Cuti']
+
+1. "Penyokong" can "view" "Senarai Rekod Permohonan Cuti". ['Penyokong', 'view', 'Senarai Rekod Permohonan Cuti', 'Cuti']
+1. "Penyokong" can "view" "Butiran Permohonan Cuti" for selected application. ['Penyokong', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Penyokong" can "view" "Pengesahan Maklumat Permohonan". ['Penyokong', 'view', 'Pengesahan Maklumat Permohonan', 'Cuti']
+3. "Penyokong" can "view" "Status Penyokongan Permohonan" from 'PN'. ['Penyokong', 'view', 'Status Penyokongan Permohonan', 'PN', 'Cuti']
+4. "Penyokong" can "VIEW" "Status Semakan Permohonan" from 'US'. ['Penyokong', 'VIEW', 'Status Semakan Permohonan', 'US', 'Cuti']
+5. "Penyokong" can "confirm" "Status Pengesahan Permohonan" from 'US'. ['Penyokong', 'confirm', 'Status Pengesahan Permohonan', 'US', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", then application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+7. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "Pelulus" can "view" "Senarai Rekod Permohonan Cuti". ['Pelulus', 'view', 'Senarai Rekod Permohonan Cuti', 'Cuti']
+1. "Pelulus" can "view" "Butiran Permohonan Cuti" for selected application. ['Pelulus', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Pelulus" can "view" "Pengesahan Maklumat Permohonan". ['Pelulus', 'view', 'Pengesahan Maklumat Permohonan', 'Cuti']
+3. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'PN'. ['Pelulus', 'view', 'Status Penyokongan Permohonan', 'PN', 'Cuti']
+4. "Pelulus" can "VIEW" "Status Semakan Permohonan" from 'US'. ['Pelulus', 'VIEW', 'Status Semakan Permohonan', 'US', 'Cuti']
+5. "Pelulus" can "confirm" "Status Pengesahan Permohonan" from 'US'. ['Pelulus', 'confirm', 'Status Pengesahan Permohonan', 'US', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", then application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+7. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'. ['Pelulus', 'view', 'Status Penyokongan Permohonan', 'Penyokong', 'Cuti']
+8. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan Permohonan', 'LULUS/TIDAK LULUS', 'Cuti']
+
+IGNORE
+1. System can "notify" "Kakitangan" that application is failed through email. ['notify', 'Kakitangan', 'Cuti']
+
+
+IGNORE
+2. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Cuti']
+
+1. "Kakitangan" can "view" "Senerai Rekod Permohonan", only for themselves. ['Kakitangan', 'view', 'Senerai Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "add" "Butiran Rekod Permohonan". ['Kakitangan', 'add', 'Butiran Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Rekod Permohonan" for selected application. ['Kakitangan', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "Kakitangan" can "view" "Status Pengesahan Butiran Maklumat dan Permohonan". ['Kakitangan', 'view', 'Status Pengesahan Butiran Maklumat dan Permohonan', 'Cuti']
+3. "Kakitangan" can "view" "Status Penyokongan Dari Pengaraha Bahagian/Negeri". ['Kakitangan', 'view', 'Status Penyokongan Dari Pengaraha Bahagian/Negeri', 'Cuti']
+
+IF STATEMENT
+IF more than 14 days. ['Cuti']
+
+4. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Cuti']
+5. "Kakitangan" can "view" "Status Permohonan dari Urus Setia". ['Kakitangan', 'view', 'Status Permohonan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK LULUS", application end there.
+
+
+IF STATEMENT
+IF confirmation status == "LULUS", proceed to next level.
+
+
+FIX
+6."Kakitangan" can "view" overall status for the application. ['Kakitangan', 'view', 'overall status for the application.', 'Cuti']
+
+
+IF STATEMENT
+IF less than 14 days:
+
+4. "Kakitangan" can "view" "Status Pengesahan dari Urus Setia". ['Kakitangan', 'view', 'Status Pengesahan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", application end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH",
+
+5. "Kakitangan"can "view" "Status Pelulusan dari Pengarah Bahagian/Negeri". ['Kakitangan', 'view', 'Status Pelulusan dari Pengarah Bahagian/Negeri', 'Cuti']
+
+FIX
+6."Kakitangan" can "view" overall status for the application. ['Kakitangan', 'view', 'overall status for the application.', 'Cuti']
+
+1. "PN" can "view" "Senarai Rekod Permohonan" for all staffs. ['PN', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PN" can "view" "Butiran Rekod Permohonan" for selected application. ['PN', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "PN" can "view" "Status Pengeshan Butiran Maklumat dan Permohonan". ['PN', 'view', 'Status Pengeshan Butiran Maklumat dan Permohonan', 'Cuti']
+3. "PN" can "support" "Status Penyokong Permohonan dari Ketua Bahagian/Negeri" by updating the support status either to 'SOKONG/TIDAK SOKONG'. ['PN', 'support', 'Status Penyokong Permohonan dari Ketua Bahagian/Negeri', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "US" can "view" "Senarai Rekod Permohonan" for all staffs. ['US', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "US" can "view" "Butiran Rekod Permohonan" for selected application. ['US', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "US" can "view" "Status Pengesahan Maklumat dan Permohonan". ['US', 'view', 'Status Pengesahan Maklumat dan Permohonan', 'Cuti']
+3. "US" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Penyokongan dari Pengarah Bahagian/Negeri', 'Cuti']
+
+IF STATEMENT
+IF more than 14 days
+
+4. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Cuti']
+5. "US" can "approve" "Status Permohonan dari Urus Setia" by updating the meeting result to either 'LULUS/TIDAK LULUS'. ['US', 'approve', 'Status Permohonan dari Urus Setia', 'LULUS/TIDAK LULUS', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK LULUS", application end there.
+
+
+IF STATEMENT
+IF confirmation status == "LULUS", proceed to next level.
+
+
+FIX
+6. "US" can "update" overall status for the application. ['US', 'update', 'overall status for the application.', 'Cuti']
+
+
+IF STATEMENT
+IF less than 14days. ['Cuti']
+
+4. "US" can "confirm" "Status Pengesahan dari Urus Setia" by updating the confirmation status to either 'SEMAK/TIDAK SEMAK'. ['US', 'confirm', 'Status Pengesahan dari Urus Setia', 'SEMAK/TIDAK SEMAK', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", application end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH",
+
+5. "US" can "view" "Status Pelulusan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Pelulusan dari Pengarah Bahagian/Negeri', 'Cuti']
+
+FIX
+6. "Us" can "update" overall status for the application. ['Us', 'update', 'overall status for the application.', 'Cuti']
+
+1. "KP" can "view" "Senarai Rekod Permohonan" for all staffs. ['KP', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "KP" can "view" "Butiran Rekod Permohonan" for selected application. ['KP', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "KP" can "view" "Status Pengesahan Maklumat dan Permohonan". ['KP', 'view', 'Status Pengesahan Maklumat dan Permohonan', 'Cuti']
+3. "KP" can "view" "Status Penyokongan dari Pengarah Bahagian/Negeri". ['KP', 'view', 'Status Penyokongan dari Pengarah Bahagian/Negeri', 'Cuti']
+
+IF STATEMENT
+IF less than 14days. ['Cuti']
+
+4. "KP" can "view" "Status Pengesahan dari Urus Setia". ['KP', 'view', 'Status Pengesahan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", application end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH",
+
+5."KP" can "approve" "Status Kelulusan dari Ketua Pengarah" by updating the approval status to either 'LULUS/TIDAK LULUS'. ['KP', 'approve', 'Status Kelulusan dari Ketua Pengarah', 'LULUS/TIDAK LULUS', 'Cuti']
+
+IGNORE
+1. System can "notify" "Keputusan Permohonan Gagal ke Kakitangan". ['notify', 'Keputusan Permohonan Gagal ke Kakitangan', 'Cuti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Permohonan", only for themselves. ['Kakitangan', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "add" "Butiran Maklumat Permohonan" and its supporting documents. ['Kakitangan', 'add', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "Kakitangan" can "confirm" "Pengesahan Maklumat Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'. ['kakitangan', 'confirm', 'Pengesahan Maklumat Permohonan', 'SAH/TIDAK SAH', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Maklumat Permohonan" for selected application. ['Kakitangan', 'view', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "Kakitangan" can "download" "Dokumen Sokongan". ['Kakitangan', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "Kakitangan" can "view" "Status Pengesahan Maklumat Permohonan". ['Kakitangan', 'view', 'Status Pengesahan Maklumat Permohonan', 'Cuti']
+4. "Kakitangan" can "view" "Status Penyokongan Permohonan dari 'PN'. ['Kakitangan', 'view', 'Status Penyokongan Permohonan dari ', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+6. "Kakitangan" can "view" "Status Pengesahan Permohonan dari Urus Setia". ['Kakitangan', 'view', 'Status Pengesahan Permohonan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", application end.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+7. "Kakitangan" can "view" "Status Penyokongan dari Pengarah Khidmat Pengurusan". ['Kakitangan', 'view', 'Status Penyokongan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+8. "Kakitangan" can "view" "Status Kelulusan dari Ketua Pengarah". ['Kakitangan', 'view', 'Status Kelulusan dari Ketua Pengarah', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+9. "Kakitangan" can "view" overall status for the application. ['Kakitangan', 'view', 'overall status for the application.', 'Cuti']
+
+1. "PN" can "view" "Senarai Rekod Permohonan" for all the applicant. ['PN', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PN" can "view" "Butiran Maklumat Permohonan" for selected applicant. ['PN', 'view', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "PN" can "downlaod" "Dokumen Sokongan". ['PN', 'downlaod', 'Dokumen Sokongan', 'Cuti']
+3. "PN" can "support" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri" by updating support status either to 'SOKONG/TIDAK SOKONG'. ['PN', 'support', 'Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri', 'SOKONG/TIDAK SOKONG', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+
+FIX
+4. "PN" can "update" kelayakan cuti rehat terkini. ['PN', 'update', 'kelayakan cuti rehat terkini.', 'Cuti']
+
+1. "US" can "view" "Senarai Rekod Permohonan" from all the applicant. ['US', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "US" can "view" "Butiran Maklumat Permohonan" for selected application. ['US', 'view', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "US" can "download" "Dokumen Sokongan". ['US', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "US" can "view" "Status Pengesahan Maklumat Permohonan". ['US', 'view', 'Status Pengesahan Maklumat Permohonan', 'Cuti']
+4. "US" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF support status == "LULUS", proceed to the next level.
+
+5. "US" can "certify" "Status Semakan Kelayakan Permohonan Cuti" by updating certification status to either 'SEMAK/TIDAK SEMAK'. ['US', 'certify', 'Status Semakan Kelayakan Permohonan Cuti', 'SEMAK/TIDAK SEMAK', 'Cuti']
+6. "US" can "confirm" "Status Pengesahan Permohonan Cuti" by updating confirmation status to either 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Permohonan Cuti', 'SAH/TIDAK SAH', 'Cuti']
+
+IF STATEMENT
+IF confirmation Status == "TIDAK SAH", application end.
+
+
+IF STATEMENT
+IF confirmation Status == "SAH",proceed to next level.
+
+7. "US" can "view" "Status Penyokongan Permohonan dari Pengarah Khidmat Pengurusan". ['US', 'view', 'Status Penyokongan Permohonan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", application end.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+8. "US" can "view" "Status Kelulusan Permohonan dari Ketua Pengarah". ['US', 'view', 'Status Kelulusan Permohonan dari Ketua Pengarah', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+9."US" can "update" overall status for the application. ['US', 'update', 'overall status for the application.', 'Cuti']
+
+1. "PKP" can "view" "Senarai Rekod Permohonan" from all the applicants. ['PKP', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PKP" can "view" "Butiran Maklumat Permohonan" for all the applicants. ['PKP', 'view', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "PKP" can "download" "Dokumen Sokongan". ['PKP', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "PKP" can "view" "Status Pengesahan Maklumat Permohonan". ['PKP', 'view', 'Status Pengesahan Maklumat Permohonan', 'Cuti']
+4. "PKP" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri". ['PKP', 'view', 'Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri', 'Cuti']
+5. "PKP" can "view" "Status Semakan Kelayakan Permohonan Cuti". ['PKP', 'view', 'Status Semakan Kelayakan Permohonan Cuti', 'Cuti']
+7. "PKP" can "support" "Status Penyokongan Permohonan" by updating support status to either 'SOKONG/TIDAK SOKONG'. ['PKP', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "KP" can "view" "Senarai Rekod Permohonan" from all the applicants. ['KP', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "KP" can "view" "Butiran Maklumat Permohonan" for all the applicants. ['KP', 'view', 'Butiran Maklumat Permohonan', 'Cuti']
+2. "KP" can "download" "Dokumen Sokongan". ['KP', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "KP" can "view" "Status Pengesahan Maklumat Permohonan". ['KP', 'view', 'Status Pengesahan Maklumat Permohonan', 'Cuti']
+4. "KP" can "view" "Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri". ['KP', 'view', 'Status Penyokongan Permohonan dari Pengarah Bahagian/Negeri', 'Cuti']
+5. "KP" can "view" "Status Semakan Kelayakan Permohonan Cuti". ['KP', 'view', 'Status Semakan Kelayakan Permohonan Cuti', 'Cuti']
+6. "KP" can "view" "Status Penyokongan Maklumat Permohonan Cuti dari Pengarah Khidmat Pengurusan". ['KP', 'view', 'Status Penyokongan Maklumat Permohonan Cuti dari Pengarah Khidmat Pengurusan', 'Cuti']
+7. "KP" can "approve" "Status Kelulusan Permohonan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['KP', 'approve', 'Status Kelulusan Permohonan', 'LULUS/TIDAK LULUS', 'Cuti']
+
+IGNORE
+1. System can "update" employee's details. ['update', 'Cuti']
+
+
+IGNORE
+2. System can "notify" employee about the application. ['notify', 'Cuti']
+
+
+IGNORE
+3. System can "notify" employee about the application status if failed. ['notify', 'Cuti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for that particular applicant. ['Kakitangan', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "add" "Butiran Permohonan Cuti". ['Kakitangan', 'add', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "upload" "Dokumen Perakuan Bersalin". ['Kakitangan', 'upload', 'Dokumen Perakuan Bersalin', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application. ['Kakitangan', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "download" "Dokumen Perakuan Bersalin". ['Kakitangan', 'download', 'Dokumen Perakuan Bersalin', 'Cuti']
+3. "Kakitangan" can "view" "Status Semakan Permohonan". ['Kakitangan', 'view', 'Status Semakan Permohonan', 'Cuti']
+4. "Kakitangan" can "view" "Status Kelulusan Pengarah Khidmat Pengurusan". ['Kakitangan', 'view', 'Status Kelulusan Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+5. "Kakitangan" can "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Cuti']
+
+1. "US" can "view" "Senarai Rekod Permohonan " for every applicants. ['US', 'view', 'Senarai Rekod Permohonan ', 'Cuti']
+1. "US" can "view" "Butiran Permohonan Cuti" for selected application. ['US', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "US" can "download" "Dokumen Perakuan Bersalin". ['US', 'download', 'Dokumen Perakuan Bersalin', 'Cuti']
+3. "US" can "verify" "Status Semakan Permohonan" by updating verification status to either 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Permohonan', 'SEMAK/TIDAK SEMAK', 'Cuti']
+4. "US" can "view" "Status Kelulusan Pengarah Khidmat Pengurusan". ['US', 'view', 'Status Kelulusan Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+5. "US" can "update" overall status of the application. ['US', 'update', 'overall status of the application.', 'Cuti']
+
+1."PKP" can "view" "Senarai Rekod Permohonan " for every applicants. ['PKP', 'view', 'Senarai Rekod Permohonan ', 'Cuti']
+1. "PKP" can "view" "Butiran Permohonan Cuti" for selected application. ['PKP', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "PKP" can "download" "Dokumen Perakuan Bersalin". ['PKP', 'download', 'Dokumen Perakuan Bersalin', 'Cuti']
+4. "PKP" can "approve" "Status Kelulusan Pengarah Khidmat Pengurusan" by updating the approval status to either 'LULUS/TIDAK LULUS'. ['PKP', 'approve', 'Status Kelulusan Pengarah Khidmat Pengurusan', 'LULUS/TIDAK LULUS', 'Cuti']
+
+IGNORE
+1. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Cuti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for the particular applicant. ['Kakitangan', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "add" "Butiran Permohonan Cuti". ['Kakitangan', 'add', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "upload" "Dokumen Sokong". ['Kakitangan', 'upload', 'Dokumen Sokong', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Permohonan Cuti" for selected application. ['Kakitangan', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "Kakitangan" can "download" "Dokumen Sokongan". ['Kakitangan', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "Kakitangan" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian". ['Kakitangan', 'view', 'Status Penyokongan dari Pengarah Negeri/Bahagian', 'Cuti']
+4. "Kakitangan" can "view" "Status Semakan dari Urus Setia". ['Kakitangan', 'view', 'Status Semakan dari Urus Setia', 'Cuti']
+
+FIX
+6. "Kakitangan" can "view" overall application status. ['Kakitangan', 'view', 'overall application status.', 'Cuti']
+
+1. "PN" can "view" "Senarai Rekod Permohonan" for all applicant. ['PN', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PN" can "view" "Butiran Permohonan Cuti" for selected application. ['PN', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "PN" can "download" "Dokumen Sokongan". ['PN', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "PN" can "support" "Status Penyokongan Pengarah Negeri/Bahagian" by updating the support status either to 'SOKONG/TIDAK SOKONG'. ['PN', 'support', 'Status Penyokongan Pengarah Negeri/Bahagian', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "US" can "view" "Senarai Rekod Permohonan" for all applicant. ['US', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "US" can "view" "Butiran Permohonan Cuti" for selected application. ['US', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "US" can "download" "Dokumen Sokongan". ['US', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "US" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian". ['US', 'view', 'Status Penyokongan dari Pengarah Negeri/Bahagian', 'Cuti']
+4. "US" can "verify" "Status Semakan dari Urus Setia" by updating the verification status either to 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan dari Urus Setia', 'SEMAK/TIDAK SEMAK', 'Cuti']
+5. "US" can "view" "Status Kelulusan dari Pengarah Khidmat Pengurusan". ['US', 'view', 'Status Kelulusan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+FIX
+6. "US" can "view" overall application status. ['US', 'view', 'overall application status.', 'Cuti']
+
+1. "PKP" can "view" "Senarai Rekod Permohonan" for all applicant. ['PKP', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PKP" can "view" "Butiran Permohonan Cuti" for selected application. ['PKP', 'view', 'Butiran Permohonan Cuti', 'Cuti']
+2. "PKP" can "download" "Dokumen Sokongan". ['PKP', 'download', 'Dokumen Sokongan', 'Cuti']
+3. "PKP" can "view" "Status Penyokongan dari Pengarah Negeri/Bahagian". ['PKP', 'view', 'Status Penyokongan dari Pengarah Negeri/Bahagian', 'Cuti']
+4. "PKP" can "view" "Status Pengesahan dari Urus Setia". ['PKP', 'view', 'Status Pengesahan dari Urus Setia', 'Cuti']
+5. "PKP" can "approve" "Status Kelulusan dari Pengarah Khidmat Pengurusan". ['PKP', 'approve', 'Status Kelulusan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+IGNORE
+1. System can "notify" application fail to the user. ['notify', 'Cuti']
+
+
+IGNORE
+2. System can "update" employee's details. ['update', 'Cuti']
+
+
+IGNORE
+3. System can "notify" application status to the user. ['notify', 'Cuti']
+
+
+IGNORE
+#12. Perakuan tidak hadir ke pejabat atas-atas sebab kecemasan. ['Cuti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Permohonan" for all applicant. ['Kakitangan', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Rekod Permohonan" for selected applicant. ['Kakitangan', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "Kakitangan" can "confirm" "Status Pengesahan Permohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'. ['Kakitangan', 'confirm', 'Status Pengesahan Permohonan', 'SAH/TIDAK SAH', 'Cuti']
+1. "Kakitangan" can "view" "Butiran Rekod Permohonan" for selected applicant. ['Kakitangan', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "Kakitangan" can "view" "Status Pengesahan Permohonan". ['Kakitangan', 'view', 'Status Pengesahan Permohonan', 'Cuti']
+3. "Kakitangan" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian". ['Kakitangan', 'view', 'Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the applicant end there.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+4. "Kakitangan" can "view" "Status Semakan Permohonan dari Urus Setia". ['Kakitangan', 'view', 'Status Semakan Permohonan dari Urus Setia', 'Cuti']
+5. "Kakitangan" can "view" "Status Pengesahan Permohonan dari Urus Setia". ['Kakitangan', 'view', 'Status Pengesahan Permohonan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", the applicant end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+6. "Kakitangan" can "view" "Status Pelulusan Permohonan dari Pengarah Khidmat Pengurusan". ['Kakitangan', 'view', 'Status Pelulusan Permohonan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", the applicant end,
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+7. "Kakitangan" can "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Cuti']
+
+1. "PN" can "view" "Senarai Rekod Permohonan" for all applicant. ['PN', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PN" can "view" "Butiran Rekod Permohonan" for selected applicant. ['PN', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "PN" can "view" "Status Pengesahan Permohonan". ['PN', 'view', 'Status Pengesahan Permohonan', 'Cuti']
+3. "PN" can "support" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian" by updating the support status to either 'SOKONG/TIDAK SOKONG'. ['PN', 'support', 'Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian', 'SOKONG/TIDAK SOKONG', 'Cuti']
+1. "US" can "view" "Senarai Rekod Permohonan" for all applicant. ['US', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "US" can "view" "Butiran Rekod Permohonan" for selected applicant. ['US', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "US" can "view" "Status Pengesahan Permohonan". ['US', 'view', 'Status Pengesahan Permohonan', 'Cuti']
+3. "US" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian". ['US', 'view', 'Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the applicant end there.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+4. "US" can "verify" "Status Semakan Permohonan dari Urus Setia" by updating the verification status to either 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Permohonan dari Urus Setia', 'SEMAK/TIDAK SEMAK', 'Cuti']
+5. "US" can "confirm" "Status Pengesahan Permohonan dari Urus Setia" by updating the confirmation status to either 'SAH/TIDAK SAH'. ['US', 'confirm', 'Status Pengesahan Permohonan dari Urus Setia', 'SAH/TIDAK SAH', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", the applicant end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+6. "US" can "view" "Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan". ['US', 'view', 'Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan', 'Cuti']
+
+IF STATEMENT
+IF approval status == "TIDAK LULUS", the applicant end,
+
+
+IF STATEMENT
+IF approval status == "LULUS", proceed to next level.
+
+
+FIX
+7. "US" can "update" overall status of the application. ['US', 'update', 'overall status of the application.', 'Cuti']
+
+1. "PKP" can "view" "Senarai Rekod Permohonan" for all applicant. ['PKP', 'view', 'Senarai Rekod Permohonan', 'Cuti']
+1. "PKP" can "view" "Butiran Rekod Permohonan" for selected applicant. ['PKP', 'view', 'Butiran Rekod Permohonan', 'Cuti']
+2. "PKP" can "view" "Status Pengesahan Permohonan". ['PKP', 'view', 'Status Pengesahan Permohonan', 'Cuti']
+3. "PKP" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian". ['PKP', 'view', 'Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian', 'Cuti']
+
+IF STATEMENT
+IF support status == "TIDAK SOKONG", the applicant end there.
+
+
+IF STATEMENT
+IF support status == "SOKONG", proceed to next level.
+
+4. "PKP" can "view" "Status Semakan Permohonan dari Urus Setia". ['PKP', 'view', 'Status Semakan Permohonan dari Urus Setia', 'Cuti']
+5. "PKP" can "view" "Status Pengesahan Permohonan dari Urus Setia". ['PKP', 'view', 'Status Pengesahan Permohonan dari Urus Setia', 'Cuti']
+
+IF STATEMENT
+IF confirmation status == "TIDAK SAH", the applicant end there.
+
+
+IF STATEMENT
+IF confirmation status == "SAH", proceed to next level.
+
+6. "PKP" can "view" "Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['PKP', 'view', 'Status Kelulusan Permohonan dari Pengarah Khidmat Pengurusan', 'LULUS/TIDAK LULUS', 'Cuti']
+			},
+		])
+	}
+}

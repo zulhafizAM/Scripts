@@ -1,0 +1,79 @@
+﻿import { DateTime } from 'luxon';
+import {
+    column,
+    BaseModel,
+    HasMany,
+    hasMany,
+    beforeFind,
+    scope,
+} from '@ioc:Adonis/Lucid/Orm';
+import CamelCaseNamingStrategy from 'App/Strategies/CamelCaseNamingStrategy';
+import Section from './Section';
+import EmploymentInterim from './EmploymentInterim';
+
+export default class Department extends BaseModel {
+    public static table = 'departments';
+    public static primaryKey = 'id';
+    public static incrementing = false;
+
+    public static namingStrategy = new CamelCaseNamingStrategy();
+
+    public static withPreloadedList = scope<typeof Department>((query) => {
+        query
+            .preload('sections')
+            .preload('employmentInterims');
+    });
+    
+    @column({ isPrimary: true, columnName: 'id', serializeAs: null })
+    public id: bigint;
+    
+    @column({ columnName: 'name' })
+    public name: string;
+    
+    @column({ columnName: 'active', serializeAs: null })
+    public active: boolean;
+    
+    @column({ columnName: 'createdBy', serializeAs: null })
+    public createdBy: string;
+    
+    @column.dateTime({
+        columnName: 'createdAt',
+        autoCreate: true,
+        serializeAs: null,
+    })
+    public createdAt: DateTime;
+    
+    @column({ columnName: 'modifiedBy', serializeAs: null })
+    public modifiedBy: string;
+    
+    @column.dateTime({
+        columnName: 'modifiedAt',
+        autoCreate: true,
+        autoUpdate: true,
+        serializeAs: null,
+    })
+    public modifiedAt: DateTime;
+    
+    @hasMany(() => Section, {
+        foreignKey: 'departmentId',
+        onQuery: (query) => {
+        query.where('active', true);
+        },
+    })
+    public sections: HasMany<typeof Section>;
+    
+    @hasMany(() => EmploymentInterim, {
+        foreignKey: 'departmentId',
+        onQuery: (query) => {
+        query.where('active', true);
+        },
+    })
+    public employmentInterims: HasMany<typeof EmploymentInterim>;
+    
+    @beforeFind()
+    public static async preloadTables(query) {
+        query
+            .preload('sections')
+            .preload('employmentInterims');
+    }
+}

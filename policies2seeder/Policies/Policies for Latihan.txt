@@ -1,0 +1,149 @@
+Module Latihan
+
+#1. Kemaskini Maklumat Peperiksaan LKIM
+	#1. Kemaskini Maklumat Peperiksaan LKIM
+		#1. Urus Setia Latihan
+			#1. Function Listing
+				1. "US Latihan" can "view" "Senarai Peperiksaan".
+			#2. Function Add 
+				1. "US Latihan" can "add" "Butiran Maklumat Peperiksaan".
+		#2. System 
+			1. System "save" "Butiran Maklumat Peperiksaan".
+			2. System "send" "Senarai Peperiksaan" for "Kakitangan".
+#2. Permohonan Peperiksaan
+	#1.Permohonan Peperiksaan Perkhidmatan
+	#2.Permohonan Peperiksaan Peningkatan Secara Lantikan (PSL)
+	Notes: The flow and number of roles is same.
+	
+		#1. Kakitangan
+			#1. Function Listing 
+				1."Kakitangan" can "view" "Senarai Pemohonan Menduduki Peperiksaan".
+			
+			#2. Function View Details
+				1. "Kakitangan" can "view" "Butiran Pemohonon".
+				2. "Kakitangan" can "view" "Status Semakan Permohonan".
+				3. "Kakitangan" can "view" "Status Pengesahan Permohonan".
+				
+				IF confirmed status == "TIDAK SAH", overall status == "TIDAK LULUS".
+				IF confirmed status == "SAH",
+				4."Kakitangan" can "download" "Surat Panggilan Peperiksaan".
+				5."Kakitangan" can "view" "Keputusan Peperiksaan dari Panel Pemeriksaan".
+				
+		#2. Urus Setia Latihan
+			#1. Function Listing 
+				1."US Latihan" can "view" "Senarai Pemohonan Menduduki Peperiksaan" for all applications.
+			
+			#2. Function View Details
+				1. "US Latihan" can "view" "Butiran Pemohonon" for selected application.
+				2. "US Latihan" can "verify" "Status Semakan Permohonan" by updating verification status to either 'SEMAK/TIDAK SEMAK'.
+				3. "US Latihan" can "confirm" "Status Pengesahan Permohonan" by updating confirmation status to either "SAH/TIDAK SAH
+				
+				IF confirmed status == "TIDAK SAH", overall status == "TIDAK LULUS".
+				IF confirmed status == "SAH",
+				4."US Latihan" can "download" "Surat Panggilan Peperiksaan".
+				5."US Latihan" can "view" "Keputusan Peperiksaan dari Panel Pemeriksaan".
+		#3. System
+			1. System can "generate" "Surat Panggilan Peperiksaan".
+			2. System can "generate" "Keputusan Peperiksaan".
+			3. System can "email" "Kakitangan" "Keputusan Peperiksaan".
+			
+#3. Permohonan Pembiayaan Pelajaran.
+	#1.Permohonan Pembiayaan Pelajaran
+	   #1. Kakitangan
+		   #1. Function Listing
+			   1. "Kakitangan" can "view" "Senarai Permohonan Pembiayaan Pelajaran".
+			   
+		   #2. Function Add Application
+			   1. "Kakitangan" can "add" "Butiran Permohonan Pembiayaan Pelajaran".
+			   2. "Kakitangan" can "upload" "Dokumen Sokongan".
+			   
+		   #3. Function View Details
+			   1. "Kakitangan" can "view" "Butiran Permohonan" for selected application.
+			   2. "Kakitangan" can "download" "Dokumen Sokongan".
+			   3. "Kakitangan" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+			   4. "Kakitangan" can "view" "Status Perakukan Permohonan dari Urus Setia Integriti".
+			   5. "Kakitangan" can "view" "Status Semakan Permohonan".
+			   6. "Kakitangan" can "view" "Status Pengesahan Permohonan".
+				   IF confirmation status  == "TIDAK SAH", application end.
+				   IF confirmation status  == "SAH",
+			   7. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				   IF meeting result == "TIDAK LULUS", "Kakitangan" can "download" "Surat Gagal Permohonan" and will be "notify".
+				   IF meeting result == "LULUS",
+			   8. "Kakitangan" can "download" "Surat Lulus Permohonan" and get "notified".
+			   9. "Kakitangan" can "view" overall status of the application.
+			   
+	   #2. Urus Setia Latihan
+			#1. Function Listing 
+				1. "US Latihan" can "view" "Senarai Rekod Permohonan" for every application.
+				
+			#2. Function View Details 
+				1. "US Latihan" can "view" "Butiran Rekod Permohonan".
+				2. "US Latihan" can "download" "Dokumen Sokongan".
+				3. "US Latihan" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+				4. "US Latihan" can "view" "Status Perakukan Permohonan dari Urus Setia Integriti".
+				5. "US Latihan" can "verify" "Status Semakan Permohonan" for verification status either to 'SEMAK/TIDAK SEMAK'.
+				6. "US Latihan" can "confirm" "Status Pengesahan Permohonan" for confirmation status either to 'SAH/TIDAK SAH'.
+				   IF confirmation status  == "TIDAK SAH", application end.
+				   IF confirmation status  == "SAH",
+				7. "US Latihan" can "update" "Keputusan Mesyuarat" by updating result to either 'LULUS/TIDAK LULUS'.
+				   IF meeting result == "TIDAK LULUS",application end.
+				   IF meeting result == "LULUS", 
+				8. "US Latihan" can "update" overall status of the application.
+				
+	   #3. Pengarah Negeri/Bahagian
+			#1. Function Listing 
+				1. "PN" can "view" "Senarai Rekod Permohonan" for every application.
+				
+			#2. Function View Details 
+				1. "PN" can "view" "Butiran Rekod Permohonan".
+				2. "PN" can "download" "Dokumen Sokongan".	
+				3. "PN" can "support" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+		
+	   #4. Urus Setia Integriti
+			#1. Function Listing 
+				1. "US Integriti" can "view" "Senarai Rekod Permohonan" for every application.
+				
+			#2. Function View Details 
+				1. "US Integriti" can "view" "Butiran Rekod Permohonan".
+				2. "US Integriti" can "download" "Dokumen Sokongan".
+				3. "US Integriti" can "view" "Status Penyokongan Permohonan dari Pengarah Negeri/Bahagian".
+				4. "US Latihan" can "certify" "Status Perakukan Permohonan dari Urus Setia Integriti" by updating certification status to either 'AKU/TIDAK AKU'.
+		
+	   #5. System
+			1. System can "generate" "surat gagal permohonan" if "Keputusan Mesyuarat" is "TIDAK LULUS".
+			2. System can "generate" "surat lulus permohonan" if "Keputusan Mesyuarat" is  "LULUS".
+			3. System can "notify/email" "Kakitangan" regardless of "Keputusan Mesyuarat".
+			
+	#2.Permohonan Tuntutan Pembiayaan Yuran Pengajian
+		#1. Kakitangan
+			#1. Function Listing
+			    1. "Kakitangan" can "view" "Senarai Permohonan".
+				
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan".
+				2. "Kakitangan" can "upload" "Dokumen Sokongan".
+			
+			#3. Function View Details
+				1. "Kakitangan" can "view" "Butiran Permohonan" for selected application.
+				2. "Kakitangan" can "download" "Dokumen Sokongan".
+				3. "Kakitangan" can "view" "Status Semakan Permohonan".
+				4. "Kakitangan" can "view" "Status Pengesahan Permohonan".
+					IF confirmation status ==  "TIDAK SAH", application end.
+					IF confirmation status ==  "SAH", 
+				5. "Kakitangan" can "view" overal status.
+		#2. Urus Setia Latihan
+			#1. Function Listing
+				1. "US Latihan" can "view" "Senarai Permohonan" for every applicant.
+				
+			#2. Function View Details 
+				1. "US Latihan" can "view" "Butiran Permohonan" for selected application.
+				2. "US Latihan" can "download" "Dokumen Sokongan".
+				3. "US Latihan" can "verify" "Status Semakan Permohonan" by updating verification status either to 'SEMAK/TIDAK SEMAK'.
+				4. "US Latihan" can "confirm" "Status Pengesahan Permohonan" by updating confirmation status either to 'SAH/TIDAK SAH'.
+					IF confirmation status ==  "TIDAK SAH", application end.
+					IF confirmation status ==  "SAH", 
+				5. "US Latihan" can "download" "arahan bayaran" to finance department.
+				6. "US Latihan" can "update" overal status.
+		#3. System 
+			1.  System can "generate" "Arahan Bayaran" to be delivered to finance department.
+			2.  System can "update" "Maklumat Kakitangan".

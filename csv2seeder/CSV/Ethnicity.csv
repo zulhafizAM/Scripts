@@ -1,0 +1,209 @@
+code,name
+0000,Tiada Maklumat
+0100,Melayu
+0101,Bugis
+0102,Boyan
+0103,Banjar
+0104,Jawa
+0105,Jawi Pekan
+0106,Minangkabau
+0200,Cina
+0201,Cantonese
+0202,Foochow
+0203,Hainanese
+0204,Henghua
+0205,Hokchia
+0206,Hokchiu
+0207,Hokkien
+0208,Khek (Hakka)
+0209,Kwongsai
+0210,Teochew
+0211,Kongfoo
+0212,Hylam
+0300,India
+0301,Malayali
+0302,Punjabi
+0303,Sikh
+0304,Tamil
+0305,Telegu
+0306,Malabari
+0307,India Muslim
+0308,Telugu
+0309,Orissa
+0400,Bangladeshi
+0500,Pakistani
+0600,Sri Lanka
+0601,Tamil Sri Lanka
+0602,Melayu Sri Lanka
+0603,Sinhalese
+0604,Ceylonese
+0700,Indonesia
+0701,Tidung
+0799,Lain-lain
+0800,Bumiputera Sabah
+0801,Bajau
+0802,Dusun
+0803,Kadazan
+0804,Murut
+0805,Sino-Native
+0806,Suluk
+0807,Tidung
+0811,Bonggi 
+0812,Toraja
+0817,Lotud 
+0820,Tatana 
+0821,Tagahas 
+0828,Ubian/Obian
+0829,Banjar
+0901,Binadan
+0902,Bisaya
+0903,Bongol
+0904,Brunei
+0905,Dumpas
+0906,Iranun
+0907,Idahan
+0908,Kwijau
+0909,Kedayan
+0910,Lingkabau
+0911,Lundayeh
+0912,Lasau
+0913,Melanau
+0914,Mangkaak
+0915,Matagang
+0916,Minokok
+0917,Melayu Sabah
+0918,Momogun
+0919,Paitan
+0920,Rumanau
+0921,Rungus
+0922,Sungai
+0923,Sonsongan
+0924,Sinulihan
+0925,Tombonuo
+0926,Tagal
+0927,Tinagas
+0928,Cocos
+0929,Kimaragang
+0930,Bolongan
+0931,Buton
+0932,Kagayan
+0933,Balabak
+0934,Kadazan-Sino
+0935,Dusun-Sino
+0936,Bajau-Sino
+0937,Murut-Sino
+0938,Brunei-Sino
+0939,Rungus-Sino
+0940,Bisaya-Sino
+0941,Idahan-Sino
+0942,Iranun-Sino
+0943,Kedayan-Sino
+0944,Sungai-Sino
+0945,Lundayeh-Sino
+0946,Suluk-Sino
+0947,Tidung-Sino
+0948,Bolongan-Sino
+0949,Balabak-Sino
+1000,Bumiputera Sarawak
+1001,Melayu Sarawak
+1002,Melanau
+1003,Kedayan
+1004,Iban atau Sea Dayak
+1005,Bidayuh atau Land Dayak
+1006,Kayan
+1007,Kenyah
+1008,Murut atau Lun Bawang
+1009,Kelabit
+1010,Punan
+1011,Penan
+1012,Orang Ulu 
+1101,Bisayah
+1102,Berawan
+1103,Belot
+1104,Buket
+1105,Balau
+1106,Batang Ai
+1107,Batu Elah
+1108,Baketan
+1109,Bintulu
+1110,Badang
+1111,Dusun
+1112,Jagoi
+1113,Lakiput
+1114,Kajang
+1115,Kejaman
+1116,Kanowit
+1117,Lirong
+1118,Lemanak
+1119,Lahanan
+1120,Lisum atau Lugum
+1121,Matu
+1122,Memaloh
+1123,Melikin
+1124,Melaing
+1125,Ngurik
+1126,Menondo
+1127,Nyamok
+1128,Sebop
+1129,Seduan
+1130,Sekapan
+1131,Segalang
+1132,Sihan
+1133,Sipeng
+1134,Saribas
+1135,Sebuyau
+1136,Skrang
+1137,Saban
+1138,Selakan
+1139,Selako
+1140,Tagal
+1141,Tabun
+1142,Tutong
+1143,Tanjong
+1144,Tatau
+1145,Taup
+1146,Ukit
+1147,Unkop
+1148,Ulu Ai
+1149,Toraja
+1150,Timor
+1151,Menado
+1152,Manura
+1153,Batak
+1154,Pathan
+1155,Tongans
+1200,Orang Asli (Semenanjung)
+1201,Jakun
+1202,Negrito
+1203,Sakai
+1204,Semai
+1205,Semalai
+1206,Temiar
+1207,Senoi
+1300,Lain-Lain Asia
+1301,Arab
+1302,Burmese
+1303,Eurasian
+1304,Fijian
+1305,Filipino
+1306,Gurkha
+1307,Japanese
+1308,Khmer
+1309,Korean
+1310,Maltese
+1311,Portugese
+1312,Thai
+1313,Vietnamese
+1314,Iranian
+1315,Afghan
+1318,Ubian
+1324,Kemboja
+1325,Myanmar
+1326,Nepal
+1400,European
+1401,British
+1498,Mesir
+1601,Siam
+1701,Sikh
+9901,Kenya
+9999,Lain-lain

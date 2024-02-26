@@ -1,0 +1,37 @@
+﻿import { z } from 'zod';
+
+const PerformanceSchema = z.object({
+	employeeId: z.number().int().nonnegative(),
+	PPKEmployeeId: z.number().int().nonnegative(),
+	PPPEmployeeId: z.number().int().nonnegative(),
+	year: z.number().int().optional(),
+	reviewDuration: z.number().int().optional(),
+	JPAFormPerformance: z.string().max(75).optional(),
+	insertDate: z.string().datetime(),
+	propertyStatus: z.string().max(75).optional(),
+	approvedPropertyDate: z.string().datetime(),
+	gradeMarkPPP: z.number().optional(),
+	gradeMarkPPK: z.number().optional(),
+	skillMarkPPP: z.number().optional(),
+	skillMarkPPK: z.number().optional(),
+	individualMarkPPP: z.number().optional(),
+	individualMarkPPK: z.number().optional(),
+	contributeMarkPPP: z.number().optional(),
+	contributeMarkPPK: z.number().optional(),
+	PPP: z.number().optional(),
+	PPK: z.number().optional(),
+	average: z.number().optional(),
+	PPSM: z.number().optional(),
+	isAmend: z.boolean().optional(),
+	description: z.string().optional(),
+	salaryMovement: z.string().max(75).optional(),
+	justification: z.string().optional(),
+	yearlyAPC: z.string().max(75).optional(),
+	active: z.boolean().optional(),
+	createdBy: z.string().max(75).optional(),
+	createdAt: z.date().optional(),
+	modifiedBy: z.string().max(75).optional(),
+	modifiedAt: z.date().optional(),
+});
+
+export default PerformanceSchema;

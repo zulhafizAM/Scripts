@@ -1,0 +1,488 @@
+﻿1. "Kakitangan" can "view" "Senarai Permohonan Pinjaman Komputer dan Telefon Pintar" that related to themselves only. ['Kakitangan', 'view', 'Senarai Permohonan Pinjaman Komputer dan Telefon Pintar', 'Pinjaman']
+1. "Kakitangan" can "add" "Butiran Permohonan Pinjaman". ['Kakitangan', 'add', 'Butiran Permohonan Pinjaman', 'Pinjaman']
+2. "Kakitangan" can "upload" "Dokumen Sokongan dan Sebut Harga". ['Kakitangan', 'upload', 'Dokumen Sokongan dan Sebut Harga', 'Pinjaman']
+1. "Kakitangan" can "view" "Butiran Permohonan Pinjaman". ['Kakitangan', 'view', 'Butiran Permohonan Pinjaman', 'Pinjaman']
+2. "Kakitangan" can "download" "Dokumen Sokongan dan Sebut Harga". ['Kakitangan', 'download', 'Dokumen Sokongan dan Sebut Harga', 'Pinjaman']
+3. "Kakitangan" can "view" "Status Semakan Permohonan". ['Kakitangan', 'view', 'Status Semakan Permohonan', 'Pinjaman']
+4. "Kakitangan" can "view" "Mengisi nama bagi Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Pelulus', 'Pinjaman']
+5. "Kakitangan" can "view" "Status Penyokongan dari Ketua Seksyen". ['Kakitangan', 'view', 'Status Penyokongan dari Ketua Seksyen', 'Pinjaman']
+
+IF STATEMENT
+IF supportedStatus == "TIDAK SOKONG", application end.
+
+
+IF STATEMENT
+IF supportedStatus == "SOKONG"
+
+6. "Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Pinjaman']
+7. "Kakitangan" can "view" "Maklumat Pinjaman, Jadual Pertama dan Kedua". ['Kakitangan', 'view', 'Maklumat Pinjaman, Jadual Pertama dan Kedua', 'Pinjaman']
+8. "Kakitangan" can "download" "Surat Tawaran Kelulusan Pinjaman dan Surat Iringan". ['Kakitangan', 'download', 'Surat Tawaran Kelulusan Pinjaman dan Surat Iringan', 'Pinjaman']
+9. "Kakitangan" can "download" "Surat Tawaran". ['Kakitangan', 'download', 'Surat Tawaran', 'Pinjaman']
+
+IF STATEMENT
+IF supportedStatus == "SOKONG" and approvedStatus == "LULUS",then
+
+
+FIX
+2. "Kakitangan" "download" offer letter from the system. ['Kakitangan', 'download', 'offer letter from the system.', 'Pinjaman']
+
+3. "Kakitangan" "upload" "Surat Perjanjian" to the system. ['Kakitangan', 'upload', 'Surat Perjanjian', 'Pinjaman']
+
+FIX
+4. "Kakitangan" "upload" receipt and invoice to the system. ['Kakitangan', 'upload', 'receipt and invoice to the system.', 'Pinjaman']
+
+1. "US" ""view"" "Senarai Permohonan Pinjaman Komputer dan Telefon Pintar". ['US', '', '', 'Senarai Permohonan Pinjaman Komputer dan Telefon Pintar', 'Pinjaman']
+1. "US" ""view"" application details and any supported documents for each selected employee. ['US', '', '', 'Pinjaman']
+2. "US" "update" status to application details to either 'SEMAK/TIDAK SEMAK'. ['US', 'update', 'SEMAK/TIDAK SEMAK', 'Pinjaman']
+
+FIX
+2. "US" "update" approver name. ['US', 'update', 'approver name.', 'Pinjaman']
+
+3. "US" ""view"" support and approval status. ['US', '', '', 'Pinjaman']
+4. "US" "edit" loan details such as "jadual pertama dan kedua". ['US', 'edit', 'jadual pertama dan kedua', 'Pinjaman']
+
+FIX
+5. "US" "download" offer letter. ['US', 'download', 'offer letter.', 'Pinjaman']
+
+6. "US" "download" "surat perjanjian". ['US', 'download', 'surat perjanjian', 'Pinjaman']
+7. "US" "download" payment voucher and "update"d loan application details. ['US', 'download', 'update', 'Pinjaman']
+
+FIX
+8. "US" "download" receipt and invoice from the system. ['US', 'download', 'receipt and invoice from the system.', 'Pinjaman']
+
+1."KS" ""view"" and list of application for smartphone and computer loan. ['KS', '', '', 'Pinjaman']
+
+FIX
+2."KS" "update" status to supported the application in one go. ['KS', 'update', 'status to supported the application in one go.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status =="TIDAK SOKONG", then the application end.
+
+
+IF STATEMENT
+IF status =="SOKONG", then the application is proceed to another level.
+
+1. "KS" ""view"" application details and any supported document for selected application. ['KS', '', '', 'Pinjaman']
+
+FIX
+2. "KS" "update" status to support selected application. ['KS', 'update', 'status to support selected application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status =="TIDAK SOKONG", then the application end.
+
+
+IF STATEMENT
+IF status =="SOKONG", then the application is proceed to another level.
+
+
+FIX
+1. "Pelulus" "view" and list of application for smartphone and computer loan. ['Pelulus', 'view', 'and list of application for smartphone and computer loan.', 'Pinjaman']
+
+
+FIX
+1. "Pelulus" "view" application details and any supported document for selected application. ['Pelulus', 'view', 'application details and any supported document for selected application.', 'Pinjaman']
+
+
+FIX
+2. "Pelulus" "view" status of application supports. ['Pelulus', 'view', 'status of application supports.', 'Pinjaman']
+
+
+FIX
+3. "Pelulus" "update" status to approve the application. ['Pelulus', 'update', 'status to approve the application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status=="TIDAK LULUS", then the application is end there.
+
+
+IF STATEMENT
+IF status=="LULUS", then the application is proceed to another level.
+
+
+IGNORE
+2. System "generate" payment order to the finance department . ['generate', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "view" and list of application for vehicle loan that related to themselves only. ['Kakitangan', 'view', 'and list of application for vehicle loan that related to themselves only.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "add" application details and supporting documents for vehicle loan. ['Kakitangan', 'add', 'application details and supporting documents for vehicle loan.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "view" application status. ['Kakitangan', 'view', 'application status.', 'Pinjaman']
+
+
+IF STATEMENT
+IF supportedStatus == "SOKONG" and approvedStatus == "LULUS",then
+
+
+FIX
+2. "Kakitangan" "download" offer letter from the system. ['Kakitangan', 'download', 'offer letter from the system.', 'Pinjaman']
+
+3. "Kakitangan" "upload" "Surat Perjanjian" to the system. ['Kakitangan', 'upload', 'Surat Perjanjian', 'Pinjaman']
+
+FIX
+4. "Kakitangan" "upload" receipt and invoice to the system. ['Kakitangan', 'upload', 'receipt and invoice to the system.', 'Pinjaman']
+
+
+FIX
+1. "US" "view" and list of application for vehicle loan. ['US', 'view', 'and list of application for vehicle loan.', 'Pinjaman']
+
+
+FIX
+1. "US" "view" application details and any supported documents for each selected employee. ['US', 'view', 'application details and any supported documents for each selected employee.', 'Pinjaman']
+
+2. "US" "update" status to application details to either 'SEMAK/TIDAK SEMAK'. ['US', 'update', 'SEMAK/TIDAK SEMAK', 'Pinjaman']
+
+FIX
+2. "US" "update" approver name. ['US', 'update', 'approver name.', 'Pinjaman']
+
+
+FIX
+3. "US" "view" support and approval status. ['US', 'view', 'support and approval status.', 'Pinjaman']
+
+4. "US" "edit" loan details such as "jadual pertama dan kedua". ['US', 'edit', 'jadual pertama dan kedua', 'Pinjaman']
+
+FIX
+5. "US" "download" offer letter. ['US', 'download', 'offer letter.', 'Pinjaman']
+
+6. "US" "download" "surat perjanjian". ['US', 'download', 'surat perjanjian', 'Pinjaman']
+
+FIX
+7. "US" "download" payment voucher and updated loan application details. ['US', 'download', 'payment voucher and updated loan application details.', 'Pinjaman']
+
+8. "US" "update" vehicle details such as "No Chasis and No Enjin". ['US', 'update', 'No Chasis and No Enjin', 'Pinjaman']
+
+IGNORE
+9. "US" insert vehicle details to JPJ system. ['US', 'Pinjaman']
+
+
+FIX
+10."US" "download" receipt and invoice uploaded by applicant. ['US', 'download', 'receipt and invoice uploaded by applicant.', 'Pinjaman']
+
+
+FIX
+1."KS" "view" and list of application for smartphone and computer loan. ['KS', 'view', 'and list of application for smartphone and computer loan.', 'Pinjaman']
+
+
+FIX
+2."KS" "update" status to supported the application in one go. ['KS', 'update', 'status to supported the application in one go.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status =="TIDAK SOKONG", then the application end.
+
+
+IF STATEMENT
+IF status =="SOKONG", then the application is proceed to another level.
+
+
+FIX
+1. "Pelulus" "view" application details and any supported document for selected application. ['Pelulus', 'view', 'application details and any supported document for selected application.', 'Pinjaman']
+
+
+FIX
+2. "Pelulus" "view" status of application supports. ['Pelulus', 'view', 'status of application supports.', 'Pinjaman']
+
+
+FIX
+3. "Pelulus" "update" status to approve the application. ['Pelulus', 'update', 'status to approve the application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status=="TIDAK LULUS", then the application is end there.
+
+
+IF STATEMENT
+IF status=="LULUS", then the application is proceed to another level.
+
+
+FIX
+1. "Pelulus" "view" and list of application for smartphone and computer loan. ['Pelulus', 'view', 'and list of application for smartphone and computer loan.', 'Pinjaman']
+
+
+FIX
+1. "Pelulus" "view" application details and any supported document for selected application. ['Pelulus', 'view', 'application details and any supported document for selected application.', 'Pinjaman']
+
+
+FIX
+2. "Pelulus" "view" status of application supports. ['Pelulus', 'view', 'status of application supports.', 'Pinjaman']
+
+
+FIX
+3. "Pelulus" "update" status to approve the application. ['Pelulus', 'update', 'status to approve the application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF status=="TIDAK LULUS", then the application is end there.
+
+
+IF STATEMENT
+IF status=="LULUS", then the application is proceed to another level.
+
+
+IGNORE
+2. System generated payment order to the finance department. ['Pinjaman']
+
+
+IGNORE
+#2. Kuarters - Permohonan Menduduki Kuarters. ['Pinjaman']
+
+
+FIX
+1. "Kakitangan" "view" and search list of application that belongs to themselves. ['Kakitangan', 'view', 'and search list of application that belongs to themselves.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "add" application details. ['Kakitangan', 'add', 'application details.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "view" application details of selected application. ['Kakitangan', 'view', 'application details of selected application.', 'Pinjaman']
+
+2. "Kakitangan" "view" status of the application updated by "US" and "PN" . ['Kakitangan', 'view', 'US', 'PN', 'Pinjaman']
+
+FIX
+1. "US" "view" and search list of application. ['US', 'view', 'and search list of application.', 'Pinjaman']
+
+
+FIX
+1. "US" "view" selected application details and its supported documents. ['US', 'view', 'selected application details and its supported documents.', 'Pinjaman']
+
+2. "US" "update" status to "SEMAK/TIDAK SEMAK" to the verification of the application. ['US', 'update', 'SEMAK/TIDAK SEMAK', 'Pinjaman']
+3. "US" "update" status to "LULUS/TIDAK LULUS" to the approval of the application. ['US', 'update', 'LULUS/TIDAK LULUS', 'Pinjaman']
+
+IF STATEMENT
+IF "TIDAK LULUS", the application is end there.
+
+
+IF STATEMENT
+IF "LULUS", the application will proceed to the next level.
+
+4. "US" "download" "Surat Tawaran menduduki Kuarters". ['US', 'download', 'Surat Tawaran menduduki Kuarters', 'Pinjaman']
+
+FIX
+1. "PN" "view" and search list of application for quarters. ['PN', 'view', 'and search list of application for quarters.', 'Pinjaman']
+
+
+FIX
+1. "PN" "view" application details and supported document. ['PN', 'view', 'application details and supported document.', 'Pinjaman']
+
+2. "PN" "view" the status if the application is verified, and approved status by the 'US'. ['PN', 'view', 'US', 'Pinjaman']
+
+FIX
+3. "PN" "update" status of application approval process. ['PN', 'update', 'status of application approval process.', 'Pinjaman']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", the application is end there.
+
+
+IF STATEMENT
+IF "LULUS", the application will proceed to the next level.
+
+
+FIX
+1. "UPF" "view" and search list of application for quarters. ['UPF', 'view', 'and search list of application for quarters.', 'Pinjaman']
+
+
+FIX
+1. "UPF" "view" the application details and the supported documents. ['UPF', 'view', 'the application details and the supported documents.', 'Pinjaman']
+
+
+FIX
+2. "UPF" "view" status of the application. ['UPF', 'view', 'status of the application.', 'Pinjaman']
+
+3. "UPF" "update" details "Maklumat Pemotongan Mengikut Jenis Kelayakan Kuarters". ['UPF', 'update', 'Maklumat Pemotongan Mengikut Jenis Kelayakan Kuarters', 'Pinjaman']
+4. "UPF" "download" "Surat Tawaran menduduki Kuarters". ['UPF', 'download', 'Surat Tawaran menduduki Kuarters', 'Pinjaman']
+
+IGNORE
+2. System notify the applicant. ['Pinjaman']
+
+
+FIX
+1. "US" "view" and search list of application for quarters from non-LKIM. ['US', 'view', 'and search list of application for quarters from non-LKIM.', 'Pinjaman']
+
+
+FIX
+1. "US" "add" application details on behalf of non-LKIM. ['US', 'add', 'application details on behalf of non-LKIM.', 'Pinjaman']
+
+
+FIX
+1. "US" "view" application details. ['US', 'view', 'application details.', 'Pinjaman']
+
+
+FIX
+2. "US" "view" status of approval of application. ['US', 'view', 'status of approval of application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF "LULUS"
+
+3. "US" "update" application details and "upload" supporting document. ['US', 'update', 'upload', 'Pinjaman']
+4. "US" "download" the "Surat Tawaran Menduduki Kuarters". ['US', 'download', 'Surat Tawaran Menduduki Kuarters', 'Pinjaman']
+
+FIX
+1. "PN" "view" and search list of application for quarters from non-LKIM. ['PN', 'view', 'and search list of application for quarters from non-LKIM.', 'Pinjaman']
+
+
+FIX
+1. "PN" "view" application details for quarters for selected application. ['PN', 'view', 'application details for quarters for selected application.', 'Pinjaman']
+
+
+FIX
+2. "PN" "update" approval status for the application. ['PN', 'update', 'approval status for the application.', 'Pinjaman']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", the application is end there.
+
+
+IF STATEMENT
+IF "LULUS", the application will proceed to the next level.
+
+
+FIX
+1. "UPF" "view" and search list of application for quarters from non-LKIM. ['UPF', 'view', 'and search list of application for quarters from non-LKIM.', 'Pinjaman']
+
+
+FIX
+1. "UPF" "view" application details for quarters for selected application. ['UPF', 'view', 'application details for quarters for selected application.', 'Pinjaman']
+
+
+FIX
+2. "UPF" "view" approval status for the application. ['UPF', 'view', 'approval status for the application.', 'Pinjaman']
+
+3. "UPF" "download" the "Surat Tawaran Menduduki Kuarters". ['UPF', 'download', 'Surat Tawaran Menduduki Kuarters', 'Pinjaman']
+
+IGNORE
+2. System will email to applicant. ['Pinjaman']
+
+
+IGNORE
+#3. Kuarters - Permohonan Keluar Kuarters. ['Pinjaman']
+
+
+FIX
+1."Kakitangan" "view" and search list of application for quarters that belongs to themselves. ['Kakitangan', 'view', 'and search list of application for quarters that belongs to themselves.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "add" application details and supporting documents. ['Kakitangan', 'add', 'application details and supporting documents.', 'Pinjaman']
+
+
+FIX
+1. "Kakitangan" "view" application details. ['Kakitangan', 'view', 'application details.', 'Pinjaman']
+
+2. "Kakitangan" "view" the status of verification from 'US'. ['Kakitangan', 'view', 'US', 'Pinjaman']
+3. "Kakitangan" "view" the status of approval from 'PN'. ['Kakitangan', 'view', 'PN', 'Pinjaman']
+
+FIX
+4. "Kakitangan" "download" memo surat and form from the system. ['Kakitangan', 'download', 'memo surat and form from the system.', 'Pinjaman']
+
+1. "US" "view" and search list of application for "Keluar Kuarters". ['US', 'view', 'Keluar Kuarters', 'Pinjaman']
+
+FIX
+1. "US" "view" the application details and supporting documents for selected application. ['US', 'view', 'the application details and supporting documents for selected application.', 'Pinjaman']
+
+
+FIX
+2. "US" "update" the status of verification of the application. ['US', 'update', 'the status of verification of the application.', 'Pinjaman']
+
+3. "US" "view" the status of approval from 'PN'. ['US', 'view', 'PN', 'Pinjaman']
+
+FIX
+4. "US" "update" the all the details related to quarters. ['US', 'update', 'the all the details related to quarters.', 'Pinjaman']
+
+1. "PN" "view" and search list of application for "Keluar Kuarters". ['PN', 'view', 'Keluar Kuarters', 'Pinjaman']
+
+FIX
+1. "PN" "view" the application details and supportings documents for selected application. ['PN', 'view', 'the application details and supportings documents for selected application.', 'Pinjaman']
+
+
+FIX
+2. "PN" "view" the verification status of the application. ['PN', 'view', 'the verification status of the application.', 'Pinjaman']
+
+3. "PN" "update" the status of approval of the application to either 'LULUS/TIDAK LULUS'. ['PN', 'update', 'LULUS/TIDAK LULUS', 'Pinjaman']
+
+IF STATEMENT
+IF "TIDAK LULUS", the application end there.
+
+
+IF STATEMENT
+IF "LULUS", the application proceed to next level.
+
+1. "UPF" "view" and search list of application for "Keluar Kuarters". ['UPF', 'view', 'Keluar Kuarters', 'Pinjaman']
+1."UPF" "view" the application details related to "Keluar Kuarters". ['UPF', 'view', 'Keluar Kuarters', 'Pinjaman']
+
+IGNORE
+2."UPF" downlaod memo, surat and borang from the system. ['UPF', 'Pinjaman']
+
+
+IGNORE
+2. System notified the applicant involved. ['Pinjaman']
+
+1. "US" "view" and search list of application for "Keluar Kuarters". ['US', 'view', 'Keluar Kuarters', 'Pinjaman']
+1. "US" "add" application detail for "Keluar Kuarters". ['US', 'add', 'Keluar Kuarters', 'Pinjaman']
+
+IF STATEMENT
+IF isArrears (Tunggakan) ==TRUE,
+
+
+FIX
+2. "US" "download" order letter (Surat Arahan Bayaran Tungggakan). ['US', 'download', 'order letter (Surat Arahan Bayaran Tungggakan).', 'Pinjaman']
+
+
+IF STATEMENT
+IF isArrers === FALSE, will proceed to next level.
+
+
+FIX
+3. "US" "update" the selected application details. ['US', 'update', 'the selected application details.', 'Pinjaman']
+
+1. "PN" "view" and search list of application for "Keluar Kuarters". ['PN', 'view', 'Keluar Kuarters', 'Pinjaman']
+
+FIX
+1. "PN" "view" the application details for selected application. ['PN', 'view', 'the application details for selected application.', 'Pinjaman']
+
+
+FIX
+2. "PN" "view" isArrear status whether is settled or not. ['PN', 'view', 'isArrear status whether is settled or not.', 'Pinjaman']
+
+
+FIX
+3. "PN" "update" the approval status of the application status. ['PN', 'update', 'the approval status of the application status.', 'Pinjaman']
+
+
+IF STATEMENT
+IF approvalStatus =="TIDAK LULUS", the application is ended.
+
+
+IF STATEMENT
+IF approvalStatus == "LULUS", the application is proceed to next level.
+
+
+IF STATEMENT
+IF isArrears == TRUE
+
+
+IGNORE
+1. System generate order letter. ['Pinjaman']
+
+
+IF STATEMENT
+IF approvalStatus=="LULUS"
+
+
+IGNORE
+3. System notified the applicant. ['Pinjaman']
+
+			},
+		])
+	}
+}

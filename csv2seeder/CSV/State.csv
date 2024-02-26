@@ -1,0 +1,299 @@
+code,name
+00,Tiada Maklumat
+01,Johor
+02,Kedah
+03,Kelantan
+04,Melaka
+05,Negeri Sembilan
+06,Pahang
+07,Pulau Pinang
+08,Perak
+09,Perlis
+10,Selangor
+11,Terengganu
+12,Sabah
+13,Sarawak
+14,Wilayah Persekutuan Kuala Lumpur
+15,Wilayah Persekutuan Labuan
+16,Wilayah Persekutuan Putrajaya
+19,Sumatera Barat
+20,Villanueva
+21,Victoria
+22,Western Australia
+23,New South Wales
+24,Vienna
+25,Brussels
+26,Baridhara Model Town
+27,Kingdom Of Bahrain
+28,Sarajevo
+29,Sao Paulo
+3 ,Iwate
+30,Bandar Seri Begawan
+31,Ontario
+32,British Columbia
+33,Geneva
+34,Washingtonova
+35,Las Condes
+36,Sanlitun
+37,Sichuen
+38,Guangdong
+39,Yunnan
+40,Shanghai
+41,Playa
+42,Berlin
+43,Cologne
+44,Frankfurt
+45,El-Biar
+46,Giza
+47,Spain
+48,Suva
+49,Rue Benouville
+50,Belgrave Square
+51,Coleah Comiche Sud
+52,Wanchai
+53,Airport Residential Area
+54,Budapest
+55,Jakarta Selatan
+56,Sumatera Utara
+57,Riau
+58,Kalimantan Barat
+59,Numgambakkam
+60,Santacruz East
+61,Chanakyapuri
+62,Ballsbridge
+63,Tehran
+64,Milan
+65,Rome
+66,Abdoun
+67,Kadoma Shi
+68,Shibuya Ku
+69,Almaty
+70,Nairobi
+71,Khan Daun Penh
+72,Daedonggang District
+73,Yongsan Ku
+74,Daiya
+75,Lao Pdr
+76,Beirut
+77,Hai Andalus
+78,Colombo
+79,Soussi
+80,Polanco
+81,Zagreb
+82,Windhoek
+83,Abuja Fct
+84,Rotterdam
+85,Kathmandu
+86,Brooklyn
+87,Ruwi
+88,Islamabad
+89,Karachi
+90,San Isidro
+91,Davao City
+92,Salcedo Village
+93,Korobosea
+94,Warsaw
+95,West Bay Dafna
+96,Bucharest
+97,Moscow
+98,Luar Negeri
+99,Lain-lain
+A0,Jeddah
+A1,Riyadh
+A2,Alamarat
+A3,Dakar
+A4,Stockholm
+A5,East Mezzeh
+A6,Sathorn
+A7,Phuket
+A8,Songkhla
+A9,Dili
+AA,Madinah
+AB,Makkah
+AC,Australian Capital Territory
+AG,Aragon
+AH,Anhui
+AK,Alaska
+AL,Al Anbar
+AM,Amman
+AN,Andalucia
+AR,Arkansas
+AS,Asturias
+AU,Auckland
+AZ,Arizona
+B0,Gaziosmanpasa
+B1,Sisli
+B2,Taipei
+B3,New Chomiche
+B4,Zabeel Road
+B5,Kiev
+B6,Massachusetts
+B7,Illinois
+B8,Suite 400
+B9,Florida
+BA,Bali
+BB,Babil
+BC,Banda Acheh
+BD,Baghdad
+BI,Balearic Islands
+BJ,Beijing
+BR,Brunei
+BS,Basra
+BY,Basque Country
+C ,Kaherah
+C0,New York
+C1,California
+C2,Washington
+C3,Tashkent
+C4,Chuao
+C5,Ba Dinh District
+C6,Ho Chi Minh
+C7,Sana'a
+C8,Samdton
+C9,Hatfield
+CA,Alexandria
+CB,Cantabria
+CD,Canary Islands
+CI,Christmas Island
+CL,Castilla La Mancha
+CO,Colorado
+CT,Connecticut
+CX,Catalonia
+CY,Castilla y Léon
+D0,Avondale
+D1,Alabama
+DA,Duhok
+DB,Durban
+DE,Delaware
+DI,Diyala
+DQ,Dhi Qar
+DT,Delft
+DU,Dushanbe
+EX,Extremadura
+F1,Helsinki
+F2,Turku
+F3,Tampere
+F4,Lappeenranta
+F5,Oulu
+F6,Vaasa
+F7,Jyvaskyla
+F8,Kuopio
+F9,Rovaniemi
+Fu,Fukuoka
+G1,England
+G2,Northern Ireland
+G3,Scotland
+G4,Wales
+G5,Leeds
+G6,York
+GA,Georgia
+GC,Galicia
+GN,Ghent
+HA,Hamilton
+HB,Halabja
+HI,Hawaii
+I2,India
+I3,Karnataka
+IA,Iowa
+ID,Idaho
+IN,Indiana
+J1,Hokkaido
+J2,Aomori
+J3,Iwate
+J4,Miyagi
+J5,Akita
+J6,Yamagata
+J7,Fukushima
+J8,Ibaraki
+J9,Tochigi
+JA,Jakarta
+JB,Jawa Barat
+JK,Kagawa
+JO,Osaka
+JP,Tokyo
+JS,Jalisco
+JT,Jawa Timur
+K7,Jeju
+K8,Seoul
+K9,Gyeonggi
+KA,Karbala
+KI,Kirkuk
+KS,Kansas
+KY,Kentucky
+LA,Louisiana
+LK,Lugansk
+LM,Lamongan
+LR,La Rioja
+M1,Male
+M2,Nay Pyi Taw
+M3,Yangon
+MA,Maysan
+MB,Melbourne
+MC,Macau
+MD,Maryland
+ME,Maine
+MH,Muthanna
+MI,Michigan
+MN,Minnesota
+MO,Missouri
+MR,Madrid
+MS,Mississippi
+MT,Montana
+MU,Murcia
+MX,Mexico City
+N1,New Jersey
+NA,Najaf
+NC,North Carolina
+ND,North Dakota
+NE,Nebraska
+NH,New Hampshire
+NI,Nineveh
+NM,New Mexico
+NR,Navarra
+NT,Northern Territory
+NV,Nevada
+O1,Oudenaarde
+OB,Oblast
+OH,Ohio
+OK,Oklahoma
+OR,Oregon
+P1,Prague
+PA,Pennsylvania
+PJ,Punjab
+PP,Peloponnisos
+QA,Al Qadisiyyah
+QL,Queensland
+RI,Rhode Island
+S0,Singapura
+SA,South Australia
+SB,Surabaya
+SC,South Carolina
+SD,South Dakota
+SL,Saladin
+SR,Siem Reap
+SU,Sulawesi
+SX,Shaanxi
+SY,Sulaymaniyah
+T1,Bangkok
+T2,Narathiwat
+T3,Yala
+T4,Pattani
+T5,Nakhon Ratchasima
+TA,Tasmania
+TI,Tunis
+TL,Toulouse
+TN,Tamil Nadu
+TS,Tennessee
+TX,Texas
+Tz,Dar es Salaam
+U1,London
+UT,Utah
+VA,Virginia
+VC,Valencia
+VD,Veldhoven
+VT,Vermont
+WA,Wasit
+WI,Wisconsin
+WV,West Virginia
+WY,Wyoming
+ZH,Zhejiang

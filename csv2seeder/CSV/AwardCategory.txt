@@ -1,0 +1,7 @@
+code:::description
+01:::Anugerah yang membawa gelaran
+02:::Anugerah yang tidak membawa gelaran
+03:::Anugerah dalam perkhidmatan awam 
+04:::Anugerah dalam perkhidmatan awam yang tidak membawa gelaran
+05:::Anugerah Akademik dalam Perkhidmatan
+99:::Lain-lain Anugerah

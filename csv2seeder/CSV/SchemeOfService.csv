@@ -1,0 +1,1523 @@
+code,name,,serviceClassCode
+1-APN-001,Orang Kaya Bendahara Sri Maharaja,,1
+1-APN-002,Orang Kaya Besar Maharaja Diraja,,1
+1-APN-003,Orang Kaya Temenggung Paduka Diraja,,1
+1-APN-004,Orang Kaya Menteri Paduka Seri,,1
+1-APN-005,Orang Kaya-Kaya Laksamana Raja Mahkota,,1
+1-APN-006,Orang Kaya-Kaya Seri Adika Raja Shahbandar Perak,,1
+1-APN-007,Orang Kaya-Kaya Panglima Kinta S/Amar Bangsa Diraja,,1
+1-APN-008,Orang Kaya-Kaya Panglima Bukit Gantang S/Amar Diraja,,1
+1-APN-009,Orang Kaya-Kaya Shahbandar Paduka Indera,,1
+1-APN-010,Orang Kaya-Kaya Setia Bijaya Diraja,,1
+1-APN-011,Orang Kaya-Kaya Iman Paduka Tuan,,1
+1-APN-012,Orang Kaya-Kaya Sri Agar Diraja,,1
+1-APN-013,"Raja Kecil Besar, Raja Kecil Sulung, Raja Kecil Tengah dan Raja Kecil Bongsu",,1
+1-APN-014,Toh Muda Orang Besar Empat,,1
+1-APN-015,Toh Muda Orang Besar Lapan,,1
+1-APN-016,Orang Besar Enam Belas,,1
+1-APN-017,Orang Besar Tiga Puluh Dua,,1
+1-APN-018,Elaun Bertugas Bagi Orang-Orang Besar Jajahan,,1
+1-APN-019,Raja Chik Dewa Pawang Diraja,,1
+1-APN-020,Toh Pawang Dewa Jaya Diraja Pawang Diraja,,1
+1-SOK-001,Juruiring,,1
+1-SOK-002,Bentara Kiri,,1
+1-SOK-003,Bentara Perempuan,,1
+1-SOK-004,Pelayan Rumah,,1
+1-SOK-005,Dang Perwara,,1
+1-SOK-006,Panglima Perang Kanan,,1
+1-SOK-007,Panglima Perang Kiri,,1
+1-SOK-008,Pelayan Istana,,1
+1-SOK-009,Penghulu Luar/Penghulu Dalam/Penghulu Balai,,1
+1-SOK-010,Tukang Air,,1
+1-SOK-011,Ratnapuri,,1
+1-SOK-013,Pelayan Besar,,1
+1-SOK-014,Ketua Pelayan,,1
+1-SOK-015,Bentara Istana,,1
+1-SOK-016,Imam Dan Guru,,1
+1-SOK-017,Orang Balai Besar/Nobat,,1
+1-SOK-018,Pembaca Quran Makam Diraja,,1
+1-SOK-019,Amah,,1
+1-SOK-020,Bentara Kanan,,1
+1-SOK-021,Pembaca Quran Makam Langgar,,1
+1-SOK-022,Orang Balai Nobat,,1
+1-SOK-023,Ketua Bentara,,1
+1-SOK-024,Pengelola Bijaya Diraja,,1
+1-SOK-025,Penyelenggara Istana,,1
+1-SOK-026,Penyelia Istana,,1
+1-SOK-027,Penolong Penyelenggara Istana,,1
+1-SOK-028,Suruhan Khas,,1
+1-SOK-029,Pegawai Protokol Istana,,1
+1-SOK-030,Sarjan/Bentara Muda/Sarjan (U),,1
+1-SOK-031,Bentara Muda,,1
+1-SOK-032,Panglima Perang,,1
+1-SOK-033,Pawang Diraja,,1
+1-SOK-034,Penolong Pawang Diraja,,1
+1-SOK-035,Bentara Lelaki,,1
+1-SOK-036,Juruiring Preman,,1
+1-SOK-037,Pengawas Kanan,,1
+1-SOK-038,Pengawas Istana,,1
+1-SOK-039,Penolong Penyelia Istana,,1
+1-SOK-012,Atendan Sultan/Tengku Ampuan/Tambahan/Perempuan,,1
+2-PGT-001,Jawatan Terbuka Kumpulan Pengurusan Tertinggi,,2
+2-SOK-001,Jawatan Terbuka Kumpulan Sokongan,,2
+2-PP-001 ,Jawatan Terbuka Kumpulan Pengurusan dan Profesional,,2
+3-APN-001,Menteri,,3
+3-APN-002,Timbalan Menteri,,3
+3-APN-003,Menteri Besar,,3
+3-APN-004,Ketua Menteri,,3
+3-APN-005,Setiausaha Politik,,3
+3-APN-006,YB Penasihat Agama Islam,,3
+3-APN-007,Setiausaha Akhbar,,3
+3-APN-008,Ketua Hakim Negara,,3
+3-APN-009,Hakim,,3
+3-APN-010,Presiden Mahkamah Rayuan,,3
+3-APN-011,Hakim Besar,,3
+3-APN-012,Pesuruhjaya Kehakiman,,3
+3-APN-013,Ketua Audit Negara,,3
+3-APN-014,Yang Dipertua Dewan Rakyat,,3
+3-APN-015,Pengerusi,,3
+3-APN-016,Timbalan Pengerusi,,3
+3-APN-017,Ahli,,3
+3-APN-018,Yang Dipertua Dewan Negara,,3
+3-APN-019,Timbalan Menteri Besar,,3
+3-APN-020,Timbalan Ketua Menteri,,3
+3-APN-021,Yang Dipertua,,3
+3-APN-022,Pengerusi Majlis Penasihat Ekonomi Negara,,3
+3-APN-023,Duta Khas,,3
+3-APN-024,YB Penasihat Khas,,3
+3-APN-026,Penasihat Hal Ehwal Sosial dan Kebudayaan,,3
+4-PP-001,Pegawai Pemasaran,,4
+4-PP-002,Pegawai Pemerosesan Visa,,4
+4-PP-003,Penterjemah,,4
+4-PP-004,Pegawai Pelaburan,,4
+4-PP-005,Jurubahasa,,4
+4-PP-006,Eksekutif Pemasaran,,4
+4-PP-007,Pengurus Pemasaran,,4
+4-PP-008,Pegawai Penerbitan/Penterjemah I,,4
+4-PP-009,Pegawai Penerbitan/Penterjemah II,,4
+4-PP-010,Pegawai Dokumen,,4
+4-SOK-001,Kerani/Jurutaip,,4
+4-SOK-002,Jaga,,4
+4-SOK-003,Pemandu/Operator Wayang Gambar,,4
+4-SOK-004,Juruteknik Rendah,,4
+4-SOK-005,Penghantar Cepat,,4
+4-SOK-006,Pekerja Awam (Jaga/Caretaker/Tukang Kebun),,4
+4-SOK-007,Pekerja Am,,4
+4-SOK-008,Kerani/Penyambut Tetamu,,4
+4-SOK-009,Penunggu Rumah,,4
+4-SOK-010,Pencuci Pejabat,,4
+4-SOK-011,Pemandu,,4
+4-SOK-012,Pengawal Keselamatan,,4
+4-SOK-013,Setiausaha,,4
+4-SOK-014,Kerani,,4
+4-SOK-015,Atendan Pejabat/Pemandu,,4
+4-SOK-016,Pembantu Penerbitan/Jurubahasa,,4
+4-SOK-017,Pekeranian/Operasi Kerani Besar,,4
+4-SOK-018,Operator Telefon/Penyambut Tetamu,,4
+4-SOK-019,Tukang Kebun,,4
+4-SOK-020,Pemandu Kenderaan Bermotor/Penghantar Cepat,,4
+4-SOK-021,Tukang Sapu,,4
+4-SOK-022,Penghantar Surat,,4
+4-SOK-023,Pembantu Penerangan,,4
+4-SOK-024,Pelayan Pejabat,,4
+4-SOK-025,Jurutrengkas,,4
+4-SOK-026,Penyelia Kediaman,,4
+4-SOK-027,Kerani Besar,,4
+4-SOK-028,Kerani Kewangan,,4
+4-SOK-029,Pembantu Rumah/Tukang Sapu,,4
+4-SOK-030,Pembantu Kerani,,4
+4-SOK-031,Kerani/Jurubahasa,,4
+4-SOK-032,Pembantu Penerbitan/Penterjemah,,4
+4-SOK-033,Juruteknik,,4
+4-SOK-034,Jurutaip,,4
+4-SOK-035,Penyelia Pejabat,,4
+4-SOK-036,Pembantu Filem,,4
+4-SOK-037,Pencuci Rumah,,4
+4-SOK-038,Pembantu Akhbar,,4
+4-SOK-039,Kerani Konsular,,4
+4-SOK-040,Setiausaha/Jurutrengkas,,4
+4-SOK-041,Pembantu Rumah VIP,,4
+4-SOK-042,Pembantu Perpustakaan,,4
+4-SOK-043,Kerani Visa,,4
+4-SOK-044,Pembantu Penyelia,,4
+4-SOK-045,Setiausaha Sosial,,4
+4-SOK-046,Pegawai Penyelidikan Surat-Surat,,4
+4-SOK-047,Jurutrengkas Tingkatan 1,,4
+4-SOK-048,Buruh Am,,4
+4-SOK-049,Pegawai Kerani Tingkatan I,,4
+4-SOK-050,Pegawai Kerani Tingkatan II,,4
+4-SOK-051,Pegawai Kerani Tingkatan III,,4
+4-SOK-052,Setiausaha Kepada TYT Duta Besar,,4
+4-SOK-053,Tukang Masak,,4
+4-SOK-054,Penunggu Pejabat,,4
+4-SOK-055,Setiausaha Pejabat/Jurutrengkas,,4
+4-SOK-056,Setiausaha Pejabat/Jurutaip,,4
+4-SOK-057,Penjaga Boiler,,4
+4-SOK-058,Penyelia Teknik,,4
+4-SOK-059,Setiausaha Kongres,,4
+4-SOK-060,Penolong Pegawai Hal Ehwal Ekonomi,,4
+4-SOK-061,Penolong Pegawai Kebajikan Pelajar,,4
+4-SOK-062,Pembantu Tadbir (Kesetiausahaan),,4
+4-SOK-063,Pembantu Tadbir Rendah (Pembantu Kerani),,4
+4-SOK-064,Pembantu Tadbir Rendah (Jurutaip),,4
+4-SOK-065,Pencari Fail,,4
+4-SOK-066,Pembantu Am Pejabat (Penolong Penyelia Rumah),,4
+4-SOK-067,Penyelia Asrama (Penyelia Rumah),,4
+4-SOK-068,Pembantu Tadbir Rendah (Penyambut Tetamu/Operator),,4
+4-SOK-069,Pembantu Tadbir Pejabat (Pembantu/Warden/Kerani/Jurutaip),,4
+4-SOK-070,Pemandu/Pekerja Am,,4
+4-SOK-071,Pemandu/Pekerja Am/Penghantar Cepat,,4
+4-SOK-072,Pembantu Rumah/Jaga,,4
+4-SOK-073,Pekerja Awam (Jaga),,4
+4-SOK-074,Pembantu Tadbir (Akaun),,4
+4-SOK-075,Pemandu Kenderaan,,4
+4-SOK-076,Pembantu Tadbir (Perkeranian/Operasi),,4
+4-SOK-077,Kerani (Imigresen),,4
+4-SOK-078,Pembantu Tadbir Rendah (Pembantu Warden/Kerani/Jurutaip),,4
+4-SOK-079,Pekerja Rendah Awam (Jaga/Caretaker/Tukang Kebun),,4
+5-PP-001,Pegawai Eksekutif,,5
+5-PGT-001,Timbalan Pengurus Besar,,5
+5-PGT-002,Pegawai Sains Nuklear,,5
+5-PGT-003,Ketua Pegawai Eksekutif,,5
+5-PGT-004,Ketua Pegawai Operasi,,5
+5-PGT-005,Ketua Pegawai Strategi,,5
+5-PGT-006,Pengarah,,5
+5-PGT-007,Pengurus Besar Kanan,,5
+5-PP-002,Pengurus Kanan,,5
+5-PP-003,Pengurus,,5
+5-PP-004,Jurutera,,5
+5-PP-005,Eksekutif Kanan,,5
+5-SOK-001,Merinyu Bangunan,,5
+5-SOK-003,Juruteknik Malaria,,5
+5-SOK-004,Kadet Pegawai laut,,5
+5-SOK-005,Juruteknik Tibi,,5
+5-SOK-006,Penguasa Stesen Pam,,5
+5-SOK-007,Merinyu Tuak,,5
+5-SOK-008,Penyelidik Hal Ehwal Ugama,,5
+5-SOK-009,Pembuat Pukat,,5
+5-SOK-010,Odeli Hakim,,5
+5-SOK-011,Pembantu Haiwan/Perusahaan Ternak Rendah,,5
+5-SOK-012,Pemandu Lanci,,5
+5-SOK-013,Guru Quran Istana,,5
+5-SOK-014,Bakal Tukang,,5
+5-SOK-015,Pengurus/Penjual Tuak,,5
+5-SOK-016,Pelayan Dapur,,5
+5-SOK-017,Tukang Kadar,,5
+5-SOK-018,Electrokardiografer,,5
+5-SOK-019,Pembantu Tukang Besi,,5
+5-SOK-020,Juruselam,,5
+5-SOK-021,Buruh Penyembur,,5
+5-SOK-022,Penyapu Limbungan,,5
+5-SOK-023,Tukang Api,,5
+5-SOK-024,Tukang Geris,,5
+5-SOK-025,Pemandu Krane,,5
+5-SOK-026,Penjaga Jentera Dandang,,5
+5-SOK-027,Penyelia Tukang,,5
+5-SOK-028,Penolong Pegawai Perancangan,,5
+5-SOK-029,Operator Kerani,,5
+5-SOK-030,Pembantu Jurutera,,5
+5-SOK-031,Merinyu Kilang dan Jentera,,5
+5-SOK-032,Monitor,,5
+5-SOK-033,Tukang Sapu,,5
+5-SOK-034,Pressman Foreman/Asst. Foreman(PTG),,5
+5-SOK-035,Penyelia Pembungkus,,5
+5-SOK-037,Kerani/Jurutaip (Tambahsentara),,5
+5-SOK-038,Pembantu Kejuruteraan,,5
+5-SOK-039,Penyelia Kilang,,5
+5-SOK-040,Merinyu Kerajaan Tempatan,,5
+5-SOK-041,Merinyu Jambatan,,5
+5-SOK-036,Penolong Mekanik Alat,,5
+5-SOK-042,Pembantu Perikanan Rendah,,5
+5-SOK-043,Pekerja Stor,,5
+5-SOK-044,Merinyu Majlis Bandaran,,5
+5-SOK-045,Linesman,,5
+5-SOK-046,Jawatan Kumpulan,,5
+5-SOK-047,Juragan,,5
+5-SOK-048,Juruelektrik,,5
+5-SOK-049,Juruteknik Peralatan,,5
+5-SOK-050,Kakitangan Ambilan Tempatan,,5
+5-SOK-051,Kerani/Penterjemah,,5
+5-SOK-052,Pelatih Kategori 'A',,5
+5-SOK-053,Pembantu Perancang,,5
+5-SOK-054,Pembantu Stor Rendah,,5
+5-SOK-055,Pencatat Data,,5
+5-SOK-056,Penolong Pegawai Perancang,,5
+5-SOK-057,Penolong Pengelola Kemajuan Masyarakat,,5
+5-SOK-058,Penyelenggara Pita,,5
+5-SOK-059,Tukang Jentera,,5
+5-SOK-060,Tukang Vulkum,,5
+5-SOK-061,Tutor,,5
+5-SOK-062,Penolong Pegawai Eksekutif,,5
+5-SOK-063,Pentadbir Kanan,,5
+5-SOK-064,Pentadbir,,5
+5-SOK-065,Pembantu Eksekutif,,5
+5-SOK-066,Pembantu Am,,5
+5-SOK-002,Merinyu Kawalan Mutu,,5
+A-SOK-020,Penolong Pemeriksa Kapal Terbang,,A    
+A-JKD-007,Jurumudi,,A    
+A-JKD-006,Anak Perahu,,A    
+AB-BSP-001,Pemeriksa Kereta Motor,,A    
+AL-PP-001,Pegawai Laut,,A    
+AT-PP-001,Juruterbang/Pemeriksa Juruterbang,,A    
+AT-PP-002,Pemeriksa Kapal Terbang,,A    
+A-JKD-001,Operator Aerobridge,,A    
+A-JKD-002,Kelasi/Jurumudi,,A    
+A-JKD-004,Pemandu Lokomotif Rendah,,A    
+A-JKD-003,Pembantu/Penjaga Rumah Api,,A    
+A-JKB-002,Penolong Jurutera Laut,,A    
+A-JKB-003,Pembantu Teknik Kapal Terbang,,A    
+A-JKB-004,Pembantu Teknik Penerbangan,,A    
+A-JKB-005,Penolong Pegawai Laut,,A    
+A-JKB-001,Penolong Pegawai Kawalan Trafik Udara,,A    
+A-SOK-019,Pembantu Laut,,A    
+A-JKD-005,Pemandu Enjin Sangkut,,A    
+A-PP-007,Pemeriksa Kapal Terbang,,A    
+AA-SOK-001,Pemandu Lokomotif Sabah,,A    
+A-PGT-006,Pemeriksa Kapal Terbang Pengurusan Tertinggi,,A    
+A-PP-001  ,Juruterbang/Pemeriksa Juruterbang,,A    
+A-PP-002  ,Pegawai Kawalan Trafik Udara,,A    
+A-PP-003  ,Jurutera Laut,,A    
+A-PP-004  ,Arkitek Laut,,A    
+A-PP-005  ,Pegawai Laut,,A    
+A-SOK-001 ,Penolong Pegawai Kawalan Trafik Udara,,A    
+A-SOK-002 ,Pembantu Kawalan Trafik Udara,,A    
+A-SOK-003 ,Pemeriksa Kapal Terbang,,A    
+A-SOK-004 ,Pembantu Teknik Kapal Terbang,,A    
+A-SOK-005 ,Operator Aerobridge,,A    
+A-SOK-006 ,Penolong Jurutera Laut,,A    
+A-SOK-007 ,Pembantu Juruenjin Laut/Juruenjin Laut,,A    
+A-SOK-008 ,Merinyu Laut,,A    
+A-SOK-009 ,Penolong Pegawai Laut,,A    
+A-SOK-010 ,Serang,,A    
+A-SOK-011 ,Kelasi/Jurumudi,,A    
+A-SOK-012 ,Penjaga Rumah Api,,A    
+A-SOK-013 ,Pemeriksa Kereta Motor,,A    
+A-BSP-001,Pemandu Lokomotif,,A    
+A-SOK-015 ,Pembantu Laut,,A    
+A-SOK-016 ,Pengajar Merin,,A    
+A-SOK-017 ,Pemandu Lokomotif Rendah,,A    
+A-PP-006  ,Malim,,A    
+A-PGT-001 ,Juruterbang/Pemeriksa Juruterbang Pengurusan Tertinggi,,A    
+A-PGT-002 ,Pegawai Kawalan Trafik Udara Pengurusan Tertinggi,,A    
+A-PGT-003 ,Jurutera Laut Pengurusan Tertinggi,,A    
+A-PGT-004 ,Arkitek Laut Pengurusan Tertinggi,,A    
+A-PGT-005 ,Pegawai Laut Pengurusan Tertinggi,,A    
+A-JKA-001,Juruterbang/Pemeriksa Juruterbang,,A    
+A-JKA-002,Pegawai Kawalan Trafik Udara,,A    
+A-JKA-003,Pemeriksa Kapal Terbang,,A    
+A-JKA-004,Jurutera Laut,,A    
+A-JKA-005,Arkitek Laut,,A    
+A-JKA-006,Pegawai Laut,,A    
+A-JKA-007,Malim,,A    
+A-JKC-001,Pegawai Perhubungan,,A    
+A-JKC-002,Pembantu Laut,,A    
+A-JKC-003,Pengajar Merin,,A    
+A-JKC-004,Merinyu Laut,,A    
+A-JKC-005,Serang,,A    
+A-JKC-006,Ketua Pegawai,,A    
+A-JKC-007,Pemeriksa Kereta Motor,,A    
+A-PP-008,Pegawai Laut,,A    
+A-SOK-018,Penolong Pegawai Laut,,A    
+AB-SOK-001,Pemeriksa Kereta Motor,,A    
+B-JKC-002,Jurutulis Cina,,B    
+B-JKC-001,Pembantu Penerbit Rancangan,,B    
+B-PGT-003,Artis Budaya Pengurusan Tertinggi,,B    
+B-JKC-003,Pembantu Kebudayaan,,B    
+B-JKA-001,Pegawai Penerbit Rancangan,,B    
+B-JKA-002,Pegawai Seni Muzik,,B    
+B-JKA-003,Pegawai Seni Pereka,,B    
+B-JKA-004,Pegawai Kebudayaan (Universiti),,B    
+B-JKA-005,Pegawai Kebudayaan,,B    
+B-PGT-001 ,Penerbit Rancangan Pengurusan Tertinggi,,B    
+B-PGT-002 ,Ahli Muzik Pengurusan Tertinggi,,B    
+B-PGT-005 ,Pegawai Kebudayaan Pengurusan Tertinggi,,B    
+B-BSP-001 ,Penerbit Rancangan,,B    
+B-BSP-002 ,Ahli Muzik,,B    
+B-BSP-003 ,Pereka,,B    
+B-BSP-004 ,Ahli Fotografi,,B    
+B-BSP-005 ,Pegawai Kebudayaan,,B    
+B-SOK-002,Penari,,B    
+B-PGT-006,Pereka Pengurusan Tertinggi,,B    
+B-PGT-007,Ahli Fotografi Pengurusan Tertinggi,,B    
+B-PGT-008,Jurusolek Pengurusan Tertinggi,,B    
+B-BSP-006,Artis Budaya,,B    
+B-SOK-004,Jurusolek,,B    
+B-JKB-001,Penolong Pegawai Penerbit Rancangan,,B    
+B-JKB-002,Penolong Pegawai Kebudayaan,,B    
+B-JKD-001,Pembantu Rendah Penerbit Rancangan,,B    
+B-JKD-002,Pembantu Rendah Kebudayaan,,B    
+B-JKD-003,Penari,,B    
+B-JKC-004,Pelukis,,B    
+B-BSP-008,Jurufotografi,,B    
+C-PGT-009,Pegawai Meteorologi Pengurusan Tertinggi,,C    
+C-SOK-019,Penolong Pegawai Meteorologi,,C    
+C-SOK-020,Pembantu Meteorologi,,C    
+C-PGT-010,Pegawai Geosains Pengurusan Tertinggi,,C    
+C-PP-012,Pegawai Geosains,,C    
+C-PGT-011,Pegawai Penyediaan Makanan Pengurusan Tertinggi,,C    
+C-SOK-021,Penolong Pegawai Geosains,,C    
+C-SOK-022,Pembantu Geosains,,C    
+C-JKD-0056,Pembantu Menggerudi,,C    
+C-JKD-006,Pembantu Menggerudi,,C    
+C-JKD-001,Pencatit Data Gerudi,,C    
+C-JKD-002,Pembantu kaji Bumi Rendah,,C    
+C-JKD-003,Pembantu Kaji Cuaca Rendah,,C    
+C-JKD-004,Pembantu makmal Rendah,,C    
+C-JKD-005,Pembantu Makmal Filem Rendah,,C    
+C-JKB-001,Penolong Pegawai Galian,,C    
+C-JKB-002,Penolong Pegawai Kimia Bumi,,C    
+C-JKB-003,Penolong Pegawai Kaji Cuaca,,C    
+C-JKB-004,Penolong Pegawai Kawalan Alam Sekitar,,C    
+C-JKB-005,Pasukan Percubaan,,C    
+C-JKB-006,Penolong Pegawai Makmal Filem,,C    
+C-JKB-007,Penolong Pegawai Teknologi Makanan,,C    
+C-JKB-008,Penolong Pegawai Penyediaan Makanan,,C    
+C-PP-011,Pegawai Meteorologi,,C    
+C-PP-010,Pegawai Penyediaan Makanan,,C    
+C-PP-010,Pegawai Dietetik,,C    
+C-PGT-007,Pegawai Teknologi Makanan Pengurusan Tertinggi,,C    
+C-PGT-008,Pegawai Dietetik Pengurusan Tertinggi,,C    
+C-PP-001  ,Pegawai Galian,,C    
+C-PP-002  ,Pegawai Kimia Bumi,,C    
+C-PP-003  ,Pegawai Kaji Bumi (Geofizik/Kaji Bumi),,C    
+C-PP-004  ,Pegawai Kawalan Alam Sekitar,,C    
+C-PP-005  ,Pegawai Sains,,C    
+C-PP-006  ,Pegawai Kaji Cuaca,,C    
+C-PP-007  ,Pegawai Makmal Filem,,C    
+C-PP-008  ,Pegawai Teknologi Makanan,,C    
+C-PP-009  ,Penyelia Jenis Makanan,,C    
+C-SOK-001 ,Penolong Pegawai Galian,,C    
+C-SOK-002 ,Pembantu Galian,,C    
+C-SOK-003 ,Penolong Pegawai Kimia Bumi,,C    
+C-SOK-004 ,Pembantu Kaji Bumi,,C    
+C-SOK-005 ,Penolong Pegawai Kawalan Alam Sekitar,,C    
+C-SOK-006 ,Penolong Pegawai Sains,,C    
+C-SOK-007 ,Pembantu Makmal,,C    
+C-SOK-008 ,Penolong Pegawai Kaji Cuaca,,C    
+C-SOK-009 ,Pembantu Kaji Cuaca,,C    
+C-SOK-010 ,Penolong Pegawai Makmal Filem,,C    
+C-SOK-011 ,Pembantu Makmal Filem,,C    
+C-SOK-012 ,Penolong Pegawai Penyediaan Makanan,,C    
+C-SOK-013 ,Penolong Pegawai Teknologi Makanan,,C    
+C-SOK-014 ,Pencatit Data Gerudi,,C    
+C-SOK-015 ,Pembantu Kaji Bumi Rendah,,C    
+C-SOK-016 ,Pembantu Makmal Rendah,,C    
+C-SOK-017 ,Pembantu Kaji Cuaca Rendah,,C    
+C-SOK-018 ,Pembantu Makmal Filem Rendah,,C    
+C-PGT-001 ,Pegawai Galian Pengurusan Tertinggi,,C    
+C-PGT-002 ,Pegawai Kimiabumi Pengurusan Tertinggi,,C    
+C-PGT-003 ,Pegawai Kaji Bumi (Geofizik/Kaji Bumi) Pengurusan Tertinggi,,C    
+C-PGT-004 ,Pegawai Kawalan Alam Sekitar Pengurusan Tertinggi,,C    
+C-PGT-005 ,Pegawai Sains Pengurusan Tertinggi,,C    
+C-PGT-006 ,Pegawai Kajicuaca Pengurusan Tertinggi,,C    
+C-JKA-001,Pegawai Galian,,C    
+C-JKA-002,Pegawai Kimia Bumi,,C    
+C-JKA-003,Pegawai Kaji Bumi (Geofizik/Kaji Bumi),,C    
+C-JKA-004,Ahli Kajicuaca,,C    
+C-JKA-005,Pegawai Kawalan Alam Sekitar,,C    
+C-JKA-006,Pegawai Sains,,C    
+C-JKA-007,Pegawai Penyelidik,,C    
+C-JKA-008,Pegawai Makmal Filem,,C    
+C-JKA-009,Pegawai Teknologi Makanan,,C    
+C-JKA-010,Penyelia Jenis makanan,,C    
+C-JKC-006,Penyiasat Luar,,C    
+C-JKC-007,Pembantu Makmal Filem,,C    
+C-JKC-001,Pembantu Galian,,C    
+C-JKC-002,Pembantu Kaji Bumi,,C    
+C-JKC-003,Pembantu Kaji Cuaca,,C    
+C-JKC-004,Pembantu Makmal,,C    
+C-JKC-005,Juruteknik Makmal,,C    
+CA-SOK-001,Pembantu Kawalan Alam Sekitar,,CA   
+DUF-PP-001,Pensyarah Farmasi,,D    
+DUG-PGT-001,Pensyarah Pergigian Pengurusan Tertinggi,,D    
+DG-BSP-001,Pegawai Perkhidmatan Pendidikan,,D    
+DUF-PGT-001,Pensyarah Farmasi Pengurusan Tertinggi,,D    
+DG-PGT-001,Pegawai Perkhidmatan Pendidikan Pengurusan Tertinggi,,D    
+DH-PGT-001,Pegawai Pendidikan Pengajian Tinggi Pengurusan Tertinggi,,D    
+DGA-XXX-001,Jawatan Fleksi DGA Tanpa Kumpulan Perkhidmatan,,D    
+DH-BSP-001,Pegawai Pendidikan Pengajian Tinggi,,D    
+DG-SOK-002,Pegawai Perkhidmatan Pendidikan Bukan Siswazah (PPPBS),,D    
+DD-PP-001,Pensyarah UDM,,D    
+DD-PGT-001,Pensyarah UDM Pengurusan Tertinggi,,D    
+DUG-PP-001,Pensyarah Pergigian,,D    
+DG-PGT-005,Pensyarah KUSZA Pengurusan Tertinggi,,D    
+DG-PGT-006,Pegawai Perkhidmatan Pendidikan Siswazah Pengurusan Tertinggi,,D    
+DM-PGT-001,Pensyarah UiTM Pengurusan Tertinggi,,D    
+DS-PGT-001,Pensyarah Universiti Pengurusan Tertinggi,,D    
+DU-PGT-001,Pensyarah Perubatan Pengurusan Tertinggi,,D    
+DU-PP-001 ,Pensyarah Perubatan,,D    
+DS-PP-001 ,Pensyarah Universiti,,D    
+DM-PP-001 ,Pensyarah UiTM,,D    
+DG-PP-004 ,Guru Bahasa,,D    
+DM-SOK-001,Penolong Pensyarah UiTM,,D    
+DGA-SOK-009,Pegawai Perkhidmatan Pendidikan Lepasan Diploma,,D    
+DG-PP-007 ,Pegawai Perkhidmatan Pendidikan Kat D3,,D    
+DG-SOK-003,Pegawai Perkhidmatan Pendidikan Kat B1,,D    
+DG-SOK-004,Pegawai Perkhidmatan Pendidikan Kat B2,,D    
+DG-SOK-005,Pegawai Perkhidmatan Pendidikan Kat T4,,D    
+DG-PP-006 ,Pegawai Perkhidmatan Pendidikan Siswazah,,D    
+DG-PP-008 ,Penolong Pensyarah 'A',,D    
+DG-SOK-006,Penolong Pensyarah 'B',,D    
+DG-SOK-007,Pengajar Bahasa,,D    
+DV-BSP-001,Pem. Peg. Latihan Vokasional/Pen. Peg. Latihan Vokasional/Peg. Latihan Vokasional,,D    
+DG-PP-005 ,Pensyarah KUSZA,,DG   
+DG-JKB-001,Penolong Pensyarah 'B' UTM,,DG   
+DG-JKB-002,Pengajar Bahasa (UM),,DG   
+DG-JKB-003,Penolong Pensyarah ITM,,DG   
+DG-PGT-007,Guru Bahasa Pengurusan Tertinggi,,DG   
+DGA-JKA-001,Pegawai Perkhidmatan Pendidikan Kat T1,,DGA  
+DGA-JKA-002,Pegawai Perkhidmatan Pendidikan Kat C1,,DGA  
+DGA-JKC-001,Pegawai Perkhidmatan Pendidikan Kat T2,,DGA  
+DGA-JKC-003,Pegawai Perkhidmatan Pendidikan Kat C2,,DGA  
+DGA-JKC-002,Pegawai Perkhidmatan Pendidikan Kat T3,,DGA  
+DGA-JKC-004,Pegawai Keselamatan Peperiksaan,,DGA  
+DGZ-PP-001,Pegawai Perkhidmatan Pelajaran - Angkatan Tentera (Ikhtisas),,DGZ  
+DL-BSP-001,Pegawai Latihan Kemahiran,,DL   
+DL-PGT-001,Pegawai Latihan Kemahiran Pengurusan Tertinggi,,DL   
+DM-JKB-001,Jurulatih ITM,,DM   
+DG-JKA-003,Pegawai Perkhidmatan Pendidikan Siswazah,,DS   
+DG-JKA-004,Guru MARA Kategori D1,,DS   
+DS-JKA-001,Pensyarah Universiti,,DS   
+DG-JKA-005,Pegawai Perkhidmatan Pendidikan Kategori D1,,DS   
+DG-JKA-006,Pegawai Peperiksaan,,DS   
+DG-JKA-007,Guru MARA Kategori D2,,DS   
+DG-JKA-008,Pegawai Perkhidmatan Pendidikan Kategori D2,,DS   
+DM-JKA-001,Guru (Universiti-Universiti),,DS   
+DG-JKA-002,Penolong Pensyarah A UTM,,DS   
+E-PP-003,Perangkawan,,E    
+E-PGT-003,Perangkawan Pengurusan Tertinggi,,E    
+E-SOK-007,Penolong Pegawai Perangkaan,,E    
+E-SOK-008,Pembantu Perangkaan,,E    
+E-JKA-001,Ahli Ekonomi Hutan,,E    
+E-JKA-002,Pegawai Kemajuan Perindustrian,,E    
+E-JKA-003,Pegawai Pembangunan Pemasaran,,E    
+E-JKA-004,Ahli Ekonomi Pertanian,,E    
+E-JKA-007,Pegawai Kemajuan MARA,,E    
+E-JKA-005,Pegawai Pendaftaran Perdagangan,,E    
+E-JKA-006,Pegawai Khidmat Peladang,,E    
+E-JKA-011,Pegawai Pelancongan,,E    
+E-JKA-012,Pegawai Pemasaran,,E    
+E-JKC-001,Pembantu Perusahaan Komoditi,,E    
+E-JKA-013,Pegawai Kemajuan Kraf,,E    
+E-JKC-002,Pembantu Pembangunan,,E    
+E-JKA-014,Pegawai Kemajuan Koperasi,,E    
+E-JKA-015,Pegawai Latihan dan Penyiasatan,,E    
+E-JKA-016,Pensyarah Maktab Kerjasama,,E    
+E-JKC-004,Merinyu Perniagaan,,E    
+E-JKA-010,Ahli Ekonomi (MIDA),,E    
+E-JKA-008,Pegawai Kemajuan Perikanan,,E    
+E-JKA-009,Pegawai Perusahaan Komoditi,,E    
+E-JKC-005,Pembantu Khidmat Peladang,,E    
+E-JKC-006,Pembantu Pembangunan Pemasaran,,E    
+E-JKC-007,Pembantu Pembangunan Koperasi,,E    
+E-JKC-008,Pembantu Kemajuan Perikanan,,E    
+E-JKC-009,Pembantu Pemasaran,,E    
+E-JKC-003,Pembantu Penyelidik,,E    
+E-JKC-010,Pembantu Pelancongan,,E    
+E-PGT-002 ,Pegawai Latihan Pengurusan Tertinggi,,E    
+E-PGT-001 ,Pegawai Ehwal Ekonomi Pengurusan Tertinggi,,E    
+E-PP-001  ,Pegawai Ehwal Ekonomi,,E    
+E-PP-002  ,Pegawai Latihan,,E    
+E-SOK-001 ,Penolong Pegawai Ehwal Ekonomi,,E    
+E-SOK-002 ,Pembantu Ehwal Ekonomi,,E    
+E-SOK-003 ,Penolong Pegawai Latihan,,E    
+E-SOK-004 ,Pembantu Pegawai Latihan,,E    
+E-SOK-005 ,Pengajar Kraf,,E    
+E-SOK-006 ,Pembantu Pemasaran Rendah,,E    
+E-JKB-001,Penolong Pegawai Pendaftaran Perdagangan,,E    
+E-JKB-003,Penolong Pegawai Kemajuan MARA,,E    
+E-JKB-004,Penolong Pegawai Kemajuan Perindustrian,,E    
+E-JKB-005,Penolong Pegawai Perusahaan Komoditi,,E    
+E-JKB-006,Penolong Pegawai Pembangunan Pemasaran,,E    
+E-JKB-008,Penolong Pegawai Perniagaan,,E    
+E-JKB-007,Penolong Pegawai Pembangunan,,E    
+E-JKB-009,Penolong Pegawai Kemajuan Perikanan,,E    
+E-JKB-010,Penolong Pegawai Pelancongan,,E    
+E-JKB-011,Penolong Pegawai Pembangunan Koperasi,,E    
+E-JKB-012,Penolong Pegawai Pemasaran,,E    
+E-JKB-013,Penolong Pegawai Kemajuan Kraf,,E    
+E-JKB-014,Penolong Pensyarah Maktab Kerjasama,,E    
+E-JKB-015,Pengajar Perdagangan Gred 1,,E    
+E-JKD-001,Pembantu Pemasaran Rendah,,E    
+E-JKC-011,Pengajar Perdagangan Gred 11,,E    
+E-SOK-009,Penolong Perangkawan,,E    
+E-BSP-001,Pembantu Pegawai Latihan/Penolong Pegawai Latihan/Pegawai Latihan,,E    
+FA-SOK-001,Penolong Pegawai Teknologi Maklumat,,F    
+F-JKD-001,Operator Mesin Prosesan Data,,F    
+F-JKB-001,Pengatur Program Komputer,,F    
+F-PP-001  ,Pegawai Teknologi Maklumat,,F    
+F-SOK-002 ,Operator Mesin Prosesan Data,,F    
+F-SOK-003 ,Operator Komputer,,F    
+F-SOK-004 ,Penolong Pegawai Teknologi Maklumat,,F    
+F-PGT-001 ,Pegawai Teknologi Maklumat Pengurusan Tertinggi,,F    
+G-JKA-001,Pegawai Pertanian,,F    
+F-JKA-001,Juruanalisa Sistem,,F    
+F-SOK-005,Juruteknik Komputer,,F    
+F-PP-001-01-41,Pembangunan Sistem,,F    
+FT-SOK-001,Juruteknik Komputer,,F    
+F-JKC-001,Operator Komputer,,F    
+G-JKA-006,Pegawai Rancangan Tanah,,G    
+G-JKA-007,Pengurus Taman Sabah,,G    
+G-JKA-008,Pengurus Ladang,,G    
+G-JKC-001,Juruteknik Pertanian,,G    
+G-JKC-002,Pembantu Veterinar,,G    
+G-JKC-003,Renjer Hutan,,G    
+G-JKC-004,Pengajar Membalak,,G    
+G-JKC-005,Pembantu Hidupan Liar,,G    
+G-JKC-006,Pembantu Perikanan,,G    
+G-JKC-007,Penyelia Rancangan Tanah,,G    
+G-JKC-008,Pembantu Taman Sabah,,G    
+G-JKA-002,Pegawai Veterinar,,G    
+G-JKA-001,Pegawai Pertanian,,G    
+G-JKA-003,Pemelihara Hutan Gred 1,,G    
+G-JKA-004,Pegawai Hidupan Liar,,G    
+G-PGT-002 ,Pegawai Veterinar Pengurusan Tertinggi,,G    
+G-PGT-001 ,Pegawai Pertanian Pengurusan Tertinggi,,G    
+G-PGT-003 ,Pemelihara Hutan Pengurusan Tertinggi,,G    
+G-PGT-004,Pegawai Hidupan Liar Pengurusan Tertinggi,,G    
+G-PGT-005 ,Pegawai Perikanan Pengurusan Tertinggi,,G    
+G-PP-001  ,Pegawai Pertanian,,G    
+G-PP-002  ,Pegawai Veterinar,,G    
+G-PP-003  ,Pemelihara Hutan,,G    
+G-PP-004  ,Pegawai Hidupan Liar,,G    
+G-PP-005  ,Pegawai Perikanan,,G    
+G-PP-006  ,Pegawai Rancangan Tanah,,G    
+G-PP-007  ,Pengurus Taman/Ladang,,G    
+G-SOK-001 ,Penolong Pegawai Pertanian,,G    
+G-SOK-002 ,Pembantu Pertanian,,G    
+G-SOK-003 ,Penolong Pegawai Veterinar,,G    
+G-SOK-004 ,Pembantu Veterinar,,G    
+G-SOK-005 ,Atendan Haiwan,,G    
+G-SOK-006 ,Penolong Pemelihara Hutan,,G    
+G-SOK-007 ,Renjer Hutan,,G    
+G-SOK-008 ,Pengajar Membalak,,G    
+G-SOK-009 ,Pengawas Hutan,,G    
+G-SOK-010 ,Penolong Pegawai Hidupan Liar,,G    
+G-SOK-011 ,Pembantu Hidupan Liar,,G    
+G-SOK-012 ,Pembantu Hidupan Liar Rendah,,G    
+G-SOK-013 ,Penolong Pegawai Perikanan,,G    
+G-SOK-014 ,Pembantu Perikanan,,G    
+G-SOK-015 ,Pengajar Rendah,,G    
+G-SOK-016 ,Penolong Pegawai Rancangan Tanah,,G    
+G-SOK-017 ,Penyelia Rancangan Tanah,,G    
+G-SOK-018 ,Penolong Pengurus Taman/Ladang,,G    
+G-SOK-019 ,Pembantu Taman/Ladang,,G    
+G-SOK-020 ,Juruteknik Pertanian Rendah,,G    
+G-SOK-021 ,Penyelia Kandang Haiwan,,G    
+G-SOK-022 ,Pembantu Rendah Taman Sabah,,G    
+G-JKB-001,Pembantu Pekebunan,,G    
+G-JKB-002,Penolong Pemelihara Hutan,,G    
+G-JKB-004,Penolong Pegawai Rancangan Tanah,,G    
+G-JKB-005,Penolong Pengurus Taman Sabah,,G    
+G-JKB-006,Penolong Pengurus Ladang,,G    
+G-JKB-007,Penolong Pegawai Pertanian,,G    
+G-JKB-008,Penolong Pegawai Veterinar,,G    
+G-JKB-009,Penolong Pegawai Perikanan,,G    
+G-JKD-007,Pembantu Luar,,G    
+G-JKD-002,Penyelia Kandang Haiwan,,G    
+G-JKD-001,Juruteknik Pertanian Rendah,,G    
+G-JKD-003,Atendan Haiwan,,G    
+G-JKD-004,Pengawas Hutan,,G    
+G-JKD-005,Pembantu Hidupan Liar Rendah,,G    
+G-JKD-006,Pembantu Rendah Taman Sabah,,G    
+G-JKA-005,Pegawai Perikanan,,G    
+G-JKA-006,Pegawai Rancangan Tanah,,G    
+GV-PP-001,Pegawai Veterinar,,G    
+G-BSP-002,Pengawas Hutan,,G    
+G-BSP-003,Renjer Hutan/Penolong Pemelihara Hutan,,G    
+G-SOK-023,Pembantu Veterinar/Penolong Pegawai Veterinar,,G    
+G-BSP-001,Pembantu Hidupan Liar,,G    
+G-PGT-006,Pengurus Taman/Ladang Pengurusan Tertinggi,,G    
+G-PGT-007,Pegawai Rancangan Tanah Pengurusan Tertinggi,,G    
+G-BSP-004,Pembantu Veterinar/Penolong Pegawai Veterinar,,G    
+GA-SOK-001,Pembantu Pertanian,,GA   
+GA-SOK-002,Pembantu Veterinar,,GA   
+GA-SOK-003,Renjer Hutan,,GA   
+GZ-PP-001,Pegawai Veterinar - Angkatan Tentera (Ikhtisas),,GZ   
+H-SOK-001,Pembantu Kemahiran,,H    
+H-SOK-002,Pemandu/Operator Jentera Pemunggah,,H    
+H-SOK-003,Operator Loji,,H    
+H-SOK-004,Pembantu Awam,,H    
+H-SOK-005,Pemandu Kenderaan,,H    
+J-SOK-031,Penolong Perancang Bandar dan Wilayah,,J    
+J-SOK-032,Penjaga Jentera Elektrik,,J    
+JA-BSP-002,Pelukis Pelan (Kejuruteraan Awam)/Penolong Jurutera,,J    
+J-SOK-034,Pelukis Pelan (Seni Bina)/Penolong Pegawai Seni Bina,,J    
+JA-BSP-001,Pelukis Pelan (Seni Bina)/Penolong Pegawai Seni Bina,,J    
+JA-SOK-006,Penolong Pemeriksa Kilang dan Jentera,,J    
+J-SOK-028,Pembantu Teknik Landskap,,J    
+JA-SOK-009,Penolong Juruukur,,J    
+J-SOK-030,Penolong Juruukur Bangunan,,J    
+J-PGT-013,Perancang Bandar dan Wilayah Pengurusan Tertinggi,,J    
+J-PGT-014,Jurugeospatial Pengurusan Tertinggi,,J    
+J-PP-011,Perancang Bandar dan Wilayah,,J    
+J-PP-012,Jurugeospatial,,J    
+J-JKD-001,Pelukis Pelan Rendah,,J    
+J-JKD-002,Pengawas Tali Air,,J    
+J-SOK-025,Penolong Jurutera,,J    
+J-SOK-026,Penolong Pegawai Senibina,,J    
+JA-SOK-008,Penolong Juruukur Bahan,,J    
+J-JKB-001,Pembantu Teknik,,J    
+J-JKB-002,Penolong Pegawai Perancang Bandar dan Desa,,J    
+J-JKB-003,Pembantu Teknik Ukur,,J    
+J-JKB-004,Penolong Pemeriksa Kilang dan Jentera,,J    
+J-JKB-005,Pengajar Ketukangan Gred 1,,J    
+J-JKC-001,Juruteknik,,J    
+J-JKC-002,Pelukis Pelan,,J    
+J-JKC-003,Juruteknik Perancang Bandar dan Desa,,J    
+J-JKC-004,Juruteknik Ukur,,J    
+J-JKC-005,Pembantu Pemeriksa Kilang dan Jentera,,J    
+J-JKC-006,Pengajar Ketukangan Gred II,,J    
+J-JKC-007,Pengajar Ketukangan Gred III,,J    
+J-JKC-008,Penguasa Bekalan Air,,J    
+J-JKC-009,Jurubina Model,,J    
+J-JKC-010,Merinyu Tali Air,,J    
+J-JKC-011,Pemeriksa Tali Air,,J    
+J-JKA-001,Arkitek,,J    
+J-JKA-002,Arkitek Lanskap,,J    
+J-JKA-003,Jurutera,,J    
+J-JKA-004,Juruukur Bahan,,J    
+J-JKA-005,Pegawai Perancang Bandar dan Desa,,J    
+J-JKA-006,Jurukartografi,,J    
+J-JKA-007,Juruukur,,J    
+J-JKA-008,Pemeriksa Kilang dan Jentera,,J    
+J-PP-001  ,Arkitek,,J    
+J-PP-002  ,Arkitek Landskap,,J    
+J-PP-003  ,Jurutera,,J    
+J-PP-004  ,Juruukur Bahan,,J    
+J-PP-005  ,Pegawai Perancang Bandar dan Desa,,J    
+J-PP-006  ,Juruukur,,J    
+J-PP-007  ,Jurukartografi,,J    
+J-PP-008  ,Pemeriksa Kilang dan Jentera,,J    
+J-BSP-001 ,Pem. Peg. Latihan Vokasional/Pen. Peg. Latihan Vokasional/Peg. LatihanVokasional,,J    
+J-SOK-001 ,Pembantu Teknik,,J    
+J-SOK-002 ,Juruteknik,,J    
+J-SOK-003 ,Pelukis Pelan,,J    
+JA-SOK-010 ,Penolong Pegawai Perancang Bandar dan Desa,,J    
+J-SOK-005 ,Juruteknik Perancang Bandar dan Desa,,J    
+J-SOK-006 ,Pembantu Teknik Ukur,,J    
+J-SOK-007 ,Juruteknik Ukur,,J    
+J-SOK-008 ,Penolong Pemeriksa Kilang dan Jentera,,J    
+J-SOK-009 ,Pembantu Pemeriksa Kilang dan Jentera,,J    
+J-SOK-010 ,Penguasa Bekalan Air,,J    
+J-SOK-011 ,Merinyu Tali Air,,J    
+J-SOK-012 ,Pengawas Tali Air,,J    
+J-SOK-018 ,Jurubina Model,,J    
+J-SOK-019 ,Pelukis Pelan Rendah,,J    
+J-PGT-002 ,Arkitek Lanskap Pengurusan Tertinggi,,J    
+J-PGT-004 ,Juruukur Bahan Pengurusan Tertinggi,,J    
+J-PGT-005 ,Pegawai Perancang Bandar dan Desa Pengurusan Tertinggi,,J    
+J-PGT-006 ,Juruukur Pengurusan Tertinggi,,J    
+J-PGT-008 ,Pemeriksa Kilang dan Jentera Pengurusan Tertinggi,,J    
+J-PGT-001 ,Arkitek Pengurusan Tertinggi,,J    
+J-PGT-003 ,Jurutera Pengurusan Tertinggi,,J    
+J-PGT-009,Pegawai Latihan Vokasional Pengurusan Tertinggi,,J    
+J-PGT-012,Juruukur Bangunan Pengurusan Tertinggi,,J    
+J-SOK-022,Penolong Jurutera (Jumud),,J    
+J-SOK-023,Juruteknik Lanskap,,J    
+JA-SOK-007,Penolong Arkitek Landskap,,J    
+J-SOK-013 ,Penerbit Teknik,,J    
+J-SOK-015 ,Juruteknik Rendah,,J    
+J-SOK-016 ,Juruteknik Ukur Rendah,,J    
+J-SOK-017 ,Pengajar Ketukangan Gred 3,,J    
+J-PP-010,Juruukur Bangunan,,J    
+J-SOK-020,Pembantu Teknik Ukur Bangunan,,J    
+JA-SOK-005,Juruteknik Landskap,,JA   
+JA-SOK-001,Juruteknik,,JA   
+JA-SOK-002,Juruteknik Perancang Bandar dan Wilayah,,JA   
+JA-SOK-003,Juruteknik Ukur,,JA   
+JA-SOK-004,Pembantu Pemeriksa Kilang dan Jentera,,JA   
+JZ-PP-001,Pegawai Kejuruteraan - Angkatan Tentera (Ikhtisas),,JZ   
+KP-PP-005,Penguasa Imigresen,,K    
+KP-BSP-001,Penolong Penguasa Imigresen/Penguasa Imigresen,,K    
+KR-PP-001,Pegawai Siasatan,,K    
+KR-SOK-001,Penolong Pegawai Siasatan,,K    
+KR-SOK-002,Pembantu Siasatan,,K    
+KR-PGT-001,Pegawai Siasatan Pengurusan Tertinggi,,K    
+KB-PGT-001,Penguasa Bomba Pengurusan Tertinggi,,K    
+KX-PGT-001,Penguasa Penjara Pengurusan Tertinggi,,K    
+KX-PP-001 ,Penguasa Penjara,,K    
+KB-PP-001 ,Penguasa Bomba,,K    
+KP-PP-001 ,Pegawai Keselamatan,,K    
+KP-PP-002 ,Pegawai Pertahanan Awam,,K    
+KP-SOK-002,Pembantu Pertahanan Awam,,K    
+KP-SOK-003,Penolong Pegawai Pendaftaran,,K    
+KP-SOK-004,Pembantu Pendaftaran,,K    
+KP-SOK-005,Penolong Penguasa Imigresen,,K    
+KX-SOK-001,Penolong Penguasa Penjara,,K    
+KX-SOK-002,Pegawai Penjara,,K    
+KP-SOK-006,Pegawai Perhubungan Preman,,K    
+KP-SOK-007,Amra,,K    
+KP-SOK-008,Pembantu Pendaftaran Rendah,,K    
+KP-SOK-009,Pegawai Imigresen Rendah,,K    
+KB-SOK-001,Penolong Penguasa Bomba,,K    
+KB-SOK-002,Pegawai Bomba,,K    
+KB-SOK-003,Ahli Bomba,,K    
+KP-SOK-010,Penolong Pegawai Keselamatan,,K    
+KP-SOK-011,Pembantu Keselamatan,,K    
+KP-SOK-015,Pengawal Keselamatan,,K    
+KP-SOK-001,Penolong Pegawai Pertahanan Awam,,K    
+KP-SOK-014,Pegawai Imigresen,,K    
+KP-PGT-001,Pegawai Keselamatan Pengurusan Tertinggi,,K    
+KP-PGT-002,Pegawai Pertahanan Awam Pengurusan Tertinggi,,K    
+KP-PP-004,Pegawai Penguat Kuasa,,K    
+KP-SOK-016,Pembantu Penguat Kuasa,,K    
+KP-SOK-017,Penolong Pegawai Penguat Kuasa,,K    
+KJ-XXX-001,Askar Timbalan Setia Negeri Johor,,K    
+KP-BSP-002,Penolong Pegawai Pendaftaran/Pegawai Pendaftaran,,K    
+KX-SOK-003,Pegawai Penjara (Jumud),,K    
+KA-PP-001,Penguasa Penjara,,K    
+KA-SOK-002,Pegawai Penjara,,K    
+KA-SOK-001,Penolong Penguasa Penjara,,K    
+KP-PGT-003,Pegawai Penguat Kuasa Pengurusan Tertinggi,,K    
+KB-JKB-001,Penolong Penguasa Bomba,,KB   
+KB-JKD-001,Ahli Bomba,,KB   
+KB-JKA-001,Penguasa Bomba,,KB   
+KP-JKA-001,Pegawai Keselamatan,,KB   
+KP-JKA-002,Pegawai Pertahanan Awam,,KB   
+KR-JKA-001,Pegawai Siasatan,,KB   
+KB-JKC-001,Pegawai Bomba,,KB   
+KJ-SOK-001,ASKAR TIMBALAN SETIA NEGERI JOHOR,,KJ   
+KP-JCK-001,Pembantu Keselamatan,,KP   
+KB-JKC-002,Pembantu Pertahanan Awam,,KP   
+KB-JKC-003,Pembantu Pendaftaran,,KP   
+KB-JKC-004,Pegawai Imigresen,,KP   
+KB-JKC-005,Pegawai Perhubungan Preman,,KP   
+KP-JKD-001,Amra,,KP   
+KP-JKD-002,Pengawal Keselamatan,,KP   
+KP-JKD-003,Pembantu Pendaftaran Rendah,,KP   
+KP-JKD-004,Pegawai Imigresen Rendah,,KP   
+KP-JKB-001,Penolong Pegawai Keselamatan,,KP   
+KP-JKB-002,Penolong Pegawai Pertahanan Awam,,KP   
+KP-JKB-003,Penolong Pegawai Pendaftaran,,KP   
+KP-JKB-004,Penolong Penguasa Imigresen,,KP   
+KR-JKB-001,Penolong Pegawai Siasatan,,KR   
+KR-JKC-001,Pembantu Siasatan,,KR   
+KX-PP-002,Penguasa Penjara,,KX   
+KX-JKB-001,Penolong Penguasa Penjara,,KX   
+KX-JKA-001,Penguasa Penjara,,KX   
+L-JKB-001,Pembantu Undang-Undang,,L    
+L-SOK-004,Penolong Pegawai Undang-Undang,,L    
+LS-PGT-001,Pegawai Syariah Pengurusan Tertinggi,,L    
+L-JKA-001,Pesuruhjaya Penyemak Undang-Undang,,L    
+L-JKA-002,Pegawai Undang-Undang,,L    
+LS-JKA-001,Pegawai Syariah,,L    
+L-PP-001  ,Pegawai Undang-Undang,,L    
+L-PP-003  ,Pegawai Syariah,,L    
+L-SOK-001 ,Pembantu Undang-Undang,,L    
+L-PGT-001 ,Pegawai Undang-Undang Pengurusan Tertinggi,,L    
+L-PGT-002 ,Pesuruhjaya Penyemak Undang-Undang,,L    
+LS-PP-001,Pegawai Syariah,,L    
+LS-SOK-001,Penolong Pegawai Syariah,,L    
+LS-SOK-002,Pembantu Syariah,,L    
+L-SOK-002,Pembantu Tadbir (Undang-Undang),,L    
+L-SOK-003,Jurubahasa,,L    
+LA-BSP-001,Jurubahasa,,L    
+LS-JKC-001,Jurubahasa,,LS   
+M-JKA-001,Pegawai Tadbir Dan Diplomatik,,M    
+M-PGT-001 ,Pegawai Tadbir Dan Diplomatik Pengurusan Tertinggi,,M    
+M-PP-001  ,Pegawai Tadbir Dan Diplomatik,,M    
+N-PP-001  ,Pegawai Tadbir,,N    
+N-PP-002  ,Pegawai Penerbitan,,N    
+N-PP-003  ,Pegawai Penguatkuasa,,N    
+N-PP-004  ,Pengurus Asrama,,N    
+N-PP-005  ,Perangkawan,,N    
+N-PP-006  ,Pegawai Penyelidik Sosial,,N    
+N-PP-007  ,Jurubahasa Serentak,,N    
+N-SOK-001 ,Penolong Pegawai Tadbir,,N    
+N-SOK-002 ,Pembantu Tadbir (Perkeranian/Operasi),,N    
+N-SOK-003 ,Pembantu Tadbir Rendah,,N    
+N-SOK-004 ,Pembantu Am Pejabat,,N    
+N-SOK-005 ,S/Usaha Yang Dipertua Dewan Rakyat/Dewan Negara/Hakim,,N    
+N-SOK-006 ,Bentara Mesyuarat,,N    
+N-SOK-007 ,Pelapor Perbahasan Parlimen/Dewan Negeri,,N    
+N-SOK-008 ,Pengurus Stesyen,,N    
+N-SOK-009 ,Jurubahasa,,N    
+N-SOK-010 ,Pemeriksa Cap Jari,,N    
+N-SOK-011 ,Penyelia Jurupakaian,,N    
+N-SOK-012 ,Peniup Kaca,,N    
+N-SOK-013 ,Operator Wayarles,,N    
+N-SOK-014 ,Bentara Parlimen,,N    
+N-SOK-015 ,Penyelia Jeti,,N    
+N-SOK-016 ,Penghantar Notis,,N    
+N-SOK-017 ,Penyelamat,,N    
+N-SOK-018 ,Pengawas Pemulihan,,N    
+N-SOK-019 ,Penolong Pegawai Penerbitan,,N    
+N-SOK-020 ,Pembantu Penerbitan,,N    
+N-SOK-021 ,Operator Kamera Offset/Pembuat Plet,,N    
+N-SOK-022 ,Pengawet,,N    
+N-SOK-023 ,Penolong Operator Kamera,,N    
+N-SOK-024 ,Drebar Atau Operator Wayang Gambar,,N    
+N-SOK-025 ,Penolong Pegawai Penguatkuasa,,N    
+N-SOK-027 ,Penolong Pengurus Asrama,,N    
+N-SOK-028 ,Penyelia Asrama,,N    
+N-SOK-029 ,Tukang Masak,,N    
+N-SOK-030 ,Pembantu Perangkaan,,N    
+N-SOK-031 ,Penolong Pegawai Penyelidik Sosial,,N    
+N-SOK-032 ,Pembantu Penyelidik Sosial,,N    
+N-SOK-034 ,Juruteknik Percetakan Rendah,,N    
+N-SOK-035 ,Pembantu Percetakan Rendah,,N    
+N-SOK-036 ,Pembaca Pruf,,N    
+N-SOK-037 ,Pemeriksa Filem Rendah,,N    
+N-SOK-038 ,Operator Mesin Addressograf,,N    
+N-SOK-039 ,Pembantu Kamera Offset,,N    
+N-SOK-040 ,Pembantu Penguatkuasa Rendah,,N    
+N-SOK-041 ,Penyelia Asrama Rendah,,N    
+N-SOK-042 ,Penyelia Atau Pengasuh Pelajar,,N    
+N-SOK-043 ,Pembantu Perangkaan Rendah,,N    
+N-SOK-057 ,Penyelenggara Stor Rendah,,N    
+N-SOK-059 ,Pembantu Pemilih Padi dan Beras,,N    
+N-SOK-060 ,Pembantu Trafik Rendah,,N    
+N-SOK-061 ,Penimbang,,N    
+N-SOK-062 ,Jurupakaian,,N    
+N-SOK-064 ,Pemungut Sewa,,N    
+N-SOK-065 ,Penghantar Berita,,N    
+N-SOK-066 ,Atendan Letak Kereta,,N    
+N-SOK-067 ,Penjaga Kolam Ikan,,N    
+N-SOK-069 ,Pembantu Tadbir (Kesetiausahaan),,N    
+N-SOK-073 ,Penolong Pegawai Perangkaan,,N    
+N-SOK-072 ,Pembantu Penguatkuasa,,N    
+N-SOK-045 ,Pegawai Kerani Rendah,,N    
+N-SOK-063 ,Pencatat Masa,,N    
+N-SOK-033 ,Jurutaip,,N    
+N-SOK-044 ,Penyelia Bangunan,,N    
+N-SOK-074,Penyelia Dobi,,N    
+N-SOK-075,Penolong Pegawai Tadbir Tanah,,N    
+N-SOK-077,Juruaudio Visual,,N    
+N-SOK-078,Pembantu Tadbir Tanah,,N    
+N-SOK-079,Pembantu Kamera/Pemandu,,N    
+NT-SOK-001,Penolong Pegawai Tanah (Pemakaian di Sarawak sahaja),,N    
+N-SOK-080,Pegawai Khidmat Pelanggan,,N    
+N-PGT-001 ,Pegawai Tadbir Pengurusan Tertinggi,,N    
+N-SOK-047 ,Operator Mesin,,N    
+N-SOK-046,Pencari Fail,,N    
+N-SOK-081,Pembantu Pengurusan Murid,,N    
+N-PGT-002 ,Pegawai Penerbitan Pengurusan Tertinggi,,N    
+N-PGT-003 ,Pegawai Penguatkuasa Pengurusan Tertinggi,,N    
+N-PGT-005 ,Perangkawan Pengurusan Tertinggi,,N    
+N-PGT-008 ,Pegawai Tadbir Am Pengurusan Tertinggi,,N    
+N-JKA-001,Pegawai Tadbir Negeri Sarawak,,N    
+N-JKA-002,Pegawai Tadbir Negeri Sabah,,N    
+N-JKA-003,Pegawai Tadbir,,N    
+N-JKA-004,Pegawai Tadbir Negeri,,N    
+N-JKA-005,Pegawai Tadbir Tanah Sarawak,,N    
+N-JKA-006,Pegawai Tadbir Universiti,,N    
+N-JKA-007,Pegawai Tadbir Parlimen,,N    
+N-JKA-008,Pegawai Pelabuhan,,N    
+N-JKA-009,Pegawai Tadbir Trafik,,N    
+N-JKA-010,Pegawai Analisis Pengurusan,,N    
+N-JKA-011,Pengurus Hotel,,N    
+N-JKA-012,Pegawai Stor,,N    
+N-JKA-008,Pegawai Pelabuhan,,N    
+N-JKA-013,Pegawai Rekod Perubatan,,N    
+N-JKA-014,"Pegawai Kebudayaan, Belia dan Sukan",,N    
+N-JKA-015,Pegawai Penerbitan,,N    
+N-JKA-016,Pegawai Penterjemah,,N    
+N-JKA-017,Pegawai Percetakan (BBB/KKT),,N    
+N-JKA-018,Pegawai Percetakan,,N    
+N-JKA-019,Pegawai Sains Penerangan,,N    
+N-JKA-020,Penyunting,,N    
+N-JKA-021,Penerbit Filem,,N    
+N-JKA-022,Penyunting perbahasan Parlimen,,N    
+N-JKA-023,Perangkawan,,N    
+N-JKA-024,Pegawai Penguatkuasa,,N    
+N-JKA-025,Penguasa Perlesenan,,N    
+N-JKA-026,Pengurus Asrama,,N    
+N-JKA-027,Pegawai Penyelidik,,N    
+N-JKA-028,Jurubahasa Serentak,,N    
+N-JKC-001,Pegawai Kerani,,N    
+N-JKC-002,Pembantu Trafik,,N    
+N-JKC-003,Penyelenggara Stor,,N    
+N-JKC-004,Pembantu Rekod Perubatan,,N    
+N-JKC-005,Penyelia Letak Kereta,,N    
+N-JKC-006,Pegawai Kerani Undang-Undang,,N    
+N-JKC-007,Pegawai Kerani Trafik,,N    
+N-JKC-008,Merinyu Kapal,,N    
+N-JKC-009,Penyiasat Luar,,N    
+N-JKC-010,Pelawat Rumah,,N    
+N-JKC-011,Pegawai Petempatan,,N    
+N-JKC-012,Pembantu Kebudayaan Belia dan Sukan,,N    
+N-JKC-013,Pelapor Mahkamah,,N    
+N-JKC-014,Pegawai Saifer,,N    
+N-JKC-015,Juruaudio/Operator Wayarles,,N    
+N-JKC-016,Jurutrengkas,,N    
+N-JKC-017,Perekod,,N    
+N-JKC-018,Penyelia Dobi,,N    
+N-JKC-019,Pemeriksa Cap Jari,,N    
+N-JKC-020,Pelapor Perbahasan Parlimen/Negeri,,N    
+N-JKC-021,Pengurus Stesen,,N    
+N-JKC-022,Penyelia Jurupakaian,,N    
+N-JKC-023,Peniup Kaca,,N    
+N-JKC-024,Pembuat Set,,N    
+N-JKC-025,Pembantu Penerbit,,N    
+N-JKC-026,Pembantu Percetakan (BBB/KKT),,N    
+N-JKC-027,Juruteknik Percetakan,,N    
+N-JKC-028,Pemeriksa Filem,,N    
+N-JKC-029,Penterjemah,,N    
+N-JKC-030,Pemeriksa Penerbitan,,N    
+N-JKC-031,Penolong Penyunting,,N    
+N-JKC-032,Operator Kamera Offset/Pembuat Plet,,N    
+N-JKC-033,Pembantu Perangkaan,,N    
+N-JKC-034,Pembantu Penguasa,,N    
+N-JKC-035,Pemeriksa Lesen,,N    
+N-JKC-036,Pembantu Penguatkuasa Jalan,,N    
+N-JKC-037,Penyelia Asrama,,N    
+N-JKC-038,Pembantu Penyelidik,,N    
+N-SOK-049 ,Penghantar Cepat,,N    
+N-SOK-046 ,Pencari Fail,,N    
+N-SOK-082,Operator Wayarles,,N    
+N-PP-008  ,Pegawai Tadbir Am,,N    
+N-JKD-048,Amah,,N    
+N-JKD-049,Pembantu Kerani/Pembanci,,N    
+N-JKD-045,Pegawai Kerani Rendah,,N    
+N-SOK-090,Pengawas Kawasan Kem,,N    
+N-JKD-046,Pegawai Kecil Pejabat Tanah Tingkatan III,,N    
+N-JKD-047,Atendan Makmal,,N    
+N-SOK-091 ,Pembantu Operasi,,N    
+N-PGT-009 ,Pegawai Penyelidik Sosial Pengurusan Tertinggi,,N    
+N-JKD-044,Atendan Perpustakaan,,N    
+N-SOK-094 ,Penolong Pegawai Pentadbiran tanah,,N    
+N-SOK-092 ,Pembantu Penyediaan Makanan,,N    
+NT-SOK-004,Pembantu Pentadbir Tanah/Penolong Pentadbir Tanah (Pemakaian di Sabah dan Sarawak),,N    
+N-JKC-040,Penyelia Kerja Tingkatan ll,,N    
+N-JKD-030,Pembantu Seranta Penerbitan,,N    
+N-SOK-093,Penolong Pegawai Tanah,,N    
+N-JKD-050,Operator Mesin Penyalin,,N    
+N-JKD-051,Pelayan Pejabat,,N    
+N-JKD-052,Penghantar Surat,,N    
+N-SOK-095,Tukang Mesin/Penjilid Buku,,N    
+N-SOK-096,Pembantu Kerani (Pembanci),,N    
+N-JKD-049,Pelayan Asrama,,N    
+N-JKB-001,Pegawai Eksekutif,,N    
+N-JKB-002,Penolong Pegawai Tadbir (Parlimen),,N    
+N-JKB-003,Penolong Pegawai Pelabuhan,,N    
+N-JKB--004,Penolong Pegawai Tadbir dan Trafik,,N    
+N-JKB-005,Penolong Pegawai Analisis Pengurusan,,N    
+N-JKB-006,Penolong Pegawai Stor,,N    
+N-JKB-007,Penolong Pegawai Rekod Perubatan,,N    
+N-JKB-008,Penguasa Kebun Bunga,,N    
+N-JKB-009,Pegawai Percubaan,,N    
+N-JKB-010,"Pegawai Kebudayaan, Belia dan Sukan",,N    
+N-JKB-011,Penghulu/Penggawa,,N    
+N-JKB-012,Penolong Pegawai Tadbir Tanah,,N    
+N-JKB-013,Pegawai Kanan Tempatan,,N    
+N-JKB-014,Setiausaha Yang Dipertua Dewan Rakyat/Dewan Negara,,N    
+N-JKB-015,Setiausaha Kepada Hakim,,N    
+N-JKB-016,Bentara Mesyuarat,,N    
+N-JKB-017,Penolong Pegawai Penerbitan,,N    
+N-JKB-018,Penolong Pegawai Percetakan (BBB/KKT),,N    
+N-JKB-019,Penolong Penyunting Berita,,N    
+N-JKB-020,Penolong Pegawai Perangkaan,,N    
+N-JKB-021,Penolong Pegawai Penguatkuasa,,N    
+N-JKB-022,Penolong Penguasa Perlesenan,,N    
+N-JKB-024,Penolong Pengurus Asrama,,N    
+N-JKB-025,Penolong Pegawai Penyelidik Sosial,,N    
+N-JKB-026,"Penolong Pegawai Kebudayaan, Belia dan Sukan",,N    
+N-SOK-083,Bentara Parlimen,,N    
+N-JKD-043,Penolong Dapur/Tukang Masak,,N    
+N-SOK-085,Penghulu,,N    
+N-JKC-039,Pelayan Rumah,,N    
+N-SOK-086,Tukang Masak,,N    
+NT-SOK-002,Penolong Pegawai Tanah (Pemakaian di Semenanjung sahaja),,N    
+N-SOK-087,Tukang Kebun,,N    
+N-SOK-088,Tukang Cuci,,N    
+N-SOK-089,Pembantu Setiausaha Pejabat/Setiausaha Pejabat,,N    
+N-SOK-084,Pembuat Set,,N    
+NP-SOK-001,Penghulu,,N    
+N-JKD-001,Pembaca Meter,,N    
+N-JKD-002,Penyelia Rumah Pangsa,,N    
+N-JKD-003,Operator Telefon,,N    
+N-JKD-003,Operator Telefon,,N    
+N-JKD-004,Pengawas Ladang,,N    
+N-JKD-005,Penyambut Tetamu,,N    
+N-JKD-006,Pengawas,,N    
+N-JKD-007,Bailif,,N    
+N-JKD-008,Jurutaip,,N    
+N-JKD-009,Jurutaip Teleprinter,,N    
+N-JKD-010,Penyelenggara Stor Rendah,,N    
+N-JKD-011,Pembantu Trafik Rendah,,N    
+N-JKD-012,Penimbang,,N    
+N-JKD-013,Operator Wayarles,,N    
+N-JKD-014,Jurupakaian,,N    
+N-JKD-015,Pencatit Masa,,N    
+N-JKD-016,Pembantu Am Rendah,,N    
+N-JKD-017,Pembantu Bilik Gelap,,N    
+N-JKD-018,Pembantu Rendah,,N    
+N-JKD-019,Penjaga Kolam Ikan,,N    
+N-JKD-020,Bentara Palimen,,N    
+N-JKD-021,Pemungut Sewa,,N    
+N-JKD-022,Penyelia Jeti,,N    
+N-JKD-023,Penghantar Notis,,N    
+N-JKD-024,Penghantar Berita,,N    
+N-JKD-025,Penyelamat,,N    
+N-JKD-026,Pengawas Pemulihan,,N    
+N-JKD-027,Atendan Letak Kereta,,N    
+N-JKD-028,Juruteknik Percetakan Rendah,,N    
+N-JKD-029,Pembantu Percetakan Rendah,,N    
+N-JKD-0230,Pembaca Pruf,,N    
+N-JKD-031,Pemeriksa Filem Rendah,,N    
+N-JKD-032,Pengawet,,N    
+N-JKD-033,Penolong Operator Kamera,,N    
+N-JKD-034,Pencuci Filem,,N    
+N-JKD-035,Drebar/Operator Wayang Gambar,,N    
+N-JKD-036,Operator Mesin Addressograf,,N    
+N-JKD-038,Pembantu Kamera Offset,,N    
+N-JKD-039,Pembantu Perangkaan Rendah,,N    
+N-JKD-037,Pembantu Kamera/Pemandu,,N    
+N-JKD-040,Pembantu Penguatkuasa Rendah,,N    
+N-JKD-041,Penyelia Asrama Rendah,,N    
+N-JKD-042,Penyelia/Pengasuh Pelajar,,N    
+NT-BSP-001,Pembantu Pentadbir Tanah/Penolong Pentadbir Tanah (Pemakaian di Sabah dan Sarawak),,N    
+N-BSP-001,Pembantu Setiausaha Pejabat/Setiausaha Pejabat,,N    
+N-SOK-097,Pencetak Pelan,,N    
+NP- SOK-002,Penghulu,,NP   
+NT-SOK-003,Penolong Pegawai Pentadbiran Tanah,,NT   
+NT-SOK-002,Penolong Pegawai Tanah (Semenanjung),,NT   
+P-BSP-001,Penolong Pegawai Siasatan/Pegawai Siasatan,,P    
+P-PGT-001,Penolong Pegawai Siasatan/Pegawai Siasatan Pengurusan Tertinggi,,P    
+Q-JKD-012,Pekerja Mengawal Makhluk Perosak,,Q    
+Q-JKD-013,Pekerja Am,,Q    
+Q-JKD-014,Pekerja Ujian Kayu,,Q    
+Q-JKB-001,Penolong Pegawai Penyelidik,,Q    
+Q-JKB-011,Penolong Pegawai Pembangunan Peneroka,,Q    
+Q-JKD-001,Pembantu Penyelidik Rendah,,Q    
+Q-JKD-002,Operator Pam Minyak/Gas,,Q    
+Q-JKD-003,Pekerja Dobi,,Q    
+Q-JKD-004,Pekerja Sistem Pembentongan,,Q    
+Q-JKD-005,Nelayan,,Q    
+Q-JKD-006,Pekerja Koservensi,,Q    
+Q-JKD-007,Pekerja Perparitan Bawah Tanah,,Q    
+Q-JKD-008,Pembiak Tumbuhan,,Q    
+Q-JKD-009,Pekerja Krematoria,,Q    
+Q-JKD-011,Penjalan Jentera Pertanian Pandu,,Q    
+Q-JKD-071,Jurulatih Kawad Rendah,,Q    
+Q-JKD-072,Posmen,,Q    
+Q-JKD-067,Penyemak Perpustakaan,,Q    
+Q-JKD-068,Pembantu Ekonomi Rumah Tangga Rendah,,Q    
+Q-JKD-069,Pembantu Luar Hal Ehwal Orang Asli,,Q    
+Q-JKD-070,Pembantu Pembangunan Keluarga,,Q    
+Q-JKD-066,Pembantu Muzium Rendah,,Q    
+Q-JKD-064,Jaga,,Q    
+Q-JKD-065,Pembantu Rendah Hal Ehwal Islam,,Q    
+Q-JKD-061,Operator Troli/Kren (KTM),,Q    
+Q-JKD-062,Pemandu Troli/Kren (KTM),,Q    
+Q-JKD-063,Pemandu/Operator Jentera Berat Landasan (KTM),,Q    
+Q-JKD-060,Pemandu Injin,,Q    
+Q-JKD-059,Pelangsir (KTM),,Q    
+Q-JKD-057,Pemandu Jentera Pemunggahan,,Q    
+Q-JKD-058,Tukang K3,,Q    
+Q-JKD-056,Drebar Kren (Bergerak),,Q    
+Q-JKD-055,Operator Loji Gred 1 dan 11,,Q    
+Q-JKD-054,Operator Loji Cutter Suction/Pengorek Dipper,,Q    
+Q-JKD-015,Operator Loji Pembentungan,,Q    
+Q-JKD-016,Operator Penggaris Jalan,,Q    
+Q-JKD-017,Pekerja Dermaga,,Q    
+Q-JKD-018,Pekerja Landasan Pelabuhan,,Q    
+Q-JKD-019,Tukang Bahan Bakar,,Q    
+Q-JKD-020,Pekerja Kilang dan Gudang,,Q    
+Q-JKD-021,Pemerah Susu,,Q    
+Q-JKD-022,Atendan Pam Suis,,Q    
+Q-JKD-023,Pekerja Rumah Tingkatan II,,Q    
+Q-JKD-024,Pendulang,,Q    
+Q-JKD-025,Penyelia,,Q    
+Q-JKD-026,Ketua Regu Pelabuhan,,Q    
+Q-JKD-028,Buruh Ukur,,Q    
+Q-JKD-029,Pekerja Rendering,,Q    
+Q-JKD-030,Konduktor Bukit Bendera,,Q    
+Q-JKD-031,Penyelenggara Landasan dan Komunikasi (KBB),,Q    
+Q-JKD-032,Pekerja Logam Putih,,Q    
+Q-JKD-033,Pekerja Mesin,,Q    
+Q-JKD-034,Pekerja Bateri,,Q    
+Q-JKD-035,Pekerja Rencam,,Q    
+Q-JKD-036,Pengecat,,Q    
+Q-JKD-037,Pengetuk Besi,,Q    
+Q-JKD-038,Perawat Kenderaan,,Q    
+Q-JKD-39,Tukang Pakal Bekalan Air,,Q    
+Q-JKD-040,Pekerja Hutan,,Q    
+Q-JKD-041,Penjaga Alat Air,,Q    
+Q-JKD-042,Penjahit,,Q    
+Q-JKD-043,Operator Loji Gred III,,Q    
+Q-JKD-044,Operator Otokleb,,Q    
+Q-JKD-045,Penjaga Binatang DBKL,,Q    
+Q-JKD-046,Penjaga Landasan (Perlabuhan),,Q    
+Q-JKD-053,"Pemandu Kereta, Van, Lori dan Bas",,Q    
+Q-JKD-052,Pemandu Penggelek,,Q    
+Q-JKD-051,Pemandu Pelonggok,,Q    
+Q-JKD-050,Drebar Pemunggah,,Q    
+Q-JKA-023,Pegawai Pemulihan,,Q    
+Q-JKD-047,Atendan Motor Letrik,,Q    
+Q-JKD-048,Pengasing Bijih,,Q    
+Q-JKD-049,Pemandu Jentera Pembinaan/Pertanian,,Q    
+Q-JKA-022,Pegawai Ilmu Jiwa,,Q    
+Q-JKA-024,Pegawai Kesatria,,Q    
+Q-JKA-025,Pegawai Perancangan Bahasa,,Q    
+Q-JKA-026,Pegawai Pos,,Q    
+Q-JKB-001,Penolong Pengarah Penyelidik,,Q    
+Q-JKB-002,Penolong Pegawai Hal Ehwal Islam,,Q    
+Q-JKB-003,Penolong Pegawai Arkib,,Q    
+Q-JKB-004,Penolong Kurator,,Q    
+Q-JKB-005,Penolong Pegawai Muzium,,Q    
+Q-JKB-006,Penolong Pegawai Perpustakaan,,Q    
+Q-JKB-007,Pegawai Kebajikan Masyarakat,,Q    
+Q-JKB-008,Penolong Pegawai Kemajuan,,Q    
+Q-JKB-009,Penolong Pegawai Perhubungan Masyarakat,,Q    
+Q-JKB-010,Penyelia Ekonomi Rumah Tangga,,Q    
+Q-JKB-011,Penolong Pegawai Pembangunan Peneroka,,Q    
+Q-JKB-012,Penolong Pegawai Kebajikan Peneroka,,Q    
+Q-JKB-013,Penolong Pegawai Kemajuan Sukan,,Q    
+Q-JKB-014,Penolong Pegawai Belia dan Sukan,,Q    
+Q-JKB-015,Penolong Pegawai Displin,,Q    
+Q-JKB-017,Pegawai Pekerjaan,,Q    
+Q-JKB-018,Penolong Pegawai Buruh Pelabuhan,,Q    
+Q-JKB-016,Pegawai Buruh,,Q    
+Q-JKB-019,Penyelia Penderma Darah/Pegawai Seranta,,Q    
+Q-JKB-020,Penolong Pegawai Perhubungan Awam,,Q    
+Q-JKB-021,Penolong Pegawai Penerangan,,Q    
+Q-JKB-022,Penolong Pegawai Pemulihan,,Q    
+Q-JKB-023,Penolong Pegawai Kesatria,,Q    
+Q-JKB-024,Penolong Pegawai Perancangan Bahasa,,Q    
+Q-JKB-025,Penolong Pegawai Pos,,Q    
+Q-JKC-001,Pembantu Penyelidik Sains,,Q    
+Q-JKC-003,Penjaga Jentera Elektrik,,Q    
+Q-JKC-002,Pembantu Penyelidik,,Q    
+Q-JKC-004,Pembantu Hal Ehwal Islam,,Q    
+Q-JKC-005,Pembantu Arkib,,Q    
+Q-JKC-006,Pembantu Muzium,,Q    
+Q-JKC-007,Pembantu Perpustakaan,,Q    
+Q-JKC-008,Pembantu Ekonomi Rumah Tangga,,Q    
+Q-JKC-009,Pembantu Kemajuan Masyarakat,,Q    
+Q-JKC-010,Pembantu Kebajikan Masyarakat,,Q    
+Q-JKC-011,Pembantu Pembangunan Peneroka,,Q    
+Q-JKC-012,Jurulatih Pembangunan masyarakat,,Q    
+Q-JKC-013,Pegawai Luar Hal Ehwal Orang Asli,,Q    
+Q-JKC-014,Pembantu Belia dan Sukan,,Q    
+Q-JKC-016,Penolong Pegawai Pekerjaan,,Q    
+Q-JKC-017,Pembantu Penerangan,,Q    
+Q-JKC-018,Pembantu Kesatria,,Q    
+Q-JKC-019,Jurulatih Kawad,,Q    
+Q-JKA-001,Pegawai Penyelidik,,Q    
+Q-JKA-002,Mufti,,Q    
+Q-JKA-003,Pegawai Hal Ehwal Islam,,Q    
+Q-JKA-004,Pegawai Penasihat Agama,,Q    
+Q-JKA-005,Pegawai Arkib,,Q    
+Q-JKA-006,Kurator,,Q    
+Q-JKA-007,Pustakawan,,Q    
+Q-JKA-008,Pegawai Perpustakaan,,Q    
+Q-JKA-009,Pegawai Kanan Pembangunan Masyarakat,,Q    
+Q-JKA-010,Pegawai Kemajuan Masyarakat,,Q    
+Q-JKA-011,Pegawai Perhubungan Masyarakat,,Q    
+Q-JKA-012,Pegawai Keajikan Perubatan,,Q    
+Q-JKA-013,Pegawai Kemajuan Sukan,,Q    
+Q-JKA-014,Pegawai Belia dan Sukan,,Q    
+Q-JKA-015,Pegawai Berita,,Q    
+Q-JKA-016,Pegawai Buruh Pekabuhan,,Q    
+Q-JKA-017,Pegawai Kanan Buruh,,Q    
+Q-JKA-018,Pegawai Perhubungan Awam,,Q    
+Q-JKA-019,Pegawai Penerangan,,Q    
+Q-JKA-020,Pegawai Pelajaran Kesihatan,,Q    
+Q-JKA-021,Pegawai Bimbingan Nasihat,,Q    
+Q-PGT-001 ,Pegawai Penyelidik Pengurusan Tertinggi,,Q    
+Q-PGT-002,Pegawai Pemeriksa Paten Pengurusan Tertinggi,,Q    
+Q-PP-002,Pegawai Pemeriksa Paten,,Q    
+Q-SOK-003 ,Pembantu Penyelidik Rendah,,Q    
+Q-PP-001  ,Pegawai Penyelidik,,Q    
+Q-SOK-001 ,Penolong Pegawai Penyelidik,,Q    
+Q-SOK-002 ,Pembantu Penyelidik,,Q    
+R-SOK-001 ,Pekerja Awam,,R    
+R-SOK-002 ,Pekerja Awam Khas,,R    
+R-SOK-003 ,Pemandu Kenderaan,,R    
+R-SOK-004 ,Operator Loji,,R    
+R-SOK-005 ,Pemandu/Operator Jentera Pemunggah,,R    
+R-SOK-006 ,Penjaga Jentera Elektrik,,R    
+R-SOK-007 ,Tukang K1,,R    
+R-SOK-008 ,Tukang K2,,R    
+R-SOK-009 ,Tukang K3,,R    
+R-SOK-010 ,Pelansir (KTM),,R    
+R-SOK-011 ,Pemandu Troli Rel (KTM),,R    
+R-SOK-013 ,Pemandu Atau Operator Jentera Berat Land,,R    
+R-SOK-014 ,Jaga,,R    
+R-SOK-012 ,Operator Troli/Kren (KTM),,R    
+R-SOK-015,Pemandu Enjin (KBB),,R    
+R-JKD-001,Pemandu Injin Sangkut/Motorbot,,R    
+R-JKD-002,Mandor,,R    
+R-JKD-003,Pemandu/Anak Perahu,,R    
+R-JKD-004,Pemasang Jentera,,R    
+R-JKD-005,Pemandu Jentera Pembinaan/Pertanian,,R    
+R-SOK-016,Pembuat Pukat,,R    
+S-PGT-019,Pustakawan Pengurusan Tertinggi,,S    
+S-PGT-018,Pegawai Perancang Bahasa Pengurusan Tertinggi,,S    
+S-SOK-047,Wartawan,,S    
+S-PP-020,Perancang Bahasa,,S    
+S-SOK-048,Penolong Perancang Bahasa,,S    
+S-PGT-021,Pegawai Antidadah Pengurusan Tertinggi,,S    
+S-PGT-023,Pegawai Psikologi Pengurusan Tertinggi,,S    
+S-SOK-049,Penolong Pustakawan,,S    
+S-PGT-020,Perancang Bahasa Pengurusan Tertinggi,,S    
+S-PP-021,Pegawai Komunikasi Strategik,,S    
+S-JKD-001,Pembantu Luar,,S    
+S-SOK-050,Pegawai Rumah Budak Laki-Laki,,S    
+S-PGT-017,Kurator Pengurusan Tertinggi,,S    
+S-PGT-007,Pegawai Penerangan Pengurusan Tertinggi,,S    
+S-PP-017,Kaunselor,,S    
+S-SOK-035,Pembantu Muzium Rendah,,S    
+S-SOK-036,Penyemak Perpustakaan,,S    
+S-SOK-037,Penolong Kaunselor,,S    
+S-PP-018,Pegawai Antidadah,,S    
+S-SOK-024,Pembantu Pembangunan Keluarga,,S    
+S-SOK-039,Jurulatih Kawat Rendah,,S    
+S-SOK-040,Pembantu Antidadah,,S    
+S-SOK-041,Pembantu Pemuliharaan,,S    
+S-SOK-044,Penolong Pegawai Antidadah,,S    
+S-PGT-002 ,Pegawai Belia dan Sukan Pengurusan Tertinggi,,S    
+S-PGT-003 ,Pegawai Siasatan Pengurusan Tertinggi,,S    
+S-PGT-004 ,Pegawai Berita Pengurusan Tertinggi,,S    
+S-PGT-005 ,Pegawai Perhubungan Perusahaan Pengurusan Tertinggi,,S    
+S-PGT-006 ,Pegawai Penerangan Pengurusan Tertinggi,,S    
+S-PGT-009 ,Pegawai Perancang Bahasa Pengurusan Tertinggi,,S    
+S-PGT-010 ,Pegawai Arkib Pengurusan Tertinggi,,S    
+S-PGT-012 ,Pegawai Hal Ehwal Islam Pengurusan Tertinggi,,S    
+S-PGT-013 ,Pegawai Arkib Pengurusan Tertinggi,,S    
+S-PGT-014 ,Kurator Pengurusan Tertinggi,,S    
+S-PGT-015 ,Pustakawan Pengurusan Tertinggi,,S    
+S-PGT-016 ,Pegawai Pembangunan Masyarakat Pengurusan Tertinggi,,S    
+S-PP-004  ,Pegawai Berita,,S    
+S-PP-005  ,Pegawai Perhubungan Perusahaan,,S    
+S-PP-006  ,Pegawai Penerangan,,S    
+S-PP-007  ,Pegawai Rundingcara,,S    
+S-PP-008  ,Pegawai Kesatria,,S    
+S-PP-009  ,Pegawai Perancang Bahasa,,S    
+S-PP-010  ,Pegawai Pos,,S    
+S-PP-012  ,Pegawai Hal Ehwal Islam,,S    
+S-PP-013  ,Pegawai Arkib,,S    
+S-PP-015  ,Pustakawan,,S    
+S-PP-016  ,Pegawai Pembangunan Masyarakat,,S    
+S-PP-002  ,Pegawai Belia dan Sukan,,S    
+S-PP-003  ,Pegawai Siasatan,,S    
+S-PP-014  ,Kurator,,S    
+S-SOK-004 ,Penolong Pegawai Belia dan Sukan,,S    
+S-SOK-005 ,Pembantu Belia dan Sukan,,S    
+S-SOK-006 ,Penolong Pegawai Siasatan,,S    
+S-SOK-007 ,Pembantu Siasatan,,S    
+S-SOK-008 ,Pembantu Wartawan/Wartawan,,S    
+S-SOK-009 ,Penolong Pegawai Perhubungan Perusahaan,,S    
+S-SOK-010 ,Pembantu Perhubungan Perusahaan,,S    
+S-SOK-011 ,Penolong Pegawai Penerangan,,S    
+S-SOK-012 ,Pembantu Penerangan,,S    
+S-SOK-013 ,Penolong Pegawai Rundingcara,,S    
+S-SOK-014 ,Penolong Pegawai Kesatria,,S    
+S-SOK-015 ,Pembantu Kesatria,,S    
+S-SOK-016 ,Jurulatih Kawad,,S    
+S-SOK-017 ,Penolong Pegawai Perancang Bahasa,,S    
+S-SOK-018 ,Penolong Pegawai Pos,,S    
+S-SOK-019 ,Posmen,,S    
+S-SOK-031 ,Penolong Kurator,,S    
+S-SOK-032 ,Pembantu Muzium,,S    
+S-SOK-033 ,Penolong Pegawai Perpustakaan,,S    
+S-SOK-001 ,Pembantu Perpustakaan,,S    
+S-SOK-002 ,Penolong Pegawai Pembangunan Masyarakat,,S    
+S-SOK-003 ,Pembantu Pembangunan Masyarakat,,S    
+S-SOK-026 ,Penolong Pegawai Hal Ehwal Islam,,S    
+S-SOK-027 ,Pembantu Hal Ehwal Islam,,S    
+S-SOK-028 ,Pembantu Rendah Hal Ehwal Islam,,S    
+S-SOK-034 ,Penolong Pegawai Arkib,,S    
+S-SOK-030 ,Pembantu Arkib,,S    
+S-SOK-045,Pembantu Luar Hal Ehwal Orang Asli,,S    
+S-PP-019,Pegawai Psikologi,,S    
+S-SOK-046,Penolong Pegawai Psikologi,,S    
+S-SOK-051,Pembantu Pustakawan,,S    
+SZ-PP-001,Pegawai Agama - Angkatan Tentera (Ikhtisas),,SZ   
+T-PP-001,Pegawai Penguat Kuasa Maritim,,T    
+T-BSP-001,Pegawai Lain-Lain Pangkat Penguat Kuasa Maritim,,T    
+T-PGT-001,Pegawai Penguat Kuasa Maritim Pengurusan Tertinggi,,T    
+U-SOK-026,Juruterapi Pergigian,,U    
+UG-PP-001,Pegawai Pergigian,,U    
+UF-PP-001,Pegawai Farmasi,,U    
+U-JKD-018,Juruteknik Malaria,,U    
+U-PGT-009,Jururawat Pengurusan Tertinggi,,U    
+U-JKD-016 ,Penolong Pelawat Kesihatan,,U    
+U-JKD-017,Penguasa Malaria,,U    
+U-PGT-008,Pengajar Sains Kesihatan Pengurusan Tertinggi,,U    
+U-PP-009,Pengajar Sains Kesihatan,,U    
+U-SOK-025,Pembantu Perawatan Kesihatan,,U    
+U-JKD-015,Pengawas Kesihatan Umum,,U    
+U-JKA-007,Ahli Kimia Ubat,,U    
+U-SOK-024,Pembantu Kesihatan Awam (jumud),,U    
+U-JKD-003,Penolong Jururawat,,U    
+U-JKD-014,Juruteknik Penilaian Rendah,,U    
+U-JKD-004,Bidan,,U    
+U-JKD-006,Pemungut Jentik-Jentik,,U    
+U-JKD-007,Atendan Hospital Otak,,U    
+U-JKD-008,Atendan Hospital,,U    
+U-JKD-009,Atendan Makmal,,U    
+U-JKD-010,Pembantu Pembedahan Pergigian,,U    
+U-JKD-011,Pegawai Farmasi,,U    
+U-JKD-012,Juruproses Filem X-Ray,,U    
+U-JKD-013,Juruteknik Rendah Prostetik/Ortotik,,U    
+U-JKD-005,Pembantu Kesihatan Awam,,U    
+U-JKB-002,Juru X-Ray,,U    
+U-JKB-003,Pengajar Juru X-Ray,,U    
+U-JKB-004,Jurupulih Perubatan,,U    
+U-JKB-005,Pengajar Jurupulih Perubatan,,U    
+U-JKB-006,Inspektor Kesihatan,,U    
+U-JKB-007,Pengajar Inspektor Kesihatan,,U    
+UJKB-008,Pengajar Pembantu Perubatan,,U    
+UJKB-009,Pengajar Makmal,,U    
+UJKB-010,Pengajar Jururawat,,U    
+U-JKB-011,Pengajar Juruteknik Pergigian,,U    
+U-JKB-012,Pengajar Jururawat Pergigian,,U    
+U-JKB-013,Pengajar Pembantu Farmasi,,U    
+U-JKA-001,Pegawai Perubatan,,U    
+U-JKA-002,Pegawai Optometri,,U    
+U-JKA-003,Pegawai Pergigian,,U    
+U-JKA-004,Pasukan Akauntan,,U    
+U-JKA-006,Pasukan Penilaian,,U    
+U-JKD-002,Pembantu Hospital Rendah,,U    
+U-JKD-001,Pembantu Teknologi Makmal,,U    
+U-SOK-021-001,Pemungut Jentik-Jentik,,U    
+U-PGT-006,Pegawai Dietetik Pengurusan Tertinggi,,U    
+U-JKB-001,Penolong Pegawai Sains Perubatan,,U    
+U-JKB-002,Pegawai Kerja Akaun,,U    
+U-JKB-003,Penolong Pegawai Penaksir,,U    
+U-JKB-004,Penolong Penguasa Kastam,,U    
+U-PP-008,Jururawat,,U    
+U-BSP-004,Penolong Pegawai Perubatan,,U    
+U-JKC-001,Jururawat Desa,,U    
+U-JKC-002,Juruteknik Prostetik/Ortotik,,U    
+U-JKC-003,Juruteknik Bilik Acuan,,U    
+U-JKC-004,Penyimpan Akaun,,U    
+U-JKC-005,Juruteknik Penilaian,,U    
+U-JKC-006,Pegawai Kerani Audit,,U    
+U-JKC-007,Pembantu Penaksir,,U    
+U-JKC-008,Pegawai Kastam,,U    
+U-PP-001  ,Pegawai Perubatan,,U    
+U-PP-002  ,Pegawai Pergigian,,U    
+U-PP-003  ,Pegawai Farmasi,,U    
+U-PP-004  ,Pegawai Optometri,,U    
+U-SOK-002 ,Juru X- Ray,,U    
+U-SOK-003 ,Jurupulih Perubatan,,U    
+U-SOK-004 ,Inspektor Kesihatan,,U    
+U-SOK-005 ,Pembantu Perubatan,,U    
+U-SOK-006 ,Juruteknologi Makmal Perubatan,,U    
+U-SOK-007 ,Jururawat,,U    
+U-SOK-008 ,Jururawat Masyarakat,,U    
+U-SOK-009 ,Penolong Jururawat,,U    
+U-SOK-010 ,Pembantu Kesihatan Awam,,U    
+U-SOK-011 ,Atendan Kesihatan,,U    
+U-SOK-012 ,Jururawat Pergigian,,U    
+U-SOK-013 ,Juruteknologi Pergigian,,U    
+U-SOK-014 ,Pembantu Pembedahan Pergigian,,U    
+U-SOK-015 ,Penolong Pegawai Farmasi,,U    
+U-SOK-016 ,Juruteknik Perubatan,,U    
+U-SOK-018 ,Pembantu Teknologi Makmal Perubatan,,U    
+U-SOK-019 ,Pembantu Hospital Rendah,,U    
+U-SOK-020 ,Bidan,,U    
+U-SOK-021 ,Pemungut Jentik-Jentik,,U    
+U-SOK-022 ,Juruproses Filem X-Ray,,U    
+U-SOK-023 ,Juruteknik Rendah Prostetik/Ortotik,,U    
+U-PGT-002 ,Pegawai Pergigian Pengurusan Tertinggi,,U    
+U-PGT-003 ,Pegawai Farmasi Pengurusan Tertinggi,,U    
+U-BSP-001,Juru X-Ray,,U    
+U-BSP-002,Penolong Pegawai Kesihatan Persekitaran/Pegawai Kesihatan Persekitaran,,U    
+U-BSP-003,Jururawat,,U    
+U-PP-005,Pegawai Pemulihan Perubatan,,U    
+U-PP-006,Pengajar,,U    
+U-PGT-001 ,Pegawai Perubatan Pengurusan Tertinggi,,U    
+U-PGT-004,Pegawai Optometri Pengurusan Tertinggi,,U    
+U-PGT-005,Pegawai Pemulihan Perubatan Pengurusan Tertinggi,,U    
+U-PP-007,Pegawai Dietetik,,U    
+U-SOK-017 ,Inspektor Pencegah Malaria,,U    
+UD-PP-001,Pegawai Perubatan,,UD   
+UD-PGT-001,Pegawai Perubatan Pengurusan Tertinggi,,UD   
+UF-PGT-001,Pegawai Farmasi Pengurusan Tertinggi,,UF   
+UF-SOK-001,Penolong Pegawai Farmasi,,UF   
+UF-PP-001,Pegawai Farmasi,,UF   
+UG-PP-001,Pegawai Pergigian,,UG   
+UG-PGT-001,Pegawai Pergigian Pengurusan Tertinggi,,UG   
+UZ-PP-001,Pegawai Perubatan - Angkatan Tentera (Ikhtisas),,UZ   
+PGT-UZ-001,Pegawai Perubatan Pengurusan Tertinggi - Angkatan Tentera (Ikhtisas),,UZ   
+VIP-APN-999,Anggota Pentadbiran,,VIP  
+WK-SOK-001,Penolong Penguasa Kastam,,W    
+WK-SOK-002,Pembantu Penguasa Kastam,,W    
+WK-PP-001,Penguasa Kastam,,W    
+U-JKA-005,Akauntan (BBB/KKT),,W    
+U-JKA-008,Pemeriksa Kira-Kira,,W    
+U-JKA-007,Juruaudit,,W    
+U-JKA-009,Pegawai Penaksir,,W    
+U-JKA-010,Penguasa Kastam,,W    
+U-JKA-011,Pegawai Kewangan,,W    
+U-JKA-012,Pegawai Aktuari,,W    
+W-SOK-012 ,Juruteknik Penilaian Rendah,,W    
+W-SOK-013 ,Pembantu Tadbir (Kewangan),,W    
+W-PGT-001 ,Pegawai Akauntan Pengurusan Tertinggi,,W    
+W-PGT-002 ,Pegawai Penilaian Pengurusan Tertinggi,,W    
+W-PGT-003 ,Juruaudit Pengurusan Tertinggi,,W    
+W-PGT-004 ,Penguasa Kastam Pengurusan Tertinggi,,W    
+W-PGT-005 ,Pegawai Kewangan Pengurusan Tertinggi,,W    
+W-PGT-008 ,Pegawai Penaksir Pengurusan Tertinggi,,W    
+W-PP-001  ,Akauntan,,W    
+W-PP-002  ,Pegawai Penilaian,,W    
+W-PP-003  ,Juruaudit,,W    
+W-PP-008  ,Pegawai Penaksir,,W    
+W-PP-004  ,Penguasa Kastam,,W    
+W-PP-005  ,Pegawai Kewangan,,W    
+W-PP-006  ,Pegawai Aktuari,,W    
+W-SOK-001 ,Penolong Akauntan,,W    
+W-SOK-002 ,Pembantu Akauntan,,W    
+W-SOK-003 ,Penolong Pegawai Penilaian,,W    
+W-SOK-004 ,Pembantu Penilaian,,W    
+W-SOK-005 ,Penolong Juruaudit,,W    
+W-SOK-006 ,Pembantu Juruaudit,,W    
+W-SOK-008 ,Penolong Pegawai Penaksir,,W    
+W-SOK-009 ,Pembantu Penaksir,,W    
+W-SOK-010 ,Penolong Penguasa Kastam,,W    
+W-SOK-011 ,Pembantu Penguasa Kastam,,W    
+WA-PP-001,Akauntan,,W    
+WK-PP-001,Penguasa Kastam,,WK   
+WK-PGT-001,Penguasa Kastam Pengurusan Tertinggi,,WK   
+XA-BSP-001,Pegawai Lain-Lain Pangkat Penguat Kuasa Maritim,,X    
+XA-PP-001,Pegawai Penguat Kuasa Maritim,,X    
+XA-PGT-001,Pegawai Penguat Kuasa Maritim Pengurusan Tertinggi,,X    
+XA01000,Laskar Kelas II Maritim,,X    
+X-SOK-002,Laskar Kelas II Maritim,,X    
+X-SOK-003,Laskar Kelas I Maritim,,X    
+X-BSP-001,Pegawai Penguat Kuasa Maritim,,X    
+X-SOK-001,Pegawai Lain-Lain Pangkat Penguat Kuasa Maritim,,X    
+X-PGT-001,Pegawai Penguat Kuasa Maritim Pengurusan Tertinggi,,X    
+XX-PGT-002,Jawatan Fleksi Kumpulan Tertinggi,,XX   
+XX-PGT-003,Jawatan Kakitangan Ambilan Tempatan Kumpulan Tertinggi,,XX   
+XX-PP-002,Jawatan Fleksi Kumpulan Pengurusan dan Profesional,,XX   
+XX-PP-003,Jawatan Kakitangan Ambilan Tempatan Kumpulan Pengurusan dan Profesional,,XX   
+XX-SOK-002,Jawatan Fleksi Kumpulan Sokongan,,XX   
+XX-SOK-003,Jawatan Kakitangan Ambilan Tempatan Kumpulan Sokongan,,XX   
+XX-BSP-001,Jawatan Terbuka Kumpulan Skim Perkhidmatan Bersepadu,,XX   
+XX-BSP-002,Jawatan Fleksi Kumpulan Skim Perkhidmatan Bersepadu,,XX   
+XX-BSP-003,Jawatan Kakitangan Ambilan Tempatan Kumpulan Skim Perkhidmatan Bersepadu,,XX   
+XX-XXX-003,Jawatan Kakitangan Ambilan Tempatan Tanpa Kumpulan dan Klasifikasi Perkhidmatan,,XX   
+XX-XXX-001,Jawatan Terbuka Tanpa Kumpulan dan Klasifikasi Perkhidmatan,,XX   
+XX-XXX-002,Jawatan Fleksi Tanpa Kumpulan dan Klasifikasi Perkhidmatan,,XX   
+XX-BSP-004,SKIM PERKHIDMATAN SINGKAT (PRE2) JURURAWAT,,XX   
+XX-PP-004,Jawatan Pakej Rangsangan Ekonomi (PRE-2) Kumpulan Pengurusan dan Profesional,,XX   
+XX-SOK-004,Jawatan Pakej Rangsangan Ekonomi (PRE-2) Kumpulan Sokongan,,XX   
+XX-XXX-004,Jawatan Terbuka - Jawatan Pakej Rangsangan Ekonomi (PRE-2),,XX   
+XX-PP-005,Jawatan Kumpulan Pengurusan dan Profesional Tanpa Klasifikasi Perkhidmatan,,XX   
+YA-PP-001,Pegawai Kanan Polis,,Y    
+YA-SOK-001,Pegawai Rendah Polis dan Konstabel,,Y    
+YA-PGT-001,Pegawai Kanan Polis Pengurusan Tertinggi,,Y    
+Y-BSP-001,Pegawai Kanan Polis,,Y    
+Y-PGT-001 ,Pegawai Kanan Polis Pengurusan Tertinggi,,Y    
+YP-SOK-001,Pegawai Rendah Polis dan Konstabel Orang Asli,,Y    
+Y-SOK-001 ,Pegawai Rendah Polis dan Konstabel,,Y    
+YT-SOK-001,Pegawai Rendah Polis dan Konstabel Tambahan,,Y    
+Y-PP-001,Penolong Penguasa Polis,,Y    
+Y-PP-002,Timbalan Penguasa Polis,,Y    
+YT-SOK-002,Pegawai Rendah Polis dan Konstabel Sokongan,,Y    
+YA-BSP-001,Pegawai Rendah Polis dan Konstabel,,Y    
+YP-SOK-002,Pegawai Rendah Polis dan Konstabel Orang Asli,,YP   
+Z-PGT-002,"Pegawai Angkatan Tetap Pengurusan Tertinggi, Angkatan Tentera Malaysia",,Z    
+Z-BSP-001,"Pegawai Angkatan Tetap, Angkatan Tentera Malaysia",,Z    
+Z-SOK-001,"Askar Laskar Angkatan Tetap, Angkatan Tentera Malaysia",,Z    
+Z-PGT-001,"Pegawai Angkatan Tetap Pengurusan Tertinggi, Angkatan Tentera Malaysia",,Z    
+ZA-BSP-001,"Askar Laskar Angkatan Tetap, Angkatan Tentera Malaysia",,Z    
+ZA-PGT-001,"Pegawai Angkatan Tetap Pengurusan Tertinggi, Angkatan Tentera Malaysia",,Z    
+ZA-SOK-001,"Askar Laskar Angkatan Tetap, Angkatan Tentera Malaysia",,Z    
+ZA-PP-001,"Pegawai Angkatan Tetap, Angkatan Tentera Malaysia",,Z    

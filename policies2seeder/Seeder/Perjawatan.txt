@@ -1,0 +1,1227 @@
+﻿1. "Calon" can "view" "Senarai Permohonan" for each application. ['Calon', 'view', 'Senarai Permohonan', 'Perjawatan']
+1. "Calon" can "add" "Butiran Permohonan". ['Calon', 'add', 'Butiran Permohonan', 'Perjawatan']
+1. "Calon" can "view" "Butiran Permohonan" for selected application. ['Calon', 'view', 'Butiran Permohonan', 'Perjawatan']
+2. "Calon" can "view" "Status Semakan Maklumat Calon". ['Calon', 'view', 'Status Semakan Maklumat Calon', 'Perjawatan']
+
+IF STATEMENT
+IF fit criteria == false, the application end.
+
+
+IF STATEMENT
+IF fit criteria == true,
+
+3. "Calon" can "view" "Status Penyokongan Permohonan". ['Calon', 'view', 'Status Penyokongan Permohonan', 'Perjawatan']
+
+IF STATEMENT
+IF supported status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF supported status == "SOKONG",
+
+4. "Calon" can "view" "Status Kelulusan Permohonan". ['Calon', 'view', 'Status Kelulusan Permohonan', 'Perjawatan']
+
+IF STATEMENT
+IF approved status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approved status == "LULUS",
+
+5. "Calon" can "view" "Id Kakitangan". ['Calon', 'view', 'Id Kakitangan', 'Perjawatan']
+1. "US" can "view" "Senarai Permohonan" for each application. ['US', 'view', 'Senarai Permohonan', 'Perjawatan']
+1. "US" can "view" "Butiran Permohonan" for selected application. ['US', 'view', 'Butiran Permohonan', 'Perjawatan']
+2. "US" can "verify" "Status Semakan Maklumat Calon" by updating the verification status to either 'SAH/TIDAK SAH'. ['US', 'verify', 'Status Semakan Maklumat Calon', 'SAH/TIDAK SAH', 'Perjawatan']
+
+IF STATEMENT
+IF fit criteria == false, the application end.
+
+
+IF STATEMENT
+IF fit criteria == true,
+
+3. "US" can "update" "Maklumat Penyokong dan Pelulus". ['US', 'update', 'Maklumat Penyokong dan Pelulus', 'Perjawatan']
+4. "US" can "view" "Status Penyokongan Permohonan". ['US', 'view', 'Status Penyokongan Permohonan', 'Perjawatan']
+
+IF STATEMENT
+IF supported status == "TIDAK SOKONG", the application end.
+
+
+IF STATEMENT
+IF supported status == "SOKONG",
+
+5. "US" can "view" "Status Kelulusan Permohonan". ['US', 'view', 'Status Kelulusan Permohonan', 'Perjawatan']
+
+IF STATEMENT
+IF approved status == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF approved status == "LULUS",
+
+6. "US" can "view" "Id Kakitangan". ['US', 'view', 'Id Kakitangan', 'Perjawatan']
+1. "Penyokong" can "view" "Senarai Permohonan" for each application. ['Penyokong', 'view', 'Senarai Permohonan', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Permohonan" for selected application. ['Penyokong', 'view', 'Butiran Permohonan', 'Perjawatan']
+2. "Penyokong" can "view" "Status Semakan Maklumat Calon". ['Penyokong', 'view', 'Status Semakan Maklumat Calon', 'Perjawatan']
+
+IF STATEMENT
+IF fit criteria == false, the application end.
+
+
+IF STATEMENT
+IF fit criteria == true,
+
+3. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating support status to either to 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan Permohonan', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Permohonan" for each application. ['Pelulus', 'view', 'Senarai Permohonan', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Permohonan" for selected application. ['Pelulus', 'view', 'Butiran Permohonan', 'Perjawatan']
+2. "Pelulus" can "view" "Status Semakan Maklumat Calon". ['Pelulus', 'view', 'Status Semakan Maklumat Calon', 'Perjawatan']
+
+IF STATEMENT
+IF fit criteria == false, the application end.
+
+
+IF STATEMENT
+IF fit criteria == true,
+
+3. "Pelulus" can "view" "Status Penyokongan Permohonan". ['Pelulus', 'view', 'Status Penyokongan Permohonan', 'Perjawatan']
+4. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating approval status to either to 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan Permohonan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IGNORE
+1. System can "generate" new employee number. ['generate', 'Perjawatan']
+
+
+IGNORE
+2. System can "update" "maklumat kakitangan". ['update', 'maklumat kakitangan', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" to the "calon". ['email', 'calon', 'Perjawatan']
+
+1. "US" can "view" "Senarai Rekod Kakitangan yang terlibat". ['US', 'view', 'Senarai Rekod Kakitangan yang terlibat', 'Perjawatan']
+1. "US" can "view" "Butiran Kakitangan yang terlibat" for selected record. ['US', 'view', 'Butiran Kakitangan yang terlibat', 'Perjawatan']
+2. "US" can "approve" "Keputusan Mesyuarat" by updating meeting result either to 'LULUS/TIDAK LULUS'. ['US', 'approve', 'Keputusan Mesyuarat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF meeting result == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF meeting result == "LULUS",
+
+3. "US" can "download" "Dokumen untuk dimuat turun". ['US', 'download', 'Dokumen untuk dimuat turun', 'Perjawatan']
+4. "US" can "update" "Maklumat Penyokong dan Pelulus". ['US', 'update', 'Maklumat Penyokong dan Pelulus', 'Perjawatan']
+5. "US" can "view" "Status Penyokongan". ['US', 'view', 'Status Penyokongan', 'Perjawatan']
+6. "US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+7. "US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+
+IGNORE
+1. System can "generate" "surat tawaran rasionalisai". ['generate', 'surat tawaran rasionalisai', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "borang lapor diri". ['generate', 'borang lapor diri', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" to the employee. ['email', 'Perjawatan']
+
+1. "Kakitangan" can "view" "Senarai Rekod Tawaran Baru". ['Kakitangan', 'view', 'Senarai Rekod Tawaran Baru', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Kakitangan yang terlibat" for selected record. ['Kakitangan', 'view', 'Butiran Kakitangan yang terlibat', 'Perjawatan']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+
+IF STATEMENT
+IF meeting result == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF meeting result == "LULUS",
+
+3. "Kakitangan" can "download" "Dokumen untuk dimuat turun". ['Kakitangan', 'download', 'Dokumen untuk dimuat turun', 'Perjawatan']
+4. "Kakitangan" can "update" "Maklumat Penyokong dan Pelulus". ['Kakitangan', 'update', 'Maklumat Penyokong dan Pelulus', 'Perjawatan']
+5. "Kakitangan" can "view" "Status Penyokongan". ['Kakitangan', 'view', 'Status Penyokongan', 'Perjawatan']
+6. "Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+7. "Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Senarai Rekod Tawaran Baru". ['Penyokong', 'view', 'Senarai Rekod Tawaran Baru', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Kakitangan yang terlibat" for selected record. ['Penyokong', 'view', 'Butiran Kakitangan yang terlibat', 'Perjawatan']
+2. "Penyokong" can "view" "Keputusan Mesyuarat". ['Penyokong', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+
+IF STATEMENT
+IF meeting result == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF meeting result == "LULUS",
+
+3. "Penyokong" can "view" "Dokumen untuk dimuat turun". ['Penyokong', 'view', 'Dokumen untuk dimuat turun', 'Perjawatan']
+4. "Penyokong" can "view" "Maklumat Penyokong dan Pelulus". ['Penyokong', 'view', 'Maklumat Penyokong dan Pelulus', 'Perjawatan']
+5. "Penyokong" can "support" "Status Penyokongan" by updating support status either to 'TIDAK SOKONG/SOKONG'. ['Penyokong', 'support', 'Status Penyokongan', 'TIDAK SOKONG/SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Rekod Tawaran Baru". ['Pelulus', 'view', 'Senarai Rekod Tawaran Baru', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Kakitangan yang terlibat" for selected record. ['Pelulus', 'view', 'Butiran Kakitangan yang terlibat', 'Perjawatan']
+2. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+
+IF STATEMENT
+IF meeting result == "TIDAK LULUS", application end.
+
+
+IF STATEMENT
+IF meeting result == "LULUS",
+
+3. "Pelulus" can "view" "Dokumen untuk dimuat turun". ['Pelulus', 'view', 'Dokumen untuk dimuat turun', 'Perjawatan']
+4. "Pelulus" can "view" "Maklumat Penyokong dan Pelulus". ['Pelulus', 'view', 'Maklumat Penyokong dan Pelulus', 'Perjawatan']
+5. "Pelulus" can "view" "Status Penyokong" from 'Penyokong'. ['Pelulus', 'view', 'Status Penyokong', 'Penyokong', 'Perjawatan']
+6. "Pelulus" can "approve" "Status Penyokongan" by updating approval status either to 'TIDAK LULUS/LULUS'. ['Pelulus', 'approve', 'Status Penyokongan', 'TIDAK LULUS/LULUS', 'Perjawatan']
+
+IGNORE
+2. Pengesahan dalam Perkhidmatan. ['Perjawatan']
+
+
+IGNORE
+1. System can "generate" "Senarai Ramai Kakitangan dalam Percubaan". ['generate', 'Senarai Ramai Kakitangan dalam Percubaan', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Pengesahan dalam Perkhidmatan". ['generate', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+
+1. "Kakitangan" can "view" "Senarai Nama Kakitangan dalam Percubaan" for their own application. ['Kakitangan', 'view', 'Senarai Nama Kakitangan dalam Percubaan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Kakitangan dalam Percubaan" for that particular employees. ['Kakitangan', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "Kakitangan" can "view" "Status Semakan Pengesahan". ['Kakitangan', 'view', 'Status Semakan Pengesahan', 'Perjawatan']
+
+IF STATEMENT
+IF verify status == "TIDAK SEMAK"
+
+
+IF STATEMENT
+IF verify status == "SEMAK",
+
+3. "Kakitangan" can "view" "Status Perakuan Permohonan dari Pengarah Integriti dan Audit". ['Kakitangan', 'view', 'Status Perakuan Permohonan dari Pengarah Integriti dan Audit', 'Perjawatan']
+4. "Kakitangan" can "view" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian". ['Kakitangan', 'view', 'Status Perakuan Permohonan dari Pengarah Negeri/Bahagian', 'Perjawatan']
+5. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan". ['Kakitangan', 'download', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+6. "Kakitangan" can "view" "Status Keputusan Pengesahan". ['Kakitangan', 'view', 'Status Keputusan Pengesahan', 'Perjawatan']
+1. "US" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees. ['US', 'view', 'Senarai Nama Kakitangan dalam Percubaan', 'Perjawatan']
+1. "US" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee. ['US', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "US" can "verify" "Status Semakan Pengesahan" by updating verification status to eiher 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Pengesahan', 'SEMAK/TIDAK SEMAK', 'Perjawatan']
+3. "US" can "view" "Status Perakuan Permohonan dari Pengarah Integriti dan Audit". ['US', 'view', 'Status Perakuan Permohonan dari Pengarah Integriti dan Audit', 'Perjawatan']
+4. "US" can "view" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian". ['US', 'view', 'Status Perakuan Permohonan dari Pengarah Negeri/Bahagian', 'Perjawatan']
+5. "US" can "update" "Keputusan Mesyuarat". ['US', 'update', 'Keputusan Mesyuarat', 'Perjawatan']
+6. "US" can "download" "Surat Pengesahan dalam Perkhidmatan". ['US', 'download', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+7. "US" can "update" "Status Keputusan Pengesahan". ['US', 'update', 'Status Keputusan Pengesahan', 'Perjawatan']
+1. "PIA" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees. ['PIA', 'view', 'Senarai Nama Kakitangan dalam Percubaan', 'Perjawatan']
+1. "PIA" can "view" "Butiran Kakitangan dalam Percubaan" for selected employees. ['PIA', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "PIA" can "view" "Status Semakan Pengesahan". ['PIA', 'view', 'Status Semakan Pengesahan', 'Perjawatan']
+3. "PIA" can "certify" "Status Perakuan Permohonan dari Pengarah integriti dan Audit" by updating certification to either 'AKU/TIDAK AKU'. ['PIA', 'certify', 'Status Perakuan Permohonan dari Pengarah integriti dan Audit', 'AKU/TIDAK AKU', 'Perjawatan']
+1. "PN" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees. ['PN', 'view', 'Senarai Nama Kakitangan dalam Percubaan', 'Perjawatan']
+1. "PN" can "view" "Butiran Kakitangan dalam Percubaan" for selected employees. ['PN', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "PN" can "view" "Status Semakan Pengesahan". ['PN', 'view', 'Status Semakan Pengesahan', 'Perjawatan']
+3. "PN" can "view" "Status Perakuan Permohonan dari Pengarah integriti dan Audit". ['PN', 'view', 'Status Perakuan Permohonan dari Pengarah integriti dan Audit', 'Perjawatan']
+4. "PN" can "cerity" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian" by updating certification to either 'AKU/TIDAK AKU'. ['PN', 'cerity', 'Status Perakuan Permohonan dari Pengarah Negeri/Bahagian', 'AKU/TIDAK AKU', 'Perjawatan']
+
+IGNORE
+1. System can "generate" "Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun". ['generate', 'Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Keputusan". ['generate', 'Surat Keputusan', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" "Kakitangan". ['email', 'kakitangan', 'Perjawatan']
+
+1. "US" can "view" "Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun" for all employees. ['US', 'view', 'Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun', 'Perjawatan']
+1. "US" can "view" "Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun" for selected employees. ['US', 'view', 'Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun', 'Perjawatan']
+2. "US" can "verify" "Status Semakan Syarat Pengesahan" by updating verification status to either 'SEMAK/TIDAK SEMAK'. ['US', 'verify', 'Status Semakan Syarat Pengesahan', 'SEMAK/TIDAK SEMAK', 'Perjawatan']
+3. "US" can "update" "Maklumat Mesyuarat". ['US', 'update', 'Maklumat Mesyuarat', 'Perjawatan']
+4. "US" can "download" "Surat Keputusan". ['US', 'download', 'Surat Keputusan', 'Perjawatan']
+
+FIX
+5. "US" can "update" overall status for the request. ['US', 'update', 'overall status for the request.', 'Perjawatan']
+
+1. "Kakitangan" can "view" "Senarai Nama Kakitangan dalam Pengesahan bagi Melebih Tempoh 3 Tahun" for themselves. ['Kakitangan', 'view', 'Senarai Nama Kakitangan dalam Pengesahan bagi Melebih Tempoh 3 Tahun', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun". ['Kakitangan', 'view', 'Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun', 'Perjawatan']
+2. "Kakitangan" can "view" "Status Semakan Syarat Pengesahan". ['Kakitangan', 'view', 'Status Semakan Syarat Pengesahan', 'Perjawatan']
+3. "Kakitangan" can "view" "Maklumat Mesyuarat". ['Kakitangan', 'view', 'Maklumat Mesyuarat', 'Perjawatan']
+4. "Kakitangan" can "downlaod" "Surat Keputusan". ['Kakitangan', 'downlaod', 'Surat Keputusan', 'Perjawatan']
+
+FIX
+5. "Kakitangan" can "view" overall status for the request. ['Kakitangan', 'view', 'overall status for the request.', 'Perjawatan']
+
+
+IGNORE
+1. System can "generate" "Senarai Nama Kakitangan dalam Percubaan". ['generate', 'Senarai Nama Kakitangan dalam Percubaan', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Pengesahan dalam Perkhidmatan". ['generate', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+
+1. "Kakitangan" can "view" "Senarai Kakitangan dalam Percubaan". ['Kakitangan', 'view', 'Senarai Kakitangan dalam Percubaan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Kakitangan dalam Percubaan". ['Kakitangan', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "Kakitangan" can "view" "Status Semakan Syarat Pengesahan". ['Kakitangan', 'view', 'Status Semakan Syarat Pengesahan', 'Perjawatan']
+3. "Kakitangan" can "view" "Status Perakuan dari Pengarah integriti dan Audit". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah integriti dan Audit', 'Perjawatan']
+4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Negeri/Bahagian". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah Negeri/Bahagian', 'Perjawatan']
+5. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan". ['Kakitangan', 'download', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+
+FIX
+7. "Kakitangan" can "view" overall status for the request. ['Kakitangan', 'view', 'overall status for the request.', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. ['US', 'view', 'Senarai Kakitangan dalam Percubaan', 'Perjawatan']
+1. "US" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee. ['US', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "Kakitangan" can "verify" "Status Semakan Syarat Pengesahan" by updating verification status either to "SEMAK/TIDAK SEMAKAN". ['Kakitangan', 'verify', 'Status Semakan Syarat Pengesahan', 'SEMAK/TIDAK SEMAKAN', 'Perjawatan']
+3. "Kakitangan" can "view" "Status Perakuan dari Pengarah integriti dan Audit". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah integriti dan Audit', 'Perjawatan']
+4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Negeri/Bahagian". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah Negeri/Bahagian', 'Perjawatan']
+5. "Kakitangan" can "update" "Keputusan Mesyuarat". ['Kakitangan', 'update', 'Keputusan Mesyuarat', 'Perjawatan']
+6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan". ['Kakitangan', 'download', 'Surat Pengesahan dalam Perkhidmatan', 'Perjawatan']
+
+FIX
+7. "Kakitangan" can "update" overall status for the request. ['Kakitangan', 'update', 'overall status for the request.', 'Perjawatan']
+
+1. "PIA" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. ['PIA', 'view', 'Senarai Kakitangan dalam Percubaan', 'Perjawatan']
+1. "PIA" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee. ['PIA', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "PIA" can "view" "Status Semakan Syarat Pengesahan". ['PIA', 'view', 'Status Semakan Syarat Pengesahan', 'Perjawatan']
+3. "PIA" can "certify" "Status Perakuan dari Pengarah integriti dan Audit" by updating certification status either to 'AKU/TIDAK AKU'. ['PIA', 'certify', 'Status Perakuan dari Pengarah integriti dan Audit', 'AKU/TIDAK AKU', 'Perjawatan']
+1. "PN" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. ['PN', 'view', 'Senarai Kakitangan dalam Percubaan', 'Perjawatan']
+1. "PN" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee. ['PN', 'view', 'Butiran Kakitangan dalam Percubaan', 'Perjawatan']
+2. "PN" can "view" "Status Semakan Syarat Pengesahan". ['PN', 'view', 'Status Semakan Syarat Pengesahan', 'Perjawatan']
+3. "PN" can "view" "Status Perakuan dari Pengarah Integriti dan Audit". ['PN', 'view', 'Status Perakuan dari Pengarah Integriti dan Audit', 'Perjawatan']
+4. "PN" can "certify" "Status Perakuan dari Pengarah" by updating certification status either to 'AKU/TIDAK AKU'. ['PN', 'certify', 'Status Perakuan dari Pengarah', 'AKU/TIDAK AKU', 'Perjawatan']
+1. "Kakitangan" can "view" "Senarai Permohonan PTB dan KWAP". ['Kakitangan', 'view', 'Senarai Permohonan PTB dan KWAP', 'Perjawatan']
+1. "Kakitangan" can "add" "Butiran Permohonan PTB dan KWAP" for selected application. ['Kakitangan', 'add', 'Butiran Permohonan PTB dan KWAP', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Permohonan PTB dan KWAP" for selectef application. ['Kakitangan', 'view', 'Butiran Permohonan PTB dan KWAP', 'Perjawatan']
+2. "Kakitangan" can "view" "Keputusan dari JPA". ['Kakitangan', 'view', 'Keputusan dari JPA', 'Perjawatan']
+3. "Kakitangan" can "view" "Maklumat Surat JPA". ['Kakitangan', 'view', 'Maklumat Surat JPA', 'Perjawatan']
+4. "Kakitangan" can "download" "Borang KWAP". ['Kakitangan', 'download', 'Borang KWAP', 'Perjawatan']
+5. "Kakitangan" can "view" "Keputusan dari KWAP". ['Kakitangan', 'view', 'Keputusan dari KWAP', 'Perjawatan']
+6. "Kakitangan" can "view" "Maklumat Kakitangan". ['Kakitangan', 'view', 'Maklumat Kakitangan', 'Perjawatan']
+7. "Kakitangan" can "view" "Penyokong and Pelulus". ['Kakitangan', 'view', 'Penyokong and Pelulus', 'Perjawatan']
+8. "Kakitangan" can "view" "Status Penyokongan". ['Kakitangan', 'view', 'Status Penyokongan', 'Perjawatan']
+9. "Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+10."Kakitangan" can "view" overall status for the application. ['Kakitangan', 'view', 'overall status for the application.', 'Perjawatan']
+
+
+IGNORE
+#1. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Perjawatan']
+
+1. "US" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants. ['US', 'view', 'Senarai Permohonan PTB dan KWAP', 'Perjawatan']
+1. "US" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants. ['US', 'view', 'Butiran Permohonan PTB dan KWAP', 'Perjawatan']
+2. "US" can "view" "Keputusan dari JPA". ['US', 'view', 'Keputusan dari JPA', 'Perjawatan']
+3. "US" can "view" "Maklumat Surat JPA". ['US', 'view', 'Maklumat Surat JPA', 'Perjawatan']
+4. "US" can "download" "Borang KWAP". ['US', 'download', 'Borang KWAP', 'Perjawatan']
+5. "US" can "update" "Keputusan dari KWAP". ['US', 'update', 'Keputusan dari KWAP', 'Perjawatan']
+6. "US" can "update" "Maklumat Kakitangan". ['US', 'update', 'Maklumat Kakitangan', 'Perjawatan']
+7. "US" can "update" "Penyokong and Pelulus". ['US', 'update', 'Penyokong and Pelulus', 'Perjawatan']
+8. "US" can "view" "Status Penyokongan". ['US', 'view', 'Status Penyokongan', 'Perjawatan']
+9. "US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+10."US" can "view" overall status for the application. ['US', 'view', 'overall status for the application.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants. ['Penyokong', 'view', 'Senarai Permohonan PTB dan KWAP', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants. ['Penyokong', 'view', 'Butiran Permohonan PTB dan KWAP', 'Perjawatan']
+2. "Penyokong" can "view" "Keputusan dari JPA". ['Penyokong', 'view', 'Keputusan dari JPA', 'Perjawatan']
+3. "Penyokong" can "view" "Maklumat Surat JPA". ['Penyokong', 'view', 'Maklumat Surat JPA', 'Perjawatan']
+4. "Penyokong" can "download" "Borang KWAP". ['Penyokong', 'download', 'Borang KWAP', 'Perjawatan']
+5. "Penyokong" can "view" "Keputusan dari KWAP". ['Penyokong', 'view', 'Keputusan dari KWAP', 'Perjawatan']
+6. "Penyokong" can "view" "Maklumat Kakitangan". ['Penyokong', 'view', 'Maklumat Kakitangan', 'Perjawatan']
+7. "Penyokong" can "view" "Penyokong and Pelulus". ['Penyokong', 'view', 'Penyokong and Pelulus', 'Perjawatan']
+8. "Penyokong" can "support" "Status Penyokongan" by updating support status either to 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants. ['Pelulus', 'view', 'Senarai Permohonan PTB dan KWAP', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants. ['Pelulus', 'view', 'Butiran Permohonan PTB dan KWAP', 'Perjawatan']
+2. "Pelulus" can "view" "Keputusan dari JPA". ['Pelulus', 'view', 'Keputusan dari JPA', 'Perjawatan']
+3. "Pelulus" can "view" "Maklumat Surat JPA". ['Pelulus', 'view', 'Maklumat Surat JPA', 'Perjawatan']
+4. "Pelulus" can "download" "Borang KWAP". ['Pelulus', 'download', 'Borang KWAP', 'Perjawatan']
+5. "Pelulus" can "view" "Keputusan dari KWAP". ['Pelulus', 'view', 'Keputusan dari KWAP', 'Perjawatan']
+6. "Pelulus" can "view" "Maklumat Kakitangan". ['Pelulus', 'view', 'Maklumat Kakitangan', 'Perjawatan']
+7. "Pelulus" can "view" "Penyokong and Pelulus". ['Pelulus', 'view', 'Penyokong and Pelulus', 'Perjawatan']
+7. "Pelulus" can "view" "Status Penyokongan". ['Pelulus', 'view', 'Status Penyokongan', 'Perjawatan']
+8. "Pelulus" can "approve" "Status Kelulusan" by updating approval status either to 'SOKONG/TIDAK SOKONG'. ['Pelulus', 'approve', 'Status Kelulusan', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+
+IGNORE
+1. System can "generate" "Senarai Nama Kakitangan". ['generate', 'Senarai Nama Kakitangan', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Panggilan Temuduga dan Borang Perakuan Pendidikan". ['generate', 'Surat Panggilan Temuduga dan Borang Perakuan Pendidikan', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" "Kakitangan". ['email', 'Kakitangan', 'Perjawatan']
+
+
+IGNORE
+4. System can "generate surat tawaran pemangkuan, surat setuju terima, borang lapor diri, nota serah tugas". ['generate surat tawaran pemangkuan, surat setuju terima, borang lapor diri, nota serah tugas', 'Perjawatan']
+
+
+IGNORE
+5. System can "update" "Maklumat Perjawatan Kakitangan & Waran Perjawatan". ['update', 'Maklumat Perjawatan Kakitangan & Waran Perjawatan', 'Perjawatan']
+
+
+IGNORE
+6. System can "generate" "surat gagal penangguhan rayuan". ['generate', 'surat gagal penangguhan rayuan', 'Perjawatan']
+
+
+IGNORE
+7. System can "generate" "surat penangguhan rayuan". ['generate', 'surat penangguhan rayuan', 'Perjawatan']
+
+1. "US" can "view" "senarai Kakitangan" for all employee. ['US', 'view', 'senarai Kakitangan', 'Perjawatan']
+1. "US" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['US', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "US" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+5. "US" can "download" "Surat Panggilan Temuduga dan Borang Perakukan". ['US', 'download', 'Surat Panggilan Temuduga dan Borang Perakukan', 'Perjawatan']
+6. "US" can "update" "Keputusan Temuduga Calon". ['US', 'update', 'Keputusan Temuduga Calon', 'Perjawatan']
+7. "US" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['US', 'update', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+8. "US" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['US', 'download', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "US" can "update" "Mengisi nama bagi Penyokong dan Pelulus". ['US', 'update', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+10."US" can "update" "Keputusan Mesyuarat Penangguhan" by updating status to either 'LULUS/TIDAK LULUS'. ['US', 'update', 'Keputusan Mesyuarat Penangguhan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS"
+
+
+IF STATEMENT
+IF status == "LULUS"
+
+12."US" can "update" "Mengisi nama bagi Penyokong dan Pelulus". ['US', 'update', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+14."US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+15."US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+1. "USI" can "view" "Senarai Nama Kakitangan" for all employee. ['USI', 'view', 'Senarai Nama Kakitangan', 'Perjawatan']
+1. "USI" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['USI', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "USI" can "add" "Keputusan Mesyuarat". ['USI', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+3. "USI" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either "AKUI/TIDAK AKUI". ['USI', 'certify', 'Status Perakuan dari Urusetia Integriti', 'AKUI/TIDAK AKUI', 'Perjawatan']
+1. "PN" can "view" "Senarai Nama Kakitangan" for all employee. ['PN', 'view', 'Senarai Nama Kakitangan', 'Perjawatan']
+1. "PN" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['PN', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "PN" can "add" "Keputusan Mesyuarat". ['PN', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+3. "PN" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either "AKUI/TIDAK AKUI". ['PN', 'certify', 'Status Perakuan dari Urusetia Integriti', 'AKUI/TIDAK AKUI', 'Perjawatan']
+1. "Kakitangan" can "view" "senarai Kakitangan" for themselves. ['Kakitangan', 'view', 'senarai Kakitangan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Kakitangan', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Kakitangan', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+5. "Kakitangan" can "download" "Surat Panggilan Temuduga dan Borang Perakukan". ['Kakitangan', 'download', 'Surat Panggilan Temuduga dan Borang Perakukan', 'Perjawatan']
+6. "Kakitangan" can "view" "Keputusan Temuduga Calon". ['Kakitangan', 'view', 'Keputusan Temuduga Calon', 'Perjawatan']
+7. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat". ['Kakitangan', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application end her.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Kakitangan" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'download', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+8. "Kakitangan" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'download', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "update" "Status Rayuan Penangguhan/Penempatan". ['Kakitangan', 'update', 'Status Rayuan Penangguhan/Penempatan', 'Perjawatan']
+10."Kakitangan" can "view" "Keputusan Mesyuarat Penangguhan/Penempatan". ['Kakitangan', 'view', 'Keputusan Mesyuarat Penangguhan/Penempatan', 'Perjawatan']
+
+IF STATEMENT
+IF status== "TIDAK LULUS",
+
+11. "Kakitangan" can "download" "Surat Gagal Penangguhan Rayuan". ['Kakitangan', 'download', 'Surat Gagal Penangguhan Rayuan', 'Perjawatan']
+
+IF STATEMENT
+IF status == "LULUS"
+
+12."Kakitangan" can "download" "Surat Penangguhan Rayuan". ['Kakitangan', 'download', 'Surat Penangguhan Rayuan', 'Perjawatan']
+13."Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+15."Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+16."Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+1. "Penyokong" can "view" "senarai Kakitangan" for themselves. ['Penyokong', 'view', 'senarai Kakitangan', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Penyokong', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Penyokong" can "view" "Keputusan Mesyuarat". ['Penyokong', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Penyokong" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Penyokong', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+5. "Penyokong" can "view" "Surat Panggilan Temuduga dan Borang Perakukan". ['Penyokong', 'view', 'Surat Panggilan Temuduga dan Borang Perakukan', 'Perjawatan']
+6. "Penyokong" can "view" "Keputusan Temuduga Calon". ['Penyokong', 'view', 'Keputusan Temuduga Calon', 'Perjawatan']
+7. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat". ['Penyokong', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'Perjawatan']
+8. "Penyokong" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Penyokong', 'view', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Penyokong" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Penyokong', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Penyokong" can "support" "Status Penyokongan" by updating support status to either 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+8. "Penyokong" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Penyokong', 'view', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Penyokong" can "view" "Status Rayuan Penangguhan/Penempatan". ['Penyokong', 'view', 'Status Rayuan Penangguhan/Penempatan', 'Perjawatan']
+10."Penyokong" can "view" "Surat Penangguhan Rayuan". ['Penyokong', 'view', 'Surat Penangguhan Rayuan', 'Perjawatan']
+11."Penyokong" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Penyokong', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+12."Penyokong" can "support" "Status Penyokongan" by updating support status to either 'SOKONG/TIDAK SOKONG'. ['Penyokong', 'support', 'Status Penyokongan', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+1. "Penyokong" can "view" "senarai Kakitangan" for themselves. ['Penyokong', 'view', 'senarai Kakitangan', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Pelulus', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Pelulus" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri". ['Pelulus', 'view', 'Status Perakuan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+5. "Pelulus" can "view" "Surat Panggilan Temuduga dan Borang Perakukan". ['Pelulus', 'view', 'Surat Panggilan Temuduga dan Borang Perakukan', 'Perjawatan']
+6. "Pelulus" can "view" "Keputusan Temuduga Calon". ['Pelulus', 'view', 'Keputusan Temuduga Calon', 'Perjawatan']
+7. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat". ['Pelulus', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'Perjawatan']
+8. "Pelulus" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Pelulus', 'view', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Pelulus', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Pelulus" can "view" "Status Penyokongan". ['Pelulus', 'view', 'Status Penyokongan', 'Perjawatan']
+11."Pelulus" can "approve" "Status Kelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+8. "Pelulus" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas". ['Pelulus', 'view', 'Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Pelulus', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Pelulus" can "view" "Status Penyokongan". ['Pelulus', 'view', 'Status Penyokongan', 'Perjawatan']
+11."Pelulus" can "approve" "Status Kelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Kelulusan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IGNORE
+1. System can "view" "Senarai Kakitangan yang terlibat". ['view', 'Senarai Kakitangan yang terlibat', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan". ['generate', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" to "Kakitangan". ['email', 'Kakitangan', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan" for selected emloyee. ['US', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "US" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['US', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "US" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['US', 'download', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "US" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['US', 'update', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "US" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['US', 'download', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "US" can "update" "Mengisi nama bagi Penyokong dan Pelulus". ['US', 'update', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan" for selected emloyee. ['US', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "US" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['US', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+3. "US" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either 'AKU/TIDAK AKU'. ['US', 'certify', 'Status Perakuan dari Urusetia Integriti', 'AKU/TIDAK AKU', 'Perjawatan']
+1. "Kakitangan" can "view" "Senarai Kakitangan" for selected emloyee. ['Kakitangan', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Kakitangan', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Kakitangan" can "add" "Keputusan Mesyuarat". ['Kakitangan', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Kakitangan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Kakitangan', 'download', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Kakitangan', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Kakitangan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'download', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Senarai Kakitangan" for selected emloyee. ['Penyokong', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Penyokong', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Penyokong" can "view" "Keputusan Mesyuarat". ['Penyokong', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Penyokong" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Penyokong', 'view', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Penyokong', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Kakitangan" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'view', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Kakitangan" can "support" "Status Penyokong" by updating support status to either 'SOKONG/TIDAK SOKONG'. ['Kakitangan', 'support', 'Status Penyokong', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Kakitangan" for selected emloyee. ['Pelulus', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Pelulus', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Pelulus" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Pelulus', 'view', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Pelulus" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Pelulus', 'view', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Pelulus', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Pelulus" can "view" "Status Penyokong". ['Pelulus', 'view', 'Status Penyokong', 'Perjawatan']
+11."Pelulus" can "approve" "Status Pelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Pelulusan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IGNORE
+1.System can "view" "Senarai Calon yang Berkhidmat 13 Tahun Mengikut Tarikh Jawatan Gred Semasa". ['view', 'Senarai Calon yang Berkhidmat 13 Tahun Mengikut Tarikh Jawatan Gred Semasa', 'Perjawatan']
+
+
+IGNORE
+2.System can "generate" "Surat Tawaran Kenaikan Pangkat" and its documents. ['generate', 'Surat Tawaran Kenaikan Pangkat', 'Perjawatan']
+
+
+IGNORE
+3.System can "send" email to the employee. ['send', 'Perjawatan']
+
+1. "US" can "view" "Senarai Calon yang Berkhidmat 13 Tahun". ['US', 'view', 'Senarai Calon yang Berkhidmat 13 Tahun', 'Perjawatan']
+
+FIX
+1. "US" can "select/add" candidates. ['US', 'select/add', 'candidates.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "US" can "add" "Keputusan Mesyuarat Penempatan". ['US', 'add', 'Keputusan Mesyuarat Penempatan', 'Perjawatan']
+
+IGNORE
+#3. Function View Details. ['Perjawatan']
+
+
+FIX
+1. "US" can "view" candidates. ['US', 'view', 'candidates.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "US" can "view" "Keputusan Mesyuarat Penempatan". ['US', 'view', 'Keputusan Mesyuarat Penempatan', 'Perjawatan']
+
+FIX
+1. "USI" can "view" list of candidates. ['USI', 'view', 'list of candidates.', 'Perjawatan']
+
+
+FIX
+1. "USI" can "view" details for selected candidates. ['USI', 'view', 'details for selected candidates.', 'Perjawatan']
+
+2. "USI" can "update" "Status Perakuan dari Urus Setia Integriti" by updating the status to either "AKU" or "TIDAK AKU". ['USI', 'update', 'Status Perakuan dari Urus Setia Integriti', 'AKU', 'TIDAK AKU', 'Perjawatan']
+
+FIX
+1. "PN" can "view" list of candidates. ['PN', 'view', 'list of candidates.', 'Perjawatan']
+
+
+FIX
+1. "PN" can "view" details for selected candidates. ['PN', 'view', 'details for selected candidates.', 'Perjawatan']
+
+2. "PN" can "view" "Status Perakuan dari Urus Setia Integriti". ['PN', 'view', 'Status Perakuan dari Urus Setia Integriti', 'Perjawatan']
+3. "PN" can "update" "Status Perakuan dari Bahagian/Negeri" by updating the status to either "AKU" or "TIDAK AKU". ['PN', 'update', 'Status Perakuan dari Bahagian/Negeri', 'AKU', 'TIDAK AKU', 'Perjawatan']
+1. "Kakitangan" can "view" "Senarai Calon yang Berkhidmat 13 Tahun". ['Kakitangan', 'view', 'Senarai Calon yang Berkhidmat 13 Tahun', 'Perjawatan']
+
+IGNORE
+#2. Function View Details. ['Perjawatan']
+
+
+FIX
+1. "Kakitangan" can "view" candidates. ['Kakitangan', 'view', 'candidates.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "Kakitangan" can "view" "Keputusan Mesyuarat Penempatan". ['Kakitangan', 'view', 'Keputusan Mesyuarat Penempatan', 'Perjawatan']
+6. "Kakitangan" can "download" "Borang Berkaitan". ['Kakitangan', 'download', 'Borang Berkaitan', 'Perjawatan']
+9. "Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+1. "Penyokong" can "view" "Senarai Calon yang Berkhidmat 13 Tahun". ['Penyokong', 'view', 'Senarai Calon yang Berkhidmat 13 Tahun', 'Perjawatan']
+
+IGNORE
+#2. Function View Details. ['Perjawatan']
+
+
+FIX
+1. "Penyokong" can "view" candidates. ['Penyokong', 'view', 'candidates.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "Penyokong" can "view" "Keputusan Mesyuarat Penempatan". ['Penyokong', 'view', 'Keputusan Mesyuarat Penempatan', 'Perjawatan']
+6. "Penyokong" can "view" "Borang Berkaitan". ['Penyokong', 'view', 'Borang Berkaitan', 'Perjawatan']
+8. "Penyokong" can "update" "Status Sokongan" by updating to either "SOKONG" or "TIDAK SOKONG". ['Penyokong', 'update', 'Status Sokongan', 'SOKONG', 'TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Calon yang Berkhidmat 13 Tahun". ['Pelulus', 'view', 'Senarai Calon yang Berkhidmat 13 Tahun', 'Perjawatan']
+
+IGNORE
+#2. Function View Details. ['Perjawatan']
+
+
+FIX
+1. "Pelulus" can "view" candidates. ['Pelulus', 'view', 'candidates.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application end here.
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "Pelulus" can "view" "Keputusan Mesyuarat Penempatan". ['Pelulus', 'view', 'Keputusan Mesyuarat Penempatan', 'Perjawatan']
+6. "Pelulus" can "view" "Borang Berkaitan". ['Pelulus', 'view', 'Borang Berkaitan', 'Perjawatan']
+8. "Pelulus" can "view" "Status Sokongan". ['Pelulus', 'view', 'Status Sokongan', 'Perjawatan']
+9. "Pelulus" can "update" "Status Kelulusan" by updating to either "LULUS" or "TIDAK LULUS". ['Pelulus', 'update', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+
+IGNORE
+#3. Pengesahan Kenaikan Pangkat Gred Utama. ['Perjawatan']
+
+
+IGNORE
+1. System can "view" "Senarai Kakitangan yang terlibat". ['view', 'Senarai Kakitangan yang terlibat', 'Perjawatan']
+
+
+IGNORE
+2. System can "generate" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan". ['generate', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan', 'Perjawatan']
+
+
+IGNORE
+3. System can "email" to "Kakitangan". ['email', 'Kakitangan', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan" for selected emloyee. ['US', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "US" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['US', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "US" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['US', 'download', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "US" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['US', 'update', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "US" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['US', 'download', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "US" can "update" "Mengisi nama bagi Penyokong dan Pelulus". ['US', 'update', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan" for selected emloyee. ['US', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "US" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['US', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+3. "US" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either 'AKU/TIDAK AKU'. ['US', 'certify', 'Status Perakuan dari Urusetia Integriti', 'AKU/TIDAK AKU', 'Perjawatan']
+1. "Kakitangan" can "view" "Senarai Kakitangan" for selected emloyee. ['Kakitangan', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Kakitangan', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Kakitangan" can "add" "Keputusan Mesyuarat". ['Kakitangan', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Kakitangan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Kakitangan', 'download', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Kakitangan', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Kakitangan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'download', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+11."Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+12."Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Senarai Kakitangan" for selected emloyee. ['Penyokong', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Penyokong', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Penyokong" can "view" "Keputusan Mesyuarat". ['Penyokong', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Penyokong" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Penyokong', 'view', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Penyokong', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Kakitangan" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Kakitangan', 'view', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Kakitangan', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Kakitangan" can "support" "Status Penyokong" by updating support status to either 'SOKONG/TIDAK SOKONG'. ['Kakitangan', 'support', 'Status Penyokong', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Kakitangan" for selected emloyee. ['Pelulus', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee. ['Pelulus', 'view', 'Butiran Maklumat Kakitangan', 'Perjawatan']
+2. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+4. "Pelulus" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV". ['Pelulus', 'view', 'Borang Penilaian, Kesihatan dan Profil Kakitangan CV', 'Perjawatan']
+5. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'view', 'Keputusan Mesyuarat Kenaikan Pangkat', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF status == "TIDAK LULUS", application failed.
+
+
+IF STATEMENT
+IF status == "LULUS",
+
+8. "Pelulus" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas". ['Pelulus', 'view', 'Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas', 'Perjawatan']
+9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus". ['Pelulus', 'view', 'Mengisi nama bagi Penyokong dan Pelulus', 'Perjawatan']
+10."Pelulus" can "view" "Status Penyokong". ['Pelulus', 'view', 'Status Penyokong', 'Perjawatan']
+11."Pelulus" can "approve" "Status Pelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'. ['Pelulus', 'approve', 'Status Pelulusan', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+FIX
+1. "Kakitangan" can "view" their own application. ['Kakitangan', 'view', 'their own application.', 'Perjawatan']
+
+1. "Kakitangan" can "add" "Alasan Pertukaran". ['Kakitangan', 'add', 'Alasan Pertukaran', 'Perjawatan']
+2. "Kakitangan" can "update" "Status Pengesahan Permohonan". ['Kakitangan', 'update', 'Status Pengesahan Permohonan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Pertukaran" for selected application. ['Kakitangan', 'view', 'Butiran Pertukaran', 'Perjawatan']
+2. "Kakitangan" can "view" "Status Pengesahan Permohonan". ['Kakitangan', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+3. "Kakitangan" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri". ['Kakitangan', 'view', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+
+IF STATEMENT
+IF "TIDAK LULUS"
+
+5. "Kakitangan" can "download" "Surat Gagal Pertimbangkan". ['Kakitangan', 'download', 'Surat Gagal Pertimbangkan', 'Perjawatan']
+
+IF STATEMENT
+IF "KIV"
+
+
+IF STATEMENT
+IF "LULUS"
+
+5. "Kakitangan" can "download" "Surat Pertukaran" and its documents. ['Kakitangan', 'download', 'Surat Pertukaran', 'Perjawatan']
+
+IF STATEMENT
+IF Postpone
+
+6. "Kakitangan" can "add" "Permohonan Penangguhan/Pindaan Penempatan". ['Kakitangan', 'add', 'Permohonan Penangguhan/Pindaan Penempatan', 'Perjawatan']
+7. "Kakitangan" can "view" "Masukan Nama Pelulus". ['Kakitangan', 'view', 'Masukan Nama Pelulus', 'Perjawatan']
+
+IF STATEMENT
+IF LULUS
+
+9. "Kakitangan" can "download" "Surat Penangguhan Pertukaran". ['Kakitangan', 'download', 'Surat Penangguhan Pertukaran', 'Perjawatan']
+10. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus". ['Kakitangan', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+
+FIX
+13. "Kakitangan" can "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Perjawatan']
+
+
+IF STATEMENT
+IF FAIL
+
+10. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus". ['Kakitangan', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+
+FIX
+13. "Kakitangan" can "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Perjawatan']
+
+1. "US" can "view" "Senarai Permohonan Pertukaran". ['US', 'view', 'Senarai Permohonan Pertukaran', 'Perjawatan']
+2. "US" can "view" "Status Pengesahan Permohonan". ['US', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+3. "US" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri". ['US', 'view', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+4. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Perjawatan']
+5. "US" can "view" "Surat Pertukaran" and its documents. ['US', 'view', 'Surat Pertukaran', 'Perjawatan']
+
+IF STATEMENT
+IF Postpone
+
+6. "US" can "view" "Permohonan Penangguhan/Pindaan Penempatan". ['US', 'view', 'Permohonan Penangguhan/Pindaan Penempatan', 'Perjawatan']
+7. "US" can "add" "Masukan Nama Pelulus". ['US', 'add', 'Masukan Nama Pelulus', 'Perjawatan']
+
+IF STATEMENT
+IF LULUS
+
+9. "US" can "download" "Surat Penangguhan Pertukaran". ['US', 'download', 'Surat Penangguhan Pertukaran', 'Perjawatan']
+10. "US" can "add" "Masukan Penyokong dan Pelulus". ['US', 'add', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+
+FIX
+13. "US" can "view" overall status of the application. ['US', 'view', 'overall status of the application.', 'Perjawatan']
+
+1. "PN" can "view" "Senarai Permohonan Pertukaran". ['PN', 'view', 'Senarai Permohonan Pertukaran', 'Perjawatan']
+2. "PN" can "view" "Status Pengesahan Permohonan". ['PN', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+1. "PN" can "view" "Butiran Permohonan Pertukaran". ['PN', 'view', 'Butiran Permohonan Pertukaran', 'Perjawatan']
+2. "PN" can "update" "Status Sokongan dari Pengarah Bahagian/Negeri". ['PN', 'update', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+
+IGNORE
+2. System can "email" employee. ['email', 'Perjawatan']
+
+
+IGNORE
+3. System can "generate" "Surat Pertukaran Penempatan Borang Lapor Diri" and its documents. ['generate', 'Surat Pertukaran Penempatan Borang Lapor Diri', 'Perjawatan']
+
+
+IGNORE
+4. System can "email" employee, current Pengarah Semasa and Pengarah Baru. ['email', 'Perjawatan']
+
+
+FIX
+1. "Penyokong" can "view" application. ['Penyokong', 'view', 'application.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Butiran Pertukaran" for selected application. ['Penyokong', 'view', 'Butiran Pertukaran', 'Perjawatan']
+2. "Penyokong" can "view" "Status Pengesahan Permohonan". ['Penyokong', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+3. "Penyokong" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri". ['Penyokong', 'view', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+
+IF STATEMENT
+IF "LULUS"
+
+5. "Penyokong" can "download" "Surat Pertukaran" and its documents. ['Penyokong', 'download', 'Surat Pertukaran', 'Perjawatan']
+
+IF STATEMENT
+IF Postpone
+
+6. "Penyokong" can "view" "Permohonan Penangguhan/Pindaan Penempatan". ['Penyokong', 'view', 'Permohonan Penangguhan/Pindaan Penempatan', 'Perjawatan']
+7. "Penyokong" can "view" "Masukan Nama Pelulus". ['Penyokong', 'view', 'Masukan Nama Pelulus', 'Perjawatan']
+9. "Penyokong" can "download" "Surat Penangguhan Pertukaran". ['Penyokong', 'download', 'Surat Penangguhan Pertukaran', 'Perjawatan']
+10. "Penyokong" can "view" "Masukan Penyokong dan Pelulus". ['Penyokong', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+11. "Penyokong" can "update" "Status Sokongan" by updating supporting status to either "SOKONG" or "TIDAK SOKONG". ['Penyokong', 'update', 'Status Sokongan', 'SOKONG', 'TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Permohonan Pertukaran". ['Pelulus', 'view', 'Senarai Permohonan Pertukaran', 'Perjawatan']
+2. "Pelulus" can "view" "Status Pengesahan Permohonan". ['Pelulus', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+3. "Pelulus" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri". ['Pelulus', 'view', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+4. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+5. "Pelulus" can "view" "Surat Pertukaran" and its documents. ['Pelulus', 'view', 'Surat Pertukaran', 'Perjawatan']
+
+IF STATEMENT
+IF Postpone
+
+6. "Pelulus" can "view" "Permohonan Penangguhan/Pindaan Penempatan". ['Pelulus', 'view', 'Permohonan Penangguhan/Pindaan Penempatan', 'Perjawatan']
+7. "Pelulus" can "view" "Masukan Nama Pelulus". ['Pelulus', 'view', 'Masukan Nama Pelulus', 'Perjawatan']
+8. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS". ['Pelulus', 'update', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+2. "Pelulus" can "view" "Status Pengesahan Permohonan". ['Pelulus', 'view', 'Status Pengesahan Permohonan', 'Perjawatan']
+3. "Pelulus" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri". ['Pelulus', 'view', 'Status Sokongan dari Pengarah Bahagian/Negeri', 'Perjawatan']
+4. "Pelulus" can "view" "Keputusan Mesyuarat". ['Pelulus', 'view', 'Keputusan Mesyuarat', 'Perjawatan']
+5. "Pelulus" can "view" "Surat Pertukaran" and its documents. ['Pelulus', 'view', 'Surat Pertukaran', 'Perjawatan']
+
+IF STATEMENT
+IF Postpone
+
+6. "Pelulus" can "view" "Permohonan Penangguhan/Pindaan Penempatan". ['Pelulus', 'view', 'Permohonan Penangguhan/Pindaan Penempatan', 'Perjawatan']
+7. "Pelulus" can "view" "Masukan Nama Pelulus". ['Pelulus', 'view', 'Masukan Nama Pelulus', 'Perjawatan']
+8. "Pelulus" can "view" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS". ['Pelulus', 'view', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+9. "Pelulus" can "download" "Surat Penangguhan Pertukaran". ['Pelulus', 'download', 'Surat Penangguhan Pertukaran', 'Perjawatan']
+10. "Pelulus" can "view" "Masukan Penyokong dan Pelulus". ['Pelulus', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+12. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS". ['Pelulus', 'update', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+1. "PN" can "view" "Senarai Kakitangan". ['PN', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "PN" can "view" "Butiran Kakitangan/Penempatan Dicadangkan dan Alasan Pertukaran". ['PN', 'view', 'Butiran Kakitangan/Penempatan Dicadangkan dan Alasan Pertukaran', 'Perjawatan']
+
+FIX
+2. "PN" can "view" overall status. ['PN', 'view', 'overall status.', 'Perjawatan']
+
+1. "US" can "view" "Senarai Kakitangan". ['US', 'view', 'Senarai Kakitangan', 'Perjawatan']
+3. "US" can "view" "Surat Gagal" or "Surat Pertukaran". ['US', 'view', 'Surat Gagal', 'Surat Pertukaran', 'Perjawatan']
+4. "US" can "add" "Masukan Nama Penyokong dan Pelulus". ['US', 'add', 'Masukan Nama Penyokong dan Pelulus', 'Perjawatan']
+
+FIX
+7. "US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+1. "Kakitangan" can "view" "Senarai Kakitangan". ['Kakitangan', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Kakitangan" can "view" "Butiran Kakitangan". ['Kakitangan', 'view', 'Butiran Kakitangan', 'Perjawatan']
+3. "Kakitangan" can "download" "Surat Gagal" or "Surat Pertukaran". ['Kakitangan', 'download', 'Surat Gagal', 'Surat Pertukaran', 'Perjawatan']
+4. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus". ['Kakitangan', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+
+FIX
+7. "Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Perjawatan']
+
+1. "Penyokong" can "view" "Senarai Kakitangan". ['Penyokong', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Penyokong" can "view" "Butiran Kakitangan". ['Penyokong', 'view', 'Butiran Kakitangan', 'Perjawatan']
+3. "Penyokong" can "download" "Surat Gagal" or "Surat Pertukaran". ['Penyokong', 'download', 'Surat Gagal', 'Surat Pertukaran', 'Perjawatan']
+4. "Penyokong" can "view" "Masukan Penyokong dan Pelulus". ['Penyokong', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+5. "Penyokong" can "update" "Status Sokongan" by updating the supported status either to "SOKONG" or "TIDAK SOKONG". ['Penyokong', 'update', 'Status Sokongan', 'SOKONG', 'TIDAK SOKONG', 'Perjawatan']
+1. "Pelulus" can "view" "Senarai Kakitangan". ['Pelulus', 'view', 'Senarai Kakitangan', 'Perjawatan']
+1. "Pelulus" can "view" "Butiran Kakitangan". ['Pelulus', 'view', 'Butiran Kakitangan', 'Perjawatan']
+3. "Pelulus" can "download" "Surat Gagal" or "Surat Pertukaran". ['Pelulus', 'download', 'Surat Gagal', 'Surat Pertukaran', 'Perjawatan']
+4. "Pelulus" can "view" "Masukan Penyokong dan Pelulus". ['Pelulus', 'view', 'Masukan Penyokong dan Pelulus', 'Perjawatan']
+5. "Pelulus" can "view" "Status Sokongan". ['Pelulus', 'view', 'Status Sokongan', 'Perjawatan']
+6. "Pelulus" can "update" "Status Kelulusan" by updating the approval status either to "LULUS" or "TIDAK LULUS". ['Pelulus', 'update', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+1. System can "generate" "Surat" eithe "Surat Gagal or Surat Penempatan". ['generate', 'Surat', 'Surat Gagal or Surat Penempatan', 'Perjawatan']
+2. System can "email" "PN", "current Pengarah" and "Kakitangan". ['email', 'PN', 'current Pengarah', 'Kakitangan', 'Perjawatan']
+
+FIX
+1. "US" can "view" list of potential employees. ['US', 'view', 'list of potential employees.', 'Perjawatan']
+
+2. "US" can "view" "Permohonan Penangguhan dari Kakitangan". ['US', 'view', 'Permohonan Penangguhan dari Kakitangan', 'Perjawatan']
+3. "US" can "add" "Masukkan Nama Pelulus". ['US', 'add', 'Masukkan Nama Pelulus', 'Perjawatan']
+4. "US" can "view" "Status Kelulusan Permohonan Penangguhan". ['US', 'view', 'Status Kelulusan Permohonan Penangguhan', 'Perjawatan']
+6. "US" can "add" "Masukkan maklumat penyokong dan pelulus". ['US', 'add', 'Masukkan maklumat penyokong dan pelulus', 'Perjawatan']
+8. "US" can "view" "Status Kelulusan". ['US', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+9. "US" can "update" overall status. ['US', 'update', 'overall status.', 'Perjawatan']
+
+
+FIX
+1. "Kakitangan" can "view" list of employee. ['Kakitangan', 'view', 'list of employee.', 'Perjawatan']
+
+2. "Kakitangan" can "add" "Permohonan Penangguhan dari Kakitangan". ['Kakitangan', 'add', 'Permohonan Penangguhan dari Kakitangan', 'Perjawatan']
+3. "Kakitangan" can "view" "Masukkan Nama Pelulus". ['Kakitangan', 'view', 'Masukkan Nama Pelulus', 'Perjawatan']
+4. "Kakitangan" can "view" "Status Kelulusan Permohonan Penangguhan". ['Kakitangan', 'view', 'Status Kelulusan Permohonan Penangguhan', 'Perjawatan']
+
+IF STATEMENT
+IF LULUS
+
+6. "Kakitangan" can "view" "Masukkan maklumat penyokong dan pelulus". ['Kakitangan', 'view', 'Masukkan maklumat penyokong dan pelulus', 'Perjawatan']
+8. "Kakitangan" can "view" "Status Kelulusan". ['Kakitangan', 'view', 'Status Kelulusan', 'Perjawatan']
+
+FIX
+9. "Kakitangan" can "update" overall status. ['Kakitangan', 'update', 'overall status.', 'Perjawatan']
+
+
+FIX
+1. "Penyokong" can "view" list of employee. ['Penyokong', 'view', 'list of employee.', 'Perjawatan']
+
+2. "Penyokong" can "view" "Permohonan Penangguhan dari Kakitangan". ['Penyokong', 'view', 'Permohonan Penangguhan dari Kakitangan', 'Perjawatan']
+3. "Penyokong" can "view" "Masukkan Nama Pelulus". ['Penyokong', 'view', 'Masukkan Nama Pelulus', 'Perjawatan']
+4. "Penyokong" can "view" "Status Kelulusan Permohonan Penangguhan". ['Penyokong', 'view', 'Status Kelulusan Permohonan Penangguhan', 'Perjawatan']
+
+IF STATEMENT
+IF LULUS
+
+6. "Penyokong" can "view" "Masukkan maklumat penyokong dan pelulus". ['Penyokong', 'view', 'Masukkan maklumat penyokong dan pelulus', 'Perjawatan']
+7. "Penyokong" can "update" "Status Penyokongan" by updating supported status to either "SOKONG" or "TIDAK SOKONG". ['Penyokong', 'update', 'Status Penyokongan', 'SOKONG', 'TIDAK SOKONG', 'Perjawatan']
+
+FIX
+1. "Pelulus" can "view" list of employee. ['Pelulus', 'view', 'list of employee.', 'Perjawatan']
+
+2. "Pelulus" can "view" "Permohonan Penangguhan dari Kakitangan". ['Pelulus', 'view', 'Permohonan Penangguhan dari Kakitangan', 'Perjawatan']
+3. "Pelulus" can "view" "Masukkan Nama Pelulus". ['Pelulus', 'view', 'Masukkan Nama Pelulus', 'Perjawatan']
+4. "Pelulus" can "view" "Status Kelulusan Permohonan Penangguhan". ['Pelulus', 'view', 'Status Kelulusan Permohonan Penangguhan', 'Perjawatan']
+
+IF STATEMENT
+IF LULUS
+
+6. "Pelulus" can "view" "Masukkan maklumat penyokong dan pelulus". ['Pelulus', 'view', 'Masukkan maklumat penyokong dan pelulus', 'Perjawatan']
+7. "Pelulus" can "view" "Status Penyokongan". ['Pelulus', 'view', 'Status Penyokongan', 'Perjawatan']
+8. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS". ['Pelulus', 'update', 'Status Kelulusan', 'LULUS', 'TIDAK LULUS', 'Perjawatan']
+#1. "Kakitangan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja"). ['Kakitangan', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+
+FIX
+#1. "Kakitangan" "add" details related to interim position and its details. ['Kakitangan', 'add', 'details related to interim position and its details.', 'Perjawatan']
+
+#2. "Kakitangan" "download" and "upload" supporting documents. ['Kakitangan', 'download', 'upload', 'Perjawatan']
+
+FIX
+#1. "Kakitangan" "view" details related to interim position and its details. ['Kakitangan', 'view', 'details related to interim position and its details.', 'Perjawatan']
+
+#2. "Kakitangan" "download" and "upload" supporting documents. ['Kakitangan', 'download', 'upload', 'Perjawatan']
+
+FIX
+#4. "Kakitangan" "view" final status of their application. ['Kakitangan', 'view', 'final status of their application.', 'Perjawatan']
+
+#1. "Pengarah Bahagian" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja"). ['Pengarah Bahagian', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+#1. "Pengarah Bahagian" "edit" status to "SOKONG" for all interim position application. ['Pengarah Bahagian', 'edit', 'SOKONG', 'Perjawatan']
+#1. "Pengarah Bahagian" "edit" status to "TIDAK SOKONG" for all interim position application. ['Pengarah Bahagian', 'edit', 'TIDAK SOKONG', 'Perjawatan']
+#1. "Pengarah Bahagian" "edit" status to "SOKONG/TIDAK SOKONG" for one interim position application at one time. ['Pengarah Bahagian', 'edit', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+#1. "Urus Setia Perjawatan" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja"). ['Urus Setia Perjawatan', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+
+FIX
+#1. "Urus Setia Perjawatan" "view" the interim position application for selected employee. ['Urus Setia Perjawatan', 'view', 'the interim position application for selected employee.', 'Perjawatan']
+
+
+FIX
+#1. "Urus Setia Perjawatan" "view" the selected employee current service details. ['Urus Setia Perjawatan', 'view', 'the selected employee current service details.', 'Perjawatan']
+
+
+FIX
+#1. "Urus Setia Perjawatan" "view" tempoh penangguhan kerja. ['Urus Setia Perjawatan', 'view', 'tempoh penangguhan kerja.', 'Perjawatan']
+
+#1. "Urus Setia Perjawatan" "view", "download" the documents. ['Urus Setia Perjawatan', 'view', 'download', 'Perjawatan']
+
+FIX
+#1. "Urus Setia Perjawatan" "view" if the applicant is skipping seniority and its remark. ['Urus Setia Perjawatan', 'view', 'if the applicant is skipping seniority and its remark.', 'Perjawatan']
+
+#1. "Urus Setia Perjawatan" "view" if "Pengarah Bahagia" give their supported based on status. ['Urus Setia Perjawatan', 'view', 'Pengarah Bahagia', 'Perjawatan']
+
+FIX
+#1. "Urus Setia Perjawatan" "update" the checklist,the one who checked and prepare the document as well. ['Urus Setia Perjawatan', 'update', 'the checklist,the one who checked and prepare the document as well.', 'Perjawatan']
+
+#1. "Pengarah Khidmat Pengurusan" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja"). ['Pengarah Khidmat Pengurusan', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+
+FIX
+#1. "Pengarah Khidmat Pengurusan" "view" the interim position application for selected employee. ['Pengarah Khidmat Pengurusan', 'view', 'the interim position application for selected employee.', 'Perjawatan']
+
+
+FIX
+#1. "Pengarah Khidmat Pengurusan" "view" the selected employee current service details. ['Pengarah Khidmat Pengurusan', 'view', 'the selected employee current service details.', 'Perjawatan']
+
+
+FIX
+#1. "Pengarah Khidmat Pengurusan" "view" tempoh penangguhan kerja. ['Pengarah Khidmat Pengurusan', 'view', 'tempoh penangguhan kerja.', 'Perjawatan']
+
+#1. "Pengarah Khidmat Pengurusan" "view", "download" the documents. ['Pengarah Khidmat Pengurusan', 'view', 'download', 'Perjawatan']
+
+FIX
+#1. "Pengarah Khidmat Pengurusan" "view" if the applicant is skipping seniority and its remark. ['Pengarah Khidmat Pengurusan', 'view', 'if the applicant is skipping seniority and its remark.', 'Perjawatan']
+
+#1. "Pengarah Khidmat Pengurusan" "view" if "Pengarah Bahagia" give their supported based on status. ['Pengarah Khidmat Pengurusan', 'view', 'Pengarah Bahagia', 'Perjawatan']
+
+FIX
+#1. "Pengarah Khidmat Pengurusan" "view" the checklist,the one who checked and prepare the document as well. ['Pengarah Khidmat Pengurusan', 'view', 'the checklist,the one who checked and prepare the document as well.', 'Perjawatan']
+
+#1. "Pengarah Khidmat Pengurusan" "edit" the status to either "LULUS/TIDAK LULUS" and checked. ['Pengarah Khidmat Pengurusan', 'edit', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF "TIDAK LULUS", system will generate surat gagal permohonan dan email
+
+
+IF STATEMENT
+IF "LULUS", System will generate surat arahan tanggung kerja and email
+
+#1. "Urus Setia Perjawatan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja"). ['Urus Setia Perjawatan', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+
+FIX
+#1. "Urus Setia Perjawatan" "view" selected employee's interim application and its details. ['Urus Setia Perjawatan', 'view', "selected employee's interim application and its details.", 'Perjawatan']
+
+#2. "Urus Setia Perjawatan" "view" selected employee's current service details. "Pegawai yang Menanggung Kerja". ['Urus Setia Perjawatan', 'view', 'Pegawai yang Menanggung Kerja', 'Perjawatan']
+#3. "Urus Setia Perjawatan" "edit" status to "SAH/TIDAK SAH" and remark. ['Urus Setia Perjawatan', 'edit', 'SAH/TIDAK SAH', 'Perjawatan']
+#4. "Urus Setia Perjawatan" "view" interim allowances section "Pengiraan Elaun Tanggung Kerja". ['Urus Setia Perjawatan', 'view', 'Pengiraan Elaun Tanggung Kerja', 'Perjawatan']
+
+FIX
+#1. "Timbalan Ketua Seksyen" "view" selected employee's interim application and its details. ['Timbalan Ketua Seksyen', 'view', "selected employee's interim application and its details.", 'Perjawatan']
+
+
+FIX
+#2. "Timbalan Ketua Seksyen" "view" selected employee's current service details. ['Timbalan Ketua Seksyen', 'view', "selected employee's current service details.", 'Perjawatan']
+
+#3. "Timbalan Ketua Seksyen" "edit" status to "SOKONG/TIDAK SOKONG" and remark. ['Timbalan Ketua Seksyen', 'edit', 'SOKONG/TIDAK SOKONG', 'Perjawatan']
+
+IF STATEMENT
+IF "SOKONG", system will notified the system.
+
+
+IF STATEMENT
+IF "NOT SOKONG", the flow will end there.
+
+
+FIX
+#1. "Ketua Seksyen" "view" selected employee's interim application and its details. ['Ketua Seksyen', 'view', "selected employee's interim application and its details.", 'Perjawatan']
+
+
+FIX
+#2. "Ketua Seksyen" "view" selected employee's current service details. ['Ketua Seksyen', 'view', "selected employee's current service details.", 'Perjawatan']
+
+#3. "Ketua Seksyen" "edit" status to "LULUS/TIDAK LULUS" and remark. ['Ketua Seksyen', 'edit', 'LULUS/TIDAK LULUS', 'Perjawatan']
+
+IF STATEMENT
+IF "LULUS", system will notified the employee.
+
+
+IF STATEMENT
+IF "TIDAK LULUS", the flow will end there.
+
+#1. "Kakitangan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja"). ['Kakitangan', 'view', 'Senarai Rekod Tanggung Kerja', 'Perjawatan']
+#1. "Kakitangan" "download" "Surat Penamatan Tanggung Kerja". ['Kakitangan', 'download', 'Surat Penamatan Tanggung Kerja', 'Perjawatan']
+#1. "Kakitangan" "view",search their own list of application. "Senarai Permohan Persaraan". ['Kakitangan', 'view', 'Senarai Permohan Persaraan', 'Perjawatan']
+#2. "Kakitangan" "add" new application by clicking "Permohonan Baru" button. ['Kakitangan', 'add', 'Permohonan Baru', 'Perjawatan']
+#1. "Kakitangan" "add" new application by clicking "Hantar"button. ['Kakitangan', 'add', 'Hantar', 'Perjawatan']
+#1. "Kakitangan" "view" status "AKU/TIDAK AKU" and remark for "Perakuan Dari Urus Setia Integriti". ['Kakitangan', 'view', 'AKU/TIDAK AKU', 'Perakuan Dari Urus Setia Integriti', 'Perjawatan']
+#7. "Kakitangan" "view" status, remark and "tarikh Penghantarn Permohonan ke KWAP". ['Kakitangan', 'view', 'tarikh Penghantarn Permohonan ke KWAP', 'Perjawatan']
+#1. "Urus Setia Integriti" "view", filter and search "Senarai Persara Pilihan". ['Urus Setia Integriti', 'view', 'Senarai Persara Pilihan', 'Perjawatan']
+#1. "Urus Setia Integriti" "edit" status and remark of application to either "DIPERAKU OR TIDAK DIPERAKU". ['Urus Setia Integriti', 'edit', 'DIPERAKU OR TIDAK DIPERAKU', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view", filter and search "Senarai Persara Pilihan". ['Urus Setia Persaraan', 'view', 'Senarai Persara Pilihan', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "Perakuan dari Urus Setia Integriti". ['Urus Setia Persaraan', 'view', 'Perakuan dari Urus Setia Integriti', 'Perjawatan']
+
+IF STATEMENT
+#2. IF status="SAH" procced to page Route: '.../Pilhan/Penyokong dan Pelulus'
+
+
+FIX
+#3. IF status="TIDAK SAH" proceed to Route: ".../Pilihan/Senarai Persaraan" and end. ['TIDAK SAH', '.../Pilihan/Senarai Persaraan', 'and end.', 'Perjawatan']
+
+#1. "Urus Setia Persaraan" "add" "Penyokong 1, Penyokong 2, Pelulus". ['Urus Setia Persaraan', 'add', 'Penyokong 1, Penyokong 2, Pelulus', 'Perjawatan']
+#2. "Urus Setia Persaraan" "view" "Penyokong 1, Penyokong 2, Pelulus". ['Urus Setia Persaraan', 'view', 'Penyokong 1, Penyokong 2, Pelulus', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "Penyokong 1, Penyokong 2, Pelulus"'s statuses and remarks. ['Urus Setia Persaraan', 'view', 'Penyokong 1, Penyokong 2, Pelulus', 'Perjawatan']
+
+FIX
+#1. "Urus Setia Persaraan" "edit" status and remark. ['Urus Setia Persaraan', 'edit', 'status and remark.', 'Perjawatan']
+
+
+FIX
+#2. "Urus Setia Persaraan" "view" status and remark. ['Urus Setia Persaraan', 'view', 'status and remark.', 'Perjawatan']
+
+
+IF STATEMENT
+IF "TIDAK LULUS", route back to "Senarai Persaraan".
+
+
+IF STATEMENT
+IF "LULUS", proceed to next stage, where system notified chosen
+
+
+FIX
+#1. "Urus Setia Persaraan" "edit" status and remark. ['Urus Setia Persaraan', 'edit', 'status and remark.', 'Perjawatan']
+
+
+FIX
+#2. "Urus Setia Persaraan" "view" status and remark. ['Urus Setia Persaraan', 'view', 'status and remark.', 'Perjawatan']
+
+
+IGNORE
+#8. Status Penghantaran Permohonon ke KWAP. ['Perjawatan']
+
+
+FIX
+#1. "Urus Setia Persaraan" "edit" status, {tarikh penghantaran permohonan ke KWAP} and remark. ['Urus Setia Persaraan', 'edit', 'status, {tarikh penghantaran permohonan ke KWAP} and remark.', 'Perjawatan']
+
+
+FIX
+#2. "Urus Setia Persaraan" "view" status, sendDate. and remark. ['Urus Setia Persaraan', 'view', 'status, sendDate. and remark.', 'Perjawatan']
+
+#1. "Penyokong I" "view", filter and search "Senarai Persara Pilihan". ['Penyokong I', 'view', 'Senarai Persara Pilihan', 'Perjawatan']
+#1. "Penyokong II" "view", filter and search "Senarai Persara Pilihan". ['Penyokong II', 'view', 'Senarai Persara Pilihan', 'Perjawatan']
+#1. "Pelulus" "view", filter and search "Senarai Persara Pilihan". ['Pelulus', 'view', 'Senarai Persara Pilihan', 'Perjawatan']
+
+FIX
+"Penyokong 1" and "Penyokong 2". ['Penyokong 1', 'Penyokong 2', '".', 'Perjawatan']
+
+#1. "Pelulus" "edit" status and remark for "Permohonan Persaran". ['Pelulus', 'edit', 'Permohonan Persaran', 'Perjawatan']
+#1. "Kakitangan" "view",search their own list of application. "Senarai Permohonan Persaraan". ['Kakitangan', 'view', 'Senarai Permohonan Persaraan', 'Perjawatan']
+#2. "Kakitangan" "add" new application by clicking "Permohonan Baru" button. ['Kakitangan', 'add', 'Permohonan Baru', 'Perjawatan']
+#1. "Kakitangan" "add" new application by clicking "Hantar"button. ['Kakitangan', 'add', 'Hantar', 'Perjawatan']
+#1. "Kakitangan" "view" status "Urus Setia Integriti" status. ['Kakitangan', 'view', 'Urus Setia Integriti', 'Perjawatan']
+#3. "Kakitangan" "view" "Status Pengesahan Dari Urusetia Persaraan". ['Kakitangan', 'view', 'Status Pengesahan Dari Urusetia Persaraan', 'Perjawatan']
+#4. IF "TIDAK SAH", "Kakitangan" is route back to "Senarai Persaraan". ['TIDAK SAH', 'Kakitangan', 'Senarai Persaraan', 'Perjawatan']
+
+IF STATEMENT
+IF "SAH"
+
+#6. "Kakitangan" "upload" completed "Borang Persaraan". ['Kakitangan', 'upload', 'Borang Persaraan', 'Perjawatan']
+#8. "Kakitangan" "view" "Semak Status Penghantaran Permohonan ke KWAP". ['Kakitangan', 'view', 'Semak Status Penghantaran Permohonan ke KWAP', 'Perjawatan']
+#1. "Urus Setia Integriti" "view", filter and search "Senarai Persara Paksaan". ['Urus Setia Integriti', 'view', 'Senarai Persara Paksaan', 'Perjawatan']
+#1. "Urus Setia Integriti" "edit" status and remark of application to either "DIPERAKU OR TIDAK DIPERAKU". ['Urus Setia Integriti', 'edit', 'DIPERAKU OR TIDAK DIPERAKU', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view", filter and search "Senarai Persara Paksaan". ['Urus Setia Persaraan', 'view', 'Senarai Persara Paksaan', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "Perakuan dari Urus Setia Integriti". ['Urus Setia Persaraan', 'view', 'Perakuan dari Urus Setia Integriti', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "Semak Rekod Tatatertib Kakitangan". ['Urus Setia Persaraan', 'view', 'Semak Rekod Tatatertib Kakitangan', 'Perjawatan']
+
+IF STATEMENT
+IF status IS TIDAK SAH,
+
+
+IF STATEMENT
+IF status IS SAH
+
+#1. "Urus Setia Persaraan" "edit" "status" and "remark". ['Urus Setia Persaraan', 'edit', 'status', 'remark', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "Semak Pengesahan Dokumen Persaraan". ['Urus Setia Persaraan', 'view', 'Semak Pengesahan Dokumen Persaraan', 'Perjawatan']
+
+IGNORE
+#6. Keputusan Penghantaran Permohonan ke KWAP. ['Perjawatan']
+
+#1. "Urus Setia Persaraan" "edit" "status" and "Tarikh Penghantaran Permohonan ke KWAP". ['Urus Setia Persaraan', 'edit', 'status', 'Tarikh Penghantaran Permohonan ke KWAP', 'Perjawatan']
+#1. "Urus Setia Persaraan" "view" "status" and "Tarikh Penghantaran Permohonan ke KWAP". ['Urus Setia Persaraan', 'view', 'status', 'Tarikh Penghantaran Permohonan ke KWAP', 'Perjawatan']
+			},
+		])
+	}
+}

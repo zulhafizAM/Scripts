@@ -1,0 +1,392 @@
+
+Module Elaun-Elaun Perkhidmatan
+#1. Permohonan Bantuan  Pakaian Istiadat
+#2. Permohonan Elaun Pakaian Panas
+	The same policies like Elaun Pakaian Istiadat.
+	#1. Kakitangan
+		#1. Function Listing
+			1. "Kakitangan" can "view" "Senarai Permohonan"
+			
+		#2. Function Add Permohonan
+			1. "Kakitangan" can "add" "Butiran Permohonan".
+			2. "Kakitangan" can "upload" "Dokumen Sokongan".
+			
+		#3. Function Papar Butiran 
+			1. "Kakitangan" "view" application details and their supported documents.
+			2. "Kakitangan" "view" the support status of the application.
+			3. "Kakitangan" "view" the verification status of the application from 'US Elaun'.
+			4. "Kakitangan" "view" who is the approver and supporter.
+			
+			IF "SOKONG"
+			5. "Kakitangan" "view" the support status of the application
+			
+			IF "LULUS"
+			6. "Kakitangan" "view" the approval status of the application.
+			7. "Kakitangan" "view" the overall status of the application.
+	
+	#2. Urus Setia
+		#1. Function Listing 
+			1. "US Elaun" "view" and search list of application.
+			
+		#2. Function Papar Butiran 
+			1. "US Elaun" "view" the application details and uploaded documents.
+			2. "US Elaun" "view" the support status of the application.
+			3. "US Elaun" "update" the verification status of the application.
+			4. "US Elaun" "update" approver and supporter into the application. 
+			
+			IF "SOKONG"
+			5. "US Elaun" "view" the support status of the application
+			
+			IF "LULUS"
+			6. "US Elaun" "view" the approval status of the application.
+			7. "US Elaun" "update" the overall status of the application.
+			
+			
+	#3. Pengarah Bahagian/ Negeri
+		#1. Function Listing 
+			1. "PN" "view" and search list of application.
+		#2. Function Papar Butiran 
+			1. "PN" "view" the application details and uploaded documents.
+			2. "PN" "update" support status of the application. 
+			
+			IF "TIDAK SOKONG", the application end there.
+			IF "SOKONG", the application proceed to another level.
+			
+	#4. Penyokong 
+		#1. Function Listing 
+			1. "Penyokong" "view" and search list of application.
+			
+		#2. Function Papar Butiran 
+			1. "Penyokong" "view" the application details and uploaded documents. 
+			2. "Penyokong" "view" the support status of the application from 'PN'.
+			3. "Penyokong" "view" the verification status of the application from 'US Elaun'.
+			4. "Penyokong" "update" the support status of the application.
+			
+			IF "SOKONG", application proceed to next level.
+			IF "TIDAK SOKONG", application is end.
+
+	#5. Pelulus
+		#1. Function Listing 
+			1. "Pelulus" "view" and search list of application.
+			
+		#2. Function Papar Butiran 
+			1. "Pelulus" "view" the application details and uploaded documents. 
+			2. "Pelulus" "view" the support status of the application from 'PN'.
+			3. "Pelulus" "view" the verification status of the application from 'US Elaun'.
+			4. "Pelulus" "view" the support status of the application.
+			5. "Pelulus" "update" the approval status of the application from 'Penyokong'.
+		
+	#6. System
+		1. System "update" employee details.
+		2. System generate "arahan bayaran ke Bahagian Kewangan."
+		
+
+	
+#3. Permohonan Tambang Mengunjungi Wilayah Asal
+	#1. Kakitangan
+		#1. Function Listing   
+			1. "Kakitangan" "view" and search list of application.
+			
+		#2. Function Add Permohonan 
+			1. "Kakitangan" "add" application details and the supporting documents. 
+	
+		#3. Function Papar Butiran
+			1. "Kakitangan" "view" application details and its supporting documents.
+			2. "Kakitangan" "view" the verification status of the application from 'US Elaun'.
+			3. "Kakitangan" "view" the support status of the application from 'Penyokong'.
+			4. "Kakitangan" "view" the approval status of the application from 'Pelulus'.
+			5. "Kakitangan" "view" the application overall status.
+			6. "Kakitangan" "download" "Surat Kelulusan".
+
+	#2. Urus Setia
+		#1. Function Listing
+			1. "US Elaun" "view" and search list of application.
+			
+		#2. Function Papar Butiran
+			1. "US Elaun" "view" application details and its supporting documents.
+			2. "US Elaun" "update" verification status of the application.
+			3. "US Elaun" "update" approver and supporter into the application.
+			4. "US Elaun" "view" the support status into the application.
+			5. "US Elaun" "view" the verification status for the application.
+			6. "US Elaun" "update" the overall status of the application.
+			
+	#3. Penyokong 
+		#1. Function Listing
+			1. "Penyokong" "view" and search list of application. 
+		#2. Function Papar Butiran
+			1. "Penyokong" "view" the application details and its supporting documents.
+			2. "Penyokong" "view" the verification status of the application.
+			3. "Penyokong" "update" the support status into the application.
+			
+			IF "SOKONG", the application proceed to next level.
+			IF "TIDAK SOKONG", the application will end.
+			
+	#4. Pelulus
+		#1. Function Listing
+			1. "Pelulus" "view" and search list of application.
+			
+		#2. Function Papar Butiran
+			1. "Pelulus" "view" the application details and its supporting documents.
+			2. "Pelulus" "view" the verification status of the application.
+			3. "Pelulus" "view" the support status for the application.
+			4. "Pelulus" "update" the approval status into the application.
+			
+	#5. System
+		1. System "update" the employee details..
+		2. System generate "Surat Kelulusan Permohonan" to finance department.
+		
+#4. Permohonan Bantuan Mengurus Jenazah
+	#1. Urus Setia@Pemohonan (Mana2 Urus Setia).
+		#1. Function Listing
+			1. "US Elaun" "view" list of application for funeral service.
+			
+		#2. Function Add Permohonan 
+			1. "US Elaun" "add" the application details for funeral service.
+			2. "US Elaun" "upload" "Lampiran B" and its supported documents.
+			
+		#3. Function Papar Butiran 
+			1. "US Elaun" "view" the application details for funeral service.
+			2. "US Elaun" "view" "Lampiran B" and its supported documents. 
+			3. "US Elaun" "view" verification status for the application. 
+			4. "US Elaun" "view" support status for the application.
+			5. "US Elaun" "view" approval status for the application.
+			6. "US Elaun" "view" verification and confirmation status from the next of kins. 
+			7. "US Elaun" "view" the status of the application.
+	
+	#2. Urus Setia	
+		#1. Function Listing
+			1. "US Elaun" "view" list of application for funeral service.
+		#2. Function Papar Butiran
+			1. "US Elaun" "view" application details for funeral service. 
+			2. "US Elaun" "update" verification status of the application.
+			3. "US Elaun" "update" the supporter and approver  into the application.
+			
+			IF "LULUS"
+			4. "US Elaun" "view" the support status of the application.
+			IF "SOKONG"
+			5. "US Elaun" "view" the approval status of the application.
+			
+			6. "US Elaun" "download" the payment order to finance department.
+			7. "US Elaun" get the verification and confirmation from the employee's next of kin.
+			8. "US Elaun" "update" the overall status. 
+	#3. Penyokong
+		#1. Function Listing
+			1. "Penyokong" "view" the list of application.
+			
+		#2. Function Papar Butiran
+			1. "Penyokong" "view" the application details.
+			2. "Penyokong" "view" verification status of the application. 
+			3. "Penyokong" "update" the support status of the application.
+			
+			IF "SOKONG", application proceed to the next level.
+			IF "TIDAK SOKONG", application will end there.
+			
+	#4. Pelulus
+		#1. Function Listing
+			1. "Pelulus" "view" the list of application.
+		#2. Function Papar Butiran
+			1. "Pelulus" "view" the application details.
+			2. "Pelulus" "view" verification status of the application.
+			3. "Pelulus" "view" the support status of the application. 
+			4. "Pelulus" "update" the approval status of the application.
+			
+			IF "LULUS", the application will proceed to next level.
+			IF "TIDAK LULUS", application will end there.
+	#5. System
+		1. System generate payment order to finance department.
+		2. System "update" the employee's details.
+		
+		
+#5.	Permohonan Tabung Kebajikan Kakitangan
+	#1. Kakitangan
+		#1. Function Listing
+			1. "Kakitangan" "view" the list of application.
+		#2. Function Add Permohonan
+			1. "Kakitangan" "add" the application details and its supported document.
+			
+		#3. Function Papar Butiran
+			1. "Kakitangan" "view" the application details and its supported document.
+			2. "Kakitangan" "view" the support status from 'PN'.
+			3. "Kakitangan" "view" the verification status from "US Elaun" for the application.
+			4. "Kakitangan" "view" supporter and approver for the application.
+			
+			IF "SOKONG" and "LULUS"
+			5. "Kakitangan" "view" the support status from "Penyokong" and approval status from 'Pelulus'.
+			6. "Kakitangan" "view" overall status of the application.
+			
+	#2. Urus Setia 
+		#1. Function Listing 
+			1. "US Elaun" "view" the list of application.
+			
+		#2. Function Papar Butiran
+			1. "US Elaun" "view" the application details and its supported documents.
+			2. "US Elaun" "view" the support status from 'PN'.
+			3. "US Elaun" "update" verification status for the the application.
+			4. "US Elaun" "update" supporter and approver into the application.
+			
+			IF "SOKONG" and "LULUS"
+			5. "US Elaun" "view" the support status from "Penyokong" and approval status from 'Pelulus'.
+			6. "US Elaun" "download" payment order for finance department.
+			7. "US Elaun" "update" the overall status for the application.
+			
+	#3. Pengarah Negeri
+		#1. Function Listing 
+			1. "PN" "view" the application list.
+			
+		#2. Function Papar Butiran
+			1. "PN" "view" the application details and its supported documents.
+			2. "PN" "update" the support status for the application.
+			
+			IF "SOKONG", the application will proceed to the next level.			
+			IF "NOT SOKONG", the application end. 
+			
+	#4. Penyokong
+		#1. Function Listing 
+			1. "Penyokong" "view" the list of application.
+			
+		#2. Function Papar Butiran
+			1. "Penyokong" "view" the applicationd details and its supported documents.
+			2. "Penyokong" "view" the support status from "PN" for the application.
+			3. "Penyokong" "view" the verification status from "US Elaun" for the application.
+			4. "Penyokong" "update" the support status for the application.
+			
+			IF "SOKONG", the application will proceed to the next level.			
+			IF "NOT SOKONG", the application end. 
+	#5. Pelulus
+		#1. Function Listing 
+			1. "Pelulus" "view" the list of application.
+			
+		#2. Function Papar Butiran
+			1. "Pelulus" "view" the application details and its supported documents.
+			2. "Pelulus" "view" the support status from "PN" for the application.
+			3. "Pelulus" "view" the verification status from "US Elaun" for the application.
+			4. "Pelulus" "view" the support status from "Penyokong" for the application.
+			5. "Pelulus" "update" the approval status for the application.
+			
+			IF "SOKONG", the application will proceed to the next level.			
+			IF "NOT SOKONG", the application end. 
+	#6. System 
+		1. System "update" the employee's details. 
+		2. System generate payment order to finance department.
+
+#5. Permohonan Elaun Perpindahan Rumah
+#6. Permohonan Bayaran Balik Passport
+#7. Permohonan Pembayaran Balik Insurans Kesihatan Penjawat Awam Keluar Negara atas Urusan Peribadi
+	Notes: 5,6,7 have the same policies.
+	#1. Kakitangan
+		#1. Function Listing 
+			1. "Kakitangan" "view" the list of application.
+			
+		#2. Function Add Pemohonan
+			1. "Kakitangan" "add" the application details and its supported documents. 
+			 
+		#3. Function Papar Butiran 
+			1. "Kakitangan" "view" the application details and its supported documents. 
+			2. "Kakitangan" "view" the verification status from 'US Elaun'.
+			
+			IF "SOKONG"
+			3. "Kakitangan" "view" the support status from 'Penyokong'.
+			IF "LULUS"
+			4. "Kakitangan" "view" the approval status from "Pelulus"
+			5. "Kakitangan" "view" overall status of application.
+					
+	#2. Urus Setia
+		#1. Function Listing
+			1. "US Elaun" "view" the list of application.
+		#2. Function Papar Butiran
+			1. "US Elaun" "view" the application and its supported documents.
+			2. "US Elaun" "update" the verification status for the application.
+			3. "US Elaun" "update" approver and supporter into the application.
+			
+			IF "SOKONG" 
+			4. "US Elaun" "view" the support status of the application.
+			
+			IF "LULUS"
+			5. "US Elaun" "view" the approval status of the application.
+			6. "US Elaun" "download" the payment order to finance. (except Pemohonan 
+				Pembayaran Balik Insuran Kesihatan Penjawatan Awam Keluar Negara atas Urusan
+				Peribadi).
+			7. "US Elaun" "update" the overall status of the application.
+	#3. Penyokong
+		#1. Function Listing
+			1. "Penyokong" "view" the list of application.
+		#2. Function Papar Butiran
+			1. "Penyokong" "view" the application details and its supported documents.
+			2. "Penyokong" "view" the verification status from "US Elaun" for the application.
+			3. "Penyokong" "update" the support status for the application. 
+			4. "Penyokong" "download" the payment order to finance. (only applicable for 
+				Pembayaran Balik Insuran Kesihatan Penjawatan Awam Keluar Negara atas Urusan
+				Peribadi).
+	#4. Pelulus
+		#1. Function Listing
+			1. "Pelulus" "view" the list of application.
+		#2. Function Papar Butiran
+			1. "Pelulus" "view" the application details and its supported documents.
+			2. "Pelulus" "view" the verification status from "US Elaun" for the application.
+			3. "Pelulus" "view" the support status from "Penyokong" for the application.
+			4. "Pelulus" "update" the approval status for the application.
+			
+			IF "SOKONG", the application will proceed to the next level.			
+			IF "NOT SOKONG", the application end. 
+	#5. System 
+		1. System "update" the employee's details. 
+		2. System generate payment order to finance department.
+		
+		
+#8. Permohonan Pembayaran Balik Pengangkutan Barang Melalui Jalan Laut
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" "view" and search list of application.
+			
+			#2. Function Add Permohonan 
+				1. "Kakitangan" "add" the application details.
+				
+			#3. Function Papar Butiran
+				1. "Kakitangan" "view" the application details.
+				2. "Kakitangan" "view" uploaded supported documents from 'US Elaun'.
+				
+				IF "SOKONG"
+				3. "Kakitangan" "view" support status of the application.
+				
+				IF "LULUS"
+				4. "Kakitangan" "view" approval status of the application.
+				5. "Kakitangan" "view" overall status of the application.
+				
+		#2. Urus Setia
+			#1. Function Listing 
+				1. "US Elaun" "view" and search list of application.
+			#2. Function Papar Butiran
+				1. "US Elaun" "view" the application details.
+				2. "US Elaun" "upload" the supported document.
+				3. "US Elaun" "update" the approver and supporter into the application.
+				
+				IF "SOKONG"
+				3. "US Elaun" "view" support status of the application.
+				
+				IF "LULUS"
+				4. "US Elaun" "view" approval status of the application.
+					*Maklum kepada Syarikat Pengangkutan
+					
+				5. "US Elaun" "update" invoice details and its documents related to the application to the system.
+				6. "US Elaun" "download" payment order to the finance department.
+				7. "US Elaun" "update" overall status of the application.
+				
+		#3. Penyokong
+			#1. Function Listing 
+				1. "Penyokong" "view" and search list of application.
+			#2. Function Papar Butiran
+				1. "Penyokong" "view" the application details and its supported document.
+				2. "Penyokong" "update" support status for the application.
+				
+		#4. Pelulus 
+			#1. Function Listing 
+				1. "Pelulus" "view" and search list of application.
+			#2. Function Papar Butiran
+				1."Pelulus" "view" the application details and its supported documents.
+				2."Pelulus" "view" the support status of the application.
+				3."Pelulus" "update" approval status for the application.
+				
+		#5. System 
+			1. System generate Local Order (LO) application letter.
+			2. System generate payment order to finance team.
+			3. System "update" the employee's details.

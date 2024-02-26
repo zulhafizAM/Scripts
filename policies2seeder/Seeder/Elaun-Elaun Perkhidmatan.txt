@@ -1,0 +1,730 @@
+﻿1. "Kakitangan" can "add" "Butiran Permohonan". ['Kakitangan', 'add', 'Butiran Permohonan', 'Elaun-Elaun Perkhidmatan']
+2. "Kakitangan" can "upload" "Dokumen Sokongan". ['Kakitangan', 'upload', 'Dokumen Sokongan', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+1. "Kakitangan" "view" application details and their supported documents. ['Kakitangan', 'view', 'application details and their supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Kakitangan" "view" the support status of the application. ['Kakitangan', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+3. "Kakitangan" "view" the verification status of the application from 'US'. ['Kakitangan', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Kakitangan" "view" who is the approver and supporter. ['Kakitangan', 'view', 'who is the approver and supporter.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG"
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+6. "Kakitangan" "view" the approval status of the application. ['Kakitangan', 'view', 'the approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "Kakitangan" "view" the overall status of the application. ['Kakitangan', 'view', 'the overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" and search list of application. ['US', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the application details and uploaded documents. ['US', 'view', 'the application details and uploaded documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "US" "view" the support status of the application. ['US', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "US" "update" the verification status of the application. ['US', 'update', 'the verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "US" "update" approver and supporter into the application. ['US', 'update', 'approver and supporter into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG"
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+6. "US" "view" the approval status of the application. ['US', 'view', 'the approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "US" "update" the overall status of the application. ['US', 'update', 'the overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "PN" "view" and search list of application. ['PN', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "PN" "view" the application details and uploaded documents. ['PN', 'view', 'the application details and uploaded documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "PN" "update" support status of the application. ['PN', 'update', 'support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "TIDAK SOKONG", the application end there.
+
+
+IF STATEMENT
+IF "SOKONG", the application proceed to another level.
+
+
+FIX
+1. "Penyokong" "view" and search list of application. ['Penyokong', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the application details and uploaded documents. ['Penyokong', 'view', 'the application details and uploaded documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Penyokong" "view" the support status of the application from 'PN'. ['Penyokong', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+3. "Penyokong" "view" the verification status of the application from 'US'. ['Penyokong', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Penyokong" "update" the support status of the application. ['Penyokong', 'update', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", application proceed to next level.
+
+
+IF STATEMENT
+IF "TIDAK SOKONG", application is end.
+
+
+FIX
+1. "Pelulus" "view" and search list of application. ['Pelulus', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the application details and uploaded documents. ['Pelulus', 'view', 'the application details and uploaded documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Pelulus" "view" the support status of the application from 'PN'. ['Pelulus', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+3. "Pelulus" "view" the verification status of the application from 'US'. ['Pelulus', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Pelulus" "view" the support status of the application. ['Pelulus', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+5. "Pelulus" "update" the approval status of the application from 'Penyokong'. ['Pelulus', 'update', 'Penyokong', 'Elaun-Elaun Perkhidmatan']
+
+IGNORE
+1. System "update" employee details. ['update', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" and search list of application. ['Kakitangan', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "add" application details and the supporting documents. ['Kakitangan', 'add', 'application details and the supporting documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" application details and its supporting documents. ['Kakitangan', 'view', 'application details and its supporting documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Kakitangan" "view" the verification status of the application from 'US'. ['Kakitangan', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+3. "Kakitangan" "view" the support status of the application from 'Penyokong'. ['Kakitangan', 'view', 'Penyokong', 'Elaun-Elaun Perkhidmatan']
+4. "Kakitangan" "view" the approval status of the application from 'Pelulus'. ['Kakitangan', 'view', 'Pelulus', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+5. "Kakitangan" "view" the application overall status. ['Kakitangan', 'view', 'the application overall status.', 'Elaun-Elaun Perkhidmatan']
+
+6. "Kakitangan" "download" "Surat Kelulusan". ['Kakitangan', 'download', 'Surat Kelulusan', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+1. "US" "view" and search list of application. ['US', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" application details and its supporting documents. ['US', 'view', 'application details and its supporting documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "US" "update" verification status of the application. ['US', 'update', 'verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "US" "update" approver and supporter into the application. ['US', 'update', 'approver and supporter into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "US" "view" the support status into the application. ['US', 'view', 'the support status into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+5. "US" "view" the verification status for the application. ['US', 'view', 'the verification status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+6. "US" "update" the overall status of the application. ['US', 'update', 'the overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" and search list of application. ['Penyokong', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the application details and its supporting documents. ['Penyokong', 'view', 'the application details and its supporting documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Penyokong" "view" the verification status of the application. ['Penyokong', 'view', 'the verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "Penyokong" "update" the support status into the application. ['Penyokong', 'update', 'the support status into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", the application proceed to next level.
+
+
+IF STATEMENT
+IF "TIDAK SOKONG", the application will end.
+
+
+FIX
+1. "Pelulus" "view" and search list of application. ['Pelulus', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the application details and its supporting documents. ['Pelulus', 'view', 'the application details and its supporting documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Pelulus" "view" the verification status of the application. ['Pelulus', 'view', 'the verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "Pelulus" "view" the support status for the application. ['Pelulus', 'view', 'the support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "Pelulus" "update" the approval status into the application. ['Pelulus', 'update', 'the approval status into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+1. System "update" the employee details.. ['update', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+2. System generate "Surat Kelulusan Permohonan" to finance department. ['Surat Kelulusan Permohonan', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+#1. Urus Setia@Pemohonan (Mana2 Urus Setia). ['Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" list of application for funeral service. ['US', 'view', 'list of application for funeral service.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "add" the application details for funeral service. ['US', 'add', 'the application details for funeral service.', 'Elaun-Elaun Perkhidmatan']
+
+2. "US" "upload" "Lampiran B" and its supported documents. ['US', 'upload', 'Lampiran B', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+1. "US" "view" the application details for funeral service. ['US', 'view', 'the application details for funeral service.', 'Elaun-Elaun Perkhidmatan']
+
+2. "US" "view" "Lampiran B" and its supported documents. ['US', 'view', 'Lampiran B', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+3. "US" "view" verification status for the application. ['US', 'view', 'verification status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "US" "view" support status for the application. ['US', 'view', 'support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+5. "US" "view" approval status for the application. ['US', 'view', 'approval status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+6. "US" "view" verification and confirmation status from the next of kins. ['US', 'view', 'verification and confirmation status from the next of kins.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "US" "view" the status of the application. ['US', 'view', 'the status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" list of application for funeral service. ['US', 'view', 'list of application for funeral service.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" application details for funeral service. ['US', 'view', 'application details for funeral service.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "US" "update" verification status of the application. ['US', 'update', 'verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "US" "update" the supporter and approver into the application. ['US', 'update', 'the supporter and approver into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+4. "US" "view" the support status of the application. ['US', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG"
+
+
+FIX
+5. "US" "view" the approval status of the application. ['US', 'view', 'the approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+6. "US" "download" the payment order to finance department. ['US', 'download', 'the payment order to finance department.', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+7. "US" get the verification and confirmation from the employee's next of kin. ['US', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+8. "US" "update" the overall status. ['US', 'update', 'the overall status.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the list of application. ['Penyokong', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the application details. ['Penyokong', 'view', 'the application details.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Penyokong" "view" verification status of the application. ['Penyokong', 'view', 'verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "Penyokong" "update" the support status of the application. ['Penyokong', 'update', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", application proceed to the next level.
+
+
+IF STATEMENT
+IF "TIDAK SOKONG", application will end there.
+
+
+FIX
+1. "Pelulus" "view" the list of application. ['Pelulus', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the application details. ['Pelulus', 'view', 'the application details.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Pelulus" "view" verification status of the application. ['Pelulus', 'view', 'verification status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "Pelulus" "view" the support status of the application. ['Pelulus', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "Pelulus" "update" the approval status of the application. ['Pelulus', 'update', 'the approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "LULUS", the application will proceed to next level.
+
+
+IF STATEMENT
+IF "TIDAK LULUS", application will end there.
+
+
+IGNORE
+1. System generate payment order to finance department. ['Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+2. System "update" the employee's details. ['update', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" the list of application. ['Kakitangan', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "add" the application details and its supported document. ['Kakitangan', 'add', 'the application details and its supported document.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" the application details and its supported document. ['Kakitangan', 'view', 'the application details and its supported document.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Kakitangan" "view" the support status from 'PN'. ['Kakitangan', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+3. "Kakitangan" "view" the verification status from "US" for the application. ['Kakitangan', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Kakitangan" "view" supporter and approver for the application. ['Kakitangan', 'view', 'supporter and approver for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG" and "LULUS"
+
+5. "Kakitangan" "view" the support status from "Penyokong" and approval status from 'Pelulus'. ['Kakitangan', 'view', 'Penyokong', 'Pelulus', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+6. "Kakitangan" "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the list of application. ['US', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the application details and its supported documents. ['US', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "US" "view" the support status from 'PN'. ['US', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+3. "US" "update" verification status for the the application. ['US', 'update', 'verification status for the the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+4. "US" "update" supporter and approver into the application. ['US', 'update', 'supporter and approver into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG" and "LULUS"
+
+5. "US" "view" the support status from "Penyokong" and approval status from 'Pelulus'. ['US', 'view', 'Penyokong', 'Pelulus', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+6. "US" "download" payment order for finance department. ['US', 'download', 'payment order for finance department.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "US" "update" the overall status for the application. ['US', 'update', 'the overall status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "PN" "view" the application list. ['PN', 'view', 'the application list.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "PN" "view" the application details and its supported documents. ['PN', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "PN" "update" the support status for the application. ['PN', 'update', 'the support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", the application will proceed to the next level.
+
+
+IF STATEMENT
+IF "NOT SOKONG", the application end.
+
+
+FIX
+1. "Penyokong" "view" the list of application. ['Penyokong', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the applicationd details and its supported documents. ['Penyokong', 'view', 'the applicationd details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Penyokong" "view" the support status from "PN" for the application. ['Penyokong', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+3. "Penyokong" "view" the verification status from "US" for the application. ['Penyokong', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Penyokong" "update" the support status for the application. ['Penyokong', 'update', 'the support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", the application will proceed to the next level.
+
+
+IF STATEMENT
+IF "NOT SOKONG", the application end.
+
+
+FIX
+1. "Pelulus" "view" the list of application. ['Pelulus', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the application details and its supported documents. ['Pelulus', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Pelulus" "view" the support status from "PN" for the application. ['Pelulus', 'view', 'PN', 'Elaun-Elaun Perkhidmatan']
+3. "Pelulus" "view" the verification status from "US" for the application. ['Pelulus', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+4. "Pelulus" "view" the support status from "Penyokong" for the application. ['Pelulus', 'view', 'Penyokong', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+5. "Pelulus" "update" the approval status for the application. ['Pelulus', 'update', 'the approval status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", the application will proceed to the next level.
+
+
+IF STATEMENT
+IF "NOT SOKONG", the application end.
+
+
+IGNORE
+1. System "update" the employee's details. ['update', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+2. System generate payment order to finance department. ['Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+Notes: 5,6,7 have the same policies. ['Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" the list of application. ['Kakitangan', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "add" the application details and its supported documents. ['Kakitangan', 'add', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" the application details and its supported documents. ['Kakitangan', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Kakitangan" "view" the verification status from 'US'. ['Kakitangan', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+IF STATEMENT
+IF "SOKONG"
+
+3. "Kakitangan" "view" the support status from 'Penyokong'. ['Kakitangan', 'view', 'Penyokong', 'Elaun-Elaun Perkhidmatan']
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+5. "Kakitangan" "view" overall status of application. ['Kakitangan', 'view', 'overall status of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the list of application. ['US', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the application and its supported documents. ['US', 'view', 'the application and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "US" "update" the verification status for the application. ['US', 'update', 'the verification status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "US" "update" approver and supporter into the application. ['US', 'update', 'approver and supporter into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG"
+
+
+FIX
+4. "US" "view" the support status of the application. ['US', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+5. "US" "view" the approval status of the application. ['US', 'view', 'the approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "US" "update" the overall status of the application. ['US', 'update', 'the overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the list of application. ['Penyokong', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the application details and its supported documents. ['Penyokong', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Penyokong" "view" the verification status from "US" for the application. ['Penyokong', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+3. "Penyokong" "update" the support status for the application. ['Penyokong', 'update', 'the support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the list of application. ['Pelulus', 'view', 'the list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" the application details and its supported documents. ['Pelulus', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Pelulus" "view" the verification status from "US" for the application. ['Pelulus', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+3. "Pelulus" "view" the support status from "Penyokong" for the application. ['Pelulus', 'view', 'Penyokong', 'Elaun-Elaun Perkhidmatan']
+
+FIX
+4. "Pelulus" "update" the approval status for the application. ['Pelulus', 'update', 'the approval status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG", the application will proceed to the next level.
+
+
+IF STATEMENT
+IF "NOT SOKONG", the application end.
+
+
+IGNORE
+1. System "update" the employee's details. ['update', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+2. System generate payment order to finance department. ['Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" and search list of application. ['Kakitangan', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "add" the application details. ['Kakitangan', 'add', 'the application details.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Kakitangan" "view" the application details. ['Kakitangan', 'view', 'the application details.', 'Elaun-Elaun Perkhidmatan']
+
+2. "Kakitangan" "view" uploaded supported documents from 'US'. ['Kakitangan', 'view', 'US', 'Elaun-Elaun Perkhidmatan']
+
+IF STATEMENT
+IF "SOKONG"
+
+
+FIX
+3. "Kakitangan" "view" support status of the application. ['Kakitangan', 'view', 'support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+4. "Kakitangan" "view" approval status of the application. ['Kakitangan', 'view', 'approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+5. "Kakitangan" "view" overall status of the application. ['Kakitangan', 'view', 'overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" and search list of application. ['US', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "US" "view" the application details. ['US', 'view', 'the application details.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "US" "upload" the supported document. ['US', 'upload', 'the supported document.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3. "US" "update" the approver and supporter into the application. ['US', 'update', 'the approver and supporter into the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "SOKONG"
+
+
+FIX
+3. "US" "view" support status of the application. ['US', 'view', 'support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IF STATEMENT
+IF "LULUS"
+
+
+FIX
+4. "US" "view" approval status of the application. ['US', 'view', 'approval status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+5. "US" "update" invoice details and its documents related to the application to the system. ['US', 'update', 'invoice details and its documents related to the application to the system.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+6. "US" "download" payment order to the finance department. ['US', 'download', 'payment order to the finance department.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+7. "US" "update" overall status of the application. ['US', 'update', 'overall status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" and search list of application. ['Penyokong', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Penyokong" "view" the application details and its supported document. ['Penyokong', 'view', 'the application details and its supported document.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2. "Penyokong" "update" support status for the application. ['Penyokong', 'update', 'support status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1. "Pelulus" "view" and search list of application. ['Pelulus', 'view', 'and search list of application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+1."Pelulus" "view" the application details and its supported documents. ['Pelulus', 'view', 'the application details and its supported documents.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+2."Pelulus" "view" the support status of the application. ['Pelulus', 'view', 'the support status of the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+FIX
+3."Pelulus" "update" approval status for the application. ['Pelulus', 'update', 'approval status for the application.', 'Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+1. System generate Local Order (LO) application letter. ['Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+2. System generate payment order to finance team. ['Elaun-Elaun Perkhidmatan']
+
+
+IGNORE
+3. System "update" the employee's details. ['update', 'Elaun-Elaun Perkhidmatan']
+
+			},
+		])
+	}
+}

@@ -1,0 +1,25 @@
+code,name
+01,Isteri
+02,Suami
+03,Ibu
+04,Bapa
+05,Anak Kandung
+06,Anak Tiri
+07,Anak Angkat
+08,Anak Tidak Sah Taraf
+09,Nenek
+10,Datuk
+11,Saudara Kandung
+12,Penjaga
+13,Bekas Isteri
+14,Bekas Suami
+15,Anak Tiri Tanggungan
+16,Ibu Angkat
+17,Bapa Angkat
+18,Ibu Tiri
+19,Bapa Tiri
+20,Anak Angkat De Facto
+21,Anak Pelihara
+22,Ibu Mentua
+23,Bapa Mentua
+99,Lain-lain

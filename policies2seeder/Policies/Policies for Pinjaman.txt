@@ -1,0 +1,336 @@
+"US Pinjaman" == "Urus Setia";
+"KS" == "Ketua Seksyen";
+"PN" == "Pengarah Negeri";
+"UPF"== "Unit Pengurusan Fasiliti"
+Module Pinjaman
+	
+#1. Pinjaman Komputer, Telefon Pintar dan Kenderaan
+		#1. Pinjaman Telefon Pintar dan Komputer
+			#1. Kakitangan
+				#1. Function Listing:
+					1. "Kakitangan" can "view" "Senarai Permohonan Pinjaman Komputer dan Telefon Pintar" that related to themselves only.
+				#2. Function Add Application
+					1. "Kakitangan" can "add" "Butiran Permohonan Pinjaman".
+					2. "Kakitangan" can "upload" "Dokumen Sokongan dan Sebut Harga".
+					
+				#3. Function Papar Butiran
+					1. "Kakitangan" can "view" "Butiran Permohonan Pinjaman".
+					2. "Kakitangan" can "download" "Dokumen Sokongan dan Sebut Harga".
+					3. "Kakitangan" can "view" "Status Semakan Permohonan".
+					4. "Kakitangan" can "view" "Mengisi nama bagi Pelulus".
+					5. "Kakitangan" can "view" "Status Penyokongan dari Ketua Seksyen".
+					
+					IF supportedStatus == "TIDAK SOKONG", application end.
+					IF supportedStatus == "SOKONG"
+					6. "Kakitangan" can "view" "Status Kelulusan".
+					7. "Kakitangan" can "view" "Maklumat Pinjaman, Jadual Pertama dan Kedua".
+					8. "Kakitangan" can "download" "Surat Tawaran Kelulusan Pinjaman dan Surat Iringan".
+					9. "Kakitangan" can "download" "Surat Tawaran".
+					
+					
+					
+					
+					
+					
+					IF supportedStatus == "SOKONG" and approvedStatus == "LULUS",then 
+					2. "Kakitangan" "download" offer letter from the system.
+					3. "Kakitangan" "upload" "Surat Perjanjian" to the system.
+					4. "Kakitangan" "upload" receipt and invoice to the system.
+					
+			#2. Urus Setia Pentadbiran
+				#1. Function Listing:
+					1. "US Pinjaman" ""view""  "Senarai Permohonan Pinjaman Komputer dan Telefon Pintar".
+				#2. Function Papar Butiran
+					1. "US Pinjaman" ""view"" application details and any supported documents for each selected employee.
+					2. "US Pinjaman" "update" status to application details to either 'SEMAK/TIDAK SEMAK'.
+					2. "US Pinjaman" "update" approver name.
+					3. "US Pinjaman" ""view"" support and approval status.
+					4. "US Pinjaman" "edit" loan details such as "jadual pertama dan kedua".
+					5. "US Pinjaman" "download" offer letter.
+					6. "US Pinjaman" "download" "surat perjanjian".
+					7. "US Pinjaman" "download" payment voucher and "update"d loan application details.
+					8. "US Pinjaman" "download" receipt and invoice from the system. 
+					
+			#3. Ketua Seksyen
+				#1. Funtion Listing:
+					1."KS" ""view"" and list of application for smartphone and computer loan.
+					2."KS" "update" status to supported the application in one go.
+					
+					IF status =="TIDAK SOKONG", then the application end.
+					IF status =="SOKONG", then the application is proceed to another level.
+							
+				#2. Function Papar Butiran:
+					1. "KS" ""view"" application details and any supported document for selected application.
+					2. "KS" "update" status to support selected application.
+					
+					IF status =="TIDAK SOKONG", then the application end.
+					IF status =="SOKONG", then the application is proceed to another level.
+					
+			#4. Pelulus
+				#1. Function Listing:
+					1. "Pelulus" "view" and list of application for smartphone and computer loan.
+					
+				#2. Function Papar Butiran:
+					1. "Pelulus" "view" application details and any supported document for selected application.
+					2. "Pelulus" "view" status of application supports.
+					3. "Pelulus" "update" status to approve the application.
+					
+					IF status=="TIDAK LULUS", then the application is end there.
+					IF status=="LULUS", then the application is proceed to another level.
+				
+					
+			#5. System 
+					1. System "generate" loan approval letter (surat tawaran kelulusan pinjaman),
+					surat iringan and notified the kakitangan.
+					2. System "generate" payment order to the finance department .
+					3. System "generate"  "Surat Kelulusan Pembiayaan Pinjaman" and "Surat Lantikan" and notified
+					   employee.
+					   
+
+
+					   
+		#2. Pinjaman Kenderaan
+			#1. Kakitangan
+				#1. Function Listing:
+					1. "Kakitangan" "view" and list of application for vehicle loan that related to themselves only.
+				#2. Function Add Permohonan
+					1. "Kakitangan" "add" application details and supporting documents for vehicle loan.
+				#3. Function Papar Butiran
+					1. "Kakitangan" "view" application status.
+					IF supportedStatus == "SOKONG" and approvedStatus == "LULUS",then 
+					2. "Kakitangan" "download" offer letter from the system.
+					3. "Kakitangan" "upload" "Surat Perjanjian" to the system.
+					4. "Kakitangan" "upload" receipt and invoice to the system.
+				
+			#2. Urus Setia Pentadbiran
+				#1. Function Listing:
+					1. "US Pinjaman" "view" and list of application for vehicle loan.
+				#2. Function Papar Butiran
+					1. "US Pinjaman" "view" application details and any supported documents for each selected employee.
+					2. "US Pinjaman" "update" status to application details to either 'SEMAK/TIDAK SEMAK'.
+					2. "US Pinjaman" "update" approver name.
+					3. "US Pinjaman" "view" support and approval status.
+					4. "US Pinjaman" "edit" loan details such as "jadual pertama dan kedua".
+					5. "US Pinjaman" "download" offer letter.
+					6. "US Pinjaman" "download" "surat perjanjian".
+					7. "US Pinjaman" "download" payment voucher and updated loan application details.
+					8. "US Pinjaman" "update" vehicle details such as "No Chasis and No Enjin".
+					9. "US Pinjaman" insert vehicle details to JPJ system.
+					10."US Pinjaman" "download" receipt and invoice uploaded by applicant.
+					
+			#3. Ketua Seksyen
+				#1. Funtion Listing:
+					1."KS" "view" and list of application for smartphone and computer loan.
+					2."KS" "update" status to supported the application in one go.
+					
+					IF status =="TIDAK SOKONG", then the application end.
+					IF status =="SOKONG", then the application is proceed to another level.
+				#2. Function Papar Butiran:
+					1. "Pelulus" "view" application details and any supported document for selected application.
+					2. "Pelulus" "view" status of application supports.
+					3. "Pelulus" "update" status to approve the application.
+					
+					IF status=="TIDAK LULUS", then the application is end there.
+					IF status=="LULUS", then the application is proceed to another level.
+			#4. Pelulus
+				#1. Function Listing:
+					1. "Pelulus" "view" and list of application for smartphone and computer loan.
+					
+				#2. Function Papar Butiran:
+					1. "Pelulus" "view" application details and any supported document for selected application.
+					2. "Pelulus" "view" status of application supports.
+					3. "Pelulus" "update" status to approve the application.
+					
+					IF status=="TIDAK LULUS", then the application is end there.
+					IF status=="LULUS", then the application is proceed to another level.
+					
+			#5. System
+				1. System generate loan approval letter (surat tawaran kelulusan pinjaman),
+					surat iringan and notified the kakitangan.
+				2. System generated payment order to the finance department.
+				3. System generated "surat kelulusan Pembiayaan Pinjaman", "Surat Lantikan",
+				  "Surat Chasis & No enjin" and email to employee.
+				
+#2. Kuarters - Permohonan Menduduki Kuarters.
+		#1. Permohonan Menduduki Kuarters Permohonan Masuk Kakitangan LKIM
+			#1. Kakitangan 
+				#1. Function Listing
+					1. "Kakitangan" "view" and search list of application that belongs to themselves.
+	
+				#2. Function Add Pemohonan 
+					1. "Kakitangan" "add" application details.
+				   
+				#3. Function Papar Butiran
+					1. "Kakitangan" "view" application details of selected application. 
+					2. "Kakitangan" "view" status of the application updated by "US Pinjaman" and "PN" .
+					
+			#2. Urus Setia Peringkat Negeri 
+				#1. Function Listing 
+					1. "US Pinjaman" "view" and search list of application.
+					
+				#2. Function Papar Butiran
+					1. "US Pinjaman" "view" selected application details and its supported documents. 
+					2. "US Pinjaman" "update" status to "SEMAK/TIDAK SEMAK" to  the verification of the application.
+					3. "US Pinjaman" "update" status to "LULUS/TIDAK LULUS" to  the approval of the application.
+					
+					IF "TIDAK LULUS", the application is end there.
+					IF "LULUS", the application will proceed to the next level.
+					
+					4. "US Pinjaman" "download" "Surat Tawaran menduduki Kuarters".
+					
+			#3. Pengarah Negeri 
+				#1. Function Listing
+					1. "PN" "view" and search list of application for quarters.
+					
+				#2. Function Papar Butiran
+					1. "PN" "view" application details and supported document.
+					2. "PN" "view" the status if the application is verified, and approved status by the 'US Pinjaman'.
+					3. "PN" "update" status of application approval process.
+					
+					IF "TIDAK LULUS", the application is end there.
+					IF "LULUS", the application will proceed to the next level.
+					
+			#4. Unit Pengurusan Fasiliti 
+				#1. Function Listing
+					1. "UPF" "view" and search list of application for quarters.
+				#2. Funtion Papar Butiran 
+					1. "UPF" "view" the application details and the supported documents.
+					2. "UPF" "view" status of the application. 
+					3. "UPF" "update" details "Maklumat Pemotongan Mengikut Jenis Kelayakan Kuarters".
+					4. "UPF" "download"  "Surat Tawaran menduduki Kuarters".
+			
+			#5. System 
+				1. System generates
+					1. Surat Tawaran menduduki Kuarters
+					2. Borang Akuan Masuk Rumah
+					3. Borang Pemeriksaan Masuk Rumah
+					4. Surat Akuan Patuh Kepada Peraturan
+					5. Garis Bantuan
+				2. System notify the applicant.
+					
+		#2.	Pemohonan Menduduki Kuarters Permohonan Masuk Bukan Kakitangan LKIM 
+			#1. Urus Setia Peringkat Negeri
+				#1. Function Listing 
+					1. "US Pinjaman" "view" and search list of application for quarters from non-LKIM.
+				#2. Function Add Permohonan 
+					1. "US Pinjaman" "add" application details on behalf of non-LKIM.
+					
+				#2. Function Papar Butiran 
+					1. "US Pinjaman" "view" application details.
+					2. "US Pinjaman" "view" status of approval of application.
+					
+					IF "LULUS"
+					3. "US Pinjaman" "update" application details and "upload" supporting document.
+					4. "US Pinjaman" "download" the "Surat Tawaran Menduduki Kuarters".
+					
+			#2. Pengarah Negeri 
+				#1. Function Listing 
+					1. "PN" "view" and search list of application for quarters from non-LKIM.
+					
+				#2. Function Papar Butiran
+					1. "PN" "view" application details for quarters for selected application.
+					2. "PN" "update" approval status for the application.
+					
+					IF "TIDAK LULUS", the application is end there.
+					IF "LULUS", the application will proceed to the next level.
+					
+			#3. Unit Pengurusan Fasiliti 
+				#1. Function Listing 
+					1. "UPF" "view" and search list of application for quarters from non-LKIM.
+					
+				#2. Function Papar Butiran
+					1. "UPF" "view" application details for quarters for selected application.
+					2. "UPF" "view" approval status for the application.
+					3. "UPF" "download" the "Surat Tawaran Menduduki Kuarters".
+		
+			#4. System
+				1. System will generate 
+					1. Surat Tawaran Menduduki Kuarters
+					2. Borang Akuan Masuk Rumah
+					3. Borang Pemeriksaan Masuk Rumah
+					4. Surat Akuan Patuh kepada Peraturan
+					5. Garis Panduan
+				2. System will email to applicant.
+		
+#3. Kuarters - Permohonan Keluar Kuarters.
+		#1. Permohonan Keluar Kakitangan LKIM 
+			#1. Kakitangan
+				#1. Function Listing
+					1."Kakitangan" "view" and search list of application for quarters that belongs to themselves.
+				#2. Function Add Permohonan
+					1. "Kakitangan" "add" application details and supporting documents.
+					
+				#3. Function Papar Butiran
+					1. "Kakitangan" "view" application details. 
+					2. "Kakitangan" "view" the status of verification from 'US Pinjaman'.
+					3. "Kakitangan" "view" the status of approval from 'PN'.
+					4. "Kakitangan" "download" memo surat and form from the system.
+					
+			#2. Urus Setia Peringkat Negeri
+				#1. Function Listing
+					1. "US Pinjaman" "view" and search list of application for 'Keluar Kuarters'.
+					
+				#2. Function Papar Butiran
+					1. "US Pinjaman" "view" the application details and supporting documents for selected application.
+					2. "US Pinjaman" "update" the status of verification of the application.
+					3. "US Pinjaman" "view" the status of approval from 'PN'.
+					4. "US Pinjaman" "update" the all the details related to quarters.
+					
+			#3. Pengarah Negeri 
+				#1. Function Listing
+					1. "PN" "view" and search list of application for 'Keluar Kuarters'.
+					
+				#2. Function Papar Butiran
+					1. "PN" "view" the application details and supportings documents for selected application.
+					2. "PN" "view" the verification status of the application. 
+					3. "PN" "update" the status of approval of the application to either 'LULUS/TIDAK LULUS'.
+					
+					IF "TIDAK LULUS", the application end there.
+					IF "LULUS", the application proceed to next level.
+						
+			#4. Unit Pengurusan Fasiliti
+				#1. Function Listing
+					1. "UPF" "view" and search list of application for 'Keluar Kuarters'.
+					
+				#2. Function Papar Butiran
+					1."UPF" "view" the application details related to 'Keluar Kuarters'.
+					2."UPF" downlaod memo, surat and borang from the system.
+					
+					
+			#5. System
+				1. System generated "Memo Keluar Kuarters", "Borang Akuan Keluar Kuartes",
+									"Surat Maklumat dari Negeri"
+				2. System notified the applicant involved.
+		#2. Permohonan Keluar (Bukan LKIM)
+			#1. Urus Setia Peringkat Negeri
+				#1. Function Listing 
+					1. "US Pinjaman" "view" and search list of application for 'Keluar Kuarters'.
+				#2. Function Add Permohonan
+					1. "US Pinjaman" "add" application detail for 'Keluar Kuarters'.
+					
+					IF isArrears (Tunggakan) ==TRUE,
+					2. "US Pinjaman" "download" order letter (Surat Arahan Bayaran Tungggakan).
+					
+					IF isArrers === FALSE, will proceed to next level.
+					3. "US Pinjaman" "update" the selected application details.
+					
+				#3. Function Papar Butiran
+			#2. Pengarah Negeri
+				#1. Function Listing
+					1. "PN" "view" and search list of application for 'Keluar Kuarters'.
+				
+				#2. Function Papar Butiran 
+					1. "PN" "view" the application details for selected application.
+					2. "PN" "view" isArrear status whether is settled or not.
+					3. "PN" "update" the approval status of the application status.
+					
+					IF approvalStatus =="TIDAK LULUS", the application is ended.
+					IF approvalStatus == "LULUS", the application is proceed to next level.
+					
+			#3. System 
+				IF isArrears == TRUE
+				1. System generate order letter. 
+				IF approvalStatus=="LULUS"
+				2. System generate "borang akuan keluar kuarters", "borang pemeriksaan keluar kuarters",
+						"surat makluman dari negeri"
+				3. System notified the applicant.

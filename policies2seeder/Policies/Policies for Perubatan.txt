@@ -1,0 +1,267 @@
+Module Perubatan
+
+#1. Klinik Panel
+	#1. Permohonan Klinik Panel
+		#1. Unit Bahagian/Negeri
+			#1.Function Listing 
+			    1. "Unit Bahagian/Negeri" can "view" "senarai permohonan klinik panel".
+			#2.Function Add Application
+				1. "Unit Bahagian/Negeri" can "add" new application and its details for panel clinic.
+				
+			#3.Function View Application
+				1. "Unit Bahagian/Negeri" can "view" application details for panel clinic.
+				2. "Unit Bahagian/Negeri" can "view" "Status Semakan Permohonan" from 'US Perubatan'.
+				3. "Unit Bahagian/Negeri" can "view" "Status Pengesahan Permohonan" from 'US Perubatan'.
+					IF confirmation Status  == "TIDAK SAH", the application end.
+					IF confirmation Status  == "SAH", the application continue to the next level.
+				4. "Unit Bahagian/Negeri" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					IF support status == "TIDAK SOKONG" , the application end.
+					IF support status == "SOKONG", the application continue to the next level.
+				5. "Unit Bahagian/Negeri" can "view" "Status Pelulusan Permohonan" from 'Pelulus'.
+					IF approval status == "TIDAK LULUS", the application end.
+					IF approval status == "LULUS", the application proceed to th next level.
+				6. "Unit Bahagian/Negeri" can "download" the "Cetak Surat Perlantikan Klinik Panel".
+				7. "Unit Bahagian/Negeri" can "view" overall status of the applicaton. 
+		#2. Urus Setia
+			#1. Function Listing
+				1. "US Perubatan" can "view" "senarai permohonan klinik panel".
+				
+			#2. Function View Application
+				1. "US Perubatan" can "view" selected application and its details.
+				2. "US Perubatan" can "verify" the selected application by updating the status to either 'SEMAK/TIDAK SEMAK'.
+				3. "US Perubatan" can "confirm" the selected application by updaing the status to either 'SAH/TIDAK SAH'.
+				
+				IF confirmation Status == "TIDAK SAH", the application end.
+				IF confirmation Status == "SAH", the application proceed to the next tab.
+				4. "US Perubatan" can "update" the name of supporter and approver.
+				5. "US Perubatan" can "view" the current support status for the application.
+				
+				IF support Status == "TIDAK SOKONG", the application end.
+				IF support Status == "SOKONG", the application proceed to next level.
+				6. "US Perubatan" can "view" the current approval status for the application
+				
+				IF approval Status == "TIDAK LULUS", the application end.
+				IF approval Status == "LULUS", the application proceed to next level.
+				7. "US Perubatan" can "download" "surat perlantikan klinik panel".
+				8. "US Perubatan" can "update" the overall status of the application.
+				
+		#3. Penyokong
+			#1. Function Listing
+				1. "Penyokong" can "view" "senarai permohonan klinik panel".
+				
+			#2. Function View Application 
+				1. "Penyokong" can "view" selected application and its details.
+				2. "Penyokong" can "view" "Status Semakan Permohonan".
+				3. "Penyokong" can "view" "Status Pengesahan Permohonan".
+				4. "Penyokong" can "update" the selected application by updating the status to either 'SOKONG/TIDAK SOKONG'.
+		
+		#4. Pelulus
+			#1. Function Listing
+				1. "Pelulus" can "view" "senarai permohon klinik panel".
+				
+			#2. Function View Application 
+				1. "Pelulus" can "view" selected application and its details.
+				2. "Pelulus" can "view" "Status Semakan Permohonan" from 'US Perubatan'.
+				3. "Pelulus" can "view" "Status Pengesahan Permohonan" from 'US Perubatan'.
+				4. "Pelulus" can "view" "Status Penyokong Permohonan" from 'Penyokong'.
+				5. "Pelulus" can "update" the selected application by updating the status to either 'LULUS/TIDAK LULUS'.
+		
+		#5. System 
+			1. System can "generate" "Surat Tidak Berjaya" and "email" to clinic panel.
+			2. System can "generate" "Surat Perlantikan Klinik Panel" and "email" to clinic panel.
+			3. System can "update" "maklumat klinik".
+		
+	#2. Bil Tuntutan Klinik Panel
+			#1. Klinik Panel				
+				#1. Function Listing
+					1. "Klinik Panel" can "view" "Senarai Rekod Bil Tuntutan", only for that particular clinic.
+					
+				#2. Function Add
+					1. "Klinik Panel" can "add" "Borang Bil Tuntutan".
+				
+				#3. Function View Details
+					1. "Klinik Panel" can "view" selected details for bil tuntutan.
+					2. "Klinik Panel" can "view" "Status Semakan Permohonan" from 'US Perubatan'.
+					3. "Klinik Panel" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+					4. "Klinik Panel" can "edit" selected details for bil tuntutan if the status "TIDAK LULUS" from 'US Perubatan'.
+					5. "Klinik Panel" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					
+					IF suppport Status == "TIDAK SOKONG", application end.
+					IF support Status  == "SOKONG", application can proceed to the next level.
+					6. "Klinik Panel" can "view" "Status Pelulusan Permohonan" from 'Pelulus'.
+					7. "Klinik Panel" can "view" overall status of the application.
+					
+			#2. Urus Setia Perubatan
+				#1. Function Listing
+					1. "US Perubatan" can "view" "Senarai Rekod Bil Tuntutan" from all the panel clinic.
+					
+				#2. Function View Details
+					1."US Perubatan" can "view" "Butiran Rekod Bil Tuntutan" from selected record.
+					2."US Perubatan" can "update" the selected record by updating the status to either 'SEMAK/TIDAK SEMAK'.
+					3."US Perubatan" can "update" the selected record by updating the status to either 'LULUS/TIDAK LULUS'.
+					
+					IF approval status == "TIDAK LULUS", the clinic will be prompt to "update" their details.
+					IF approval status == "LULUS", the application will proceed to the next level.
+					
+					4. "US Perubatan" can "update" the name of the approver and supporter.
+					5. "US Perubatan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					
+					IF support status =="TIDAK SOKONG", the application end.
+					IF support status =="SOKONG", the application proceed to the next level.
+					
+					6. "US Perubatan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+					
+					IF approval status == "TIDAK LULUS", the application end.
+					IF approval status == "LULUS", the aplication proceed to the next level.
+					
+					7. "US Perubatan" can "download" "Mencetak Arahan Bayaran Mengikut Penempatan Kakitangan".
+					8. "US Perubatan" can "update" the overall status of the application.	
+			#3. Penyokong
+				#1. Function Listing
+					1. "Penyokong" can "view" "Senarai Rekod Bil Tuntutan" from all the panel clinic.
+					
+				#2. Function View Details
+					1. "Penyokong" can "view" "Butiran Rekod Bil Tuntutan" from selected record.
+					2. "Penyokong" can "view" "Status Semakan Permohonan" from 'US Perubatan'.
+					3. "Penyokong" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+					4. "Penyokong" can "update" the selected record by updating the status to either 'SOKONG/TIDAK SOKONG'.
+			#4. Pelulus
+				1. Function Listing
+					1. "Pelulus" can "view" "Senarai Rekod Bil Tuntutan" from all the panel clinic.
+					
+				#2. Function View Details
+					1. "Pelulus" can "view" "Butiran Rekod Bil Tuntutan" from selected record.
+					2. "Pelulus" can "view" "Status Semakan Permohonan" from 'US Perubatan'.
+					3. "Pelulus" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+					4. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+					4. "Pelulus" can "update" the selected record by updating the status to either 'LULUS/TIDAK LULUS'.
+			#5. System 
+				1. System can "generate" "Arahan Bayaran Mengikut Penempatan Kakitangan".
+				2. System can "update" "Maklumat Klinik Panel".
+				
+#2. Perubatan Kakitangan
+	#1. Bil Tuntutan Kakitangan
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Permohonan Tuntutan" only for that particular employee.
+
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan Tuntutan".
+				2. "Kakitangan" can "upload" "Resit Pembelian Ubat/Klinik".
+				
+			#3. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Permohonan Tuntutan" for selected application.
+				2. "Kakitangan" can "view" "Resit Pembelian Ubat/Klinik.
+				3. "Kakitangan" can "view" "Status Semak Baki Peruntukan Kakitangan".
+				IF is over budget == true, the application end. 
+				IF is over budget == false, proceed to next level.
+				4. "Kakitangan" can "view" "Status  Penyemakan Permohonan" from 'US Perubatan'.
+				5. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+				IF approval Status  == "TIDAK LULUs", application end.
+				IF approval status  == "LULUS", the application proceed to next level.
+				6. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+				
+				IF support status == "TIDAK SOKONG", the application end.
+				IF support status == "SOKONG", the application proceed to next level.
+				7. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+				IF approval status == "TIDAK LULUS", the application end.
+				IF approval status == "LULUS", the application proceed to next level.
+				8. "Kakitangan" can "view" overall status of the application.
+				
+		#2. Urus Setia Perubatan 
+			#1. Function Listing
+				1. "US Perubatan" can "view" "Senarai Permohonan Tuntutan" for all employee.
+				
+				
+			#2. Function View Details 
+				1."US Perubatan" can "view" "Butiran Permohonan Tuntutan" for selected application.
+				2. "US Perubatan" can "download" "Resit Pembelian  Ubat/Klinik".
+				3. "US Perubatan" can "view" "Status Semak Baki Peruntukan Kakitangan".
+				4. "US Perubatan" can "verify" "Status Penyemakan Permohonan" by updating the status to either 'SEMAK/TIDAK SEMAK'.
+				5. "US Perubatan" can "approve" "Status Kelulusan Permohonan" by updating the status to either 'LULUS/TIDAK LULUS'.
+				
+				IF approval status == "TIDAK LULUS", application end.
+				IF approval status =="LULUS", the application proceed to another level.
+				6. "US Perubatan" can "update" the name of supporter and approval into the application 
+				7. "US Perubatan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+				
+				IF support status == "TIDAK SOKONG", the application end.
+				IF support status == "SOKONG", the application proceed to next level.
+				8. "US Perubatan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+				IF approval status == "TIDAK LULUS", the application end.
+				IF approval status == "LULUS", the application proceed to next level.
+				
+				9. "US Perubatan" can "download" payment order to finance department.
+				10."US Perubatan" can "update" the overall status of the application.
+				
+		#3. Penyokong
+			#1. Function Listing
+				1. "Penyokong" can "view" "Senarai Permohonan Tuntutan" for all employee.
+				
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Permohonan Tuntutan" for selected application.
+				2. "Penyokong" can "view" "Resit Pembelian Ubat/Klinik.
+				3. "Penyokong" can "view" "Status Semak Baki Peruntukan Kakitangan".
+				4. "Penyokong" can "view" "Status  Penyemakan Permohonan" from 'US Perubatan'.
+				5. "Penyokong" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+				6. "Penyokong" can "update" "Status Penyokongan Permohonan" by updating the status to either 'SOKONG/TIDAK SOKONG'.
+				
+		#4. Pelulus 
+			#1. Function Listing
+				1."Pelulus" can "view" "Senarai Permohonan Tuntutan" for all employee.
+				
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Permohonan Tuntutan" for selected application.
+				2. "Pelulus" can "view" "Resit Pembelian Ubat/Klinik.
+				3. "Pelulus" can "view" "Status Semak Baki Peruntukan Kakitangan".
+				4. "Pelulus" can "view" "Status  Penyemakan Permohonan" from 'US Perubatan'.
+				5. "Pelulus" can "view" "Status Kelulusan Permohonan" from 'US Perubatan'.
+				6. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+				7. "Pelulus" can "update" "Status Kelulusan Permohonan" by updating the status to either 'LULUS/TIDAK LULUS'.
+				
+		#5. System 
+			1. System "verify" "Semak Baki Peruntukan Kakitangan"
+			   IF is over budget == true, the application end. 
+			   IF is over budget == false, proceed to next level.
+			2. System "generate" payment order to finance department.
+			3. System "update" "Butiran Kakitangan".
+	
+	#2. Menyemak Baki Peruntukan
+		#1. System
+				IF is deduct from salary == true,
+				1. System "update" salary details for the employee by 'generate" "arahan penolakan gaji".
+				
+		#2. Kakitangan
+			#1. Function Display
+			   1. "Kakitangan" can "view" "Baki Perubatan Kakitangan".
+			   IF is over budget == false, the flow end here.
+			   IF is over budget == true, the application proceed to next level. 
+			   2."Kakitangan" can "download" "surat melebihi had penggunaan perubatan tahunan".
+			   
+			   IF isDeductFromSalary== true
+			   3. "Kakitangan" can "download" "arahan penolakan gaji".
+			   
+			   IF isDeductFromSalary == false
+			   4. "Kakitangan" can "upload" "Bukti Pembayaran".
+				
+			   5. "Kakitangan" can "view" "Semak Pengesahan Bukti Pembayaran".
+			   IF status == "TIDAK SAH", 
+			   6. "Kakitangan" can re-"upload" "Butki Pembayaran" and repeat the same process.
+				
+			   IF status == "SAH",
+			   7. "Kakitangan" can "view" updated "Baki Perubatan Kakitangan".
+				
+		#3. Urus Setia Perubatan
+			#1. Funtion Listing
+				1. "US Perubatan" can "view" "Senarai Kakitangan Yang Melebihi Kuota".
+
+			#2. Function View Details
+				1. "US Perubatan" can "view" details of selected employee.
+				2. "US Perubatan" can "view" if which payment the employee wanted.
+				3. "US Perubatan" can "download" uploaded "Bukti Pembayaran" from the employee.
+				4. "US Perubatan" can "confirm" the "Bukti Pembayaran" by updating the status to either 'SAH/TIDAK SAH'.
+				
+				IF status == "TIDAK SAH", the application required "Kakitangan" to "upload" new "bukti pembayaran".
+				IF status == "SAH", 
+				5. "US Perubatan" can "update" updated "Baki Perubatan Kakitangan" which should not be over budget anymore.
+				6. "US Perubatan" can "update" record where that particular record no longer over budget.

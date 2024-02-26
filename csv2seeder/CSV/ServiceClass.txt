@@ -1,0 +1,57 @@
+code:::description
+1:::Jawatan Istana
+2:::Jawatan Terbuka
+3:::Anggota Pentadbiran
+4:::Kakitangan Ambilan Tempatan
+5:::Sistem Saraan Yang Diasingkan
+A    :::Pengangkutan
+B    :::Bakat dan Seni
+C    :::Sains
+CA   :::Pembantu Kawalan Alam Sekitar
+D    :::Pendidikan
+DG   :::Pegawai Perkhidmatan Pendidikan
+DGA  :::Pegawai Perkhidmatan Pendidikan Lepasan Diploma
+DGZ  :::Pendidikan Tentera -Pendidikan Berijazah dan Bukan Berijazah
+DL   :::Pegawai Latihan Kemahiran
+DM   :::Pensyarah UiTM
+DS   :::Pensyarah Universiti
+E    :::Ekonomi
+F    :::Sistem Maklumat
+G    :::Pertanian
+GA   :::Pembantu Pertanian
+GZ   :::Pertanian - Angkatan Tentera
+H    :::Kemahiran
+J    :::Kejuruteraan
+JA   :::Juruteknik
+JZ   :::Kejuruteraan - Angkatan Tentera
+K    :::Keselamatan dan Pertahanan Awam
+KB   :::Bomba
+KJ   :::Askar Timbalan Setia Negeri Johor
+KP   :::Pentadbiran Keselamatan
+KR   :::Siasatan
+KX   :::Penjara
+L    :::Perundangan dan Kehakiman
+LS   :::Perundangan Syariah
+M    :::Tadbir dan Diplomatik
+N    :::Pentadbiran Dan Sokongan
+NP   :::Penghulu
+NT   :::Pentadbiran Tanah
+P    :::Pencegahan Rasuah
+Q    :::Penyelidikan Dan Pembangunan
+R    :::Mahir/ Separuh Mahir / Tidak Mahir
+S    :::Sosial
+SZ   :::Sosial - Angkatan Tentera
+T    :::Penguatkuasaan Maritim
+U    :::Perubatan dan Kesihatan
+UD   :::Pegawai Perubatan
+UF   :::Pegawai Farmasi
+UG   :::Pegawai Pergigian
+UZ   :::Kor Perubatan - Angkatan Tentera
+VIP  :::Anggota Pentadbiran 
+W    :::Kewangan
+WK   :::Kastam
+X    :::Penguatkuasaan Maritim
+XX   :::Tiada Klasifikasi Perkhidmatan
+Y    :::Polis
+YP   :::Polis Orang Asli
+Z    :::Tentera

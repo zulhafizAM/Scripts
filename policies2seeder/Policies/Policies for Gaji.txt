@@ -1,0 +1,56 @@
+"PKP" = "Pengarah Khidmat Pengurusan"
+"US Gaji"  = "Urus Setia";
+
+Module Gaji
+
+#1.Pergerakan Gaji
+	#1.Function pergerakan gaji kakitangan bagi setiap tahun
+		#1. Urus Setia Gaji 
+			1."US Gaji" "add" meeting result.
+			2."US Gaji" "download" result for "Pergerakan Gaji"
+		#2. Pengarah Khidmat Pengurusan
+			1. "PKP" "confirm" timetable for "Pergerakan Gaji".
+		#3. System
+			1. System create timetable for "Pergerakan Gaji Kakitangan".
+			2. System create "surat Pergerakan Gaji" and email to "Kakitangan".
+ 
+#2. Gaji dan Elaun-elaun kakitangan
+	#1. Function manage salary and allowance for each employee monthly.
+		#1. System
+			1. System create list of employee involved in "Perubahan Gaji dan Elaun-elaun".
+			2. System notified "US Gaji".
+			3. System sent the data through API to SAGA.
+			4. System generate pay slip and email the "Kakitangan".
+		#2. Urus Setia Gaji
+			1. "US Gaji" "view", search list of employee involved.
+			2. "US Gaji" "edit" employee's details that involves in "Perubahan Gaji dan Elaun-elaun".
+			3. "US Gaji" "download" employee's pay slip.
+
+		#3.Pengarah Khidmat Pengurusan
+			1. "PKP" "view", search the list of employee involved.
+			2. "PKP" "edit" status to approve the list of employee involved.
+
+#3. Pemotongan Gaji
+	#1. Function manage salary deduction for employee monthly.
+		#1. System 
+			1. System create list of employee involved in "pemotongan gaji secara bulanan".
+			2. System notified "US Gaji".
+			3. System generate "surat pemotongan gaji" and email to the employee.
+			
+		#2. Urus Setia 
+			1. "US Gaji" "view", filter and search list of employee involved in "Pemotongan Gaji Secara Bulanan".
+			2. "US Gaji" "edit" employee's details that involved in "Pemotongan Gaji".
+			3. "US Gaji" "download" employee's pay slip.
+			
+		#3. Pengarah Khidmat Pengurusan 
+			1. "PKP" "view", search the list of employee involved.
+			2. "PKP" "edit" status to approve the list of employee involved.
+#4. Persaraan 
+	#1. Function Final Salary for will be retired employee.
+		#1. System
+			1. System create list of employee that will be retired regardless of either forced, voluntary or other types of retirements.
+			2. System generate pay slip and email the "Kakitangan".
+		#2. Urus Setia 
+			1. "US Gaji" "view", filter and search list of employee that will be retired.
+			2. "US Gaji" "update" salary details (included loan and elaun).
+			3. "US Gaji" "download" employee's pay slip.

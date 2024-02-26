@@ -1,0 +1,20 @@
+﻿import { z } from 'zod';
+
+const MaternityLeaveSchema = z.object({
+	employeeId: z.number().int().nonnegative(),
+	reason: z.string(),
+	applicationDate: z.string().datetime(),
+	startDate: z.string().datetime(),
+	endDate: z.string().datetime(),
+	expectedDeliveryDate: z.string().datetime(),
+	status: z.string().max(255),
+	remark: z.string().optional(),
+	currentAddress: z.string().optional(),
+	active: z.boolean().optional(),
+	createdBy: z.string().max(75).optional(),
+	createdAt: z.date().optional(),
+	modifiedBy: z.string().max(75).optional(),
+	modifiedAt: z.date().optional(),
+});
+
+export default MaternityLeaveSchema;

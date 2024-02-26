@@ -1,0 +1,147 @@
+Module Kakitangan Kontrak
+
+1. Perlantikan Baharu
+   #1. Calon
+	   #1. Function Listing
+		   1. "Calon" can "view" "Senarai Permohonan" for particular candidates.
+	   #2. Function Add Application
+		   1. "Calon" can "add" "Butiran Permohonan".
+	   #3. Function View Details
+		   1. "Calon" can "view" "Butiran Permohonan" for selected application.
+		   2. "Calon" can "view" "Status Semakan Maklumat Calon".
+		   3. "Calon" can "view" "Status memenuhi kriteria".
+		   
+		   IF "Memenuhi Kriteria"== false, 
+		   4. "Calon" can "update" "Butiran Permohonan".
+		   IF "Memenuhi kriteria" == true
+		   5. "Calon" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+		   6. "Calon" can "view" "Status Pengesahan Permohonan" from "Pelulus" ONLY IF "SOKONG"; 
+		   7. "Calon" can "view"  "ID Kakitangan".
+		   
+   #2. Urusetia Perjawatan
+	   #1. Function Listing
+		   1. "US Perjawatan" can "view" "Senarai Permohonan" for involves in all candidates.
+	   #2. Function View Details
+		   1. "US Perjawatan" can "view" "Butiran Permohonan" for selected application.
+		   2. "US Perjawatan" can "verify" "Maklumat Calon"  by updating the verification status either to 'SEMAK/TIDAK SEMAK'.
+		   3. "US Perjawatan" can "update" "Memenuhi Kriteria".
+		   IF "Memenuhi Kriteria"== false, calon will be asked to "update" their details.
+		   IF "Memenuhi kriteria" == true
+		   4. "US Perjawatan" can "update" "approver" and  "supporter" into the application.
+		   5. "US Perjawatan" can "support" "Status Permohonan" by updating the supportation status either to 'SOKONG/TIDAK SOKONG'.
+		   IF support status == "TIDAK SOKONG", the application end.
+		   IF support status == "SOKONG", proceed to the next level.
+		   
+		   6. "US Perjawatan" can "approve" "Status Permohonan" by updating the appproval status either to 'LULUS/TIDAK LULUS'.
+		   7. "US Perjawatan" can "view" "ID Kakitangan".
+		   8. "US Perjawatan" can "update" "Maklumat Kakitangan".
+		    
+   #3. Penyokong 
+	   #1. Function Listing
+		   1. "Penyokong" can "view" "Senarai Permohonan" for involves in all candidates. 
+	   #2. Function View Details
+		   1. "Penyokong" can "view" "Butiran Permohonan" for selected application.
+		   2. "Penyokong" can "view" "Status Semakan Maklumat Calon".
+		   3. "Penyokong" can "view" "Memenuhi Kriteria".
+		   4. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'.
+
+   #4. Pelulus
+	   #1. Function Listing
+		   1. "Pelulus" can "view" "Senarai Permohonan" for involves in all candidates. 
+	   #2. Function View Details
+		   1. "Pelulus" can "view" "Butiran Permohonan" for selected application.
+		   2. "Pelulus" can "view" "Status Semakan Maklumat Calon".
+		   3. "Pelulus" can "view" "Memenuhi Kriteria".
+		   4. "Pelulus" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+		   5. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'.
+	
+   #5. System 
+		1. System can "generate" employeeId/employeeNumber.
+		2. System can "update" "Maklumat kakitangan".
+		
+2. Pembaharuan Kontrak
+   #1. System
+	    1. System can "update" "maklumat kakitangan kontrak".
+		2. System send "notify" 2 months before the contract end to 'US'.
+		3. System can "geenerate" "surat tamat kontrak"
+		4. System can "update" "Maklumat Penamatan Kakitangan".
+		
+		5. System can "generate" "Kontrak Perjanjian Yang Baru".
+		6. System can "update" "Maklumat Kakitangan".
+   #2. Urus Setia Khidmat Sokongan 
+	    #1. Function Listing
+		   1. "US Kakitangan Kontrak" can "view" "senarai kakitangan akan tamat kontrak".
+		
+		#2. Function View Details
+		   1. "US Kakitangan Kontrak" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee.
+		   2. "US Kakitangan Kontrak" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+		   3. "US Kakitangan Kontrak" can "confirm" "Status Pengesahan Pemohonan" by updating the confirmation status either to 'SAH/TIDAK SAH'.
+		   
+		   IF confirmation status  == "TIDAK SAH", letter of termination of contract.
+		   IF confirmation status  == "SAH", 
+		   4. "US Kakitangan Kontrak" can "update" "approver" and  "supporter" into the application.
+		   5. "US Kakitangan Kontrak" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+		   
+		   IF support status == "TIDAK SOKONG", the application end.
+		   IF support status == "SOKONG",the application proceed to next level.
+		   6. "US Kakitangan Kontrak" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+	       
+		   IF approval status == "TIDAK LULUS", the application end.
+		   IF approval status == "LULUS", the application proceed to next level.
+		   7. "US Kakitangan Kontrak" can "view" the "Borang Perjanjian".
+		   8. "US Kakitangan Kontrak" can "confirm" the "Status Pengesahan Borang Perjanjian" by updating the confirmation status either to 'SAH/TIDAK SAH'.
+		   
+		   IF confirmation status == "TIDAK SAH", "Kakitangan" can  "update"  "borang perjanjian"
+		   IF confirmation status == "SAH", the application proceed to next level.
+		   9. "US Kakitangan Kontrak" can "update" the overall status of the application.
+		   
+   #3. Kakitangan
+		#1. Function Listing
+		   1. "Kakitangan" can "view" "Senarai Kakitangan Yang akan Tamat Kontrak".
+			
+		#2. Function View Details 
+			1. "Kakitangan" can "view" "Butiran Kakitangan Yamg akan tamat kontrak".
+			2. "Kakitangan" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+			3. "Kakitangan" can "view" "Status Pengesahan Pemohonan".
+		   
+		   IF confirmation status  == "TIDAK SAH", letter of termination of contract.
+		   IF confirmation status  == "SAH".
+		   4. "Kakitangan" can "view" "approver" and  "supporter" into the application.
+		   5. "Kakitangan" can "view" "Status Penyokongan Permohonan" from 'Penyokong'.
+		   IF support status == "TIDAK SOKONG", the application end.
+		   IF support status == "SOKONG",the application proceed to next level.
+		   6. "Kakitangan" can "view" "Status Kelulusan Permohonan" from 'Pelulus'.
+	       IF approval status == "TIDAK LULUS", the application end.
+		   IF approval status == "LULUS", the application proceed to next level.
+		  
+   		   7. "Kakitangan" can "update" "Borang Perjanjian".		   
+		   8. "Kakitangan" can "view" "Status Pengesahan Borang Perjanjian".
+		   9. "Kakitangan" can "view" the overall status of the application.
+		   10."Kakitangan" can "download" "Surat Kontrak Perjanjian Baru".
+			
+			
+   #4. Pengarah Negeri/Bahagian
+		#1. Function Listing 
+			1. "PN" can "view" "senarai kakitangan akan tamat kontrak".
+		#2. Function View Details
+			1. "PN" can "view" "Butiran kakitangan akan tamat kontrak" for selected employee.
+			2. "PN" can "certify" "Status Perakuan dari Pengarah Bahagian/Negeri" by updating the certification status either to 'AKU/TIDAK AKU'.
+   #5. Penyokong 
+		#1. Function Listing
+		   1. "Penyokong" can "view" "senarai kakitangan akan tamat kontrak".
+		#2. Function View Details
+		   1. "Penyokong" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee.
+		   2. "Penyokong" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+		   3. "Penyokong" can "view" "Status Pengesahan " from 'US'.
+		   4. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating the support status either to 'SOKONG/TIDAK SOKONG'.
+		   
+   #6. Pelulus
+		#1. Function Listing
+		   1. "Pelulus" can "view" "senarai kakitangan akan tamat kontrak".
+		#2. Function View Details
+		   1. "Pelulus" can "view" "Butiran Kakitangan yang akan tamat kontrak" for selected employee.
+		   2. "Pelulus" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+		   3. "Pelulus" can "view" "Status Pengesahan Pemohonan" from 'US'.
+		   4. "Pelulus" can "view" "Status Penyokongan Pemohonan" from 'Penyokong'.
+		   5. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating the approval status either to 'LULUS/TIDAK LULUS'.
+		 

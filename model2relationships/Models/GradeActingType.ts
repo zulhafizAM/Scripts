@@ -1,0 +1,113 @@
+﻿import { DateTime } from 'luxon';
+import {
+    column,
+    BaseModel,
+    belongsTo,
+    BelongsTo,
+    hasOne,
+    HasOne,
+} from '@ioc:Adonis/Lucid/Orm';
+import CamelCaseNamingStrategy from 'App/Strategies/CamelCaseNamingStrategy';
+import Employee from './Employee';
+import Meeting from './Meeting';
+import GradeActingTypesProcess from './GradeActingTypesProcess';
+import GradeActingPostponeProcess from './GradeActingPostponeProcess';
+
+export default class GradeActingType extends BaseModel {
+    public static table = 'gradeActingTypes';
+    public static primaryKey = 'id';
+    public static incrementing = false;
+
+    public static namingStrategy = new CamelCaseNamingStrategy();
+
+    @column({ isPrimary: true, columnName: 'id', serializeAs: null })
+    public id: bigint;
+
+    @column({ columnName: 'employeeId', serializeAs: null })
+    public employeeId: bigint;
+
+    @column({ columnName: 'meetingId', serializeAs: null })
+    public meetingId: bigint;
+
+    @column({ columnName: 'interviewResult' })
+    public interviewResult: string;
+
+    @column({ columnName: 'isUpForPromotion' })
+    public isUpForPromotion: boolean;
+
+    @column({ columnName: 'isGrade1till54' })
+    public isGrade1till54: boolean;
+
+    @column({ columnName: 'isPostpone' })
+    public isPostpone: boolean;
+
+    @column({ columnName: 'meetingResult' })
+    public meetingResult: string;
+
+    @column({ columnName: 'meetingRemark' })
+    public meetingRemark: string;
+
+    @column({ columnName: 'status' })
+    public status: string;
+
+    @column({ columnName: 'remark' })
+    public remark: string;
+
+    @column({ columnName: 'active', serializeAs: null })
+    public active: boolean;
+
+    @column({ columnName: 'createdBy', serializeAs: null })
+    public createdBy: string;
+
+    @column.dateTime({
+        columnName: 'createdAt',
+        autoCreate: true,
+        serializeAs: null,
+    })
+    public createdAt: DateTime;
+
+    @column({ columnName: 'modifiedBy', serializeAs: null })
+    public modifiedBy: string;
+
+    @column.dateTime({
+        columnName: 'modifiedAt',
+        autoCreate: true,
+        autoUpdate: true,
+        serializeAs: null,
+    })
+    public modifiedAt: DateTime;
+
+    @belongsTo(() => Employee, {
+        foreignKey: 'employeeId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public employee: BelongsTo<typeof Employee>;
+
+    @belongsTo(() => Meeting, {
+        foreignKey: 'meetingId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public meeting: BelongsTo<typeof Meeting>;
+
+    @hasOne(() => GradeActingTypesProcess, {
+        foreignKey: 'actingId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public gradeActingTypesProcess: HasOne<typeof GradeActingTypesProcess>;
+
+    @hasOne(() => GradeActingPostponeProcess, {
+        foreignKey: 'actingId',
+        onQuery: (query) => {
+            query.where('active', true);
+        },
+    })
+    public gradeActingPostponeProcess: HasOne<
+        typeof GradeActingPostponeProcess
+    >;
+}

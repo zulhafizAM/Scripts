@@ -1,0 +1,149 @@
+Module Integriti
+
+#1. Surcaj
+	#1. Surcaj
+		#1. Urus Setia Integriti
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Rekod Pekerja untuk proses tindakan surcaj".
+			#2. Function Add Records
+				1. "US Integriti" can "add" "Butiran Rekod untuk Tindakan Surcaj".
+				2. "US Integriti" can "add" "Keputusan Mesyuarat"
+				3. "US Integriti" can "add" "Cara Pembayaran".
+				4. "US Integriti" can "update" overall status of the record.
+				
+			#3. Function View Details 
+				1. "US Integriti" can "view" "Butiran Rekod untuk Tindakan Surcaj" for selected record.
+				2. "US Integriti" can "view" "Keputusan Mesyuarat"
+				3. "US Integriti" can "view" "Cara Pembayaran".
+				4. "US Integriti" can "view" overall status of the record.
+				
+		#2. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Pekerja untuk proses tindakan surcaj".
+			
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Rekod untuk Tindakan Surcaj".
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat"
+				3. "Kakitangan" can "view" "Cara Pembayaran".
+				4. "Kakitangan" can "view" overall status of the record.
+				
+		#3. System 
+			
+#2. Prosiding Tatatertib
+	#1. Pertuduhan
+		#1. Urus Setia Integriti
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Rekod Pertuduhan" for all involved employees.
+ 			#2. Function Add Records 
+				1. "US Integriti" can "add" "Butiran Rekod" 
+				2. "US Integriti" can "add" "Keputusan Mesyuarat".
+				3. "US Integriti" can "update" overall status.
+				
+			#3. Function View Details 
+				1. "US Integriti" can "view" "Butiran Rekod" for selected record.
+				2. "US Integriti" can "view" "Keputusan Mesyuarat".
+				3. "US Integriti" can "view" overall status.
+				
+		#2. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Pertuduhan" for all involved employees.
+ 				
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Rekod" for selected record.
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				3. "Kakitangan" can "view" overall status.
+		#3. System
+			1. System can "update" "Maklumat Kakitangan".
+			
+	#2. Penentuan Hukuman 
+		#1. Urus Setia Tatatertib
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Rekod Penentuan Hukuman" for all involved employees.
+ 			#2. Function Add Records 
+				1. "US Integriti" can "add" "Butiran Rekod" 
+				2. "US Integriti" can "add" "Keputusan Mesyuarat".
+				3. "US Integriti" can "update" overall status.
+				
+			#3. Function View Details 
+				1. "US Integriti" can "view" "Butiran Rekod" for selected record.
+				2. "US Integriti" can "view" "Keputusan Mesyuarat".
+				3. "US Integriti" can "view" overall status.
+		#2. Kakitangan 
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Penentuan Hukuman" for all involved employees.
+ 				
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Rekod" for selected record.
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				3. "Kakitangan" can "view" overall status.
+		#3. System 
+			IF found guilty == true
+			1. System can "update" necessary module based on sentenced given.
+			IF found guilty == false 
+			1. Nothing happend.
+			 
+	#3. Rayuan
+		#1. Kakitangan
+			#1. Function Listing 
+				1. "Kakitangan" can "view" "Senarai Permohonan Rayuan".
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan Rayuan".
+			#3. Function View Application
+				1. "Kakitangan" can "view" "Butiran Permohonan Rayuan" for selected application. 
+				2. "Kakitangan" can "view" "Keputusan Rayuan".
+				
+		#2. Urus Setia Tatatertib 
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Permohonan Rayuan" for all involved employees.
+			#2. Function View Application
+				1. "US Integriti" can "view" "Butiran Permohonan Rayuan" for selected application.
+				2. "US Integriti" can "update" "Keputusan Mesyuarat".
+			
+		#3. System
+			1. System  can "update" "Maklumat Kakitangan".
+			
+	#4. Tahan Kerja 
+		#1. Urus Setia Integriti 
+			#1. Function Listing
+				1. "US Integriti" can "view" "Senarai Rekod Tahan Kerja" for all involved employees.
+			#2. Function Add Records  
+				1. "US Integriti" can "add" "Butiran Rekod Tahan Kerja".
+				2. "US Integriti" can "update" "Keputusan Mesyuarat".
+				
+			#3. Function View Details 
+				1. "US Integriti" can "view" "Butiran Rekod Tahan Kerja" for selected record.
+				2. "US Integriti" can "view" "Keputusan Mesyuarat".
+				
+		#2. Kakitangan 
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Tahan Kerja" for that particular employee.
+				
+			#2. Function View Details 
+				1.  "Kakitangan" can "view" "Butiran Rekod Tahan Kerja" for selected application.
+				2.  "Kakitangan" can "view" "Keputusan Mesyuarat".
+				
+		#3. System 
+			1.  System can "update" "maklumat kakitangan".
+			
+	#5. Gantung Kerja 
+		#1. Urus Setia Integriti
+			#1. Function Listing 
+				1.  "US Integriti" can "view" "Senarai Rekod Gantung Kerja" for all involved employees.
+			
+			#2. Function Add Records  
+				1.  "US Integriti" can "add" "Butiran Rekod Gantung Kerja".
+				2.  "US Integriti" can "update" "Keputusan Mesyuarat".
+			
+			#3. Function View Details
+				1.  "US Integriti" can "view" "Butiran Rekod Gantung Kerja" for selected application.
+				2.  "US Integriti" can "view" "Keputusan Mesyuarat".	
+			
+		#2. Kakitangan
+			#1. Function Listing 
+				1.  "Kakitangan" can "view" "Senarai Rekod Gantung Kerja" for all involved employees.
+			
+			#3. Function View Details
+				1.  "Kakitangan" can "view" "Butiran Rekod Gantung Kerja" for selected application.
+				2.  "Kakitangan" can "view" "Keputusan Mesyuarat".	
+		#3. System 
+			1.  System can "update" "maklumat kakitangan".

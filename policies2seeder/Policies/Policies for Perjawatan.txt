@@ -1,0 +1,1316 @@
+Module Perjawatan
+
+1. Lantikan Baru
+   #1.Perlantikan Baru (Tetap)
+	   #1. Calon
+		   #1. Function Listing
+			   1. "Calon" can "view" "Senarai Permohonan" for each application.
+			   
+		   #2. Function Add Application
+			    1. "Calon" can "add" "Butiran Permohonan".
+			   
+			   
+		   #3. Function View Details
+				1. "Calon" can "view" "Butiran Permohonan" for selected application.
+			    2. "Calon" can "view" "Status Semakan Maklumat Calon".
+			       IF fit criteria == false, the application end.
+				   IF fit criteria == true, 
+			    3. "Calon" can "view" "Status Penyokongan Permohonan".
+				   IF supported status == "TIDAK SOKONG", the application end.
+				   IF supported status == "SOKONG",
+			    4. "Calon" can "view" "Status Kelulusan Permohonan".
+				   IF approved status == "TIDAK LULUS", application end.
+				   IF approved status == "LULUS",
+				5. "Calon" can "view" "Id Kakitangan".
+			
+	   #2. Urus Setia Perjawatan
+		   #1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Permohonan" for each application.
+		   #2. Function View Details
+				1. "US Perjawatan" can "view" "Butiran Permohonan" for selected application.
+			    2. "US Perjawatan" can "verify" "Status Semakan Maklumat Calon" by updating the verification status to either 'SAH/TIDAK SAH'.
+			       IF fit criteria == false, the application end.
+				   IF fit criteria == true, 
+			    3. "US Perjawatan" can "update" "Maklumat Penyokong dan Pelulus".
+				4. "US Perjawatan" can "view" "Status Penyokongan Permohonan".
+				   IF supported status == "TIDAK SOKONG", the application end.
+				   IF supported status == "SOKONG",
+			    5. "US Perjawatan" can "view" "Status Kelulusan Permohonan".
+				   IF approved status == "TIDAK LULUS", application end.
+				   IF approved status == "LULUS",
+				6. "US Perjawatan" can "view" "Id Kakitangan".
+			
+		
+	   #3. Penyokong 
+		   #1. Function Listing 
+			   1. "Penyokong" can "view" "Senarai Permohonan" for each application.
+			   
+		   #2. Function View Details
+				1. "Penyokong" can "view" "Butiran Permohonan" for selected application.
+				2. "Penyokong" can "view" "Status Semakan Maklumat Calon".
+					IF fit criteria == false, the application end.
+				   IF fit criteria == true, 
+				3. "Penyokong" can "support" "Status Penyokongan Permohonan" by updating support status to either to 'SOKONG/TIDAK SOKONG'.
+				   
+	   #4. Pelulus
+		   #1. Function Listing 
+			   1. "Pelulus" can "view" "Senarai Permohonan" for each application.
+			   
+		   #2. Function View Details
+				1. "Pelulus" can "view" "Butiran Permohonan" for selected application.
+				2. "Pelulus" can "view" "Status Semakan Maklumat Calon".
+					IF fit criteria == false, the application end.
+				    IF fit criteria == true, 
+				3. "Pelulus" can "view" "Status Penyokongan Permohonan". 	
+				4. "Pelulus" can "approve" "Status Kelulusan Permohonan" by updating approval status to either to 'LULUS/TIDAK LULUS'.
+				
+	   #5. System
+		   1. System can "generate" new employee number.
+		   2. System can "update" "maklumat kakitangan".
+		   3. System can "email" to the "calon".
+		   
+	2. Tawaran Baru dalam Perkhidmatan (Rasionalisasi/Tukar Lantik/Jumud/Lain-lain)
+		#1. Urus Setia Perjawatan 
+			#1. Function Listing
+				1. "US Perjawatan" can "view" "Senarai Rekod Kakitangan yang terlibat".
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Kakitangan yang terlibat" for selected record.
+				2. "US Perjawatan" can "approve" "Keputusan Mesyuarat" by updating meeting result either to 'LULUS/TIDAK LULUS'.
+					IF meeting result  == "TIDAK LULUS", application end. 
+					IF meeting result  == "LULUS", 
+				3. "US Perjawatan" can "download" "Dokumen untuk dimuat turun".
+				4. "US Perjawatan" can "update" "Maklumat Penyokong dan Pelulus".
+				5. "US Perjawatan" can "view" "Status Penyokongan".
+				6. "US Perjawatan" can "view" "Status Kelulusan".
+				7. "US Perjawatan" can "update" overall status.
+				
+		#2. System 
+			1. System can "generate" "surat tawaran rasionalisai".
+			2. System can "generate" "borang lapor diri".
+			3. System can "email" to the employee.
+			
+		#3. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Rekod Tawaran Baru".
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Kakitangan yang terlibat" for selected record.
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat".
+					IF meeting result  == "TIDAK LULUS", application end. 
+					IF meeting result  == "LULUS", 
+				3. "Kakitangan" can "download" "Dokumen untuk dimuat turun".
+				4. "Kakitangan" can "update" "Maklumat Penyokong dan Pelulus".
+				5. "Kakitangan" can "view" "Status Penyokongan".
+				6. "Kakitangan" can "view" "Status Kelulusan".
+				7. "Kakitangan" can "view" overall status.
+				
+		#4. Penyokong
+			#1. Function Listing
+				1. "Penyokong" can "view" "Senarai Rekod Tawaran Baru".
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Kakitangan yang terlibat" for selected record.
+				2. "Penyokong" can "view" "Keputusan Mesyuarat".
+					IF meeting result  == "TIDAK LULUS", application end. 
+					IF meeting result  == "LULUS", 
+				3. "Penyokong" can "view" "Dokumen untuk dimuat turun".
+				4. "Penyokong" can "view" "Maklumat Penyokong dan Pelulus".
+				5. "Penyokong" can "support" "Status Penyokongan" by updating support status either to 'TIDAK SOKONG/SOKONG'.
+		
+		#5. Pelulus
+			#1. Function Listing
+				1. "Pelulus" can "view" "Senarai Rekod Tawaran Baru".
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Kakitangan yang terlibat" for selected record.
+				2. "Pelulus" can "view" "Keputusan Mesyuarat".
+					IF meeting result  == "TIDAK LULUS", application end. 
+					IF meeting result  == "LULUS", 
+				3. "Pelulus" can "view" "Dokumen untuk dimuat turun".
+				4. "Pelulus" can "view" "Maklumat Penyokong dan Pelulus".
+				5. "Pelulus" can "view" "Status Penyokong" from 'Penyokong'.
+				6. "Pelulus" can "approve" "Status Penyokongan" by updating approval status either to 'TIDAK LULUS/LULUS'.
+
+2. Pengesahan dalam Perkhidmatan.
+	#1. Pengesahan bagi semua kakitangan
+		#1. System
+			1. System can "generate" "Senarai Ramai Kakitangan dalam Percubaan".
+			2. System can "generate" "Surat Pengesahan dalam Perkhidmatan".
+			
+		#2. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Nama Kakitangan dalam Percubaan" for their own application.
+				
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Kakitangan dalam Percubaan" for that particular employees.
+				2. "Kakitangan" can "view" "Status Semakan Pengesahan".
+					IF verify status  == "TIDAK SEMAK"
+					IF verify status  == "SEMAK",
+				3. "Kakitangan" can "view" "Status Perakuan Permohonan dari Pengarah Integriti dan Audit".
+				4. "Kakitangan" can "view" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian".
+				5. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan".
+				6. "Kakitangan" can "view" "Status Keputusan Pengesahan".
+				
+		#3. Urus Setia Perjawatan
+			#1. Function Listing
+				1. "US Perjawatan" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees.
+				
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee.
+				2. "US Perjawatan" can "verify" "Status Semakan Pengesahan" by updating verification status to eiher 'SEMAK/TIDAK SEMAK'.
+				3. "US Perjawatan" can "view" "Status Perakuan Permohonan dari Pengarah Integriti dan Audit".
+				4. "US Perjawatan" can "view" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian".
+				5. "US Perjawatan" can "update" "Keputusan Mesyuarat".
+				6. "US Perjawatan" can "download" "Surat Pengesahan dalam Perkhidmatan".
+				7. "US Perjawatan" can "update" "Status Keputusan Pengesahan".
+				
+		#4. Pengarah Integriti dan Audit
+			#1. Function Listing
+				1. "PIA" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees.
+				
+			#2. Function View Details 
+				1. "PIA" can "view" "Butiran Kakitangan dalam Percubaan" for selected employees.
+				2. "PIA" can "view" "Status Semakan Pengesahan".
+				3. "PIA" can "certify" "Status Perakuan Permohonan dari Pengarah integriti dan Audit" by updating certification to either 'AKU/TIDAK AKU'.
+				
+		#5. Pengarah Negeri/Bahagian 
+			#1. Function Listing 
+				1. "PN" can "view" "Senarai Nama Kakitangan dalam Percubaan" for all employees.
+				
+			#2. Function View Details 
+				1. "PN" can "view" "Butiran Kakitangan dalam Percubaan" for selected employees.
+				2. "PN" can "view" "Status Semakan Pengesahan".
+				3. "PN" can "view" "Status Perakuan Permohonan dari Pengarah integriti dan Audit".
+				4. "PN" can "cerity" "Status Perakuan Permohonan dari Pengarah Negeri/Bahagian" by updating certification to either 'AKU/TIDAK AKU'.
+				
+	#2. Pengesahan bagi melebihi tempoh 3 tahun 
+		#1. System  
+			1. System can "generate" "Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun".
+			2. System can "generate" "Surat Keputusan".
+			3. System can "email" "Kakitangan".
+		
+		#2. Urus Setia Perjawatan
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Nama Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun" for all employees.
+				
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun" for selected employees.
+				2. "US Perjawatan" can "verify" "Status Semakan Syarat Pengesahan" by updating verification status to either 'SEMAK/TIDAK SEMAK'.
+				3. "US Perjawatan" can "update" "Maklumat Mesyuarat".
+				4. "US Perjawatan" can "download" "Surat Keputusan".
+				5. "US Perjawatan" can "update" overall status for the request.
+				
+		#3. Kakitangan
+			#1. Function Listing 
+				1. "Kakitangan" can "view" "Senarai Nama Kakitangan dalam Pengesahan bagi Melebih Tempoh 3 Tahun" for themselves.
+				
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Kakitangan dalam Pengesahan bagi melebihi tempoh 3 tahun".
+				2. "Kakitangan" can "view" "Status Semakan Syarat Pengesahan".
+				3. "Kakitangan" can "view" "Maklumat Mesyuarat".
+				4. "Kakitangan" can "downlaod" "Surat Keputusan".
+				5. "Kakitangan" can "view" overall status for the request.
+				
+	#3. Pengesahan lantikan ke Gred/Skim Baru (Gred Lantikan)
+		#1. System 
+			1. System can "generate" "Senarai Nama Kakitangan dalam Percubaan".
+			2. System can "generate" "Surat Pengesahan dalam Perkhidmatan".
+				
+		#2. Kakitangan
+			#1. Function Listing 
+				1. "Kakitangan" can "view" "Senarai Kakitangan dalam Percubaan".
+				
+			#2. Function View Details
+				1. "Kakitangan" can "view" "Butiran Kakitangan dalam Percubaan".
+				2. "Kakitangan" can "view" "Status Semakan Syarat Pengesahan".
+				3. "Kakitangan" can "view" "Status Perakuan dari Pengarah integriti dan Audit".
+				4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Negeri/Bahagian".
+				5. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan".
+				7. "Kakitangan" can "view" overall status for the request. 
+				
+		#3. Urus Setia Perjawatan 
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. 
+				
+			#2. Function View Details
+				1. "US Perjawatan" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee.
+				2. "Kakitangan" can "verify" "Status Semakan Syarat Pengesahan" by updating verification status either to "SEMAK/TIDAK SEMAKAN".
+				3. "Kakitangan" can "view" "Status Perakuan dari Pengarah integriti dan Audit".
+				4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Negeri/Bahagian".
+				5. "Kakitangan" can "update" "Keputusan Mesyuarat".
+				6. "Kakitangan" can "download" "Surat Pengesahan dalam Perkhidmatan".
+				7. "Kakitangan" can "update" overall status for the request. 
+				
+		#4. Pengarah integriti dan Audit 
+			#1. Function Listing 
+				1. "PIA" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. 
+				
+			#2. Function View Details
+				1. "PIA" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee.
+				2. "PIA" can "view" "Status Semakan Syarat Pengesahan".
+				3. "PIA" can "certify" "Status Perakuan dari Pengarah integriti dan Audit" by updating certification status either to 'AKU/TIDAK AKU'.
+				
+		#5. Pengarah Negeri/Bahagian 
+			#1. Function Listing 
+				1. "PN" can "view" "Senarai Kakitangan dalam Percubaan" for all employees. 
+				
+			#2. Function View Details
+				1. "PN" can "view" "Butiran Kakitangan dalam Percubaan" for selected employee.
+				2. "PN" can "view" "Status Semakan Syarat Pengesahan".
+				3. "PN" can "view" "Status Perakuan dari Pengarah Integriti dan Audit".
+				4. "PN" can "certify" "Status Perakuan dari Pengarah" by updating certification status either to 'AKU/TIDAK AKU'.
+				
+3. Pemberian Taraf Berpencen (PTB) & KWAP 
+	#1. PTB and KWAP 
+		#1. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Permohonan PTB dan KWAP".
+				
+			#2. Function Add Application
+				1. "Kakitangan" can "add" "Butiran Permohonan PTB dan KWAP" for selected application.
+
+			#3. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Permohonan PTB dan KWAP" for selectef application.
+				2. "Kakitangan" can "view" "Keputusan dari JPA".
+				3. "Kakitangan" can "view" "Maklumat Surat JPA".
+				4. "Kakitangan" can "download" "Borang KWAP".
+				5. "Kakitangan" can "view" "Keputusan dari KWAP".
+				6. "Kakitangan" can "view" "Maklumat Kakitangan".
+				7. "Kakitangan" can "view" "Penyokong and Pelulus".
+				8. "Kakitangan" can "view" "Status Penyokongan".
+				9. "Kakitangan" can "view" "Status Kelulusan".
+				10."Kakitangan" can "view" overall status for the application.
+		
+		#2. System 
+			#1. System can "update"  "Maklumat Kakitangan".
+		#3. Urus Setia Perjawatan
+			#1. Function Listing 
+				1.  "US Perjawatan" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants.
+				
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants.
+				2. "US Perjawatan" can "view" "Keputusan dari JPA".
+				3. "US Perjawatan" can "view" "Maklumat Surat JPA".
+				4. "US Perjawatan" can "download" "Borang KWAP".
+				5. "US Perjawatan" can "update" "Keputusan dari KWAP".
+				6. "US Perjawatan" can "update" "Maklumat Kakitangan".
+				7. "US Perjawatan" can "update" "Penyokong and Pelulus".
+				8. "US Perjawatan" can "view" "Status Penyokongan".
+				9. "US Perjawatan" can "view" "Status Kelulusan".
+				10."US Perjawatan" can "view" overall status for the application.
+				
+		#4. Penyokong 
+			#1. Function Listing 
+				1.  "Penyokong" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants.
+				
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants.
+				2. "Penyokong" can "view" "Keputusan dari JPA".
+				3. "Penyokong" can "view" "Maklumat Surat JPA".
+				4. "Penyokong" can "download" "Borang KWAP".
+				5. "Penyokong" can "view" "Keputusan dari KWAP".
+				6. "Penyokong" can "view" "Maklumat Kakitangan".
+				7. "Penyokong" can "view" "Penyokong and Pelulus".
+				8. "Penyokong" can "support" "Status Penyokongan" by updating support status either to 'SOKONG/TIDAK SOKONG'.
+				
+		#5. Pelulus 
+			#1. Function Listing 
+				1.  "Pelulus" can "view" "Senarai Permohonan PTB dan KWAP" for all applicants.
+				
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Permohonan PTB dan KWAP" for selected applicants.
+				2. "Pelulus" can "view" "Keputusan dari JPA".
+				3. "Pelulus" can "view" "Maklumat Surat JPA".
+				4. "Pelulus" can "download" "Borang KWAP".
+				5. "Pelulus" can "view" "Keputusan dari KWAP".
+				6. "Pelulus" can "view" "Maklumat Kakitangan".
+				7. "Pelulus" can "view" "Penyokong and Pelulus".
+				7. "Pelulus" can "view" "Status Penyokongan".
+				8. "Pelulus" can "approve" "Status Kelulusan" by updating approval status either to 'SOKONG/TIDAK SOKONG'.
+			
+4. Pemangkuan
+	#1. Pemangkuan Gred 1-54
+	#2. Pemangkuan Gred 41 (Flexi/KUP)
+		#1. System 
+			1.  System can "generate" "Senarai Nama Kakitangan".
+			2.  System can "generate" "Surat Panggilan Temuduga dan Borang Perakuan Pendidikan".
+			3.  System can "email" "Kakitangan".
+			4.  System can "generate surat tawaran pemangkuan, surat setuju terima, borang lapor diri, nota serah tugas".
+			5.  System can "update" "Maklumat Perjawatan Kakitangan & Waran Perjawatan".
+			
+			//Penangguhan
+			6. System can "generate" "surat gagal penangguhan rayuan".
+			7. System can "generate" "surat penangguhan rayuan".
+			
+		#2. Urus Setia Perjawatan 
+			#1. Function Listing 
+				1.  "US Perjawatan" can "view" "senarai Kakitangan" for all employee.
+			
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				3. "US Perjawatan" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "US Perjawatan" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+				5. "US Perjawatan" can "download" "Surat Panggilan Temuduga dan Borang Perakukan".
+				6. "US Perjawatan" can "update" "Keputusan Temuduga Calon".
+				7. "US Perjawatan" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+				8. "US Perjawatan" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "US Perjawatan" can "update" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."US Perjawatan" can "view" "Status Penyokong"
+				11."US Perjawatan" can "view" "Status Kelulusan".
+				12."US Perjawatan" can "update" overall status.
+				
+				//Penangguhan 
+				9. "US Perjawatan" can "view" "Maklumat Permohonan Penangguhan/Penempatan"
+				10."US Perjawatan" can "update" "Keputusan Mesyuarat Penangguhan" by updating status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS"
+				11."US Perjawatan" can "download" "Surat Gagal Penangguhan/Penempatan Rayuan"
+					IF status == "LULUS"
+				12."US Perjawatan" can "update" "Mengisi nama bagi Penyokong dan Pelulus".
+				13."US Perjawatan" can "view" "Status Penyokong"
+				14."US Perjawatan" can "view" "Status Kelulusan".
+				15."US Perjawatan" can "update" overall status.
+		#3. Urus Setia integriti
+			#1.  Function Listing 
+				1. "USI" can "view" "Senarai Nama Kakitangan" for all employee.
+			#2.  Function View Details 
+				1. "USI" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "USI" can "add" "Keputusan Mesyuarat".
+				3. "USI" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either "AKUI/TIDAK AKUI".
+				
+		#4. Pengarah Bahagian/Negeri 
+			#1.  Function Listing 
+				1. "PN" can "view" "Senarai Nama Kakitangan" for all employee.
+			#2.  Function View Details 
+				1. "PN" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "PN" can "add" "Keputusan Mesyuarat".
+				3. "PN" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either "AKUI/TIDAK AKUI".
+				
+		#5. Kakitangan
+			#1. Function Listing 
+				1.  "Kakitangan" can "view" "senarai Kakitangan" for themselves.
+			
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat".
+				3. "Kakitangan" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "Kakitangan" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+				5. "Kakitangan" can "download" "Surat Panggilan Temuduga dan Borang Perakukan".
+				6. "Kakitangan" can "view" "Keputusan Temuduga Calon".
+				7. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat".
+				IF status == "TIDAK LULUS", application end her.
+				IF status == "LULUS",
+				8. "Kakitangan" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."Kakitangan" can "view" "Status Penyokong"
+				11."Kakitangan" can "view" "Status Kelulusan".
+				12."Kakitangan" can "view" overall status.
+				
+				// Penangguhan
+				8. "Kakitangan" can "download" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Kakitangan" can "update" "Status Rayuan Penangguhan/Penempatan".
+				10."Kakitangan" can "view" "Keputusan Mesyuarat Penangguhan/Penempatan".
+					IF status== "TIDAK LULUS",
+				11. "Kakitangan" can "download" "Surat Gagal Penangguhan Rayuan".	
+					IF status == "LULUS"
+				12."Kakitangan" can "download" "Surat Penangguhan Rayuan".
+				13."Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				14."Kakitangan" can "view" "Status Penyokong"
+				15."Kakitangan" can "view" "Status Kelulusan".
+				16."Kakitangan" can "view" overall status.
+				
+		#6. Penyokong 
+			#1. Function Listing 
+				1.  "Penyokong" can "view" "senarai Kakitangan" for themselves.
+			
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "Penyokong" can "view" "Keputusan Mesyuarat".
+				3. "Penyokong" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "Penyokong" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+				5. "Penyokong" can "view" "Surat Panggilan Temuduga dan Borang Perakukan".
+				6. "Penyokong" can "view" "Keputusan Temuduga Calon".
+				7. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat".
+				8. "Penyokong" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Penyokong" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."Penyokong" can "support" "Status Penyokongan" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+				
+				// Penangguhan
+				8. "Penyokong" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Penyokong" can "view" "Status Rayuan Penangguhan/Penempatan".
+				10."Penyokong" can "view" "Surat Penangguhan Rayuan".
+				11."Penyokong" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				12."Penyokong" can "support" "Status Penyokongan" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+				
+		#7. Pelulus 
+			#1. Function Listing 
+				1.  "Penyokong" can "view" "senarai Kakitangan" for themselves.
+			
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "Pelulus" can "view" "Keputusan Mesyuarat".
+				3. "Pelulus" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "Pelulus" can "view" "Status Perakuan dari Pengarah Bahagian/Negeri".
+				5. "Pelulus" can "view" "Surat Panggilan Temuduga dan Borang Perakukan".
+				6. "Pelulus" can "view" "Keputusan Temuduga Calon".
+				7. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat".
+				8. "Pelulus" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."Pelulus" can "view" "Status Penyokongan".
+				11."Pelulus" can "approve" "Status Kelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'.
+				
+				// Penangguhan
+				8. "Pelulus" can "view" "Surat Tawaran Pemangkuan, Surat Setuju Terima, Borang Lapor Diri, Nota Serah Tugas".
+				9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."Pelulus" can "view" "Status Penyokongan".
+				11."Pelulus" can "approve" "Status Kelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'.
+				
+	#3. Pemangkuan Gred Utama
+		#1. System
+			1. System can "view" "Senarai Kakitangan yang terlibat".
+			2. System can "generate" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan".
+			3. System can "email" to "Kakitangan".
+			4. System can "update" "Maklumat Perjawatan"
+		#2. Urus Setia Perjawatan
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Kakitangan" for selected emloyee.
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				3. "US Perjawatan" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "US Perjawatan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+				5. "US Perjawatan" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+				IF status == "TIDAK LULUS", application failed.
+					
+				IF status == "LULUS",
+				8. "US Perjawatan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+				9. "US Perjawatan" can "update" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."US Perjawatan" can "view" "Status Penyokong"
+				11."US Perjawatan" can "view" "Status Kelulusan".
+				12."US Perjawatan" can "update" overall status.
+		#3. Urus Setia Integriti
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Kakitangan" for selected emloyee.
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				3. "US Perjawatan" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either 'AKU/TIDAK AKU'.
+				
+		#4. Kakitangan
+			#1. Function Listing 
+					1. "Kakitangan" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Kakitangan" can "add" "Keputusan Mesyuarat".
+					3. "Kakitangan" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Kakitangan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Kakitangan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Kakitangan" can "view" "Status Penyokong"
+					11."Kakitangan" can "view" "Status Kelulusan".
+					12."Kakitangan" can "view" overall status.
+		#5. Penyokong
+			#1. Function Listing 
+					1. "Penyokong" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Penyokong" can "view" "Keputusan Mesyuarat".
+					3. "Penyokong" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Penyokong" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Kakitangan" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Kakitangan" can "support" "Status Penyokong" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+		
+		#6. Pelulus
+			#1. Function Listing 
+					1. "Pelulus" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Pelulus" can "view" "Keputusan Mesyuarat".
+					3. "Pelulus" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Pelulus" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Pelulus" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Pelulus" can "view" "Status Penyokong".
+					11."Pelulus" can "approve" "Status Pelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'.
+					
+5. Pengesahan Kenaikan Pangkat 
+	#1. Pengesahan Kenaikan Pangkat Gred 1- 54
+	#2. Kenaikan Pangkat TBK 1 dan 2 Kumpulan Sokongan
+		//The same
+		#1. System
+			1.System can "view" "Senarai Calon yang Berkhidmat 13 Tahun Mengikut Tarikh Jawatan Gred Semasa".
+			2.System can "generate" "Surat Tawaran Kenaikan Pangkat" and its documents.
+			3.System can "send" email to the employee.
+		#2. Urus Setia Perjawatan
+			#1. Function Listing
+				1. "US Perjawatan" can "view" "Senarai Calon yang Berkhidmat 13 Tahun".
+			#2. Function Add Candidate/Select Candidate 
+				1. "US Perjawatan" can "select/add" candidates.
+				2. "US Perjawatan" can "view" "Status Perakuan dari Urus Setia Integriti"
+				3. "US Perjawatan" can "view" "Status Perakuan dari Pengarah Bahagian"
+				4. "US Perjawatan" can "add" "Keputusan Mesyuarat Kenaikan Pangkat"
+					IF "TIDAK LULUS", application end here. 
+					IF "LULUS"
+				5. "US Perjawatan" can "add" "Keputusan Mesyuarat Penempatan".
+				6. "US Perjawatan" can "update" "Masukan Penyokong dan Pelulus"
+				7. "US Perjawatan" can "view" "Status Sokongan"
+				8. "US Perjawatan" can "view" "Status Kelulusan"
+				
+			#3. Function View Details.
+				1. "US Perjawatan" can "view" candidates.
+				2. "US Perjawatan" can "view" "Status Perakuan dari Urus Setia Integriti"
+				3. "US Perjawatan" can "view" "Status Perakuan dari Pengarah Bahagian"
+				4. "US Perjawatan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat"
+					IF "TIDAK LULUS", application end here. 
+					IF "LULUS"
+				5. "US Perjawatan" can "view" "Keputusan Mesyuarat Penempatan".
+				6. "US Perjawatan" can "view" "Masukan Penyokong dan Pelulus"
+				7. "US Perjawatan" can "view" "Status Sokongan"
+				8. "US Perjawatan" can "view" "Status Kelulusan"
+		#3. Urus Setia Integriti
+			#1.FUnction Listing 
+				1. "USI" can "view" list of candidates.
+				
+			#2.Function View Details 
+				1. "USI" can "view" details for selected candidates. 
+				2. "USI" can "update" "Status Perakuan dari Urus Setia Integriti" by updating the status to either "AKU" or "TIDAK AKU".
+		#4. Pengarah Bahagian/Negeri
+			#1. Function Listing
+				1. "PN" can "view" list of candidates.
+			#2. Function View Details
+				1. "PN" can "view" details for selected candidates.
+				2. "PN" can "view" "Status Perakuan dari Urus Setia Integriti".
+				3. "PN" can "update" "Status Perakuan dari Bahagian/Negeri" by updating the status to either "AKU" or "TIDAK AKU".
+		#5. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Calon yang Berkhidmat 13 Tahun".
+			#2. Function View Details.
+				1. "Kakitangan" can "view" candidates.
+				2. "Kakitangan" can "view" "Status Perakuan dari Urus Setia Integriti"
+				3. "Kakitangan" can "view" "Status Perakuan dari Pengarah Bahagian"
+				4. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat"
+					IF "TIDAK LULUS", application end here. 
+					IF "LULUS"
+				5. "Kakitangan" can "view" "Keputusan Mesyuarat Penempatan".
+				6. "Kakitangan" can "download" "Borang Berkaitan".
+				7. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus"
+				8. "Kakitangan" can "view" "Status Sokongan"
+				9. "Kakitangan" can "view" "Status Kelulusan".
+				
+		#6. Penyokong 
+			#1. Function Listing
+				1. "Penyokong" can "view" "Senarai Calon yang Berkhidmat 13 Tahun".
+			#2. Function View Details.
+				1. "Penyokong" can "view" candidates.
+				2. "Penyokong" can "view" "Status Perakuan dari Urus Setia Integriti"
+				3. "Penyokong" can "view" "Status Perakuan dari Pengarah Bahagian"
+				4. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat"
+					IF "TIDAK LULUS", application end here. 
+					IF "LULUS"
+				5. "Penyokong" can "view" "Keputusan Mesyuarat Penempatan".
+				6. "Penyokong" can "view" "Borang Berkaitan".
+				7. "Penyokong" can "view" "Masukan Penyokong dan Pelulus"
+				8. "Penyokong" can "update" "Status Sokongan" by updating to either "SOKONG" or "TIDAK SOKONG".
+		#7. Pelulus 
+			#1. Function Listing
+				1. "Pelulus" can "view" "Senarai Calon yang Berkhidmat 13 Tahun".
+			#2. Function View Details.
+				1. "Pelulus" can "view" candidates.
+				2. "Pelulus" can "view" "Status Perakuan dari Urus Setia Integriti"
+				3. "Pelulus" can "view" "Status Perakuan dari Pengarah Bahagian"
+				4. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat"
+					IF "TIDAK LULUS", application end here. 
+					IF "LULUS"
+				5. "Pelulus" can "view" "Keputusan Mesyuarat Penempatan".
+				6. "Pelulus" can "view" "Borang Berkaitan".
+				7. "Pelulus" can "view" "Masukan Penyokong dan Pelulus"
+				8. "Pelulus" can "view" "Status Sokongan". 
+				9. "Pelulus" can "update" "Status Kelulusan" by updating to either "LULUS" or "TIDAK LULUS".
+		
+	#3. Pengesahan Kenaikan Pangkat Gred Utama.
+		#1. System
+			1. System can "view" "Senarai Kakitangan yang terlibat".
+			2. System can "generate" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugasan".
+			3. System can "email" to "Kakitangan".
+			4. System can "update" "Maklumat Perjawatan"
+		#2. Urus Setia Perjawatan
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Kakitangan" for selected emloyee.
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				3. "US Perjawatan" can "view" "Status Perakuan dari Urusetia Integriti"
+				4. "US Perjawatan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+				5. "US Perjawatan" can "update" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+				IF status == "TIDAK LULUS", application failed.
+					
+				IF status == "LULUS",
+				8. "US Perjawatan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+				9. "US Perjawatan" can "update" "Mengisi nama bagi Penyokong dan Pelulus".
+				10."US Perjawatan" can "view" "Status Penyokong"
+				11."US Perjawatan" can "view" "Status Kelulusan".
+				12."US Perjawatan" can "update" overall status.
+		#3. Urus Setia Integriti
+			#1. Function Listing 
+				1. "US Perjawatan" can "view" "Senarai Kakitangan" for selected emloyee.
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+				2. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				3. "US Perjawatan" can "certify" "Status Perakuan dari Urusetia Integriti" by updating certification status to either 'AKU/TIDAK AKU'.
+				
+		#4. Kakitangan
+			#1. Function Listing 
+					1. "Kakitangan" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Kakitangan" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Kakitangan" can "add" "Keputusan Mesyuarat".
+					3. "Kakitangan" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Kakitangan" can "download" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Kakitangan" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Kakitangan" can "download" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Kakitangan" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Kakitangan" can "view" "Status Penyokong"
+					11."Kakitangan" can "view" "Status Kelulusan".
+					12."Kakitangan" can "view" overall status.
+		#5. Penyokong
+			#1. Function Listing 
+					1. "Penyokong" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Penyokong" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Penyokong" can "view" "Keputusan Mesyuarat".
+					3. "Penyokong" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Penyokong" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Penyokong" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Penyokong" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Penyokong" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Penyokong" can "support" "Status Penyokong" by updating support status to either 'SOKONG/TIDAK SOKONG'.
+		
+		#6. Pelulus
+			#1. Function Listing 
+					1. "Pelulus" can "view" "Senarai Kakitangan" for selected emloyee.
+				#2. Function View Details 
+					1. "Pelulus" can "view" "Butiran Maklumat Kakitangan" for selected employee.
+					2. "Pelulus" can "view" "Keputusan Mesyuarat".
+					3. "Pelulus" can "view" "Status Perakuan dari Urusetia Integriti"
+					4. "Pelulus" can "view" "Borang Penilaian, Kesihatan dan Profil Kakitangan CV".
+					5. "Pelulus" can "view" "Keputusan Mesyuarat Kenaikan Pangkat" by updating the status to either 'LULUS/TIDAK LULUS'.
+					IF status == "TIDAK LULUS", application failed.
+						
+					IF status == "LULUS",
+					8. "Pelulus" can "view" "Surat Tawaran Kenaikan Pangkat, Borang Lapor Diri, Nota Serah Tugas".
+					9. "Pelulus" can "view" "Mengisi nama bagi Penyokong dan Pelulus".
+					10."Pelulus" can "view" "Status Penyokong".
+					11."Pelulus" can "approve" "Status Pelulusan" by updating approval status to either 'LULUS/TIDAK LULUS'.	
+6. Pertukaran
+   #1. Pertukaran Permohonan Sendiri
+	   #1. Kakitangan
+		   #1. Function Listing
+			   1. "Kakitangan" can "view" their own application.
+			   
+		   #2. Function Add
+			   1. "Kakitangan" can "add" "Alasan Pertukaran".
+			   2. "Kakitangan" can "update" "Status Pengesahan Permohonan".
+			   
+		   #3. Function View 
+			   1. "Kakitangan" can "view" "Butiran Pertukaran" for selected application.
+			   2. "Kakitangan" can "view" "Status Pengesahan Permohonan".
+			   3. "Kakitangan" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri".
+			   4. "Kakitangan" can "view" "Keputusan Mesyuarat"
+			   
+			   IF "TIDAK LULUS"
+			   5. "Kakitangan" can "download" "Surat Gagal Pertimbangkan".
+			   IF "KIV"
+			   5. "Kakitangan" can "view" "Status"
+			   IF "LULUS"
+			   5. "Kakitangan" can "download" "Surat Pertukaran" and its documents.
+
+			   
+			   IF Postpone
+			   6. "Kakitangan" can "add" "Permohonan Penangguhan/Pindaan Penempatan".
+			   7. "Kakitangan" can "view" "Masukan Nama Pelulus".
+			   8. "Kakitangan" can "view" "Status Pelulusan"
+			   
+			   IF LULUS 
+			   9. "Kakitangan" can "download" "Surat Penangguhan Pertukaran".
+			   10. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus".
+			   11. "Kakitangan" can "view" "Status Sokongan"
+			   12. "Kakitangan" can "view" "Status Kelulusan"
+			   13. "Kakitangan" can "view" overall status of the application.
+			   
+			   IF FAIL
+			   10. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus".
+			   11. "Kakitangan" can "view" "Status Sokongan"
+			   12. "Kakitangan" can "view" "Status Kelulusan"
+			   13. "Kakitangan" can "view" overall status of the application.
+		   
+	   #2. Urus Setia 
+			#1. Function Listing
+				1. "US Perjawatan" can "view" "Senarai Permohonan Pertukaran".
+				
+			#2. Function View Details  
+				1. "US Perjawatan" can "view" "Butiran Permohonan Pertukaran"  
+				2. "US Perjawatan" can "view" "Status Pengesahan Permohonan".
+				3. "US Perjawatan" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri".
+				4. "US Perjawatan" can "add" "Keputusan Mesyuarat".
+				5. "US Perjawatan" can "view" "Surat Pertukaran" and its documents.
+				
+				IF Postpone
+				6. "US Perjawatan" can "view" "Permohonan Penangguhan/Pindaan Penempatan".
+				7. "US Perjawatan" can "add"  "Masukan Nama Pelulus".
+				8. "US Perjawatan" can "view" "Status Kelulusan"
+				
+				IF LULUS
+				9. "US Perjawatan" can "download" "Surat Penangguhan Pertukaran".
+			   10. "US Perjawatan" can "add" "Masukan Penyokong dan Pelulus".
+			   11. "US Perjawatan" can "view" "Status Sokongan"
+			   12. "US Perjawatan" can "view" "Status Kelulusan"
+			   13. "US Perjawatan" can "view" overall status of the application.
+				
+	   #3. Pengarah Bahagian/Negeri
+			#1. Function Listing
+				1. "PN" can "view" "Senarai Permohonan Pertukaran".
+				2. "PN" can "view" "Status Pengesahan Permohonan".
+				
+			#2. Function View Details
+				1. "PN" can "view" "Butiran Permohonan Pertukaran".
+				2. "PN" can "update" "Status Sokongan dari Pengarah Bahagian/Negeri".
+				
+	   #4. System
+			1. System can "generate" "Surat Gagal Pertimbangkan"
+			2. System can "email" employee.
+			3. System can "generate" "Surat Pertukaran Penempatan Borang Lapor Diri" and its documents.
+			4. System can "email" employee, current Pengarah Semasa and Pengarah Baru.
+			5. System can "generate "Surat Penangguhan Pertukaran"
+			
+	   #5. Penyokong
+			#1. Function Listing
+				1. "Penyokong" can "view" application.
+			#2. Function View
+				1. "Penyokong" can "view" "Butiran Pertukaran" for selected application.
+				2. "Penyokong" can "view" "Status Pengesahan Permohonan".
+				3. "Penyokong" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri".
+				4. "Penyokong" can "view" "Keputusan Mesyuarat"
+			  
+				IF "LULUS"
+				5. "Penyokong" can "download" "Surat Pertukaran" and its documents.
+				IF Postpone
+				6. "Penyokong" can "view" "Permohonan Penangguhan/Pindaan Penempatan".
+				7. "Penyokong" can "view" "Masukan Nama Pelulus".
+				8. "Penyokong" can "view" "Status Pelulusan"
+				9. "Penyokong" can "download" "Surat Penangguhan Pertukaran".
+				10. "Penyokong" can "view" "Masukan Penyokong dan Pelulus".
+				11. "Penyokong" can "update" "Status Sokongan" by updating supporting status to either "SOKONG" or "TIDAK SOKONG". 
+	   #6. Pelulus 
+		   Two Pelulus
+		   Pelulus for Tangguh Kerja 
+		   #1. Function Listing
+				1. "Pelulus" can "view" "Senarai Permohonan Pertukaran".
+		   #2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Permohonan Pertukaran"  
+				2. "Pelulus" can "view" "Status Pengesahan Permohonan".
+				3. "Pelulus" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri".
+				4. "Pelulus" can "view" "Keputusan Mesyuarat".
+				5. "Pelulus" can "view" "Surat Pertukaran" and its documents.
+				
+				IF Postpone
+				6. "Pelulus" can "view" "Permohonan Penangguhan/Pindaan Penempatan".
+				7. "Pelulus" can "view"  "Masukan Nama Pelulus".
+				8. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS".
+		   Pelulus for Kerja 
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Permohonan Pertukaran"  
+				2. "Pelulus" can "view" "Status Pengesahan Permohonan".
+				3. "Pelulus" can "view" "Status Sokongan dari Pengarah Bahagian/Negeri".
+				4. "Pelulus" can "view" "Keputusan Mesyuarat".
+				5. "Pelulus" can "view" "Surat Pertukaran" and its documents.
+				
+				IF Postpone
+				6. "Pelulus" can "view" "Permohonan Penangguhan/Pindaan Penempatan".
+				7. "Pelulus" can "view"  "Masukan Nama Pelulus".
+				8. "Pelulus" can "view" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS".
+				9. "Pelulus" can "download" "Surat Penangguhan Pertukaran".
+			   10. "Pelulus" can "view" "Masukan Penyokong dan Pelulus".
+			   11. "Pelulus" can "view" "Status Sokongan"
+			   12. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS".
+
+   #2. Pertukaran Diatas Arahan Pengarah Bahagian/Negeri
+		#1. Pengarah Bahagian/Negeri 	
+			#1. Function Listing 
+				1. "PN" can "view" "Senarai Kakitangan".
+			#2. Function View Details
+				1. "PN" can "view" "Butiran Kakitangan/Penempatan Dicadangkan dan Alasan Pertukaran".
+				2. "PN" can "view" overall status.
+ 		#2. Urus Setia 
+			#1. Function Listing
+				1. "US Perjawatan" can "view" "Senarai Kakitangan".
+				
+			#2. Function View Details 
+				1. "US Perjawatan" can "view" "Butiran Kakitangan"
+				2. "US Perjawatan" can "add"  "Keputusan Mesyuarat"
+				3. "US Perjawatan" can "view" "Surat Gagal" or "Surat Pertukaran".
+				4. "US Perjawatan" can "add" "Masukan Nama Penyokong dan Pelulus".
+				5. "US Perjawatan" can "view" "Status Sokongan"
+				6. "US Perjawatan" can "view" "Status Kelulusan"
+				7. "US Perjawatan" can "update" overall status.
+				
+		#3. Kakitangan
+			#1. Function Listing
+				1. "Kakitangan" can "view" "Senarai Kakitangan".
+				
+			#2. Function View Details 
+				1. "Kakitangan" can "view" "Butiran Kakitangan".
+				2. "Kakitangan" can "view" "Keputusan Mesyuarat"
+				3. "Kakitangan" can "download" "Surat Gagal" or "Surat Pertukaran".
+				4. "Kakitangan" can "view" "Masukan Penyokong dan Pelulus".
+				5. "Kakitangan" can "view" "Status Sokongan"
+				6. "Kakitangan" can "view" "Status Kelulusan"
+				7. "Kakitangan" can "view" overall status.
+								
+		#4. Penyokong
+			#1. Function Listing  
+				1. "Penyokong" can "view" "Senarai Kakitangan".
+			#2. Function View Details 
+				1. "Penyokong" can "view" "Butiran Kakitangan".
+				2. "Penyokong" can "view" "Keputusan Mesyuarat"
+				3. "Penyokong" can "download" "Surat Gagal" or "Surat Pertukaran".
+				4. "Penyokong" can "view" "Masukan Penyokong dan Pelulus".
+				5. "Penyokong" can "update" "Status Sokongan" by updating the supported status either to "SOKONG" or "TIDAK SOKONG".
+
+		#5. Pelulus 
+			#1. Function Listing  
+				1. "Pelulus" can "view" "Senarai Kakitangan".
+			#2. Function View Details 
+				1. "Pelulus" can "view" "Butiran Kakitangan".
+				2. "Pelulus" can "view" "Keputusan Mesyuarat"
+				3. "Pelulus" can "download" "Surat Gagal" or "Surat Pertukaran".
+				4. "Pelulus" can "view" "Masukan Penyokong dan Pelulus".
+				5. "Pelulus" can "view" "Status Sokongan".
+				6. "Pelulus" can "update" "Status Kelulusan" by updating the approval status either to "LULUS" or "TIDAK LULUS".
+
+		#6. System 
+			1. System can "generate" "Surat" eithe "Surat Gagal or Surat Penempatan".
+			2. System can "email" "PN", "current Pengarah" and "Kakitangan".
+			
+   #3. Pertukaran Diatas Arahan Pihak Pengurusan
+		#1. Urus Setia
+			#1. Function Listing
+				1. "US Perjawatan" can "view" list of potential employees.
+			#2. Function Add
+				1. "US Perjawatan" can "add" list of employee, 
+				
+			#2. Function View Details	
+				1. "US Perjawatan" can "view" "Butiran Maklumat"
+				2. "US Perjawatan" can "view" "Permohonan Penangguhan dari Kakitangan".
+				3. "US Perjawatan" can "add" "Masukkan Nama Pelulus".
+				4. "US Perjawatan" can "view" "Status Kelulusan Permohonan Penangguhan".
+				5. "US Perjawatan" can "view" "Surat Penangguhan/Pertukaran"
+				6. "US Perjawatan" can "add" "Masukkan maklumat penyokong dan pelulus".
+				7. "US Perjawatan" can "view" "Status Penyokongan"
+				8. "US Perjawatan" can "view" "Status Kelulusan".
+				9. "US Perjawatan" can "update" overall status.
+				
+		#2. Kakitangan
+			#1. Function Listing 
+				1. "Kakitangan" can "view" list of employee. 
+				
+			#2. Function View Details
+				1. "Kakitangan" can "view" "Butiran Maklumat"
+				2. "Kakitangan" can "add" "Permohonan Penangguhan dari Kakitangan".
+				3. "Kakitangan" can "view" "Masukkan Nama Pelulus".
+				4. "Kakitangan" can "view" "Status Kelulusan Permohonan Penangguhan".
+					IF LULUS 
+				5. "Kakitangan" can "download" "Surat Penangguhan/Pertukaran"
+				6. "Kakitangan" can "view" "Masukkan maklumat penyokong dan pelulus".
+				7. "Kakitangan" can "view" "Status Penyokongan"
+				8. "Kakitangan" can "view" "Status Kelulusan".
+				9. "Kakitangan" can "update" overall status.
+			
+		#3. Penyokong
+			#1. Function Listing 
+				1. "Penyokong" can "view" list of employee. 
+				
+			#2. Function View Details
+				1. "Penyokong" can "view" "Butiran Maklumat"
+				2. "Penyokong" can "view" "Permohonan Penangguhan dari Kakitangan".
+				3. "Penyokong" can "view" "Masukkan Nama Pelulus".
+				4. "Penyokong" can "view" "Status Kelulusan Permohonan Penangguhan".
+					IF LULUS 
+				5. "Penyokong" can "download" "Surat Penangguhan/Pertukaran"
+				6. "Penyokong" can "view" "Masukkan maklumat penyokong dan pelulus".
+				7. "Penyokong" can "update" "Status Penyokongan" by updating supported status to either "SOKONG" or "TIDAK SOKONG".
+				
+		#4. Pelulus	
+			#1. Function Listing 
+				1. "Pelulus" can "view" list of employee. 
+				
+			#2. Function View Details
+				1. "Pelulus" can "view" "Butiran Maklumat"
+				2. "Pelulus" can "view" "Permohonan Penangguhan dari Kakitangan".
+				3. "Pelulus" can "view" "Masukkan Nama Pelulus".
+				4. "Pelulus" can "view" "Status Kelulusan Permohonan Penangguhan".
+					IF LULUS 
+				5. "Pelulus" can "download" "Surat Penangguhan/Pertukaran"
+				6. "Pelulus" can "view" "Masukkan maklumat penyokong dan pelulus".
+				7. "Pelulus" can "view" "Status Penyokongan".
+				8. "Pelulus" can "update" "Status Kelulusan" by updating approval status to either "LULUS" or "TIDAK LULUS".
+				
+7. Tanggung Kerja 
+	#1. Permohonan
+		#1. Kakitangan
+		Route: Kakitangan/Perjawatan/Tanggung Kerja/Permohonan
+			
+			#1.Function List 
+			   Route: .../Perjawatan/Tanggung Kerja/Permohonan/Senarai Rekod Tanggung Kerja
+			   #1. "Kakitangan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja").
+			
+			#2. Function Add (Permohonan Baru)
+				Route: .../Permohonan/Permohonan Baru
+				#1. "Kakitangan" "add" details related to interim position and its details.
+				#2. "Kakitangan" "download" and "upload" supporting documents.
+				#3. "Kakitangan" "add" status if the applied interim position did skip 
+					seniority.
+						
+			#3. Function View (Papar Butiran)
+				Route:.../Permohonan/Papar Butiran
+				#1. "Kakitangan" "view" details related to interim position and its details.
+				#2. "Kakitangan" "download" and "upload" supporting documents.
+				#3. "Kakitangan" "view" status if the applied interim position did skip 
+					seniority.
+				#4. "Kakitangan" "view" final status of their application.	
+			
+		#2. Pengarah Bahagian
+		Route: Pengarah Bahagian/Perjawatan/Tanggung Kerja/Permohonan
+			#1.Function List 
+			Route: .../Perjawatan/Tanggung Kerja/Permohonan/Senarai Rekod Tanggung Kerja
+			   #1. "Pengarah Bahagian" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja").
+			#2.Function Supported (Sokong)
+			   #1. "Pengarah Bahagian" "edit" status to "SOKONG" for all interim position application. 
+			#3. Function Not supported (Tidak Sokong)
+			   #1. "Pengarah Bahagian" "edit" status to "TIDAK SOKONG" for all interim position application.
+			#4. Function Papar Butiran
+			   #1. "Pengarah Bahagian" "edit" status to "SOKONG/TIDAK SOKONG" for one interim position application at one time.
+		
+		#3. Urus Setia Perjawatan
+		Route: Urus Setia/Perjawatan/Tanggung Kerja/Permohonan
+			#1. Function List
+				Route:.../Tanggung Kerja/Permohohan/Senarai Rekod Tanggung Kerja
+				Notes: Similar to Pengarah Function List
+				 #1. "Urus Setia Perjawatan" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja").
+			
+			#2. Funtion Papar Butiran
+				{selectedApplicantId}
+				#1. Butiran Permohonan Tanggung Kerja
+					#1. "Urus Setia Perjawatan" "view" the interim position application for selected employee. 
+				#2. Pegawai yang Menanggung Kerja
+					#1. "Urus Setia Perjawatan" "view" the selected employee current service details.
+				#3. Tempoh Penanggungan Kerja
+					#1. "Urus Setia Perjawatan" "view" tempoh penangguhan kerja.
+				#4. Muat Naik Dokumen Berkaitan
+					#1. "Urus Setia Perjawatan" "view", "download" the documents.
+				#5. Pelangkaun dari Segi Kekananan
+					#1. "Urus Setia Perjawatan" "view" if the applicant is skipping seniority and its remark.
+				#6. Sokongan dari Pengarah Bahagian/Negeri
+					#1. "Urus Setia Perjawatan" "view" if "Pengarah Bahagia" give their supported based on status.
+				#7. Senarai Semak Permohonan Penanggungan
+					#1. "Urus Setia Perjawatan" "update" the checklist,the one who checked and prepare the document as well.
+				
+		#4. Pengarah Khidmat Pengurusan
+		Route: Pengarah Khidmat Pengurusan/Perjawatan/Tanggung Kerja/Permohonan
+			#1. Function List
+				Route:.../Tanggung Kerja/Permohohan/Senarai Rekod Tanggung Kerja
+				#1. "Pengarah Khidmat Pengurusan" "view", search for application for interim position ("Senarai Rekod Tanggung Kerja").
+			
+			#2. Function Papar Butiran
+				Route:.../Papar Butiran
+				{selectedApplicantId}
+				#1. Butiran Permohonan Tanggung Kerja
+					#1. "Pengarah Khidmat Pengurusan" "view" the interim position application for selected employee. 
+				#2. Pegawai yang Menanggung Kerja
+					#1. "Pengarah Khidmat Pengurusan" "view" the selected employee current service details.
+				#3. Tempoh Penanggungan Kerja
+					#1. "Pengarah Khidmat Pengurusan" "view" tempoh penangguhan kerja.
+				#4. Muat Naik Dokumen Berkaitan
+					#1. "Pengarah Khidmat Pengurusan" "view", "download" the documents.
+				#5. Pelangkaun dari Segi Kekananan
+					#1. "Pengarah Khidmat Pengurusan" "view" if the applicant is skipping seniority and its remark.
+				#6. Sokongan dari Pengarah Bahagian/Negeri
+					#1. "Pengarah Khidmat Pengurusan" "view" if "Pengarah Bahagia" give their supported based on status.
+				#7. Senarai Semak Permohonan Penanggungan
+					#1. "Pengarah Khidmat Pengurusan" "view" the checklist,the one who checked and prepare the document as well.
+				#8. Kelulusan Permohonan Tanggung Kerja	
+					#1. "Pengarah Khidmat Pengurusan" "edit" the status to either "LULUS/TIDAK LULUS" and checked.
+				
+				IF	"TIDAK LULUS", system will generate surat gagal permohonan dan email
+					to employee dan "Pengarah Bahagian/Negeri"
+				
+				IF "LULUS", System will generate surat arahan tanggung kerja and email
+					to employee and "Pengarah Bahagian/Negeri"
+	#2. Penamatan
+		#1. Urus Setia Perjawatan
+		Route: Urus Setia perjawatan/Perjawatan/Tanggung Kerja/Penamatan
+			#1. Function Listing
+				Route:.../Tanggung Kerja/Penamatan/Senarai Rekod Tanggung Kerja
+				#1. "Urus Setia Perjawatan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja").
+			
+			#2. Funtion Papar Butiran
+				Route:.../Tanggung Kerja/Penamatan/Papar Butiran
+				#1. "Urus Setia Perjawatan" "view" selected employee's interim application and its details.
+				#2. "Urus Setia Perjawatan" "view" selected employee's current service details. "Pegawai yang Menanggung Kerja".
+				#3. "Urus Setia Perjawatan" "edit" status to "SAH/TIDAK SAH" and remark. 
+				#4. "Urus Setia Perjawatan" "view" interim allowances section "Pengiraan Elaun Tanggung Kerja".
+				#5. "Urus Setia Perjawatan" "add" supporter (Timbalan Seksyen) and approver (Ketua Seksyen)"
+				
+		#2. Timbalan Ketua Seksyen
+		Route: Timbalan Ketua Seksyen/Perjawatan/Tanggung Kerja/Penamatan
+				Route:.../Tanggung Kerja/Penamatan/Papar Butiran
+				#1. "Timbalan Ketua Seksyen" "view" selected employee's interim application and its details.
+				#2. "Timbalan Ketua Seksyen" "view" selected employee's current service details.				
+				#3. "Timbalan Ketua Seksyen" "edit" status to "SOKONG/TIDAK SOKONG" and remark.
+			
+				IF "SOKONG", system will notified the system.
+				IF "NOT SOKONG", the flow will end there. 
+		
+		#3. Ketua Seksyen
+		Route: Ketua Seksyen/Perjawatan/Tanggung Kerja/Penamatan.
+			  Route:.../Tanggung Kerja/Penamatan/Papar Butiran.
+			  #1. "Ketua Seksyen" "view" selected employee's interim application and its details.
+			  #2. "Ketua Seksyen" "view" selected employee's current service details.
+			  #3. "Ketua Seksyen" "edit" status to "LULUS/TIDAK LULUS" and remark.
+			  
+			  IF "LULUS", system will notified the employee.
+			  IF "TIDAK LULUS", the flow will end there.
+		
+		
+		The system will generate "arahan bayaran elaun" and "Surat Arahan Penamatan Tanggung Kerja"
+		
+		#4. Kakitangan
+		Route: Kakitangan/Perjawatan/Tanggung Kerja/Penamatan
+			#1. Function Listing
+				Route:.../Tanggung Kerja/Penamatan/Senarai Rekod Tanggung Kerja
+				#1. "Kakitangan" "view", search for their own application for interim position ("Senarai Rekod Tanggung Kerja").
+				#1. "Kakitangan" "download" "Surat Penamatan Tanggung Kerja".
+8. Persaraan
+	#1.Persaraan Pilihan
+	   #1. Kakitangan
+	   Route: Kakitangan/Perjawatan/Persaraan/Pilihan
+			
+			Route: .../Pilihan/Senarai Persaraan
+			#1. "Kakitangan" "view",search their own list of application. "Senarai Permohan Persaraan".
+			#2. "Kakitangan" "add" new application by clicking "Permohonan Baru" button.
+				
+				#1. Function Permohonan Baru
+				Route: .../Pilihan/Senarai Persaraan/Permohonan Baru
+					#1. "Kakitangan" "add" new application by clicking "Hantar"button.
+				
+				#2. Function Papar Butiran
+				Route: .../Persaraan/Pilihan/Papar Butiran
+				
+				#3. Semak Pengesahan Permohonan Persaraan
+				Route: .../Pilihan/Semak Pengesahan
+					
+					#1. "Kakitangan" "view" status "AKU/TIDAK AKU" and remark for "Perakuan Dari Urus Setia Integriti".
+					#2. "Kakitangan" "view" status "SAH/TIDAK SAH" and remark for "Pengesahan Permohonan Persaraan"; 
+					#3. "Kakitangan" "view" status  and remark for "Penyokong dan Pelulus"; 
+					#4. "Kakitangan" "view" status "SAH/TIDAK SAH" and remark for "Status Semak Keputusan Permohonan"; 
+					#5. "Kakitangan" "upload" and "download" document to the system;
+					#6. "Kakitangan" "view" status "SAH/TIDAK SAH" and remark for "Status Semak Pengesahan Permohonan";
+					#7. "Kakitangan" "view" status, remark and "tarikh Penghantarn Permohonan ke KWAP".
+				
+					
+	   #2. Unit Integriti
+	   Route: Unit Integriti/Perjawatan/Persaraan/Pilihan
+			Route:.../Pilihan/Senarai Persaraan
+			#1. "Urus Setia Integriti" "view", filter and search "Senarai Persara Pilihan".
+				
+				#1. Function Papar Butiran
+					Route:.../Pilihan/Perakuan
+					#1. "Urus Setia Integriti" "edit" status and remark of application to either "DIPERAKU OR TIDAK DIPERAKU".
+		
+		
+	   #3. Urus Setia Persaraan
+	   Route: Urus Setia Persaraan/Perjawatan/Persaraan/Pilihan
+			Route: .../Pilihan/Senarai Persaraan
+			#1. "Urus Setia Persaraan" "view", filter and search "Senarai Persara Pilihan".
+				
+				#1. Function Papar Butiran
+					{selectedApplicationId}
+						
+					#1. Perakuan Dari Unit Integriti
+						Route: .../Pilihan/Perakuan
+						#1. "Urus Setia Persaraan" "view" "Perakuan dari Urus Setia Integriti".
+					
+					#2. Pengesahan Permohonan Persaraan
+						Route: .../Pilihan/Pengesahan
+						#1. "Urus Setia Persaraan" "edit" status "SAH/TIDAK SAH" and "add" remark;
+			
+					#3. Semak Pengesahan Permohonan Persaraan
+						Route: .../Pilihan/Semak Pengesahan
+						#1. "Urus Setia Persaraan" "view" status "SAH/TIDAK SAH" and remark; 
+						#2. IF status="SAH" procced to page Route: '.../Pilhan/Penyokong dan Pelulus'
+						#3. IF status="TIDAK SAH" proceed to Route: ".../Pilihan/Senarai Persaraan" and end.
+					
+					#4. Penyokong dan Pelulus
+						Route: .../Pilihan/Penyokong dan Pelulus
+						#1. "Urus Setia Persaraan" "add" "Penyokong 1, Penyokong 2, Pelulus".
+						#2. "Urus Setia Persaraan" "view" "Penyokong 1, Penyokong 2, Pelulus".
+					
+					#5.	Semak Status Sokong dan Kelulusan
+						Route: .../Pilihan/Semak Status Sokongan dan Kelulusan
+						#1. "Urus Setia Persaraan" "view" "Penyokong 1, Penyokong 2, Pelulus"'s statuses and remarks.
+					
+					#6. Keputusan Permohonan 
+						ROute: .../Pilihan/Keputusan Permohonan
+						#1. "Urus Setia Persaraan" "edit" status and remark.
+						#2. "Urus Setia Persaraan" "view" status and remark.
+						
+						IF "TIDAK LULUS", route back to "Senarai Persaraan".
+						IF "LULUS", proceed to next stage, where system notified chosen
+						employee to fill document.
+					
+					#7. Pengesahan Dokumen Permohonan 
+						Route: .../Pilihan/Pengesahan Dokumen Permohonan.
+						#1. "Urus Setia Persaraan" "edit" status and remark.
+						#2. "Urus Setia Persaraan" "view" status and remark.
+					
+					#8. Status Penghantaran Permohonon ke KWAP.
+						Route: .../Pilihan/Status Penghantaran Permohonon ke KWAP.
+						#1. "Urus Setia Persaraan" "edit" status, {tarikh penghantaran permohonan ke KWAP} and remark.
+						#2. "Urus Setia Persaraan" "view" status, sendDate. and remark.
+	   #4. Penyokong I
+	   Route: Penyokong I/Perjawatan/Persaraan/Pilihan
+			Route: .../Pilihan/Senarai Persaraan
+			#1. "Penyokong I" "view", filter and search "Senarai Persara Pilihan".		
+				#1. Function Papar Butiran
+					#1. Perakuan Dari Urus Setia Integriti
+						Route: .../Pilihan/Perakuan
+						#1. "Penyokong 1" "view" "Perakuan Dari Urus Setia Integriti"						
+					#2. Pengesahan Permohonan Persaran
+						Route: .../Pilihan/Semak Pengesahan
+						#1. "Penyokong 1" "view" "Pengesahan Permohonan Persaran"
+					#3. Penyokongan Permohonan Persaraan
+						Route: .../Pilihan/Penyokongan Permohonan Persaraan
+						#1. "Penyokong 1" "edit" status and remark for "Permohon Persaraan"
+						
+	   #5. Penyokong II
+	   Route:  Penyokong II/Perjawatan/Persaraan/Pilihan
+			Route: .../Pilihan/Senarai Persaraan
+			#1. "Penyokong II" "view", filter and search "Senarai Persara Pilihan".			
+				#1. Function Papar Butiran
+					#1. Perakuan Dari Urus Setia Integriti
+						Route: .../Pilihan/Perakuan
+						#1. "Penyokong 2" "view" "Perakuan Dari Urus Setia Integriti"	
+					#2. Pengesahan Permohonan Persaran
+						Route: .../Pilihan/Semak Pengesahan
+						#1. "Penyokong 2" "view" "Pengesahan Permohonan Persaran"
+					#3. Penyokongan Permohonan Persaraan
+						Route: .../Pilihan/Penyokongan Permohonan Persaraan
+						#1. "Penyokong 2" "view" status and remark from "Penyokong 1";
+						#2. "Penyokong 2" "edit" status and remark for "Permohon Persaraan"
+					
+	   #6. Pelulus
+	   Route:Pelulus/Perjawatan/Persaraan/Pilihan
+			Route: .../Pilihan/Senarai Persaraan
+			#1. "Pelulus" "view", filter and search "Senarai Persara Pilihan".
+				#1. Function Papar Butiran
+					#1. Perakuan Dari Urus Setia Integriti
+						#1. "Pelulus" "view" "Perakuan Dari Urus Setia Integriti"
+					#2. Pengesahan Permohonan Persaran
+						#1. "Pelulus" "view" "Pengesahan Permohonan Persaran"
+					#3. Semak Sokongan Permohonan Persaraan 
+						#1. "Pelulus" "view" "Semak Sokongan Permohonan Persaran" from 
+							"Penyokong 1" and "Penyokong 2".
+					#4. Pelulusan Permohonan Persaraan
+						#1. "Pelulus" "edit" status and remark for "Permohonan Persaran".
+
+	#2.Persaraan Paksa
+	   #1. Kakitangan
+	   Route: Kakitangan/Perjawatan/Persaraan/Paksaan
+	
+			Route: .../Persaraan/Paksaan/Senarai Persaraan
+			#1. "Kakitangan" "view",search their own list of application. "Senarai Permohonan Persaraan".
+			#2. "Kakitangan" "add" new application by clicking "Permohonan Baru" button.
+				
+				#1. Function Permohonan Baru
+				Route: .../Persaraan/Paksaan/Senarai Persaraan/Permohonan Baru
+					#1. "Kakitangan" "add" new application by clicking "Hantar"button.
+		
+				#2. Function Papar Butiran
+				Route: .../Persaraan/Paksaan/Papar Butiran
+					#1. "Kakitangan" "view" status "Urus Setia Integriti" status.
+					#2. "Kakitangan" "view" "Semak Rekod Tatatertib Kakitangan"
+					#3. "Kakitangan" "view" "Status Pengesahan Dari Urusetia Persaraan".
+					#4. IF "TIDAK SAH", "Kakitangan" is route back to "Senarai Persaraan".
+					IF "SAH"
+					#5. "Kakitangan" received notification and "download" 
+						"Borang Persaraan".
+					#6. "Kakitangan" "upload" completed "Borang Persaraan".
+					#7. "Kakitangan" "view" "Status Pengesahan Dokumen"
+					#8. "Kakitangan" "view" "Semak Status Penghantaran Permohonan ke KWAP".
+					
+	   #2. Urus Setia Integriti
+	   Route: Urus Setia Integriti/Perjawatan/Persaraan/Paksaan
+			Route:.../Paksaan/Senarai Persaraan
+			#1. "Urus Setia Integriti" "view", filter and search "Senarai Persara Paksaan".
+				
+				#1. Function Papar Butiran
+					Route:.../Paksaan/Perakuan
+					#1. "Urus Setia Integriti" "edit" status and remark of application to either "DIPERAKU OR TIDAK DIPERAKU".
+				
+	   #2. Urus Setia Persaraan
+	   Route: Urus Setia Persaraan/Perjawatan/Persaraan/Paksaan
+			Route: .../Paksaan/Senarai Persaraan
+			#1. "Urus Setia Persaraan" "view", filter and search "Senarai Persara Paksaan".
+				
+				#1. Function Papar Butiran
+					#1. Perakuan Dari Urus Setia Integriti
+						Route: .../Paksaan/Perakuan
+						#1. "Urus Setia Persaraan" "view" "Perakuan dari Urus Setia Integriti".
+						
+					#2. Semak Rekod Tatatertib Kakitangan
+						Route: .../Paksaan/Semak Rekod Tatatertib Kakitangan
+						#1. "Urus Setia Persaraan" "view" "Semak Rekod Tatatertib Kakitangan".
+						
+					#3. Pengesahan Permohonan Persaraan
+						Route: .../Paksaan/Pengesahan Permohonan Persaraan
+						#1. "Urus Setia Persaraan" "edit" status "SAH/TIDAK SAH" and insert
+							remark.
+						IF status IS TIDAK SAH, 
+							#1.This will route back to Route:.../Paksaan/Senarai Persaraan
+						IF status IS SAH
+							#1. System will sent notification to employee to enter 
+								"Borang Persaraan".
+					
+					#4. Pengesahan Dokumen Persaraan
+						Route: .../Paksaan/Pengesahan Dokumen
+						#1. "Urus Setia Persaraan" "edit" "status" and "remark".
+						
+					#5. Semak Pengesahan Dokumen Persaraan 
+						Route: .../Paksaan/Semak Pengesahan Dokumen Persaraan
+						#1.  "Urus Setia Persaraan" "view" "Semak Pengesahan Dokumen Persaraan".
+					
+					#6. Keputusan Penghantaran Permohonan ke KWAP.
+						Route: .../Paksaan/Keputusan Penghantarn Permohonan ke KWAP
+						#1. "Urus Setia Persaraan" "edit" "status" and "Tarikh Penghantaran Permohonan ke KWAP".
+					
+					#7. Semak Status Penghantaran Permohonan ke KWAP
+						Route: .../Paksaan/Status Permohonan ke KWAP.
+						#1. "Urus Setia Persaraan" "view" "status" and "Tarikh Penghantaran Permohonan ke KWAP".
+				

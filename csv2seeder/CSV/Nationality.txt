@@ -1,0 +1,6 @@
+code:::description
+0:::Tiada Maklumat
+1:::Warganegara
+2:::Bukan Warganegara
+3:::Penduduk Tetap
+9:::Lain-Lain

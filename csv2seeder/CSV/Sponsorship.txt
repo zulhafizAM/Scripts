@@ -1,0 +1,165 @@
+code:::description
+0:::Tiada Maklumat
+100:::Jabatan Perkhidmatan Awam
+101:::Tabung Pembangunan Sains dan Teknologi / JPA
+102:::Universiti Kebangsaan Malaysia
+103:::Dermasiswa Persekutuan
+104:::Majlis Amanah Rakyat (MARA)
+105:::Petronas
+106:::TELEKOM Malaysia
+107:::Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN)
+108:::Dewan Bandaraya Kuala Lumpur (DBKL)
+109:::Tabung Pembangunan Kemahiran (TPK)
+200:::Commonwealth Scholarship
+300:::Kerajaan British
+301:::British Council
+302:::British High Commissioner's Award
+303:::Royal College Of Defence Studies (RCDS)
+304:::British Columbia Ministry Forests
+400:::Rancangan Colombo
+401:::Colombo - Singapura
+402:::Colombo - India
+403:::Colombo - Australia
+404:::Colombo - Jepun
+405:::Colombo - New Zealand
+406:::Colombo - United Kingdom
+407:::Colombo - Canada
+499:::Colombo - Lain-lain
+500:::Kerajaan Jepun
+501:::Mombushoo
+510:::JICA
+511:::JICA - Jepun
+512:::JICA - Thailand
+513:::JICA - Indonesia
+514:::JICA - Singapura
+515:::JICA - Malaysia
+516:::JICA - Filipina
+517:::Japan Institute Of Invention and Innovation (JIII)
+599:::JICA - Lain-lain
+600:::Negara Korea
+700:::Kerajaan Asing / Cost Sharing
+701:::Kerajaan Sweden
+702:::Kerajaan Republik German
+703:::Kerajaan India
+704:::Kerajaan Belanda
+705:::Kerajaan Kanada
+706:::Kerajaan Thailand
+707:::Kerajaan Filipina
+708:::Kerajaan Singapura
+709:::Kerajaan Indonesia
+710:::Kerajaan Amerika Syarikat (USA)
+711:::Kerajaan Belgium
+712:::Kerajaan Brunei
+713:::Kerajaan Denmark
+714:::Kerajaan Greece
+715:::Kerajaan Italy
+716:::Kerajaan Mesir
+717:::Kerajaan Perancis
+718:::Kerajaan Poland
+719:::Kerajaan Russia
+720:::Kerajaan Switzerland
+721:::Kerajaan Iraq
+722:::Kerajaan Australia
+799:::Lain-lain Kerajaan 
+800:::Badan-badan Asing / Bukan Kerajaan
+801:::MACEE Fellowship
+802:::South East Asia Fisheries Development Centre (SEAFDEC)
+803:::AARRO
+804:::Conference Of British Industry (CBI)
+805:::Asean Productivity Organization (APO)
+806:::Asean Training Board
+807:::Norwegian Agency For International Development (NORAD)
+808:::Statistical Institute For Asia & Pacific (SIAP)
+809:::Asia-Pacific Institute Of Broadcasting Development (AIBD)
+898:::Kementerian Sumber Manusia
+899:::Badan Asing Lain-lain
+900:::Kerajaan Negeri / Yayasan Negeri
+901:::Kementerian Pendidikan  Malaysia
+902:::Kementerian Pertahanan
+903:::Persekutuan Sabah
+904:::Persekutuan Sarawak
+905:::Negeri Johor
+906:::Negeri Kedah
+907:::Negeri Kelantan
+908:::Negeri Pahang
+909:::Negeri Perak
+910:::Negeri Perlis
+911:::Negeri Pulau Pinang
+912:::Negeri Sabah
+913:::Negeri Sarawak
+914:::Negeri Selangor
+915:::Negeri Sembilan
+916:::Negeri Terengganu
+917:::Balwant Singh
+918:::Kumpulan Wang Pelajaran Tinggi
+919:::Lembaga Biasiswa C.M Hashim
+920:::Biasiswa Tan Sri Manikavasagam
+921:::Ong Keng Seng Memorial Education Fund
+922:::K. Ramanathan
+923:::Tan Sri Saw Seng Memorial Education Fund
+924:::Dr Tan Chee Khoon Foundation
+925:::C.J Windsor
+926:::Yayasan Asia
+927:::Yayasan Kelantan
+928:::Yayasan Kuok
+929:::Yayasan Lee
+930:::Yayasan Tan Sri Hj. Mohammed Noah Omar
+931:::Yayasan Sabah
+932:::Yayasan Sarawak
+933:::Yayasan Terengganu
+934:::Yayasan Negeri Sembilan
+935:::Yayasan Ford
+936:::Baitul Mal
+937:::Kementerian Kesihatan
+938:::Kementerian Pembangunan Usahawan Malaysia
+939:::Datuk Bandar
+940:::Yayasan Melaka
+941:::Yayasan Perak
+942:::Kementerian Pengajian Tinggi (KPT)
+943:::Kementerian Belian dan Sukan (KBS)
+944:::KPJ
+999:::Lain-lain Yayasan
+1000:::Agensi Bangsa-bangsa Bersatu
+1001:::Commonwealth Fund Technical Cooperation (CFTC)
+1002:::Economic Development Institut (EDI)
+1003:::East-West Center
+1004:::European Economic Community (EEC)
+1005:::U.N.Econ. & Soc. Commission For Asia & The Pacific (ESCAP)
+1006:::General Agreement On Tariffs and Trade (GATT)
+1007:::International Labour Organization (ILO)
+1008:::International Labour Organization (ILO/PRG)
+1009:::International Monetary Fund (IMF)
+1010:::International Trade Conference (ITC)
+1011:::International Union Of Local Authority (IULA)
+1012:::United Nations Conference On Trade & Development (UNCTAD)
+1013:::United Nations Educational Sci. & Cultural Org. (UNESCO/UNDP)
+1014:::World Bank
+1015:::World Trade Institute
+1016:::Food & Agricultural Organization (FAO)
+1017:::United Nation Development Programme (UNDP)
+1018:::International Atomic Energy Agency (IAEA)
+1019:::International Civil Aviation Organization (ICAO)
+1020:::Inter-Governmental Maritime Consultive Org. (IMCO)
+1021:::International Telecommunications Union (ITU)
+1022:::United Nations Industrial Development Org. (UNIDO)
+1813:::Malayawata Steel Bhd.
+1814:::Matsushita 
+1815:::Monsanto
+1816:::Motorola (M) Sdn. Bhd.
+1817:::Penfibre Sdn. Bhd.
+1818:::Syarikat Chemical Co.Ot Malaysia Bhd.
+1819:::Temco Cutler
+1820:::Toshiba
+1821:::Universiti Pendidikan Sultan Idris
+1822:::Kumpulan Wang Simpanan Pekerja (KWSP)
+1823:::Jabatan Kemajuan Masyarakat (KEMAS)
+1833:::Pembiayaan Sendiri
+1834:::Kerajaan China
+1900:::NULL
+1901:::Lembaga Zakat Selangor
+1902:::FELDA
+1903:::Tabung Kumpulan Wang Biasiswa Negeri Selangor (TKWBNS)
+1904:::African-Asian Rural Development Organization (AARDO)
+1905:::Kerajaan Korea Selatan
+1906:::Jabatan Kemajuan Islam Malaysia (JAKIM)
+9999:::Lain-lain 

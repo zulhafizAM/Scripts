@@ -1,0 +1,7 @@
+code:::description
+0:::Tiada Maklumat
+1:::Belum Berkahwin
+2:::Berkahwin
+3:::Duda
+4:::Janda
+5:::Balu

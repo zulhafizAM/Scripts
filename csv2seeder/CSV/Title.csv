@@ -1,0 +1,257 @@
+code,name
+5501,Doktor
+C001,Tun
+C002,Tan Sri
+C003,Tan Sri Dato'
+C004,Tan Sri Dato' Dr.
+C005,Tan Sri Dato' Ir.
+C006,Tan Sri Dato' Seri
+C007,Tan Sri Datuk
+C008,Tan Sri Datuk Dr.
+C009,Tan Sri Datuk Profesor
+C010,Tan Sri Datuk Profesor Dr.
+C011,Tan Sri Dr.
+C012,Tan Sri Jeneral
+C013,Tan Sri Profesor
+C014,Dato'
+C015,Dato' Dr.
+C016,Dato' Ir.
+C017,Dato' Ir. Dr.
+C018,Dato' Paduka Dr.
+C019,Dato' Profesor Madya Dr.
+C020,Dato' Senara Muda
+C021,Dato' Seri
+C022,Dato' Sri
+C023,Brigedier Jeneral Dato'
+C024,Datuk
+C025,Datuk Amar
+C026,Datuk Bentara Luar
+C027,Datuk Bentara Raja
+C028,Datuk Dr.
+C029,Datuk Ir.
+C030,Datuk Patinggi
+C031,Datuk Profesor
+C032,Datuk Profesor Dr.
+C033,Datuk Setia
+C034,Datuk Setia Wangsa
+C035,Datuk Sri
+C036,Datuk Sri Amar DiRaja
+C037,Datuk Sri Dr.
+C038,Datuk Wira
+C039,Datuk Wira Jaya
+C040,Dato' Seri DiRaja
+C041,Ir.
+C042,Ir. Dr.
+C043,Jeneral
+C044,Kapten
+C045,Kolonel
+C046,Lt. Kolonel
+C047,Major
+C048,Profesor
+C049,Profesor DiRaja
+C050,Profesor Dr.
+C051,Profesor Madya
+C052,Profesor Madya Dr.
+C053,Datu
+C054,Dr.
+C055,Datuk Kol.
+C056,Datuk Seri
+C057,Dato' Paduka
+C058,Dato' Wira
+C059,Datuk Seri Utama
+C060,Dato' Seri Utama
+C061,Dato' Pahlawan
+C062,Dato' Seri Panglima
+C063,Datuk Seri Panglima
+C064,Sr.
+C065,Dato' Setia 
+C066,Dato' Sri Dr.
+C067,Profesor Dato' Dr.
+C068,Profesor Emeritus Tan Sri Dato' Dr.
+C069,Profesor Emeritus Dato' Dr.
+C070,Dato' Seri Setia DiRaja
+C071,Profesor Ir. Dr.
+C072,Profesor Madya Ir.
+C073,Profesor Madya Ir. Dr.
+C074,Prof. Dato' Paduka Dr.
+C075,Mejar Profesor Madya Dr.
+C076,Dato' Seri Profesor Dr.
+C077,Profesor Sr. Dr.
+C078,Dato' Profesor Emeritus Dr.
+C079,Datuk Profesor Emeritus
+C080,Datuk Profesor Emeritus Dr.
+C081,Profesor Emeritus Dr.
+C082,Profesor Ir.
+C083,Profesor Madya Sr. Dr.
+C084,Sr. Dr.
+C085,Datuk Profesor Madya
+C086,Dato' Paduka Profesor
+C087,Datuk Profesor Madya Dr.
+C088,Dato' Profesor Sr. Dr.
+C089,Kepten
+C090,Datu Dr. 
+C091,Yang Mulia
+C092,Ar.
+C093,Datuk Seri Dr.
+C094,Tan Sri Dato' Sri
+C095,Profesor Datuk Dr.
+C096,Mejar Jeneral Dato'
+C097,Ts.
+C098,Tc.
+C099,Dato' Indera
+C100,Dato' Profesor
+C101,Dato' Profesor Dr.
+C102,Profesor Emeritus Dato' Paduka Dr.
+C103,Dato' Profesor Ir. Dr.
+C104,Tan Sri Dato' Seri Dr.
+C105,Tan Sri Dato' Sri Profesor Ir. Dr.
+C106,Ts. Dr.
+C107,Dato' Profesor Madya
+C108,Dato' Profesor Madya Ir.
+C109,Datuk Ir. Dr.
+C110,Profesor Emeritus Tan Sri Dato' Seri Ir. Dr.
+C111,Profesor Madya Ar.
+C112,Profesor Madya Sr.
+C113,Profesor Sr. Ir. Dr.
+C114,LAr. Dr.
+C115,Kol. Dato' Profesor Dr.
+C116,Kolonel (B) Dr.
+C117,Ir. Ts. Dr.
+C118,Ir. Ts.
+C119,Profesor Madya Dr.
+C120,Profesor Madya Dato' Dr.
+C121,Profesor Ts. Dr.
+C122,Profesor Madya Ir.Ts.Dr.
+C123,Profesor Emeritus Ir. Dr.
+C124,Dr.-Ing.
+C125,Dato' Seri Dr.
+C126,Profesor Madya Ts. Dr.
+C127,Tun Dr.
+C128,Datuk Seri Ir. Dr.
+C129,Datuk Wira Dr.
+C130,Tan Sri Datuk Seri
+C131,Dato' Seri Wira
+C132,Dato' Diraja
+C133,Dato' Sri Diraja
+C134,TPr.
+C135,Dato' Seri DiRaja Bendahara Negara
+C136,Ar. Dr.
+C137,YB Senator
+C138,YB
+C139,ChM. Dr.
+C140,Dato' Kaya Setia
+C141,Dato' Perwira Raja
+C142,Yang Mulia Dato'
+C143,Dato' Seri Ir. Dr.
+C144,ChM.
+C145,Dato' Profesor Sr. Ir. Ts. Dr.
+C146,Dato' Profesor Ts. Dr.
+C147,Dato' Profesor Ir. Ts. Dr.
+C148,Dato' Profesor Sr. Ir. Dr.
+C149,Sr. Ts.
+C150,Datuk Ir. Ts. Dr.
+C151,LAr.
+C152,Profesor Emeritus Tan Sri Dato' Sri Dr.
+C153,Profesor Madya Gs. Dr.
+C154,Datuk Ts. Dr.
+C155,Brigedier Jeneral
+C156,Ts. ChM. Dr.
+L001,Encik
+L002,Tuan
+L003,Haji
+L004,Ir. Haji
+L005,Datuk Haji
+L006,Dato' Haji
+L007,Dato' Ir. Haji
+L008,Dr. Haji
+L009,Profesor Dr. Haji
+L010,Profesor Haji
+L011,Profesor Ir. Dr. Haji
+L012,Profesor Madya Dr. Haji
+L013,Profesor Madya Dr. Ir. Haji
+L014,Profesor Madya Haji
+L015,Profesor Emeritus Datuk Dr.
+L016,Profesor Ts. Dr. Haji
+L017,Profesor Sr. Ts. Dr. Haji
+L018,Tan Sri Datuk Seri Panglima Haji
+L019,Datuk Seri Panglima Dr.
+L020,Datuk Dr. Haji
+L021,Dato' Dr. Haji
+L022,Dato' Sri Dr. Haji
+L023,Dato' Sri Haji
+L024,Datuk Seri Haji
+L025,Datuk Seri Panglima Haji
+L026,Dato' Seri Haji
+L027,Dato' Setia Dr. Haji
+L028,Ir. Ts. Dr. Haji
+P001,To' Puan Seri
+P002,Toh Puan
+P003,Puan Sri
+P004,Puan Sri Datin
+P005,Puan Sri Datin Profesor
+P006,Puan Sri Dr.
+P007,Puan Sri Utama
+P008,Datin
+P009,Datin Amar
+P010,Datin Dr.
+P011,Datin Paduka
+P012,Datin Patinggi
+P013,Datin Profesor
+P014,Profesor Datin Dr.
+P015,Datin Setia
+P016,Datin Sri
+P017,Datin Sri Cempaka
+P018,Datin Sri Dr.
+P019,Cik
+P020,Puan
+P021,Hajah
+P022,Datin Seri Setia DiRaja
+P023,Datin Seri Utama
+P024,Datin Wira
+P025,Datin Seri
+P026,Toh Puan Seri Utama
+P027,Pehin Sri
+P028,To' Puan
+P029,Datin Paduka Setia
+P030,Datin Paduka Seri
+P031,Datin Indera
+P032,Prof. Datin Paduka Dr.
+P033,Datin Profesor Madya Dr.
+P034,Puan Sri Profesor Madya
+P035,Datin Sri Dato'
+P036,Puan Sri Datuk
+P037,Puan Sri Dato' Sri
+P038,Datuk Hajah
+P039,Datin Profesor Dr.
+P040,Puan Sri Datin Sri Profesor Dr.
+P041,Puan Sri Dato' Profesor Madya Dr.
+P042,Sr. Dr. Hajah
+P043,Datin Paduka Profesor Madya
+P044,Datin Profesor Ir. Dr. Hajah
+P045,Datin Profesor Madya
+P046,Datin Profesor Madya Hajah
+P047,Datin Profesor Sr. Dr.
+P048,Datin Sr. Dr.
+P049,Dr. Hajah
+P050,Profesor Dr. Hajah
+P051,Profesor Hajah
+P052,Profesor Ir. Dr. Hajah
+P053,Profesor Madya Dr. Hajah
+P054,Profesor Madya Hajah
+P055,Profesor Madya Sr. Hajah
+P056,Profesor Emerita Dr.
+P057,Datin Ir.
+P058,Profesor Datin Paduka Setia Dato' Dr.
+P059,Datin Sri Diraja
+P060,Dato' Sri Hajah
+P061,Datuk Wira Hajah
+P062,Dato' Hajah
+P063,To' Puan Seri Utama
+P064,Datin Seri Diraja
+P065,Datin Seri Wira
+P066,Tok Puan
+P067,Datin Diraja
+P068,Puan Sri Datin Seri Panglima
+P069,Datin Seri Panglima
+P070,Datin Paduka Dr.
+P071,Puan Sri To' Puan Seri

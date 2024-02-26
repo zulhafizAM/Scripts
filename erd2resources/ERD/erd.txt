@@ -1,0 +1,5 @@
+employeeAllocations Id BIGINT employeeId BIGINT covered NUMBER remainder NUMBER document VARBINARY(255) status VARCHAR(255) remark VARCHAR(MAX)
+clinicAllocations Id BIGINT current NUMBER remainder NUMBER newAllocation NUMBER status VARCHAR(255) remark VARCHAR(MAX)
+medicalClaims Id BIGINT employeeId BIGINT clinicId BIGINT treatmentDate DATETIMEOFFSET covered NUMBER remainder NUMBER paymentType VARCHAR(255) document VARBINARY(255) status VARCHAR(255) remark VARCHAR(MAX)
+patients Id BIGINT claimId BIGINT relationshipId BIGINT placementId BIGINT name VARCHAR(255) identityDocumentCard VARCHAR(255) status VARCHAR(255) remark VARCHAR(MAX)
+treatments Id BIGINT patientId BIGINT description VARCHAR(MAX) amount NUMBER status VARCHAR(255) remark VARCHAR(MAX)

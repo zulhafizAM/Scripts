@@ -1,0 +1,46 @@
+﻿1. "US" can "filter" "Senarai Kakitangan" based on chosen duration of the assessment such two or even three years. ['US', 'filter', 'Senarai Kakitangan', 'LNPT']
+2. "US" can "view" "Senarai Kakitangan" based on chosen duration of the assessment. ['US', 'view', 'Senarai Kakitangan', 'LNPT']
+1. "US" can "view" "Butiran Kakitangan" based on selected employee. ['US', 'view', 'Butiran Kakitangan', 'LNPT']
+2. "US" can "view" "Pengiraan Puara Mengikut Tahun Yang Dipilih". ['US', 'view', 'Pengiraan Puara Mengikut Tahun Yang Dipilih', 'LNPT']
+3. "US" can "download" "laporan LNPT". ['US', 'download', 'laporan LNPT', 'LNPT']
+
+IGNORE
+1. System can "calculate" "Purata Mengikut Tahun Yang Dipilih". ['calculate', 'Purata Mengikut Tahun Yang Dipilih', 'LNPT']
+
+
+IGNORE
+2. System can "generate" "laporan LNPT". ['generate', 'laporan LNPT', 'LNPT']
+
+
+IGNORE
+#2. Purata LNPT bagi pengesahan dalam lantikan. ['LNPT']
+
+1. "US" can "filter" "Senarai Kakitangan" based on chosen duration of the assessment. ['US', 'filter', 'Senarai Kakitangan', 'LNPT']
+2. "US" can "view" "Senarai Kakitangan" based on chosen duration of the assessment. ['US', 'view', 'Senarai Kakitangan', 'LNPT']
+1. "US" can "view" "Butiran Kakitangan" based on selected employee. ['US', 'view', 'Butiran Kakitangan', 'LNPT']
+2. "US" can "view" "Pengiraan Puara 2 Tahun (36.4%,63.6%)". ['US', 'view', 'Pengiraan Puara 2 Tahun (36.4%,63.6%)', 'LNPT']
+3. "US" can "download" "laporan LNPT 2 Tahun". ['US', 'download', 'laporan LNPT 2 Tahun', 'LNPT']
+
+IGNORE
+1. System can "calculate" "Purata Mengikut Tahun Yang Dipilih". ['calculate', 'Purata Mengikut Tahun Yang Dipilih', 'LNPT']
+
+
+IGNORE
+2. System can "generate" "laporan LNPT 2 Tahun". ['generate', 'laporan LNPT 2 Tahun', 'LNPT']
+
+1. "US" can "filter" "Senarai Penerima APC". ['US', 'filter', 'Senarai Penerima APC', 'LNPT']
+1. "US" can "view" "Butiran Penerima APC" for selected employee. ['US', 'view', 'Butiran Penerima APC', 'LNPT']
+2. "US" can "update" "Maklumat Tahun APC". ['US', 'update', 'Maklumat Tahun APC', 'LNPT']
+3. "US" can "download" "Laporan APC". ['US', 'download', 'Laporan APC', 'LNPT']
+
+IGNORE
+1. System "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'LNPT']
+
+
+IGNORE
+2. System "generate" "Laporan APC". ['generate', 'Laporan APC', 'LNPT']
+
+			},
+		])
+	}
+}

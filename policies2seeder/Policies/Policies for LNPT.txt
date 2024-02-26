@@ -1,0 +1,44 @@
+Module Laporan Nilaian Prestasi Tahunan (LNPT)
+#1. Purata LNPT
+	#1. Purata LNPT 
+		#1. Urus Setia LNPT 
+			#1. Function Listing
+				1. "US LNPT" can "filter" "Senarai Kakitangan" based on chosen duration of the assessment such two or even three years.
+				2. "US LNPT" can "view" "Senarai Kakitangan" based on chosen duration of the assessment.
+				
+			#2. Function View Details
+				1. "US LNPT" can "view" "Butiran Kakitangan" based on selected employee.
+				2. "US LNPT" can "view" "Pengiraan Puara Mengikut Tahun Yang Dipilih".
+				3. "US LNPT" can "download" "laporan LNPT". 
+		#2. System 
+			1. System can "calculate" "Purata Mengikut Tahun Yang Dipilih".
+			2. System can "generate" "laporan LNPT".
+			
+	#2. Purata LNPT bagi pengesahan dalam lantikan.
+		#1. Urus Setia LNPT 
+			#1. Function Listing
+				1. "US LNPT" can "filter" "Senarai Kakitangan" based on chosen duration of the assessment.
+				2. "US LNPT" can "view" "Senarai Kakitangan" based on chosen duration of the assessment.
+				
+			#2. Function View Details
+				1. "US LNPT" can "view" "Butiran Kakitangan" based on selected employee.
+				2. "US LNPT" can "view" "Pengiraan Puara 2 Tahun (36.4%,63.6%)".
+				3. "US LNPT" can "download" "laporan LNPT 2 Tahun". 
+		#2. System 
+			1. System can "calculate" "Purata Mengikut Tahun Yang Dipilih".
+			2. System can "generate" "laporan LNPT 2 Tahun".
+			
+#2. Sejarah APC (Anugerah Pekerja Cemerlang)
+	#1. Sejarah APC bagi kakitangan LKIM 
+		#1. Urus Setia
+			#1. Function Listing	
+				1. "US LNPT" can "filter" "Senarai Penerima APC".
+			#2. Function View Details
+				1. "US LNPT" can "view" "Butiran Penerima APC" for selected employee.
+				2. "US LNPT" can "update" "Maklumat Tahun APC".
+				3. "US LNPT" can "download" "Laporan APC".
+				
+		#2. System
+			1. System "update" "Maklumat Kakitangan".
+			2. System "generate" "Laporan APC".
+	

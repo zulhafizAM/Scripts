@@ -1,0 +1,35 @@
+﻿import { z } from 'zod';
+
+const PersonalDetailSchema = z.object({
+	name: z.string().max(75),
+	birthStateId: z.number().int().nonnegative(),
+	raceId: z.number().int().nonnegative(),
+	religionId: z.number().int().nonnegative(),
+	mailStateId: z.number().int().nonnegative(),
+	homeStateId: z.number().int().nonnegative(),
+	alternativeName: z.string().max(75),
+	isMalaysian: z.boolean().optional(),
+	identityDocumentType: z.string().max(75),
+	identityDocumentNumber: z.string().max(75),
+	email: z.string().email().max(75),
+	marital: z.string().max(75),
+	gender: z.string().max(75),
+	phoneNumber: z.string().max(75),
+	homeNumber: z.string().max(75).optional(),
+	birthDate: z.string().datetime(),
+	birthplace: z.string().max(75),
+	isExPoliceOrSoldier: z.boolean().optional(),
+	homeAddress: z.string(),
+	homePoscode: z.string().max(75),
+	homeCity: z.string().max(75),
+	mailAddress: z.string(),
+	mailPoscode: z.string().max(75),
+	mailCity: z.string().max(75),
+	active: z.boolean().optional(),
+	createdBy: z.string().max(75).optional(),
+	createdAt: z.date().optional(),
+	modifiedBy: z.string().max(75).optional(),
+	modifiedAt: z.date().optional(),
+});
+
+export default PersonalDetailSchema;

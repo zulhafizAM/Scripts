@@ -1,0 +1,681 @@
+﻿action,resource,module
+add, transfer-reasons,employments
+add, application-details-for-moving-out,loans
+add, application-details,loans
+add, application-details,loans
+upload,	supporting-documents,loans
+add, application-details-for-vehicle-loan,lonas
+upload, supporting-documents-for-vehicle-loan,loans
+add, application-details,service allowances
+upload, supporting-documents,service allowances
+add, application-details-for-non-LKIM,loans
+add, claim-form,medicals
+add, exam-details,courses
+add, application-details,leaves
+add,application-details,contracts
+add,application-details,courses
+add,application-details,employments
+add,application-details,service allowances
+add,application-details,leaves
+add,application-details-education-fun,courses
+add,application-details,loans
+add,application-details-for-PTB-and-KWAP,employments
+add,application-details-appeal,integrities
+add,application-details-claims,medicals
+add,record-detail-suspension,integrities
+add,record-detail-application,leaves
+add,record-detail-tahan-kerja,integrities
+add,record-detail-surcharge,integrities
+add,candidates,employments
+add,payment-type,integrities
+add,detail-for-interim-position,employments
+add,meeting-result,employments
+add,meeting-result,integrities
+add,meeting-result,leaves
+add,meeting-result-placement,employments
+add,insert-name-approver,employments
+add,insert-name-supporter-and-approver,employments
+add,insert-name-supporter-and-approver,employments
+add,insert-name-supporter-and-approver,employments
+add,insert-name-approver,employments
+add,meeting-result,salaries
+add,application-details-for-panel-clinic,medicals
+add,application-detailss,leaves
+add,insert-name-supporter-1-and-supporter-2-and-approver,employments
+add,new-application,employments
+add,postponement-application-from-employee,employments
+add,postponement-application-placement,employments
+add,application-earlier-GCR-withdrawal,leaves
+add,application-details,service allowances
+add,application-details,service allowances
+upload,supported-documents,service allowances
+add,application-details-for-funeral-service,service allowances
+approve,meeting-result,employments
+approve,approval-status,employments
+approve,approval-status-from-director,leaves
+approve,approval-status-from-director-of-management-services,leaves
+approve,approval-status-application,leaves
+approve,approval-status-from-director-of-management-services,leaves
+approve,approval-status-application,contracts
+approve,approval-status-application,employments
+approve,approval-status-application,leaves
+approve,approval-status-application,medicals
+approve,approval-status,employments
+approve,supported-status,employments
+approve,application-status,contracts
+approve,application-status-from-secretary,leaves
+certify,approval-application-status,leaves
+certify,certification-status-from-director,employments
+certify,certification-status-from-director-division-or-state,contracts
+certify,certification-status-from-integrity-director,employments
+certify,certification-status-from-audit-director,employments
+certify,certification-status-from-secretary-integrity,employments
+certify,certification-status-for-application,leaves
+certify,certification-status-for-application-from-integrity-director,employments
+certify,certification-status-for-application-from-audit-director,employments
+certify,certification-status-for-application-from-director-division-or-state,employments
+certify,certification-status-for-application-from-secretary-integrity,courses
+verify,verification-status-for-leave-application,leaves
+confirm,payment-proof,medicals
+confirm,confirmation-status-for-application,leaves
+confirm,salary-movement,salaries
+confirm,confirmation-status-for-agreement-form,contracts
+confirm,confirmation-status-from-secratary,leaves
+confirm,confirmation-status-for-application,contracts
+confirm,confirmation-status-for-application,courses
+confirm,confirmation-status-for-application,leaves
+confirm,confirmation-status-for-leave-application,leaves
+confirm,confirmation-status-for-application-from-secretary,leaves
+confirm,confirmation-status,medicals
+download,payment-order,courses
+download,salary-deduction-order,medicals
+download,supporting-documents,employments
+download,kwap-form,employments
+download,assesment-form,employments
+download,medical-form,employments
+download,employee-profile-CV,employments
+download,payment-proof,medicals
+download,clinic-panel-appointment-letter,medicals
+download,birth-certification-document,leaves
+download,supporting-documents,courses
+download,supporting-documents,leaves
+download,supporting-documents,loans
+download,quotation,loans
+download,documents,employments
+download,employee-payslip,salaries
+download,APC-report,performances
+download,performance-report,performances
+download,biannual-performance-report,performances
+download,documents,loans
+download,payment-order-based-on-placement,medicals
+download,offer-letter,loans
+download,offer-letter,loans
+download,arrears-payment-order-letter,loans
+download,payment-order-finance,service allowances
+download,payment-order-to-finance,medicals
+download,payment-order-to-finance,service allowances
+download,payment-voucher,loans
+download,loan-application-details,loans
+download,receipt,loans
+download,loan,loans
+download,invoice,loans
+download,receipt-uploaded,loans
+download,receipt-invoice,loans
+download,receipt-medical,medicals
+download,failure-letter,employments
+download,failure-letter Penangguhan Rayuan,employments
+download,failure-letter Pertimbangkan,employments
+download,approval-letter,service allowances
+download,result-letter,employments
+download,new-contract-agreement-letter,contracts
+download,application-approved-letter,courses
+download,exceeding-annual-medical-usage-limit-letter,medicals
+download,exam-invitation-letter,courses
+download,interview-invitation-letter,employments
+download,confirmation-form,employments
+download,interim-termination-letter,employments
+download,transfer-postponement-letter,employments
+download,postponement-appeal-letter,employments
+download,confirmation-in-services-letter,employments
+download,agreement-letter,loans
+download,clinic-panel-appointment-letter,medicals
+download,transfer-letter,employments
+download,offer-letter,loans
+download,offer-letter-for-loan-approval,loans
+download,cover-letter,loans
+download,offer-letter-for-promotion,employments
+download,report-duty-form,employments
+download,handover-note,employments
+download,offer-letter-quarters,loans
+download,offer-letter-for-acting-position,employments
+download,acceptance-letter,employments
+download,report-duty-form,employments
+download,handover-note,employments
+download,acceptance-letter,employments
+download,payment-order-finance,service allowances
+certify,certification-status,employments
+edit,first-and-second-schedule,loans
+approve,approval-status,employments
+edit,salary-deduction,salaries
+edit,retirement-application,employments
+edit,changes-in-salary-and-allowances,salaries
+confirm,confirmation-status,employments
+support,supported-status,employments
+support,supported-status,employments
+edit,status,employments
+edit,status,employments
+edit,remark,employments
+approve,approval-status-for-involved-employee,salaries
+edit,status,employments
+edit,remark,employments
+edit,submission-date-for-application-to-KWAP,employments
+approve,approved-status,medicals
+edit,supported-status,employments
+view,employee-list,performances
+view,APC-receiver-list,performances
+read,document,personalDetail
+support,supported-status,employments
+support,supported-status-application-from-director-division-or-state,leaves
+support,supported-status-application-from-section-lead,leaves
+support,supported-status,employments
+support,supported-status-from-director-division-or-state,leaves
+support,supported-application-status,contracts
+support,supported-application-status,employments
+support,supported-application-status,leaves
+support,supported-application-status-from-director-division-or-state,leaves
+support,supported-application-status-from-director-division-or-state,courses
+support,supported-application-status-from-director-division-or-state,leaves
+support,application-status,contracts
+approve,approval-status,loans
+update,approval-status,service allowances
+update,insert-name-approver,contracts
+update,insert-name-supporter-and-approver,service allowances
+update,insert-name-approver,loans
+update,medical-balance-for-employee,medicals
+update,agreement-letter,contracts
+update,application-details,contracts
+update,employee-details,leaves
+update,GCR-deduction-details,leaves
+update,invoice,service allowances
+update,document,service allowances
+update,current-eligibility-leave,leaves
+update,KWAP-result,employments
+update,meeting-result,courses
+update,meeting-result,employments
+update,meeting-result,integrities
+update,meeting-result-promotion,employments
+update,meeting-result-postponement,employments
+update,interview-result,employments
+approve,approval-status,loans
+update,employee-details,contracts
+update,employee-details,employments
+update,employee-details,leaves
+update,meeting-details,employments
+update,deduction-based-on-quarter-details,loans
+update,insert-name-supporter-and-approver,employments
+update,APC-year-details,performances
+update,fit-criteria,contracts
+update,insert-name-supporter-and-approver,employments
+update,chasis-engine-or-engine-number,loans
+update,overall-status,courses
+update,overall-status,employments
+update,overall-status,integrities
+update,overall-status,leaves
+update,overall-status-for-request,employments
+update,overall-status,courses
+update,overall-status,leaves
+update,overall-status,service allowances
+update,overall-status,integrities
+update,overall-status,leaves
+update,overall-status,leaves
+update,insert-name-supporter-and-approver,employments
+update,no-longer-over-budget,medicals
+update,salary-details,salaries
+verify,verification-status,loans
+update,insert-name-supporter-and-approver,leaves
+update,approval-status,employments
+update,approval-status-application,medicals
+update,confirmation-result-status,employments
+update,application-approval-process-status,loans
+update,confirmation-status-for-application,employments
+update,supported-status,employments
+update,supported-application-status,medicals
+update,certification-status-from-director-division-or-state,employments
+update,certification-status-from-secretary-integrity,employments
+update,postponement-status-for-placement,employments
+support,supported-status,employments
+update,supported-status-from-director-division-or-state,employments
+verify,verification-status,loans
+verify,verification-status,loans
+approve,approval-status,loans
+support,supported-status,loans
+support,supported-application-status,loans
+support,supported-status,service allowances
+support,supported-status,service allowances
+update,insert-name-supporter-and-approver,service allowances
+update,quarter-details,loans
+approve,approval-status,service allowances
+approve,approval-status,service allowances
+approve,approval-status-application,service allowances
+approve,approval-status-application,service allowances
+approve,approval-status-application,loans
+update,insert-name-supporter-and-approver,service allowances
+update,checklist,employments
+update,insert-checker-and-preparer,employments
+update,insert-name-supporter-and-approver,medicals
+update,insert-name-supporter-and-approver,medicals
+update,overall-status,service allowances
+update,overall-status for the application,service allowances
+update,overall-status,contracts
+update,overall-status,medicals
+update,overall-status,service allowances
+approve,approval-status,medicals
+support,supported-status,medicals
+update,application-details,loans
+approve,approval-application-status,medicals
+verify,verification-status,medicals
+support,supported-application-status,medicals
+approve,approval-application-status,loans
+verify,verification-status,loans
+support,supported-application-status,service allowances
+support,supported-application-status,service allowances
+support,supported-status,service allowances
+update,insert-name-supporter-and-approver,service allowances
+verify,verification-status,service allowances
+upload,retirement-form,employments
+upload,payment-proof,medicals
+upload,birth-certification-document,leaves
+upload,supporting-documents,leaves
+upload,supporting-documents,courses
+upload,supporting-documents,service allowances
+upload,supporting-documents dan Sebut Harga,loans
+upload,appendix-B,service allowances
+upload,receipt,loans
+upload,invoice,loans
+upload,medical-receipt,medicals
+upload,agreement-form,loans
+upload,supporting-documents,service allowances
+verify,candidates-details,contracts
+verify,GCR-payment,leaves
+verify,verification-status,medicals
+verify,verification-status-from-secretary,leaves
+verify,verification-status,employments
+verify,verification-review-status,employments
+verify,verification-status,courses
+verify,verification-status,leaves
+verify,verification-status-from-secretary,leaves
+verify,verification-status-confirmation-requirement,employments
+verify,verification-status,medicals
+certify,certification-status,employments
+view,application-list-for-computer,loans
+view,application-list-for-vehicle,loans
+view,application-list-for-vehicle-related-to-themselves,loans
+view,list-of-application,loans
+view,list-of-application,service allowances
+view,list-of-application-for-moving-out-quarters,loans
+view,list-of-application-for-quarters,loans
+view,list-of-application-for-quarters-for-non-employee,loans
+view,list-of-application-for-quarters-belongs-to-themselves,loans
+view,list-of-application-for-quarters-belongs-to-themselves,loans
+view,application-details,employments
+view,application-details,loans
+view,application-details,loans
+download,supporting-documents,loans
+view,application-details,loans
+download, supporting-documents,loans
+view, application-details,service allowances
+download, supporting-documents,service allowances
+view,application-details,loans 
+download,supporting-documents,loans
+view,application-details,service allowances
+download,supporting-documents,service allowances
+view,application-details-for-funeral-services,service allowances
+view,application-details-for-clinic-panel,medicals
+view,application-details-for-quarters,loans
+view,application-details,loans
+view,application-status,loans
+approve,approval-status-application,loans
+approve,approval-status-application,service allowances
+approve,approval-status-application,service allowances
+edit,name-approver,contracts
+view,leave-balance,leaves
+view,maximum-leave-balance,leaves
+view,medical-balance-for-employee,medicals
+view,supporting-documents,employments
+view,agreement-letter,contracts
+view,leave-details,leaves
+view,employee-details,employments
+view,employee-details,leaves
+view,employee-details,performances
+view,employee-details-for-termination-contract,contracts
+view,employee-details-for-confirmation-more-than-three-years,employments
+view,employee-details-in-trial,employments
+view,employee-details-for-termination-contract,contracts
+view,employee-details-for-termination-contract,contracts
+view,employee-details-for-involved,employments
+view,employee-details,employments
+view,recommended-placement,employments
+view,transfer-reasons,employments
+view,employee-details,employments
+view,application-details,leaves
+view,application-details,courses
+view,APC-receiver-list,performances
+view,application-details,contracts
+view,application-details,courses
+view,application-details,employments
+view,application-details,leaves
+view,application-details-earlier-GCR-withdrawal,leaves
+view,application-details-rest-day-collection,leaves
+view,application-details-transfer,employments
+view,application-details,loans
+view,application-details-for-PTB-and-KWAP,employments
+view,application-details-for-appeal,integrities
+view,application-details-for-claim,medicals
+view,transfer-detail,employments
+view,record-detail,integrities
+view,record-detail-claim,medicals
+view,record-detail-suspension,integrities
+view,record-detail-application,courses
+view,record-detail-applicantion,leaves
+view,record-detail-tahan-kerja,integrities
+view,record-detail-surcharge,integrities
+view,candidates,employments
+view,payment-type,integrities
+view,deduction-details-based-on-preset-rules,leaves
+view,interim-position-details,employments
+download,supporting-document,employments
+view,list-of-retired-employee,salaries
+view,final-status,employments
+view,employee-number-generation,contracts
+view,employee-number-generation,employments
+view,seniority-skipping,employments
+view,remarks,employments
+view,payment-type,medicals
+view,arrear-status,loans
+view,JPA-result,employments
+view,KWAP-result,employments
+view,meeting-result,courses
+view,meeting-result,employments
+view,meeting-result,integrities
+view,meeting-result,leaves
+view,meeting-result-promotion,employments
+view,meeting-result-postponement,employments
+view,meeting-result-placement,employments
+view,exam-result-from-result-examiner,courses
+view,appeal-status,integrities
+view,interview-result,employments
+view,appendix-B,service allowances
+view,list-of-application-for-funeral-services,service allowances
+view,list-of-application-for-computer,loans
+view,list-of-candidates,employments
+view,list-of-employee,employments
+view,list-of-potential-employees,employments
+view,employee-details,employments
+view,meeting-details,employments
+view,insert-name-supporter-and-approver,employments
+view,loan-detail,loans
+view,first-and-second-schedule,loans
+view,JPA-letter-details,employments
+view,insert-name-approver,employments
+view,insert-name-supporter-and-approver,employments
+view,insert-name-supporter-and-approver,employments
+view,insert-name-approver,employments
+view,fit-criteria,contracts
+view,insert-name-approver,loans
+view,insert-name-supporter-and-approver,employments
+view,GCR-value,leaves
+view,overal-status,courses
+view,overall-application-status,leaves
+view,overall-status,employments
+view,overall-status,integrities
+view,overall-status,employments
+view,overall-status,leaves
+view,overall-status,employments
+view,overall-status,service allowances
+view,overall-status,courses
+view,overall-status,employments
+view,overall-status,leaves
+view,overall-status,medicals
+view,overall-status,service allowances
+view,overall-status,medicals
+view,overall-status,integrities
+view,overall-status,leaves
+view,interim-employee,employments
+view,monthly-deduction-from-salary,salaries
+view,director-division-or-state,employments
+view,confirmation-status-for-application,leaves
+view,interim-allowance-calculation,employments
+view,GCR-collection-calculation,leaves
+view,average-two-year-calculation,performances
+view,average-for-chosen-year,performances
+view,supporter,service allowances
+view,insert-name-supporter-1-and-supporter-2-and-approver,employments
+view,insert-name-supporter-and-approver,employments
+cerify,certification-status-from-integrity-director,employments
+view,postponement-status,employments
+view,postponement-status-for-transfer,employments
+view,director-division-or-state,service allowances
+view,receipt-medical,medicals
+view,list-of-involved-employee,salaries
+view,list-of-involved-employee,salaries
+view,application-details,medicals
+view,application-details,medicals,
+download,supporting-documents,loans
+view,claim-details,medicals
+view,current-service-details,employments
+view,interim-application-details,employments
+verify,verification-result-application,leaves
+verify,verify-payment-proof,medicals
+verify,verify-retirement-document,employments
+verify,verify-disciplinary-record,employments
+verify,verification-approval-status-application Dari Pengarah Bahagian,leaves
+verify,verification-confirmation-status-for-application,leaves
+verify,submission-date-for-application-to-KWAP,employments
+verify,verification-supported-application-status-from-section-lead,leaves
+verify,verification-status,leaves
+view,thirteen-years-in-service-employee-list,employments
+view,leave-application-list,leaves
+view,list-employee,employments
+view,list-employee,performances
+view,list-employee-termination-contract,contracts
+view,list-employee-in-trial,employments
+view,list-employee-retired-death-early-dismissal,leaves
+view,list-employee-termination-contract,contracts
+view,list-employee-exceed-quota,medicals
+view,list-employee,employments
+view,list-employee-confirmation-more-than-three-years,employments
+view,list-employee-confirmation-more-than-three-years,employments
+view,list-employee-in-trial,employments
+view,list-application-for-examination,courses
+view,insert-name-supporter-and-approver,leaves
+view,exam-list,courses
+view,list-retirement-application,employments
+view,list-of-clinic-panel-application,medicals
+view,list-of-application,contracts
+view,list-of-application,courses
+view,list-of-application,employments
+view,list-of-application-for-clinic-panel,medicals
+view,list-of-application-education-fund,courses
+view,list-of-application-earlier-GCR-withdrawal,leaves
+view,list-of-application-earlier-GCR-withdrawal,leaves
+view,list-of-application-retirement,employments
+view,list-of-application-transfer,employments
+view,list-of-application-loan-computer,loans
+view,list-of-application-PTB-and-KWAP,employments
+view,list-of-application-appeal,integrities
+view,list-of-application-claim,medicals
+view,forced-retirement-list,employments
+view,voluntary-retirement-list,employments
+view,claim-list,medicals
+view,list-for-suspension,integrities
+view,list-of-involved-employee,employments
+view,list-of-involved-employee-for-surcharge,integrities
+view,list-sentencing,integrities
+view,list-application,courses
+view,list-application,leaves
+view,list-leave-application,leaves
+view,list-of-accusations,integrities
+view,list-of-tahan-kerja,integrities
+view,list-of-suspension,employments
+view,list-of-new-offer,employments
+view,list-of-application,leaves
+view,status,employments
+view,status,employments
+view,remark,employments
+view,approval-status,employments
+view,approval-status,loans
+view,approval-status-from-director,leaves
+view,approval-status-from-director-division-or-state,leaves
+view,approval-status-from-director-of-management-services,leaves
+view,approval-status-application,contracts
+view,approval-status-application,employments
+view,approval-status-application,leaves
+view,approval-status-application,medicals
+view,approval-status-application-director,leaves
+view,approval-status-application-director-of-management-services,leaves
+view,approval-status-application-postponement,employments
+view,approval-result-status,employments
+view,is-fit-criteria-status,contracts
+view,status of application supports,loans
+view,approval-status,loans
+view,application-status,loans
+view,approval-status-from-director,leaves
+view,approval-application-status,leaves
+view,approval-application-status,leaves
+view,approval-application-status,medicals
+view,approval-application-status-from-director-of-management-services,leaves
+view,confirmation-status,contracts
+view,confirmation-status-for-agreement-letter,contracts
+view,confirmation-status-for-application-details,leaves
+view,confirmation-status-for-secretary,leaves
+view,confirmation-status-for-retirement-secratary,employments
+view,confirmation-status-for-qualification,leaves
+view,confirmation-status-for-application,leaves
+view,Status confirmation-status-for-application,leaves
+view,confirmation-status-for-application,contracts
+view,confirmation-status-for-application,courses
+view,confirmation-status-for-application,employments
+view,confirmation-status-for-application,leaves
+view,confirmation-status-for-application,medicals
+view,confirmation-status-for-application-from-secretary,leaves
+view,verification-application-status,medicals
+view,supported-status,employments
+view,supported-status,medicals
+view,supported-status-from-director,leaves
+view,supported-status,employments
+view,supported-status-from-section-lead,loans
+view,supported-status-from-director-division-or-state,leaves
+view,supported-status-from-director-of-management-services,leaves
+view,supported-status-from-director-division-or-state,leaves
+view,supported-status-from-director-division-or-state,leaves
+view,supported-status-from-director-of-management-services,leaves
+view,supported-status,contracts
+view,supported-application-status,contracts
+view,supported-application-status,employments
+view,supported-application-status,leaves
+view,supported-application-status,medicals
+view,supported-application-status-from-director-division-or-state,leaves
+view,supported-application-status-from-director-division-or-state,leaves
+view,supported-application-status-from-director-of-management-services,leaves
+view,supported-application-status-from-director-division-or-state,courses
+view,supported-application-status-from-director-division-or-state,leaves
+view,certification-status-from-from-director-division-or-state,contracts
+view,certification-status-from-from-director-division-or-state,employments
+view,certification-status-from-integrity-director,employments
+view,certification-status-from-audit-director,employments
+view,certification-status-from-director-division-or-state,employments
+view,certification-status-from-secretary-integrity,employments
+view,certification-status,leaves
+view,certification-status-for-application,leaves
+view,certification-status-for-application-from-integrity-director,employments
+view,certification-status-for-application-from-audit-director,employments
+view,certification-status-for-application-from-director-division-or-state,employments
+view,certification-status-for-application-from-secretary-integrity,courses
+view,application-status,leaves
+view,postponement-status-for-transfer,employments
+view,allocation-fund-for-employee-status,medicals
+view,verification-status-from-secretary,leaves
+view,verification-status-eligibility,leaves
+view,verification-status-eligibility-leave,leaves
+view,verification-status-GCR-criteria,leaves
+view,verification-status-for-candidates-details,contracts
+view,verification-statusfor-candidates-details,employments
+view,verification-status,employments
+view,verification-status,courses
+VIEW,verification-status,leaves
+view,verification-status,loans
+view,verification-status,medicals
+view,verification-status-from-secretary,leaves
+view,verification-qualification-status,employments
+view,supported-status,employments
+view,supported-status-from-director,employments
+view,status,employments
+view,remark,employments
+view,supported-status,loans
+view,approval-status,loans
+view,supported-status,service allowances
+view,support-status,service allowances
+view,insert-name-supporter-and-approver,service allowances
+view,failure-letter,employments
+download,interview-invitation-letter,employments
+download,confirmation-form,employments
+view,postponement-appeal-letter,employments
+view,transfer-letter,employments
+view,offer-letter-for-promotion,employments
+view,report-duty-form,employments
+view,handover-note,employments
+view,submission-date-for-application-to-KWAP,employments
+view,suspension-period,employments
+view,supporting-documents,service allowances
+view,application-details,service allowances
+view,application-details,service allowances
+download,supporting-documents,service allowances
+view,application-detail,service allowances
+download,supporting-documents,service allowances
+view,application-details,loans
+download,supporting documents,loans
+view,application-details and supportings documents for selected application,loans
+view,application-details,loans
+download,supporting-documents,loans
+view,application-details,service allowances
+download,supporting-documents,service allowances
+view,application-details-for-funeral-service,service allowances
+view,application-details,loans
+view,application-details-for-moving-out-quarters,loans
+view,application-list,service allowances
+view,application-overall-status,service allowances
+view,applicationd-details,service allowances
+download,supporting-documents,service allowances
+view,approval-status,service allowances
+view,approval-status,service allowances
+view,current-support-status,medicals
+view,interim-position-application-for-selected-employee,employments
+view,list-of-application,service allowances
+view,overall-status,contracts
+view,overall-status,service allowances
+view,current-service-detail-for-employee,employments
+view,approved-status-loan-secretary,loans
+view,approval-status-for-director-division-or-state,loans
+view,application-status,service allowances
+view,verification-status-from-loan-secretary,loans
+view,supported-application-status,service allowances
+view,supported-application-status,service allowances
+view,supported-application-status-from-director-division-or-state,service allowances
+view,support-status,service allowances
+view,support-status,service allowances
+view,supported-status-from-supporter,service allowances
+view,supported-application-status-for-director-division-or-state,service allowances
+view,verification-status,service allowances
+view,verification-status-from-allowance-secretary,service allowances
+view,verification-status,loans
+view,verification-status,service allowances
+view,verification-status-from-allowance-secretary,service allowances
+download,supporting-document-from-allowance-secretary,service allowances
+view,secretary-integrity,employments
+view,allowance-secretary,service allowances
+view,loan-secretary,loans
+view,verification-status-from-next-of-kins,service allowances
+view,confirmation-status-from-next-of-kins,service allowances
+view,verification-status,service allowances
+view,verification-status,service allowances
+view,insert-name-supporter-and-approver,service allowances

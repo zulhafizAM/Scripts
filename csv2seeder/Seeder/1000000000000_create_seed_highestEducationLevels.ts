@@ -1,0 +1,298 @@
+import BaseSeeder from '@ioc:Adonis/Lucid/Seeder';
+import HighestEducationLevel from 'App/Models/HighestEducationLevel';
+
+export default class extends BaseSeeder {
+    public async run() {
+        const uniqueKey = 'description';
+        await HighestEducationLevel.updateOrCreateMany(uniqueKey, [
+            {
+                code: `0`,
+                description: `Tiada Maklumat`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `1`,
+                description: `Doktor Falsafah (Ph.D)`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `2`,
+                description: `Lepasan Sarjana`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `3`,
+                description: `Sarjana Perubatan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `4`,
+                description: `Sarjana Sains`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `5`,
+                description: `Sarjana Sastera`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `6`,
+                description: `Sarjana Persuratan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `7`,
+                description: `Ijazah Sarjana Muda dengan Kepujian`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `8`,
+                description: `Ijazah Sarjana Muda`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `9`,
+                description: `Diploma Lepasan Ijazah`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `10`,
+                description: `Diploma Lanjutan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `11`,
+                description: `Diploma`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `12`,
+                description: `Sijil`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `13`,
+                description: `STPM dan Setaraf`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `14`,
+                description: `SPM dan Setaraf`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `15`,
+                description: `PMR dan Setaraf`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `16`,
+                description: `Sekolah Rendah`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `17`,
+                description: `Taman Asuhan/Prasekolah`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `19`,
+                description: `Matrikulasi`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `20`,
+                description: `Sarjana`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `21`,
+                description: `Sekolah Menengah`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `22`,
+                description: `Sekolah Khas`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `23`,
+                description: `SPVM`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `24`,
+                description: `"Sijil Kekompetenan Penjaga Jentera A0,A1,A4-2,A4-1,A4"`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `25`,
+                description: `"Sijil Kekompetenan Penjaga Jentera B0-2,B0-1,B0,B1,B4"`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `26`,
+                description: `"Sijil Kekompetenan Pendawai Elektrik PW1,PW2,PW3,PW4,PW5,PW6"`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `27`,
+                description: `Sijil Kecekapan Pemandu Enjin Pembakaran Dalam (IC) Gred I/II`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `28`,
+                description: `Sijil kecekapan Pemandu Enjin Stim/Dandang Gred I/II`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `29`,
+                description: `Sijil Kemahiran MLVK - Tahap 1`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `30`,
+                description: `Sijil Kemahiran MLVK - Tahap 2`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `31`,
+                description: `Sijil Kemahiran MLVK - Tahap 3`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `32`,
+                description: `Sijil Kemahiran MLVK - Tahap 4`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `33`,
+                description: `Sijil Kemahiran MLVK - Tahap 5`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `34`,
+                description: `Sijil Kemahiran Bukan MLVK - Asas`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `35`,
+                description: `Sijil Kemahiran Bukan MLVK - Pertengahan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `36`,
+                description: `Sijil Kemahiran Bukan MLVK - Lanjutan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `37`,
+                description: `Sijil Kemahiran Bukan Teknikal < 3 Bulan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `38`,
+                description: `Sijil Kemahiran Bukan Teknikal > 3 - 6 Bulan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `39`,
+                description: `Sijil Kemahiran Bukan Teknikal > 6 - 12 Bulan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `40`,
+                description: `Sijil Kemahiran Bukan Teknikal > 12 Bulan`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `41`,
+                description: `Sijil Kemahiran Malaysia (SKM) Tahap 1`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `42`,
+                description: `Sijil Kemahiran Malaysia (SKM) Tahap 2`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `43`,
+                description: `Sijil Kemahiran Malaysia (SKM) Tahap 3`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `44`,
+                description: `Diploma Kemahiran Malaysia (DKM) Tahap 4`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `45`,
+                description: `Diploma Lanjutan Kemahiran Malaysia (DLKM) Tahap 5`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `46`,
+                description: `Sarjana Sains Sosial`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `98`,
+                description: `Tiada Pendidikan Formal`,
+                active: true,
+                createdBy: 'Admin',
+            },
+            {
+                code: `99`,
+                description: `Lain-Lain`,
+                active: true,
+                createdBy: 'Admin',
+            },
+        ]);
+    }
+}

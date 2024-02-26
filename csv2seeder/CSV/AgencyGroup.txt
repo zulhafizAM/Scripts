@@ -1,0 +1,6 @@
+code:::description
+BBN:::Badan Berkanun Negeri
+BBP:::Badan Berkanun Persekutuan
+PAN:::Perkhidmatan Awam Negeri
+PAP:::Perkhidmatan Awam Persekutuan
+PBT:::Pihak Berkuasa Tempatan

@@ -1,0 +1,656 @@
+code,name
+0000  ,Tiada Maklumat
+0101  ,Asahan
+0102  ,Air Baloi
+0103  ,Air Hitam
+0104  ,Bakri
+0105  ,Batu Anam
+0106  ,Batu Pahat
+0107  ,Bekok
+0108  ,Benut
+0109  ,Bukit Gambir
+0110  ,Bukit Pasir
+01100 ,Saleng
+01101 ,Seri Gading
+01102 ,Sri Medan
+01103 ,Tampoi
+01104 ,Ulu Choh
+01105 ,Iskandar Puteri
+0111  ,Chaah
+0112  ,Endau
+0113  ,Gelang Patah
+0114  ,Gemas
+0115  ,Gerisek
+0116  ,G. Taib Andak
+0117  ,Jementah
+0118  ,Johor Bahru
+0119  ,Kahang
+0120  ,Kluang
+0121  ,Kg Kngan T Dr
+0122  ,Kota Tinggi
+0123  ,Kukup
+0124  ,Kulai
+0125  ,Labis
+0126  ,Layang-Layang
+0127  ,Masai
+0128  ,Mersing
+0129  ,Muar
+0130  ,Pagoh
+0131  ,Paloh
+0132  ,Panchor
+0133  ,Parit Jawa
+0134  ,Parit Raja
+0135  ,Parit Sulong
+0136  ,Pasir Gudang
+0137  ,Pekan Nanas
+0138  ,Pengerang
+0139  ,Pontian
+0140  ,Rengit
+0141  ,Segamat
+0142  ,Skudai
+0143  ,Semerah
+0144  ,Senai
+0145  ,Senggarang
+0146  ,Simpang Renggam
+0147  ,Sungai Mati
+0148  ,Tangkak
+0149  ,Ulu Tiram
+0150  ,Yong Peng
+0151  ,Sagil
+0157  ,Bukit Kepong
+0177  ,Lenga
+0191  ,Sungai Balang
+0192  ,Gemas Baru
+0193  ,Renggam
+0194  ,Nusajaya
+0195  ,Kangkar Pulai
+0196  ,Larkin
+0197  ,Machap
+0198  ,Plentong
+0199  ,Pulai
+0201  ,Alor Setar
+0202  ,Baling
+0203  ,Bandar Baharu
+0204  ,Bedong
+0205  ,Gurun
+0206  ,Jitra
+0207  ,Karangan
+0208  ,Kepala Batas
+0209  ,Kodiang
+0210  ,Kota Kuala Muda
+0211  ,Kuala Kedah
+0212  ,Kuala Ketil
+0213  ,Kuala Nerang
+0214  ,Kulim
+0215  ,Kupang
+0216  ,Langgar
+0217  ,Langkawi
+0218  ,Lunas
+0219  ,Merbok
+0220  ,Padang Serai
+0221  ,Pendang
+0222  ,Pokok Sena
+0223  ,Serdang
+0224  ,Sik
+0225  ,Sungai Petani
+0226  ,Yan
+0234  ,Changloon
+0281  ,Sungai Bakap
+0282  ,Bukit Kayu Hitam
+0301  ,Ayer Lanas
+0302  ,Bachok
+0303  ,Cherang Ruku
+0304  ,Dabong
+0305  ,Gua Musang
+0306  ,Jeli
+0307  ,K Desa Pahlawan
+0308  ,Ketereh
+0309  ,Kota Bharu
+031   ,Kubang Kerian
+0310  ,Kuala Krai
+0311  ,Machang
+0312  ,Melor
+0313  ,Pasir Mas
+0314  ,Pasir Puteh
+0315  ,Pulai Chondong
+0316  ,Rantau Panjang
+0317  ,Tanah Merah
+0318  ,Temangan
+0319  ,Tumpat
+0320  ,Wakaf Bahru
+0401  ,Alor Gajah
+0402  ,Asahan
+0403  ,Batang Melaka
+0404  ,Bemban
+0405  ,Durian Tunggal
+0406  ,Gemas
+0407  ,Jasin
+0408  ,K/Sungai Baru
+0409  ,Lubok China
+0410  ,Masjid Tanah
+0411  ,Melaka
+0412  ,Merlimau
+0413  ,Sungai Rambai
+0414  ,Sungai Udang
+0415  ,Tampin
+0416  ,Tanjong Keling
+0417  ,Selandar
+0418  ,Ayer Keroh
+0501  ,Asahan
+0502  ,Bahau
+0503  ,Batang Melaka
+0504  ,Batu Kikir
+0505  ,Durian Tipus
+0506  ,Gemas
+0507  ,Gemencheh
+0508  ,Johol
+0509  ,Kota
+0510  ,Kuala Kelawang
+0511  ,Kuala Pilah
+0512  ,Labu
+0513  ,Lenggeng
+0514  ,Linggi
+0515  ,Lubok China
+0516  ,Mantin
+0517  ,Nilai
+0518  ,Pasir Panjang
+0519  ,Pedas
+0520  ,Port Dickson
+0521  ,Rantau
+0522  ,Rembau
+0523  ,Rompin
+0524  ,Seliau
+0525  ,Seremban
+0526  ,Sri Menanti
+0527  ,Si Rusa
+0528  ,Silau
+0529  ,Simpang Pertang
+0530  ,Sungai Gadut
+0531  ,Tampin
+0532  ,Tanjung Ipoh
+0533  ,Titi
+0534  ,Bukit Pelandok
+0535  ,Chuah
+0536  ,Lukut
+0537  ,Teluk Kemang
+0538  ,Peng Kempas
+0539  ,Jelebu
+0540  ,B Baru Serting
+0541  ,Juasseh
+0542  ,B Baru Jempol
+0543  ,Senawang
+0544  ,Bandar Baru Sendayan
+0545  ,Bandar Baru Enstek
+0601  ,Bandar Jengka
+0602  ,Benta
+0603  ,Bentong
+0604  ,Beserah
+0605  ,Bukit Fraser
+0606  ,Chenor
+0607  ,Dong
+0608  ,Gambang
+0609  ,Genting
+0610  ,Jerantut
+0611  ,Karak
+0612  ,Kemayang
+0613  ,Kuala Lipis
+0614  ,Kuala Rompin
+0615  ,Kuantan
+0616  ,Lancang
+0617  ,Lurah Bilut
+0618  ,Maran
+0619  ,Mengkarak
+0620  ,Mentakab
+0621  ,Mersing
+0622  ,Muadzam Shah
+0623  ,Padang Tengku
+0624  ,Pekan
+0625  ,Raub
+0626  ,Ringlet
+0627  ,Segamat
+0628  ,Sungai Lembing
+0629  ,Sungai Ruan
+0630  ,Tanah Rata
+0631  ,Temerloh
+0632  ,Triang
+0633  ,Bdr Tun Razak
+0634  ,Rompin
+0635  ,C Highlands
+0636  ,Bera
+0701  ,Ayer Itam
+0702  ,Balik Pulau
+0703  ,Batu Ferringhi
+0704  ,Bayan Lepas
+0705  ,Bukit Mertajam
+0706  ,Butterworth
+0707  ,Gelugor
+0708  ,Georgetown
+0709  ,Kepala Batas
+0710  ,Nibong Tebal
+0711  ,Penaga
+0712  ,Penang Hill
+0713  ,Perai
+0714  ,Permatang Pauh
+0715  ,Pulau Pinang
+0716  ,Simpang Ampat
+0717  ,Sungai Jawi
+0718  ,Tanjong Bungah
+0719  ,Tasek Gelugor
+0720  ,USM Pulau Pinang
+0721  ,Sungai Bakap
+0722  ,Tanjung Tokong
+0723  ,Jelutong
+0801  ,Ayer Tawar
+0802  ,Bagan Datoh
+0803  ,Bagan Serai
+0804  ,Batu Gajah
+0805  ,Batu Kurau
+0806  ,Beruas
+0807  ,Bidor
+0808  ,Bota
+0809  ,Chkt Keruing
+0810  ,Chemor
+0811  ,Chenderiang
+0812  ,Chenderong Balai
+0813  ,Enggor
+0814  ,Gerik
+0815  ,Gopeng
+0816  ,Hutan Melintang
+0817  ,Klian Intan
+0818  ,Ipoh
+0819  ,Kampar
+0820  ,Kampong Gajah
+0821  ,Kg Kepayang
+0822  ,Kamunting
+0823  ,Kuala Kangsar
+0824  ,Kuala Sepetang
+0825  ,Lahat
+0826  ,Langkap
+0827  ,Lenggong
+0828  ,Lumut
+0829  ,Malim Nawar
+0830  ,Mambang Diawan
+0831  ,Manong
+0832  ,Matang
+0833  ,Menglembu
+0834  ,Padang Rengas
+0835  ,Pangkor
+0836  ,Pantai Remis
+0837  ,Parit
+0838  ,Parit Buntar
+0839  ,Pengkalan Hulu
+0840  ,Pusing
+0841  ,Sauk
+0842  ,Selama
+0843  ,Selekoh
+0844  ,Semanggol
+0845  ,Simpang
+0846  ,Simpang Ampat
+0847  ,Sitiawan
+0848  ,Slim River
+0849  ,Sungai Siput
+0850  ,Sungai Sumun
+0851  ,Sungkai
+0852  ,Taiping
+0853  ,Tanjung Malim
+0854  ,Tanjung Piandang
+0855  ,Tanjung Rambutan
+0856  ,Tanjong Tualang
+0857  ,Tapah
+0858  ,Tapah Road
+0859  ,Telok Intan
+0860  ,Temoh
+0861  ,Trong
+0862  ,Teronoh
+0863  ,Ulu Kinta
+0864  ,Ulu Bernam
+0865  ,Sg Siput (U)
+0866  ,Behrang Stesen
+0867  ,Trolak
+0880  ,Kuala Dipang
+0881  ,Kuala Kurau
+0882  ,Seri Manjung
+0883  ,Seri Iskandar
+0901  ,Arau
+0902  ,Kaki Bukit
+0903  ,Kangar
+0904  ,Kuala Perlis
+0905  ,Padang Besar
+0906  ,Simpang Ampat
+097   ,Chuping
+1001  ,Ampang
+1002  ,Banting
+1003  ,Batang Berjuntai
+1004  ,Batang Kali
+1005  ,Batu 9 Cheras
+1006  ,Batu Arang
+1007  ,Batu Caves
+1008  ,Beranang
+1009  ,Bukit Rotan
+1010  ,Dengkil
+1011  ,Hulu Langat
+1012  ,Jenjarom
+1013  ,Jeram
+1014  ,Kajang
+1015  ,Kapar
+1016  ,Klang
+1017  ,Kerling
+1018  ,Kuala Kubu Bharu
+1020  ,Kuala Selangor
+1021  ,Mantin
+1022  ,Nilai
+1023  ,Pelabohan Kelang
+1024  ,Petaling Jaya
+1025  ,Puchong
+1026  ,Pulau Carey
+1027  ,Pulau Ketam
+1028  ,Pulau Lumut
+1029  ,Rantau Panjang
+1030  ,Rasa
+1031  ,Rawang
+1032  ,Sabak Bernam
+1033  ,Sekincan
+1034  ,Semenyih
+1035  ,Sepang
+1036  ,Serendah
+1037  ,Sri Kembangan
+1038  ,Shah Alam
+1039  ,Subang Jaya
+1040  ,Sg Ayer Tawar
+1041  ,Sungai Besar
+1042  ,Sungai Buloh
+1043  ,Sungai Pelek
+1044  ,Tanjong Karang
+1045  ,Tanjong Sepat
+1046  ,Telok Panglima Garang
+1047  ,UKM Bangi
+1048  ,Serdang
+1049  ,Hulu Bernam
+1050  ,Bandar Baru Bangi
+1051  ,Putrajaya
+1052  ,Cyberjaya
+1087  ,Bandar Baru Sungai Buloh
+1088  ,Ulu Yam Baru
+1089  ,Gombak
+1090  ,Bandar Baru Selayang
+1091  ,Bandar Puncak Alam
+1092  ,Cheras
+1093  ,Kalumpang
+1101  ,Ajil
+1102  ,Besut
+1103  ,Bukit Besi
+1104  ,Dungun
+1105  ,Jertih
+1106  ,Bandar Permaisuri
+1107  ,Kemaman
+1108  ,Kemasek
+1109  ,Kijal
+1110  ,Kuala Berang
+1111  ,Kuala Besut
+11112 ,Hulu Terengganu
+11119 ,Setiu
+1112  ,Kuala Terengganu
+1113  ,Marang
+1114  ,Paka
+1115  ,Kertih
+1116  ,Al Muktafi Billah Shah
+1117  ,Kampong Raja
+1118  ,Cukai
+1119  ,Kuala Nerus
+1201  ,Beaufort
+1202  ,Beluran
+1203  ,Bongawan
+1204  ,Inanam
+1205  ,Keningau
+1206  ,Kota Belud
+1207  ,Kota Kinabalu
+1208  ,Kota Marudu
+1209  ,Kuala Penyu
+1210  ,Kudat
+1211  ,Kunak
+1212  ,Lahad Datu
+1213  ,Lamag
+1214  ,Likas
+1215  ,Membakut
+1216  ,Menumbuk
+1217  ,Nabawan
+1218  ,Papar
+1219  ,Penampang
+1220  ,Ranau
+1221  ,Sandakan
+1222  ,Semporna
+1223  ,Sipitang
+1224  ,Tambunan
+12242 ,Tongod
+1225  ,Tamparuli
+1226  ,Tanjung Aru
+1227  ,Tawau
+1228  ,Tenom
+1229  ,Tuaran
+1230  ,K. Kinabatangan
+1231  ,Kalabakan 
+1232  ,Kimanis
+1233  ,Kinabatangan
+1234  ,Kundasang
+1235  ,Long Pasia 
+1236  ,Pensiangan
+1237  ,Pitas
+1238  ,Putatan
+1239  ,Sepanggar
+1240  ,Sindumin
+1241  ,Tomanggong 
+1301  ,Asajaya
+1302  ,Balingan
+1303  ,Baram
+1304  ,Bau
+1305  ,Bekenu
+1306  ,Belaga
+1307  ,Belawi
+1308  ,Betong
+1309  ,Bintangor
+1310  ,Bintulu
+13100 ,Mato
+13101 ,Samarahan
+13102 ,Marudi
+13103 ,Tanjung Kidurong
+1311  ,Dalat
+1312  ,Daro
+1313  ,Debak
+1314  ,Engkilili
+1315  ,Julau
+1316  ,Kabong
+1317  ,Kanowit
+1318  ,Kapit
+1319  ,Kota Samarahan
+1320  ,Kuching
+1321  ,Lawas
+1322  ,Limbang
+1323  ,Lingga
+1324  ,Long Lama
+1325  ,Lubok Antu
+1326  ,Lundu
+1327  ,Matu
+1328  ,Miri
+1329  ,Mukah
+1330  ,Nanga Medamit
+1331  ,Niah
+1332  ,Pekenu
+1333  ,Pusa
+1334  ,Roban
+1335  ,Saratok
+1336  ,Sarikei
+1337  ,Sebauh
+1338  ,Sebuyau
+1339  ,Serian
+1340  ,Simunjan
+1341  ,Song
+1342  ,Spaoh
+1343  ,Sri Aman
+1344  ,Sundar
+1345  ,Tatau
+1346  ,Tebakang
+1347  ,Sibu
+1348  ,Binatang
+1349  ,Tebedu
+1378  ,Pakan
+1379  ,Sibuti
+1380  ,Oya
+1381  ,Ba Kelalan
+1382  ,Bako
+1383  ,Bakong
+1384  ,Balai Ringin
+1385  ,Baratok
+1386  ,Bario
+1387  ,Batu Danau
+1388  ,Batu Lintang
+1389  ,Batu Niah
+1390  ,Beladin
+1391  ,Belawai
+1392  ,Beluru
+1393  ,Selangau
+1394  ,Biawak
+1395  ,Budu
+1396  ,Buntal
+1397  ,Durin
+1398  ,Gedong
+1399  ,Gunung Semanggul
+1401  ,Kuala Lumpur
+14402 ,Kepong
+14441 ,Bandar Baru Sentul
+14445 ,Bangsar
+14446 ,Cheras
+14447 ,Pandan Perdana
+14448 ,Segambut
+14449 ,Seri Petaling
+14450 ,Setapak
+14451 ,Sungai Besi
+1501  ,Wilayah Persekutuan Labuan
+1601  ,Putrajaya
+2001  ,Buenos Aires
+2101  ,Melbourne
+2201  ,Perth
+2301  ,Sydney
+2401  ,Vienna
+2501  ,Brussels
+2601  ,Dhaka
+2701  ,Manama
+2801  ,Sarajevo
+2901  ,Sao Paulo
+3001  ,Bandar Seri Begawan
+3101  ,Ottawa
+3201  ,Vancouver
+3301  ,Geneva
+3401  ,Prague
+3501  ,Santiago
+3601  ,Beijing
+3701  ,Chengdu
+3801  ,Guangzhou
+3901  ,"Kunming,"
+4001  ,Shanghai
+4002  ,Xi'an
+4003  ,Shantou
+4101  ,"Havana,"
+4201  ,Berlin
+4301  ,Cologne
+4401  ,Frankfurt
+4501  ,"Algiers,"
+4601  ,"Cairo,"
+4701  ,Spain
+4801  ,"Suva,"
+4901  ,Paris
+5101  ,Conakry
+5201  ,Wanchai
+5301  ,Accra
+5401  ,Budapest
+5501  ,Jakarta
+5601  ,Medan
+5701  ,Pekan Baru
+5801  ,Pontianak
+5901  ,Chennai
+6001  ,Mumbai
+6101  ,New Delhi
+6201  ,Dublin
+6301  ,Tehran
+6401  ,"Milan,"
+6501  ,Rome
+6601  ,Amman
+6701  ,"Osaka,"
+6801  ,Tokyo
+6901  ,Almaty
+7001  ,Nairobi
+7101  ,Phnom Penh
+7201  ,Pyongyang
+7301  ,Seoul
+7401  ,Kuwait City
+7501  ,Vientiane
+7601  ,Beirut
+7701  ,Tripoli
+7801  ,Colombo
+7901  ,Rabat
+8001  ,Mexico City
+8101  ,Zagreb
+8201  ,Windhoek
+8301  ,Abuja
+8401  ,Rotterdam
+8501  ,Katmandu
+8601  ,Wellington
+8701  ,Muscat
+8801  ,Islamabad
+8901  ,Karachi
+9001  ,Lima
+9101  ,Davao City
+9201  ,Makati City
+9202  ,Manila
+9301  ,Port Moresby
+9401  ,Warsaw
+9501  ,Doha
+9601  ,Bucharest
+9701  ,Moscow
+9702  ,Nizhny Novgorod
+9801  ,Dubai
+9802  ,Incheon
+9999  ,Lain-Lain Bandar
+A001  ,Jeddah
+A101  ,Riyadh
+A201  ,Khartoum
+A301  ,Dakar
+A401  ,Stockholm
+A501  ,Damascus
+A601  ,Bangkok
+A701  ,Phuket
+A801  ,Songkhla
+A901  ,Dili
+AC01  ,Canberra
+B001  ,Ankara 
+B101  ,Istanbul
+B201  ,Taipei
+B301  ,Abu dhabi
+B401  ,Dubai
+B501  ,Kiev
+B6    ,Cambridge
+B601  ,Boston
+B701  ,Chicago
+B801  ,Los angeles
+B901  ,Miami
+C001  ,New york
+C1    ,San Francisco
+C101  ,San jose
+C201  ,Washington dc
+C301  ,Tashkent
+C401  ,Caracas
+C501  ,Hanoi
+C601  ,Ho Chi Minh
+C701  ,Sana'a
+C801  ,Johannesburg
+C901  ,Pretoria
+CT01  ,New Haven
+D001  ,Harare
+G1    ,Birmingham 
+G101  ,London
+G201  ,Belfast 
+G301  ,Dundee 
+G401  ,Cardiff
+N101  ,Trenton
+S001  ,Singapura
+T301  ,Yala
+UK01  ,Oborony

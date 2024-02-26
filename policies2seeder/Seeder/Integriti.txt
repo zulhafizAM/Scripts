@@ -1,0 +1,117 @@
+﻿1. "US" can "view" "Senarai Rekod Pekerja untuk proses tindakan surcaj". ['US', 'view', 'Senarai Rekod Pekerja untuk proses tindakan surcaj', 'Integriti']
+1. "US" can "add" "Butiran Rekod untuk Tindakan Surcaj". ['US', 'add', 'Butiran Rekod untuk Tindakan Surcaj', 'Integriti']
+3. "US" can "add" "Cara Pembayaran". ['US', 'add', 'Cara Pembayaran', 'Integriti']
+
+FIX
+4. "US" can "update" overall status of the record. ['US', 'update', 'overall status of the record.', 'Integriti']
+
+1. "US" can "view" "Butiran Rekod untuk Tindakan Surcaj" for selected record. ['US', 'view', 'Butiran Rekod untuk Tindakan Surcaj', 'Integriti']
+3. "US" can "view" "Cara Pembayaran". ['US', 'view', 'Cara Pembayaran', 'Integriti']
+
+FIX
+4. "US" can "view" overall status of the record. ['US', 'view', 'overall status of the record.', 'Integriti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Pekerja untuk proses tindakan surcaj". ['Kakitangan', 'view', 'Senarai Rekod Pekerja untuk proses tindakan surcaj', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Rekod untuk Tindakan Surcaj". ['Kakitangan', 'view', 'Butiran Rekod untuk Tindakan Surcaj', 'Integriti']
+3. "Kakitangan" can "view" "Cara Pembayaran". ['Kakitangan', 'view', 'Cara Pembayaran', 'Integriti']
+
+FIX
+4. "Kakitangan" can "view" overall status of the record. ['Kakitangan', 'view', 'overall status of the record.', 'Integriti']
+
+1. "US" can "view" "Senarai Rekod Pertuduhan" for all involved employees. ['US', 'view', 'Senarai Rekod Pertuduhan', 'Integriti']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "US" can "update" overall status. ['US', 'update', 'overall status.', 'Integriti']
+
+1. "US" can "view" "Butiran Rekod" for selected record. ['US', 'view', 'Butiran Rekod', 'Integriti']
+2. "US" can "view" "Keputusan Mesyuarat". ['US', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "US" can "view" overall status. ['US', 'view', 'overall status.', 'Integriti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Pertuduhan" for all involved employees. ['Kakitangan', 'view', 'Senarai Rekod Pertuduhan', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Rekod" for selected record. ['Kakitangan', 'view', 'Butiran Rekod', 'Integriti']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Integriti']
+
+
+IGNORE
+1. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Integriti']
+
+1. "US" can "view" "Senarai Rekod Penentuan Hukuman" for all involved employees. ['US', 'view', 'Senarai Rekod Penentuan Hukuman', 'Integriti']
+2. "US" can "add" "Keputusan Mesyuarat". ['US', 'add', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "US" can "update" overall status. ['US', 'update', 'overall status.', 'Integriti']
+
+1. "US" can "view" "Butiran Rekod" for selected record. ['US', 'view', 'Butiran Rekod', 'Integriti']
+2. "US" can "view" "Keputusan Mesyuarat". ['US', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "US" can "view" overall status. ['US', 'view', 'overall status.', 'Integriti']
+
+1. "Kakitangan" can "view" "Senarai Rekod Penentuan Hukuman" for all involved employees. ['Kakitangan', 'view', 'Senarai Rekod Penentuan Hukuman', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Rekod" for selected record. ['Kakitangan', 'view', 'Butiran Rekod', 'Integriti']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+FIX
+3. "Kakitangan" can "view" overall status. ['Kakitangan', 'view', 'overall status.', 'Integriti']
+
+
+IF STATEMENT
+IF found guilty == true
+
+
+IGNORE
+1. System can "update" necessary module based on sentenced given. ['update', 'Integriti']
+
+
+IF STATEMENT
+IF found guilty == false
+
+
+IGNORE
+1. Nothing happend. ['Integriti']
+
+1. "Kakitangan" can "view" "Senarai Permohonan Rayuan". ['Kakitangan', 'view', 'Senarai Permohonan Rayuan', 'Integriti']
+1. "Kakitangan" can "add" "Butiran Permohonan Rayuan". ['Kakitangan', 'add', 'Butiran Permohonan Rayuan', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Permohonan Rayuan" for selected application. ['Kakitangan', 'view', 'Butiran Permohonan Rayuan', 'Integriti']
+2. "Kakitangan" can "view" "Keputusan Rayuan". ['Kakitangan', 'view', 'Keputusan Rayuan', 'Integriti']
+1. "US" can "view" "Senarai Permohonan Rayuan" for all involved employees. ['US', 'view', 'Senarai Permohonan Rayuan', 'Integriti']
+1. "US" can "view" "Butiran Permohonan Rayuan" for selected application. ['US', 'view', 'Butiran Permohonan Rayuan', 'Integriti']
+2. "US" can "update" "Keputusan Mesyuarat". ['US', 'update', 'Keputusan Mesyuarat', 'Integriti']
+
+IGNORE
+1. System can "update" "Maklumat Kakitangan". ['update', 'Maklumat Kakitangan', 'Integriti']
+
+1. "US" can "view" "Senarai Rekod Tahan Kerja" for all involved employees. ['US', 'view', 'Senarai Rekod Tahan Kerja', 'Integriti']
+1. "US" can "add" "Butiran Rekod Tahan Kerja". ['US', 'add', 'Butiran Rekod Tahan Kerja', 'Integriti']
+2. "US" can "update" "Keputusan Mesyuarat". ['US', 'update', 'Keputusan Mesyuarat', 'Integriti']
+1. "US" can "view" "Butiran Rekod Tahan Kerja" for selected record. ['US', 'view', 'Butiran Rekod Tahan Kerja', 'Integriti']
+2. "US" can "view" "Keputusan Mesyuarat". ['US', 'view', 'Keputusan Mesyuarat', 'Integriti']
+1. "Kakitangan" can "view" "Senarai Rekod Tahan Kerja" for that particular employee. ['Kakitangan', 'view', 'Senarai Rekod Tahan Kerja', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Rekod Tahan Kerja" for selected application. ['Kakitangan', 'view', 'Butiran Rekod Tahan Kerja', 'Integriti']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+IGNORE
+1. System can "update" "maklumat kakitangan". ['update', 'maklumat kakitangan', 'Integriti']
+
+1. "US" can "view" "Senarai Rekod Gantung Kerja" for all involved employees. ['US', 'view', 'Senarai Rekod Gantung Kerja', 'Integriti']
+1. "US" can "add" "Butiran Rekod Gantung Kerja". ['US', 'add', 'Butiran Rekod Gantung Kerja', 'Integriti']
+2. "US" can "update" "Keputusan Mesyuarat". ['US', 'update', 'Keputusan Mesyuarat', 'Integriti']
+1. "US" can "view" "Butiran Rekod Gantung Kerja" for selected application. ['US', 'view', 'Butiran Rekod Gantung Kerja', 'Integriti']
+2. "US" can "view" "Keputusan Mesyuarat". ['US', 'view', 'Keputusan Mesyuarat', 'Integriti']
+1. "Kakitangan" can "view" "Senarai Rekod Gantung Kerja" for all involved employees. ['Kakitangan', 'view', 'Senarai Rekod Gantung Kerja', 'Integriti']
+1. "Kakitangan" can "view" "Butiran Rekod Gantung Kerja" for selected application. ['Kakitangan', 'view', 'Butiran Rekod Gantung Kerja', 'Integriti']
+2. "Kakitangan" can "view" "Keputusan Mesyuarat". ['Kakitangan', 'view', 'Keputusan Mesyuarat', 'Integriti']
+
+IGNORE
+1. System can "update" "maklumat kakitangan". ['update', 'maklumat kakitangan', 'Integriti']
+
+			},
+		])
+	}
+}

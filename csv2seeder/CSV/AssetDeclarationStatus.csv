@@ -1,0 +1,23 @@
+code,name
+A0  ,Hantar Semula
+A1  ,Baru
+A2  ,Lupus
+A3  ,Permohonan Disokong
+A4  ,Memerlukan Maklumat Tambahan
+A5  ,Permohonan Dalam Perhatian
+A6  ,Permohonan Diluluskan
+A7  ,Permohonan Tidak Diluluskan
+A8  ,Deraf
+D1  ,Perlu Isytihar
+D2  ,Isytihar-Tunggu Pengesahan
+D3  ,Perisytiharan Terlewat
+D4  ,Disahkan -Tunggu Makluman
+D5  ,Perisytiharan Diambil Maklum
+D6  ,Sudah Isytihar-Tindakan Lanjut (Tatatertib)
+D7  ,Memerlukan Maklumat Tambahan
+DD  ,Tarikh Dijangka Isytihar
+DM  ,Sudah Isytihar
+EN  ,Disahkan
+PE  ,Menunggu Keputusan
+T0  ,Periytiharan Tidak Diluluskan
+T1  ,Perisytiharan Diluluskan

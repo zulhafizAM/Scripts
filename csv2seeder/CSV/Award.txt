@@ -1,0 +1,426 @@
+code:::description:::categoryId:::abbrevation
+0101001:::Darjah Kerabat Yang Amat Dihormati - Pangkat Yang Pertama:::1:::D.K I
+0101002:::Darjah Kerabat Yang Amat Dihormati - Pangkat Yang Kedua:::1:::D. K II
+0101003:::Seri Paduka Mahkota Johor Yang Amat Mulia:::1:::S.P.M.J
+0101004:::Dato' Paduka Mahkota Johor:::1:::D.P.M.J
+0101005:::Setia Mahkota Johor :::2:::S.M.J
+0101006:::Pingat Ibrahim Sultan Pangkat Pertama:::2:::P.I.S I
+0101007:::Pingat Ibrahim Sultan Pangkat Kedua:::2:::P.I.S II
+0101008:::Pingat Ibrahim Sultan Pangkat Ketiga:::2:::P.I.S III
+0101009:::Penghargaan Perkhidmatan Cemerlang Maj. Kes. Negara:::4:::
+0101012:::Pingat Kerana Lama Dan Baik Dalam Pekerjaan:::2:::P.L.P
+0101013:::Pingat Kerana Jasa Dan Lama Dalam Pekerjaan:::2:::P.J.P
+0101014:::Bintang Sultan Ismail Pangkat Pertama:::2:::B.S.I I
+0101015:::Bintang Sultan Ismail Pangkat Kedua:::2:::B.S.I II
+0101017:::Jaksa Pendamai:::2:::J.P
+0101018:::Seri Setia Sultan Ismail Johor Yang Amat Diberkati:::1:::S.S.I.J
+0101019:::Dato' Setia Ismail Johor:::1:::D.S.I.J
+0101020:::Pingat Besi Kerana Keberanian Dan Jasa Pangkat Yang Pertama:::2:::P.B. I
+0101021:::Pingat Besi Kerana Keberanian Dan Jasa Pangkat Yang Kedua:::2:::P.B. II
+0101022:::Pangkat Ketiga Setia Mulia Sultan Ibrahim Johor (SIJ):::2:::
+0201001:::Darjah Seri Setia Di Raja Kedah:::1:::S.S.D.K
+0201003:::Orang Besar Empat - Tunku Temenggong:::2:::
+0201004:::Orang Besar Empat - Tunku Laksamana:::2:::
+0201005:::Orang Besar Lapan - Dato' Seri Mahawangsa:::2:::
+0201006:::Orang Besar Lapan - Seri Amar Di Raja:::2:::
+0201007:::Orang Besar Lapan - Dato' Seri Paduka Indera:::2:::
+0201008:::Orang Besar Lapan - Dato Seri Derma Wangsa:::2:::
+0201009:::Orang Besar Enam Belas - Dato Bijaya Indera:::2:::
+0201010:::Orang Besar Enam Belas - Dato Jaya Budiman:::2:::
+0201011:::Orang Besar Enam Belas - Dato Setia Jaya:::2:::
+0201012:::Orang Besar Enam Belas - Dato Lela Bakti:::2:::
+0201013:::Orang Besar Enam Belas - Dato Indera Setia:::2:::
+0201014:::Orang Besar Enam Belas - Dato Jaya Pahlawan:::2:::
+0201015:::Orang Besar Enam Belas - Dato Indera Senggara:::2:::
+0201016:::Orang Besar Enam Belas - Dato Lela Putra:::2:::
+0201017:::Orang Besar Enam Belas - Dato Panglima Jaya:::2:::
+0201018:::Orang Besar Enam Belas - Dato Lela Pahlawan:::2:::
+0201019:::Orang Besar Enam Belas - Dato Mursyid Diraja:::2:::
+0201020:::Orang Besar Enam Belas - Dato Jaya Dermawan:::2:::
+0201021:::Orang Besar Enam Belas - Dato Setia Diraja:::2:::
+0201022:::Orang Besar Enam Belas - Dato Jaya Perkasa:::2:::
+0201023:::Orang Besar Enam Belas - Dato Andika Raja:::2:::
+0201024:::Dato' Paduka Seri Setia Sultan Abdul Halim Muadzam Shah:::1:::D.H.M.S
+0201025:::Dato' Setia Di Raja Kedah:::1:::D.S.D.K
+0201026:::Setia Mahkota Kedah:::2:::S.M.K
+0201027:::Setia Di Raja Kedah:::2:::S.D.K
+0201028:::Bintang Setia Sultan Abdul Halim Muadzam Shah:::2:::B.M.S
+0201029:::Ahli Mahkota Kedah:::2:::A.M.K
+0201030:::Bintang Perkhidmatan Cemerlang Kedah:::2:::B.C.K
+0201031:::Pingat Perkhidmatan Cemerlang Kedah:::2:::P.C.K
+0201032:::Dato Maha Kurnia:::2:::
+0201033:::Gemilang Seri Mahkota Kedah Yang Amat Dihormati:::2:::G.M.K
+0201034:::Setia Diraja Kedah (Kehormat):::2:::S.D.K (K)
+0201035:::Ahli Mahkota Kedah (Kehormat):::2:::A.M.K (K)
+0201036:::Darjah Kerabat:::2:::D.K
+0201038:::Darjah Kebesaran Gemilang Seri Mahkota Kedah -Amat Dihormati:::1:::D.G.M.K
+0201039:::Setia Sultan Abdul Halim Muadzam Shah:::2:::S.M.S
+0201040:::Darjah Utama Seri Mahawangsa Yang Dihormati:::1:::D.M.K
+0201041:::Darjah Seri Paduka Mahkota Kedah:::1:::S.P.M.K
+0201042:::Dato' Paduka Mahkota Kedah:::1:::D.P.M.K
+0201043:::Bintang Keberanian Kedah:::2:::B.K.K
+0201044:::Darjah Kerabat Halimi:::2:::D.K.H
+0201045:::Darjah Utama Kedah:::2:::D.U.M
+0201046:::Bintang Perkasa Kedah:::2:::B.P.K
+0201047:::Pingat Perkasa Kedah:::2:::P.P.K
+0201048:::Pingat Sultan Badlishah:::2:::P.S.B
+0201049:::Ahli Gemilang Mahkota Kedah:::2:::A.G.K
+0201050:::Bintang Kebaktian Masyarakat:::2:::B.K.M
+0201051:::Pingat Jasa Kebaktian:::2:::P.J.K
+0201052:::Bintang Perkhidmatan Lama:::2:::B.P.L
+0201053:::Pingat Perkhidmatan Lama:::2:::P.P.L
+0201054:::Darjah Utama Kedah:::2:::D.U.K
+0201055:::Bintang Perkhidmatan Cemerlang Kedah :::3:::B.C.K
+0201056:::Darjah Setia DiRaja Kedah:::1:::D.S.D.K
+0201057:::Darjah Paduka Seri Setia Sultan Sallehuddin Kedah Yang Amat Dihormati:::1:::D.P.S.S
+0201058:::Seri Setia Sultan Sallehuddin Kedah:::1:::S.S.S
+0201059:::Tokoh Belia Sejahtera (Kategori Pedidikan):::2:::
+0301001:::Darjah Kebesaran Yang Amat Dihormati - Al-Yunusi:::2:::D.K
+0301002:::Seri Paduka Mahkota Kelantan - Al-Muhammadi I:::1:::S.P.M.K
+0301003:::Seri Paduka Jiwa Mahkota Kelantan - Al-Ismail I:::1:::S.J.M.K
+0301004:::Seri Paduka Setia Mahkota Kelantan - Al-Ibrahimi I:::1:::S.P.S.K
+0301005:::Seri Paduka Kesateria Mahkota Kelantan:::2:::S.P.K.K
+0301006:::Darjah Pahlawan Yang Amat Gagah Perkasa:::2:::P.Y.G.P
+0301007:::Dato Paduka Mahkota Kelantan - Al-Muhammadi Il:::1:::D.P.M.K
+0301008:::Dato Paduka Jiwa Mahkota Kelantan - Al-Ismail Il:::1:::D.J.M.K
+0301009:::Dato Paduka Setia Mahkota Kelantan - Al-Ibrahimi Il:::1:::D.P.S.K
+0301010:::Dato' Paduka Kesateria Mahkota Kelantan:::2:::D.P.K.K
+0301011:::Paduka Mahkota Kelantan - Al-Muhammadi III:::2:::P.M.K
+0301012:::Setia Jiwa Mahkota Kelantan - Al-Ismail III:::2:::J.M.K
+0301013:::Paduka Setia Mahkota Kelantan - Al-Ibrahimi III:::2:::P.S.K
+0301014:::Paduka Kesateria Mahkota Kelantan:::2:::P.K.K
+0301015:::Bentara Setia Mahkota Kelantan - Al-Ibrahim IV:::2:::B.S.K
+0301016:::Ahli Setia Mahkota Kelantan - Al-Ibrahimi V:::2:::A.S.K
+0301017:::Seri Mahkota Kelantan:::2:::S.M.K
+0301018:::Seri Kelantan:::2:::S.K
+0301019:::Ahli Kelantan:::2:::A.K
+0301020:::Pingat Bakti:::2:::P.B
+0301021:::Pingat Setia Mahkota Kelantan:::2:::P.S
+0301022:::Pingat Taat:::2:::P.T
+0301023:::Pingat Perangai Baik:::2:::P.P.B
+0301024:::Darjah Kebesaran Jiwa Mahkota Kelantan yang Amat Mulia:::2:::S.J.M.K
+0401001:::Bintang Cemerlang Melaka:::2:::B.C.M
+0401002:::Darjah  Mulia Seri Melaka:::1:::D.M.S.M
+0401003:::Darjah Utama Negeri Melaka:::1:::D.U.N.M
+0401004:::Darjah Gemilang Seri Melaka:::1:::D.G.S.M
+0401005:::Darjah Cemerlang Seri Melaka:::1:::D.C.S.M
+0401006:::Darjah Seri Melaka:::2:::D.S.M
+0401007:::Jaksa Pendamai:::2:::J.P
+0401008:::Bintang Khidmat Terpuji :::2:::B.K.T
+0401009:::Bintang Gagah Perwira:::2:::B.G.P
+0401010:::Pingat Jaksa Kebaktian:::2:::P.J.K
+0401011:::Pingat Bakti Masyarakat:::2:::P.B.M
+0401012:::Pingat Khidmat Lama:::2:::P.K.L
+0401013:::Darjah Pangkuan Seri Melaka :::1:::DPSM
+0401014:::Anugerah Gemilang Presiden:::2:::
+0401015:::Anugerah Tun Fatimah DMDI:::99:::
+0401016:::Anugerah Hang Tuah DMDI:::99:::
+0401017:::Pingat Jasa Cemerlang:::2:::
+0501001:::Darjah Kerabat Negeri Sembilan:::2:::D.K.N.S
+0501002:::Darjah Kerabat Yam Tuan Raden:::2:::D.K.Y.R
+0501003:::Darjah Tertinggi Negeri Sembilan:::2:::D.T.N.S
+0501004:::Darjah Mulia Negeri Sembilan:::2:::D.M.N.S
+0501005:::Darjah Seri Paduka Tuanku Jaafar Yang Amat Terpuji:::1:::S.P.T.J
+0501006:::Darjah Seri Utama Negeri Sembilan:::1:::S.P.N.S
+0501007:::Darjah Dato' Setia Negeri Sembilan:::1:::D.S.N.S
+0501008:::Darjah Dato' Paduka Tuanku Jaafar:::1:::D.P.T.J
+0501009:::Darjah Setia Negeri Sembilan:::2:::D.N.S
+0501010:::Pingat Pekerti Terpilih:::2:::P.P.T
+0501011:::Jaksa Pendamai:::2:::J.P
+0501012:::Ahli Setia Negeri Sembilan:::2:::A.N.S
+0501013:::Pingat Keberanian Cemerlang:::2:::P.K.C
+0501014:::Pingat Khidmat Cemerlang Masyarakat:::2:::P.M.C
+0501015:::Pingat Jasa Kebaktian :::2:::P.J.K
+0501016:::Pingat Khidmat Lama:::2:::P.K.L
+0501021:::Darjah Kebesaran Dato' Paduka Tuanku Jaafar (DPTJ):::1:::DPTJ
+0501022:::Darjah Setia Bakti Negeri Sembilan (DBNS):::1:::D.B.N.S
+0501023:::Darjah Dato' Paduka Negeri Sembilan:::1:::D.P.N.S
+0501024:::Pingat Jubli Perak:::2:::
+0501025:::Darjah Pekerti Terpilih:::2:::D.P.T
+0501026:::Darjah Tuanku Muhriz:::2:::
+0501027:::Darjah Setia Tuanku Muhriz Yang Amat Gemilang (DSTM):::1:::DSTM
+0601001:::Ahli Ahmad Shah Pahang:::2:::A.A.P
+0601002:::Ahli Mahkota Pahang:::2:::A.M.P
+0601003:::Darjah Indera Mahkota Pahang:::1:::D.I.M.P
+0601004:::Darjah Indera Mahkota Pahang (Kehormat):::1:::D.I.M.P
+0601005:::Darjah Kerabat Sri Indera Mahkota Pahang Yang Amat Dihormati:::2:::D.K
+0601006:::Darjah Kerabat Sri Indera Mahkota Pahang Yang Amat Dihormati:::2:::DK(II)
+0601007:::Darjah Kerabat Sri Indera Mahkota Pahang :::2:::DKII
+0601008:::Darjah Kerabat Yang Maha Utama Kerabat Diraja Pahang        :::2:::DKP
+0601009:::Darjah Sultan Ahmad  Shah Pahang:::1:::D.S.A.P
+0601010:::Jaksa Pendamai                                              :::2:::JP
+0601011:::Pingat Gagah Perwira Pahang                                 :::2:::PGP
+0601012:::Pingat Jasa Kebaktian:::2:::P.J.K
+0601013:::Pingat Khidmat Cemerlang:::2:::P.K.C
+0601014:::Pingat Kelakuan Terpuji:::2:::P.K.T
+0601015:::Setia Ahmad Shah Pahang:::2:::S.A.P
+0601016:::Sri Indera Mahkota Pahang:::1:::S.I.M.P
+0601017:::Setia Mahkota Pahang:::2:::S.M.P
+0601018:::Setia Mahkota Pahang (Kehormat):::2:::S.M.P(K)
+0601019:::Sri Sultan Ahmad Shah Pahang:::1:::S.S.A.P
+0601020:::Pingat Pekerti Terpilih:::2:::P.P.T
+0601021:::Pingat Jasa Kebaktian:::2:::P.J.K
+0610020:::Ahli Mangku Pahang:::1:::A.M.P
+0701001:::Darjah Yang Utama Pangkuan Negeri:::1:::D.U.P.N
+0701002:::Darjah Gemilang Pangkuan Negeri:::1:::D.G.P.N
+0701003:::Darjah Yang Mulia Pangkuan Negeri:::1:::D.M.P.N
+0701004:::Darjah Setia Pangkuan Negeri:::1:::D.S.P.N
+0701005:::Darjah Johan Negeri:::2:::D.J.N
+0701006:::Bintang Cemerlang Negeri:::2:::B.C.N
+0701007:::Pingat Gagah Perwira:::2:::P.G.P
+0701008:::Pingat Kelakuan Terpuji:::2:::P.K.T
+0701009:::Pingat Jasa Kebaktian:::2:::P.J.K
+0701010:::Pingat Jasa Masyarakat:::2:::P.J.M
+0701011:::Pingat Bakti Setia:::2:::P.B.S
+0701012:::Pingat Darjah Setia Pangku Negeri:::1:::
+0701013:::Pingat Darjah Yang Mulia Pangkuan Negeri Pulau Pinang:::1:::
+0701014:::Darjah Panglima Pangkuan Negeri:::1:::D.P.P.N
+0801001:::Anugerah Ahli Mahkota Perak:::2:::A.M.P
+0801002:::Darjah Seri Paduka Mahkota Perak:::1:::S.P.M.P
+0801003:::Darjah Seri Paduka Cura Simanja Kini:::1:::S.P.C.M
+0801004:::Darjah Seri Panglima Taming Sari:::1:::S.P.T.S
+0801005:::Darjah Dato' Paduka Cura Simanja Kini :::1:::D.P.C.M
+0801006:::Darjah Dato' Pahlawan Taming Sari:::1:::D.P.T.S
+0801007:::Darjah Paduka Mahkota Perak:::1:::D.P.M.P
+0801008:::Darjah Paduka Cura Simanja Kini:::2:::P.C.M
+0801009:::Paduka Mahkota Perak:::2:::P.M.P
+0801010:::Darjah Ahli Cura Simanja Kini:::2:::A.C.M
+0801011:::Pingat Keberanian Handal:::2:::P.K.H
+0801012:::Pingat Pekerti Terpilih:::2:::P.P.T
+0801013:::Pingat Jasa Kebaktian:::2:::P.J.K
+0801014:::Pingat Lama Perkhidmatan:::2:::P.L.P
+0801015:::Tauliah Lantikan Jaksa Pendamai:::2:::J.P
+0801016:::Darjah Dato' Paduka Mahkota Perak (D.P.M.P):::1:::D.P.M.P
+0801017:::Anugerah Perkhidmatan Cemerlang (APC):::1:::APC
+0801018:::Anugerah Perkhidmatan Cemerlang (APC):::3:::APC
+0901002:::Darjah Dato' Paduka Mahkota Perlis (D.P.M.P):::1:::D.P.M.P
+0901003:::Pingat Jasa Baik (P.J.B):::2:::P.J.B
+0901004:::Pingat Jasa Kebaktian (P.J.K):::2:::P.J.K
+0901005:::Darjah Seri Setia Tuanku Syed Sirajuddin Jamalullail (SSSJ):::1:::S.S.S.J
+0901006:::Darjah Setia Paduka Tuanku Syed Sirajuddin Jamalullail (SPSJ:::1:::S.P.S.J
+0901007:::Seri Paduka Mahkota Perlis (S.P.M.P) atau Al-Safi 1 :::1:::S.P.M.P
+0901008:::Dato' Setia Tuanku Syed Sirajuddin Jamalullail (D.S.S.J.):::1:::D.S.S.J
+0901009:::Darjah Dato' Wira Tuanku Syed Sirajuddin Jamalullail (DWSJ):::1:::D.W.S.J
+0901010:::Darjah Dato' Panglima Sirajuddin Jamalullail (DPSJ) :::1:::D.P.S.J
+0901011:::Darjah Setia Mahkota Perlis (S.M.P.):::2:::S.M.P
+0901012:::Darjah Seri Sirajuddin Perlis (S.S.P):::2:::S.S.P
+0901013:::Darjah Ahli Mahkota Perlis (A.M.P):::2:::A.M.P
+0901014:::Pingat Mahkota Perlis (P.M.P.) :::2:::P.M.P
+0901015:::Pingat Keberanian Handal (P.K.H) :::2:::P.K.H
+0901016:::Pingat Pekerti Terpilih (P.P.T):::2:::P.P.T
+0901017:::Pingat Perkhidmatan Lama (P.P.L):::2:::P.P.L
+1001001:::Seri Paduka Mahkota Selangor (S.P.M.S.):::1:::S.P.M.S
+1001002:::Dato' Paduka Mahkota Selangor (D.P.M.S):::1:::D.P.M.S
+1001003:::Setia Mahkota Selangor (S.M.S):::2:::S.M.S
+1001004:::Ahli Mahkota Selangor (A.M.S):::2:::A.M.S
+1001005:::Seri - Sultan Sharafuddin Idris Shah:::1:::S.S.I.S
+1001006:::Dato' - Sultan Sharafuddin Idris Shah (D.S.I.S.):::1:::D.S.I.S
+1001007:::Setia - Sultan Sharafuddin Idris Shah (S.I.S.):::2:::S.I.S
+1001008:::Ahli - Sultan Sharafuddin Idris Shah (A.I.S):::2:::A.I.S
+1001009:::Bintang Perkhidmatan Cemerlang:::2:::B.P.C
+1001010:::Pingat Keberanian Terbilang:::2:::P.K.T
+1001011:::Pingat Pekerti Terpilih:::2:::P.P.T
+1001012:::Pingat Jasa Kebaktian:::2:::P.J.K
+1001013:::Pingat Perkhidmatan Cemerlang:::2:::P.P.C
+1001014:::Pingat Perkhidmatan Selangor:::2:::P.P.S
+1001015:::Watikah Perlantikan Jaksa Pengaman:::2:::J.P
+1001016:::Dato' Setia - Sultan Sharafuddin Idris Shah (S.S.I.S.):::1:::S.S.I.S.
+1001017:::Seri Sultan Salahuddin Abdul Aziz Shah (SSSA):::1:::S.S.S.A
+1001018:::Ahli Sultan Salahuddin Abdul Aziz Shah (A.S.A):::2:::
+1101001:::Dato Setia Sultan Mizan Zainal Abidin Terengganu:::1:::D.S.M.Z
+1101002:::Dato' Paduka Mahkota Terengganu:::1:::D.P.M.T
+1101003:::Setia Sultan Mizan Zainal Abidin Terengganu:::2:::S.M.Z
+1101004:::Ahli Setia Sultan Mahmud Terengganu:::2:::A.S.M
+1101005:::Setia Mahkota Terengganu:::2:::S.M.T
+1101006:::Ahli Sultan Mizan Zainal Abidin Terengganu:::2:::A.M.Z
+1101007:::Ahli Mahkota Terengganu:::2:::A.M.T
+1101008:::Pangkat Jaksa Pendamai:::2:::J.P
+1101009:::Pingat Jasa Cemerlang:::2:::P.J.C
+1101010:::Pingat Jasa Kebaktian:::2:::P.J.K
+1101011:::Pingat Bintang Lama Berjawatan:::2:::B.L.B
+1101012:::Pingat Lama Berjawatan:::2:::P.L.B
+1201001:::Seri Panglima Darjah Kinabalu (S.P.D.K):::1:::S.P.D.K
+1201002:::Panglima Gemilang Darjah Kinabalu (P.G.D.K)   :::1:::P.G.D.K
+1201003:::Ahli Darjah Kinabalu (A.D.K. ):::2:::A.D.K.
+1201004::: Bintang Setia Kinabalu (B.S.K.):::2:::B.S.K.
+1201005:::Ahli Setia Darjah Kinabalu (A.S.D.K.):::2:::A.S.D.K.
+1201006:::Bintang Kinabalu (B.K.):::2:::B.K.
+1201007:::Sijil Kehormatan (S.K.):::2:::S.K.
+1201008:::Jaksa Pendamai (J.P.) :::2:::J.P.
+1301001:::Panglima Negara Bintang Sarawak:::1:::P.N.B.S
+1301002:::Johan Bintang Sarawak:::2:::J.B.S
+1301003:::Pegawai Bintang Sarawak:::2:::P.B.S
+1301004:::Ahli Bintang Sarawak:::2:::A.B.S
+1301005:::Bentara Bintang Sarawak:::2:::B.B.S
+1301006:::Panglima Gemilang Bintang Kenyalang:::1:::P.G.B.K
+1301007:::Johan Bintang Kenyalang:::2:::J.B.K
+1301008:::Pegawai Bintang Kenyalang:::2:::P.B.K
+1301009:::Ahli Bintang Kenyalang:::2:::A.B.K
+1301010:::Darjah Jasa Bakti Sarawak:::1:::D.J.B.S
+1301011:::Pingat Perkhidmatan Cemerlang (Emas):::2:::
+1301012:::Pingat Perkhidmatan Bakti (Perak):::2:::
+1301013:::Pingat Perkhidmatan Terpuji (Gangsa):::2:::
+1301014:::Pegawai Bintang Sarawak (Honorary):::2:::P.B.S
+1301015:::Datuk Amar Bintang Kenyalang:::1:::D.A.B.K
+1301016:::Pingat Perkhidmatan Setia :::2:::S.P.S.
+1301017:::Pingat Perkhidmatan Bakti (Honorary):::2:::
+1301018:::Anugerah Biasiswa:::4:::
+1301019:::Pingat Jubli Perak:::2:::P.P.D. (E)
+1301020:::Pingat Peringatan Delima (Perak):::2:::
+1301021:::Pingat Peingatan Delima (Gangsa):::2:::P.P.D.(G)
+1301022:::Panglima Setia Bintang Sarawak:::1:::P.S.B.S
+1301023:::Pingat Perkhidmatan Am:::4:::
+1301024:::Panglima Nederi Bintang Sarawak:::3:::P.N.B.S
+1301025:::Pingat Keberanian:::2:::
+1301026:::Seri Setia Sultan Mahmud Terengganu (Peringkat Pertama):::3:::S.S.M.T
+1301027:::Pingat Perkhidmatan Am (Tentera):::4:::
+1301028:::Pingat Ibrahim Sultan Johor (Emas):::2:::P.I.S
+1301029:::Pahlawan Angkatan Tentera:::2:::
+1401001:::Darjah Utama Seri Mahkota Negara:::2:::D.M.N
+1401002:::Seri Maharaja Mangku Negara:::1:::S.M.N
+1401003:::Seri Setia Mahkota Malaysia:::1:::S.S.M
+1401004:::Panglima Mangku Negara:::1:::P.M.N
+1401005:::Panglima Setia Mahkota:::1:::P.S.M
+1401006:::Panglima Jasa Negara:::1:::P.J.N
+1401007:::Panglima Setia Diraja:::1:::P.S.D
+1401008:::Johan Mangku Negara:::2:::J.M.N
+1401009:::Johan Setia Mahkota:::2:::J.S.M
+1401010:::Jasa Setia DiRaja:::2:::J.S.D
+1401011:::Kesatria Mangku Negara:::2:::KMN
+1401012:::Kesatria Setia Diraja:::2:::K.S.D
+1401013:::Ahli Mangku Negara:::2:::A.M.N
+1401014:::Pingat Pangkuan Negara:::2:::P.P.N
+1401015:::Bentara Setia Diraja:::2:::B.S.D
+1401016:::Panglima Gagah Berani:::2:::P.G.B
+1401017:::Jasa Perkasa Persekutuan:::2:::J.P.P
+1401018:::Kepujian Perutusan Keberanian:::2:::K.P.K
+1401019:::Seri Pahlawan Gagah Perkasa:::2:::S.P
+1401020:::Pingat Kebaktian:::2:::P.K
+1401021:::Pingat Perkhidmatan Am:::2:::P.P.A
+1401022:::Pingat Negara Perkhidmatan Bangsa-Bangsa Bersatu:::2:::P.N.B.B
+1401023:::Darjah Kerabat Diraja Malaysia:::2:::D.K.M
+1401026:::Darjah Bakti:::2:::D.B
+1401027:::Pingat Tentera Udara:::2:::
+1401028:::Pingat Khidmat Bakti:::2:::
+1401029:::Pingat Perkhidmatan Setia:::2:::
+1401030:::Pingat Peringatan Malaysia:::2:::P.P.M
+1401031:::Pingat Setia Mahkota:::2:::P.S.M
+1401032:::Pingat Pekerti Terpilih:::2:::P.P.T
+1401033:::Jaksa Pengaman:::2:::J.P
+1401034:::Pingat Perkhidmatan Cemerlang Masyarakat:::2:::P.P.C.M
+1401035:::Seri Mahkota Wilayah:::1:::S.M.W
+1401036:::Panglima Mahkota Wilayah:::1:::P.M.W
+1401037:::Johan Mahkota Wilayah:::2:::J.M.W
+1401038:::Kesatria Mahkota Wilayah:::2:::K.M.W
+1401039:::Ahli Mahkota Wilayah:::2:::A.M.W
+1401040::: Pingat Pangkuan Mahkota Wilayah :::2:::P.P.W
+1401041:::Pingat Pertabalan Yang di-Pertuan Agong:::2:::
+1401042:::Darjah Pahlawan Pasukan Polis:::2:::
+1401043:::Pingat Perkhidmatan Cemerlang:::4:::PPC
+1401044:::Panglima Setia Angkatan Tentera:::2:::PSAT
+1401045:::Pingat Kedaulatan Negara:::2:::P.K.N
+1401046:::Seri Utama Mahkota Wilayah:::1:::S.U.M.W
+2000001:::Sijil Kecemerlangan Peserta Terbaik Kursus  Pra-Gred M2:::4:::
+2000002:::Sijil Kepujian Bagi Kumpulan A:::4:::
+2000003:::Sijil Penghargaan:::4:::
+2000004:::Anugerah 25 Tahun Berkhidmat:::4:::
+2000005:::Anugerah Khidmat Cemerlang (Melintang):::4:::
+2000006:::Anugerah Khidmat Cemerlang (Menegak):::4:::
+2000007:::Anugerah Kualiti:::4:::
+2000008:::Anugerah Khidmat Terpuji:::4:::
+2000009:::Pekerja Terbaik:::4:::
+2000010:::Tokoh Perkhidmatan Cemerlang:::4:::
+2000011:::Anugerah Ketua Setiausaha Negara (Peserta Terbaik Kursus):::4:::
+2000012:::Sijil Anugerah Sumbangan Bakti:::4:::
+2000013:::Surat Penghargaan:::4:::
+2000014:::Anugerah Perkhidmatan Cemerlang (APC):::4:::
+2000015:::Anugerah Ketua Pengarah:::4:::AKP
+2000016:::Anugerah Kecemerlangan Sains :::2:::
+2000017:::Anugerah Saintis Muda Negara :::2:::
+2000018:::Anugerah Maulidur Rasul :::2:::
+2000019:::Anugerah Tokoh Pekerja Lelaki:::2:::
+2000020:::Anugerah Perkhidmatan Setia :::3:::
+2000021:::Sijil Kepujian :::3:::
+2000022:::Anugerah Perdana Menteri:::4:::
+2000023:::Anugerah Ketua Pengarah Perkhidmatan Awam:::4:::
+2000024:::Anugerah Khas PPTD bagi Diploma Pengurusan Awam:::4:::
+2000025:::Anugerah Mutiara Perbendaharaan:::4:::
+2000026:::Anugerah Citra Perbendaharaan:::4:::
+2000027:::Anugerah Peserta Cemerlang Keseluruhan (Akademik):::5:::
+2000028:::Anugerah Perkhidmatan Cemerlang Bulanan :::4:::
+2000029:::Tawaran Baru Guru Besar (TBGB):::2:::
+2000030:::Penganugerahan Khas Khidmat Cemerlang:::4:::
+2000031:::Anugerah Pengarah:::4:::
+2000032:::Anugerah Ketua Jabatan:::4:::
+2000033:::Anugerah Ketua Bahagian/Organisasi:::4:::
+2000034:::Anugerah Kumpulan Inovatif dan Kreatif (KIK):::4:::
+2000035:::Pingat Perkhidmatan Cemerlang (P.P.C.):::3:::P.P.C.
+2000036:::Anugerah Inovasi Bahagian/Organisasi :::4:::
+2000037:::Sijil Prestasi Cemerlang:::4:::
+2000038:::Anugerah Guru Cemerlang:::4:::
+2000039:::Anugerah Penyelidikan Terbaik:::5:::
+2000040:::Anugerah Pegawai Berketerampilan:::4:::
+2000041:::Pingat Cemerlang Bomba:::4:::
+2000042:::Pingat Am Pertahanan Awam:::4:::P.A.P
+2000043:::Anugerah Tokoh Mentor Perkhidmatan Awam:::4:::
+3000001:::Pingat Bakti Belia (P.B.B):::2:::P.B.B
+3000002:::"Anugerah ""Wilton R. Earle Award"" ":::2:::
+3000003:::Best Candidate Award (JPA-BMCC Mgmt Development Programme):::99:::JPA-BMCC
+3000004:::Pingat Jasa Terpuji:::2:::
+3000005:::Best Science Teacher in Southeast Asia 2016:::99:::
+3000006:::Young Surveyor of the Year:::2:::
+4000001:::"Anugerah ""The Outstanding Young Malaysian"" ":::2:::
+4000002:::Associate ASEAN Engineer:::1:::AAE
+5000001:::Sijil Dekan:::5:::
+5000002:::Sijil Pengarah:::5:::
+5000003:::Doktor Persuratan (Dr.):::5:::
+5000004:::Research Excellence Award:::5:::
+5000005:::Anugerah Dato' Seri Dr. Salleh Mohd Nor:::2:::
+5000006:::Anugerah Pelajar Terbaik:::5:::
+5000007:::Nippon Oil Best Second Year Applied Geology:::99:::
+6000001:::Pingat Bintang Kehormat Persatuan Pandu Puteri Malaysia:::2:::BKPPPM
+9999001:::"Commander of Royal Order of Sahametrei ""AMITIE"" (CAMBODIA)":::2:::
+9999002:::Order of Sikatuna (FILIPINA):::2:::
+9999003:::Order of the Grand Cross [ 1st Class ] (PERU):::2:::
+9999004:::Anugerah Penghargaan:::2:::
+9999005:::Anugerah Penghargaan ( Kelab Kaunselor Tashkent ):::2:::
+9999006:::Blue Cross Award ( Brazil ):::2:::
+9999007:::Commander of the National Order of the Lion ( Senegal ):::2:::
+9999008:::Commander of the Order of Bernade O'Higgins ( Chile ):::2:::
+9999009:::Consul General of the Year 1992:::2:::
+9999010:::Coslam ( Anggota Konfernsi Melayu Sri Lanka ):::2:::
+9999011:::Diploma Kelab Kaunselor Tahskent (Counsellors Tashkent Club):::2:::
+9999012:::Diploma The Grand Master of The Rio Branco Order ( Brazil ):::2:::
+9999013:::Grand Cross of the National Order of Cruzeiro Do Sul :::2:::
+9999014:::"JICA, Tashkent [ Ketua Pusat Uzbekjapan (JICA), Tashkent ]":::2:::
+9999015:::Kepimpinan KSN ( Intan Bukit Kiara ):::4:::
+9999016:::Mattra Corp Bhd [Malaysian Transnational (MATTRA) Corp. Bhd]:::2:::
+9999017:::Medal of Friendship [Malaysian Transnational (MATTRA) Corp:::2:::
+9999018:::Pingat Jubilee Perak ( Brunei ):::2:::
+9999019:::"Sijil Kursus Kenegaraan Sistem Saraan Malaysia PTK 1,812":::4:::
+9999020:::Sijil Penghargaan ( Association of Business Incubators and :::2:::
+9999021:::Speech Drafting Workshop For Wisma Putra Officers:::4:::
+9999022:::"The Order of the Sacred Treasure, Gold Rays with Neck Ribbon":::2:::
+9999023:::Writing and Communication ( Embassy of Malaysia Tashkent ):::2:::
+9999024:::Anugerah Khas Kepimpinan Puspanita :::2:::
+9999025:::The Order of Sacred Treasure Gold and Silver Ray:::2:::
+9999026:::Anugerah HRMIS:::99:::
+9999027:::Mejar (Kehormat) Angkatan Sukarela Persekutuan:::2:::
+9999028:::Kolonel (Kehormat) Angkatan Sukarela Persekutuan:::2:::
+9999029:::Anugerah PUSPANITA Kebangsaan:::4:::
+9999030:::Pingat Perkhidmatan Setia (PPS):::4:::
+9999031:::Pingat Perkhidmatan Am (PPA):::4:::
+9999032:::Pingat Johan Bakti Setia (JBS):::4:::
+9999033:::Pingat Komisioner Jeneral Penjara (Kelas Pertama):::4:::
+9999034:::Pingat Komisioner Jeneral Penjara (Kelas Kedua):::4:::
+9999035:::Pingat Jasa Penjara (PJP):::4:::
+9999036:::Pingat Setia Penjara (PSP):::4:::
+9999037:::Pingat Cemerlang Penjara (PCP):::4:::
+9999038:::Pingat Pekerti Penjara (PPP):::4:::
+9999039:::Pingat Bakti Penjara (PBP):::4:::
+9999040:::Pingat Am Penjara (PAP):::4:::
+9999041:::Sijil Kepujian Tertinggi (Riben Merah):::4:::
+9999042:::Sijil Kepujian (Riben Hijau):::4:::
+9999043:::Sijil Penghargaan:::4:::
+P009:::Pingat Jasa Cemerlang:::2:::P.J.C
+S006:::Sijil Dekan:::5:::
