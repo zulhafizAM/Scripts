@@ -85,7 +85,7 @@ def convert_string(kebab: str) -> str:
 def generate_model(migration_path):
     with open(migration_path, mode='r', encoding="utf-8") as myfile:
         text = myfile.readlines()
-        moduleName = migration_path.replace("Route\\", "").replace("Routes.ts", "")
+        moduleName = migration_path.replace("customRoutes2Routes/Route\\", "").replace("Routes.ts", "")
         print(moduleName)
         
         for index, t in enumerate(text):
@@ -101,12 +101,14 @@ def generate_model(migration_path):
                 print(modelName)
                 
                 # validators #############################################################################################
-                if not os.path.exists("validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName)): 
-                    os.makedirs("validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName))
+                print(actions)
+                if "'add'" in actions or "'edit'" in actions:
+                    if not os.path.exists("customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName)): 
+                        os.makedirs("customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName))
                         
                 if "'add'" in actions:
                 
-                    validator_path = "validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName) + "/add_" + camel_to_snake(moduleName) + "_" + camel_to_snake(modelName) + "_validator.ts"
+                    validator_path = "customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName) + "/add_" + camel_to_snake(moduleName) + "_" + camel_to_snake(modelName) + "_validator.ts"
                 
                     with open(validator_path, 'w', encoding='utf-8', newline='\n') as newfile:
                         newfile.write("import vine from '@vinejs/vine'\n")
@@ -118,7 +120,7 @@ def generate_model(migration_path):
                         
                 if "'edit'" in actions:
                     
-                    validator_path = "validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName) + "/edit_" + camel_to_snake(moduleName) + "_" + camel_to_snake(modelName) + "_validator.ts"
+                    validator_path = "customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName) + "/edit_" + camel_to_snake(moduleName) + "_" + camel_to_snake(modelName) + "_validator.ts"
                 
                     with open(validator_path, 'w', encoding='utf-8', newline='\n') as newfile:
                         newfile.write("import vine from '@vinejs/vine'\n")
@@ -238,7 +240,7 @@ def generate_model(migration_path):
                 # /Service #############################################################################################
                 
         # controllers #############################################################################################
-        controller_path = "controllers/" + camel_to_snake(plural(moduleName)) + "_controller.ts"
+        controller_path = "customRoutes2Routes/controllers/" + camel_to_snake(plural(moduleName)) + "_controller.ts"
         with open(controller_path, 'w', encoding='utf-8', newline='\n') as newfile:
             newfile.write("import { roleUser } from '#abilities/main'\n")
             newfile.write("import { inject } from '@adonisjs/core/build/standalone';\n")
@@ -249,7 +251,6 @@ def generate_model(migration_path):
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
-                    print(premodelName)
                     if premodelName != '':
                         modelName = convert_string(premodelName)
                     else: modelName = capital_start(moduleName)
@@ -331,7 +332,7 @@ def generate_model(migration_path):
         # /controllers #############################################################################################
                 
         # new_routes #############################################################################################
-        controller_path = "new_routes/" + camel_to_snake(moduleName) + ".ts"
+        controller_path = "customRoutes2Routes/new_routes/" + camel_to_snake(moduleName) + ".ts"
         with open(controller_path, 'w', encoding='utf-8', newline='\n') as newfile:
             newfile.write("const " + capital_start(plural(moduleName)) + "Controller = () => import('#controllers/employment/" + plural(camel_to_snake(moduleName)) + "_controller')\n")
             newfile.write("\n")
@@ -370,7 +371,7 @@ def generate_model(migration_path):
         # /new_routes #############################################################################################
 
         
-folder_path = 'Route'
+folder_path = 'customRoutes2Routes/Route'
 
 for filename in os.listdir(folder_path):
     if filename.endswith(".ts"):
