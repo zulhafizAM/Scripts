@@ -82,15 +82,15 @@ export default class ActingsController {
         const payload = await request.validateUsing(AddActingChosenEmployeeListValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.addChosenEmployeeList(payload, auth.user!)))
+            .send(jsend.success(await this.actingChosenEmployeeListService.addChosenEmployeeList(payload, auth.user!)))
     }
 
     async editCandidateSelectionMeeting({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditCandidateSelectionMeetingCandidateSelectionMeetingValidator)
+        const payload = await request.validateUsing(EditActingCandidateSelectionMeetingValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editCandidateSelectionMeeting(payload, auth.user!)))
+            .send(jsend.success(await this.actingCandidateSelectionMeetingService.editCandidateSelectionMeeting(payload, auth.user!)))
     }
 
     async getInterviewInfos({ request, bouncer, response }: HttpContext) {
@@ -100,10 +100,10 @@ export default class ActingsController {
     }
     async editInterviewInfo({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditInterviewInfoInterviewInfoValidator)
+        const payload = await request.validateUsing(EditActingInterviewInfoValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editInterviewInfo(payload, auth.user!)))
+            .send(jsend.success(await this.actingInterviewInfoService.editInterviewInfo(payload, auth.user!)))
     }
 
     async getInterviewResults({ request, bouncer, response }: HttpContext) {
@@ -118,10 +118,10 @@ export default class ActingsController {
     }
     async editInterviewResultMark({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditInterviewResultMarkInterviewResultMarkValidator)
+        const payload = await request.validateUsing(EditActingInterviewResultMarkValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editInterviewResultMark(payload, auth.user!)))
+            .send(jsend.success(await this.actingInterviewResultMarkService.editInterviewResultMark(payload, auth.user!)))
     }
 
     async getPromotionMeetingResults({ request, bouncer, response }: HttpContext) {
@@ -134,15 +134,15 @@ export default class ActingsController {
         const payload = await request.validateUsing(AddActingPromotionMeetingResultValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.addPromotionMeetingResult(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingResultService.addPromotionMeetingResult(payload, auth.user!)))
     }
 
     async editPromotionMeetingResult({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditPromotionMeetingResultPromotionMeetingResultValidator)
+        const payload = await request.validateUsing(EditActingPromotionMeetingResultValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editPromotionMeetingResult(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingResultService.editPromotionMeetingResult(payload, auth.user!)))
     }
 
     async getPromotionMeetingResultDetail({ request, response, bouncer }: HttpContext) {
@@ -150,14 +150,14 @@ export default class ActingsController {
         const payload = await request.validateUsing(getSchema)
         return response
             .status(200)
-            .send(jsend.success(await this.actingPromotionMeetingResultDetailService.PromotionMeetingResultDetail(payload.id)))
+            .send(jsend.success(await this.actingPromotionMeetingResultDetailService.getPromotionMeetingResultDetail(payload.id)))
     }
     async editPromotionMeetingResultDetail({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditPromotionMeetingResultDetailPromotionMeetingResultDetailValidator)
+        const payload = await request.validateUsing(EditActingPromotionMeetingResultDetailValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editPromotionMeetingResultDetail(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingResultDetailService.editPromotionMeetingResultDetail(payload, auth.user!)))
     }
 
     async addPromotionMeetingPlacement({ request, bouncer, response, auth }: HttpContext) {
@@ -165,23 +165,23 @@ export default class ActingsController {
         const payload = await request.validateUsing(AddActingPromotionMeetingPlacementValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.addPromotionMeetingPlacement(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingPlacementService.addPromotionMeetingPlacement(payload, auth.user!)))
     }
 
     async editPromotionMeetingPlacement({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditPromotionMeetingPlacementPromotionMeetingPlacementValidator)
+        const payload = await request.validateUsing(EditActingPromotionMeetingPlacementValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editPromotionMeetingPlacement(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingPlacementService.editPromotionMeetingPlacement(payload, auth.user!)))
     }
 
     async editPromotionMeetingPlacementDetail({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditPromotionMeetingPlacementDetailPromotionMeetingPlacementDetailValidator)
+        const payload = await request.validateUsing(EditActingPromotionMeetingPlacementDetailValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editPromotionMeetingPlacementDetail(payload, auth.user!)))
+            .send(jsend.success(await this.actingPromotionMeetingPlacementDetailService.editPromotionMeetingPlacementDetail(payload, auth.user!)))
     }
 
     async getEmployee({ request, response, bouncer }: HttpContext) {
@@ -189,7 +189,7 @@ export default class ActingsController {
         const payload = await request.validateUsing(getSchema)
         return response
             .status(200)
-            .send(jsend.success(await this.actingEmployeeService.Employee(payload.id)))
+            .send(jsend.success(await this.actingEmployeeService.getEmployee(payload.id)))
     }
     async getPostpones({ request, bouncer, response }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
@@ -201,14 +201,14 @@ export default class ActingsController {
         const payload = await request.validateUsing(getSchema)
         return response
             .status(200)
-            .send(jsend.success(await this.actingPostponeService.Postpone(payload.id)))
+            .send(jsend.success(await this.actingPostponeService.getPostpone(payload.id)))
     }
     async editPostpone({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditPostponePostponeValidator)
+        const payload = await request.validateUsing(EditActingPostponeValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editPostpone(payload, auth.user!)))
+            .send(jsend.success(await this.actingPostponeService.editPostpone(payload, auth.user!)))
     }
 
     async getPostponeResults({ request, bouncer, response }: HttpContext) {
@@ -218,10 +218,10 @@ export default class ActingsController {
     }
     async editActingResult({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditActingResultActingResultValidator)
+        const payload = await request.validateUsing(EditActingActingResultValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editActingResult(payload, auth.user!)))
+            .send(jsend.success(await this.actingActingResultService.editActingResult(payload, auth.user!)))
     }
 
     async getActingConfirmations({ request, bouncer, response }: HttpContext) {
@@ -234,37 +234,37 @@ export default class ActingsController {
         const payload = await request.validateUsing(getSchema)
         return response
             .status(200)
-            .send(jsend.success(await this.actingActingConfirmationService.ActingConfirmation(payload.id)))
+            .send(jsend.success(await this.actingActingConfirmationService.getActingConfirmation(payload.id)))
     }
     async getDirectorCertify({ request, response, bouncer }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
         const payload = await request.validateUsing(getSchema)
         return response
             .status(200)
-            .send(jsend.success(await this.actingDirectorCertifyService.DirectorCertify(payload.id)))
+            .send(jsend.success(await this.actingDirectorCertifyService.getDirectorCertify(payload.id)))
     }
     async editDirectorCertify({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditDirectorCertifyDirectorCertifyValidator)
+        const payload = await request.validateUsing(EditActingDirectorCertifyValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editDirectorCertify(payload, auth.user!)))
+            .send(jsend.success(await this.actingDirectorCertifyService.editDirectorCertify(payload, auth.user!)))
     }
 
     async editApprove({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditApproveApproveValidator)
+        const payload = await request.validateUsing(EditActingApproveValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editApprove(payload, auth.user!)))
+            .send(jsend.success(await this.actingApproveService.editApprove(payload, auth.user!)))
     }
 
     async editSupport({ request, bouncer, response, auth }: HttpContext) {
         await bouncer.authorize(roleUser, [''])
-        const payload = await request.validateUsing(EditSupportSupportValidator)
+        const payload = await request.validateUsing(EditActingSupportValidator)
         return response
             .status(200)
-            .send(jsend.success(await this.service.editSupport(payload, auth.user!)))
+            .send(jsend.success(await this.actingSupportService.editSupport(payload, auth.user!)))
     }
 
 }

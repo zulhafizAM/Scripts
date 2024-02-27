@@ -82,6 +82,48 @@ def convert_string(kebab: str) -> str:
     
     return camel[0].capitalize() + camel[1:]
 
+def depluralize(string):
+    # Split the string into words by capitalizing the first letter of each word
+    capitalized_word = string
+    
+    if "process" not in capitalized_word and "status" not in capitalized_word and capitalized_word[-3:] != "ies":
+        converted_string = capitalized_word.rstrip('s')
+    
+    elif capitalized_word[-3:] == "ies":
+        converted_string = capitalized_word.rstrip('ies') + "y"
+    
+    else:
+        converted_string = capitalized_word
+
+    return converted_string
+
+def snake_to_camel(snake_str):
+    # Split the string into words
+    words = snake_str.split('_')
+
+    # Convert to camelCase: lowercase the first word
+    # and capitalize the rest
+    return words[0] + ''.join(word.capitalize() for word in words[1:])
+
+def snake_to_pascal(snake_str):
+    # Split the string into words and capitalize each one
+    words = snake_str.split('_')
+    return ''.join(word.capitalize() for word in words)
+
+def pascal_to_snake(pascal_str):
+    if not pascal_str:
+        return ""
+
+    snake_case = [pascal_str[0].lower()]
+
+    for char in pascal_str[1:]:
+        if char.isupper():
+            snake_case.extend(['_', char.lower()])
+        else:
+            snake_case.append(char)
+
+    return ''.join(snake_case)
+
 def generate_model(migration_path):
     with open(migration_path, mode='r', encoding="utf-8") as myfile:
         text = myfile.readlines()
@@ -90,7 +132,7 @@ def generate_model(migration_path):
         
         for index, t in enumerate(text):
             
-            if "routeName" in t:
+            if "routeName" in t and "actions" in t:
                 routeName = t.split(',')[0]
                 actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                 premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -101,7 +143,6 @@ def generate_model(migration_path):
                 print(modelName)
                 
                 # validators #############################################################################################
-                print(actions)
                 if "'add'" in actions or "'edit'" in actions:
                     if not os.path.exists("customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName)): 
                         os.makedirs("customRoutes2Routes/validators/" + camel_to_snake(moduleName) + "/" + camel_to_snake(modelName))
@@ -247,7 +288,7 @@ def generate_model(migration_path):
             newfile.write("import { error, fail, success } from 'App/Models/DTO/Shared/DefaultResponse';")
             for index, t in enumerate(text):
                 
-                if "routeName" in t:
+                if "routeName" in t and "actions" in t:
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -260,7 +301,7 @@ def generate_model(migration_path):
             newfile.write("import jsend from 'jsend'\n")
             for index, t in enumerate(text):
                 
-                if "routeName" in t:
+                if "routeName" in t and "actions" in t:
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -275,7 +316,7 @@ def generate_model(migration_path):
             newfile.write("export default class " + capital_start(plural(moduleName)) + "Controller {\n")
             newfile.write("    constructor(\n")
             for index, t in enumerate(text):
-                if "routeName" in t:
+                if "routeName" in t and "actions" in t:
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -288,7 +329,7 @@ def generate_model(migration_path):
             newfile.write("\n")
             for index, t in enumerate(text):
                 
-                if "routeName" in t:
+                if "routeName" in t and "actions" in t:
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -307,7 +348,7 @@ def generate_model(migration_path):
                         newfile.write("        const payload = await request.validateUsing(getSchema)\n")
                         newfile.write("        return response\n")
                         newfile.write("            .status(200)\n")
-                        newfile.write("            .send(jsend.success(await this." + moduleName + capital_start(modelName) + "Service." + capital_start(modelName) + "(payload.id)))\n")
+                        newfile.write("            .send(jsend.success(await this." + moduleName + capital_start(modelName) + "Service.get" + capital_start(modelName) + "(payload.id)))\n")
                         newfile.write("    }\n")
                     if "'add'" in actions:
                         newfile.write("    async add" + modelName + "({ request, bouncer, response, auth }: HttpContext) {\n")
@@ -315,16 +356,16 @@ def generate_model(migration_path):
                         newfile.write("        const payload = await request.validateUsing(Add" + capital_start(moduleName) + modelName + "Validator)\n")
                         newfile.write("        return response\n")
                         newfile.write("            .status(200)\n")
-                        newfile.write("            .send(jsend.success(await this.service.add" + modelName + "(payload, auth.user!)))\n")
+                        newfile.write("            .send(jsend.success(await this." + moduleName + capital_start(modelName) + "Service.add" + modelName + "(payload, auth.user!)))\n")
                         newfile.write("    }\n")
                         newfile.write("\n")
                     if "'edit'" in actions:
                         newfile.write("    async edit" + modelName + "({ request, bouncer, response, auth }: HttpContext) {\n")
                         newfile.write("        await bouncer.authorize(roleUser, [''])\n")
-                        newfile.write("        const payload = await request.validateUsing(Edit" + capital_start(modelName) + modelName + "Validator)\n")
+                        newfile.write("        const payload = await request.validateUsing(Edit" + capital_start(moduleName) + modelName + "Validator)\n")
                         newfile.write("        return response\n")
                         newfile.write("            .status(200)\n")
-                        newfile.write("            .send(jsend.success(await this.service.edit" + modelName + "(payload, auth.user!)))\n")
+                        newfile.write("            .send(jsend.success(await this." + moduleName + capital_start(modelName) + "Service.edit" + modelName + "(payload, auth.user!)))\n")
                         newfile.write("    }\n")
                         newfile.write("\n")
             newfile.write("}\n")
@@ -344,7 +385,7 @@ def generate_model(migration_path):
             newfile.write("        .group(() => {\n")
             for index, t in enumerate(text):
                 
-                if "routeName" in t:
+                if "routeName" in t and "actions" in t:
                     routeName = t.split(',')[0]
                     actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
                     premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
@@ -369,6 +410,246 @@ def generate_model(migration_path):
             newfile.write("}\n")
             
         # /new_routes #############################################################################################
+        
+        # postman #################################################################################################
+        with open(migration_path, mode='r', encoding="utf-8") as myfile:
+            print(actions)
+            text = myfile.readlines()
+            model_path = "customRoutes2Routes/newRoutes.groovy"
+        
+            with open(model_path, 'w', encoding='utf-8-sig') as newfile:
+                
+                newfile.write('{\n')
+                newfile.write('  "info": {\n')
+                newfile.write('      "_postman_id": "your-collection-id",\n')
+                newfile.write('      "name": "' + capital_start(moduleName) + ' Collection",\n')
+                newfile.write('      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"\n')
+                newfile.write('  },\n')
+                newfile.write('  "item": [\n')
+                newfile.write('      {\n')
+                newfile.write('          "name": "' + capital_start(moduleName) + '",\n')
+                newfile.write('          "item": [\n')
+                
+                k = 1
+                for index, t in enumerate(text):
+                    k = k + 1
+                    if "routeName" in t and "actions" in t:
+                        routeName = t.split(',')[0]
+                        actions = t.split('actions: ')[1].split('[')[1].split(']')[0]
+                        premodelName = routeName.replace('    { routeName: ', '').replace("'", '')
+                        if premodelName != '':
+                            modelName = convert_string(premodelName)
+                        else: modelName = capital_start(moduleName)
+                        print(modelName)
+                        print(actions)
+                        
+                        routeSnake = pascal_to_snake(modelName)
+                        routePascal = modelName
+                        newfile.write('              {\n')
+                        newfile.write('                  "name": "' + routePascal + '",\n')
+                        newfile.write('                  "item": [\n')
+                        i = 0
+                        if 'list' in actions:
+                            i = i + 1
+                            newfile.write('                      {\n')
+                            newfile.write('                          "name": "get' + plural(routePascal) + '",\n')
+                            newfile.write('                          "event": [\n')
+                            newfile.write('                              {\n')
+                            newfile.write('                                  "listen": "prerequest",\n')
+                            newfile.write('                                  "script": {\n')
+                            newfile.write('                                      "type": "text/javascript",\n')
+                            newfile.write('                                      "exec": [\n')
+                            newfile.write('                                          "pm.collectionVariables.set(\\"CurrentRequest\\", \\"listFilter\\");"\n')
+                            newfile.write('                                          \n')
+                            newfile.write('                                      ]\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              }\n')
+                            newfile.write('                          ],\n')
+                            newfile.write('                          "request": {\n')
+                            newfile.write('                              "method": "POST",\n')
+                            newfile.write('                              "header": [\n')
+                            newfile.write('                                  {\n')
+                            newfile.write('                                      "key": "Content-Type",\n')
+                            newfile.write('                                      "value": "application/json"\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "body": {\n')
+                            newfile.write('                                  "mode": "raw",\n')
+                            newfile.write('                                  "raw": "{\\n    \\"pageNum\\": 1,\\n    \\"pageSize\\": 5,\\n    \\"orderBy\\": \\"\\",\\n    \\"orderType\\": 0,\\n    \\"filter\\": {\\n        \\"code\\": \\"\\",\\n        \\"description\\": \\"\\"\\n    }\\n}"\n')
+                            newfile.write('                              },\n')
+                            newfile.write('                              "url": {\n')
+                            newfile.write('                              "raw": "{{Url}}/' + pascal_to_snake(capital_start(moduleName)) + '/' + routeSnake + '/list",\n')
+                            newfile.write('                              "host": [\n')
+                            newfile.write('                                  "{{Url}}"\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "path": [\n')
+                            newfile.write('                                  "' + pascal_to_snake(capital_start(moduleName)) + '",\n')
+                            newfile.write('                                  "' + routeSnake + '",\n')
+                            newfile.write('                                  "list"\n')
+                            newfile.write('                              ]\n')
+                            newfile.write('                          }\n')
+                            newfile.write('                          },\n')
+                            newfile.write('                          "response": []\n')
+                            if i < len(actions.split(',')):
+                                newfile.write('                      },\n')
+                            else:
+                                newfile.write('                      }\n')
+                        
+                        if 'get' in actions:
+                            i = i + 1
+                            newfile.write('                      {\n')
+                            newfile.write('                          "name": "get' + routePascal + '",\n')
+                            newfile.write('                          "event": [\n')
+                            newfile.write('                              {\n')
+                            newfile.write('                                  "listen": "prerequest",\n')
+                            newfile.write('                                  "script": {\n')
+                            newfile.write('                                      "type": "text/javascript",\n')
+                            newfile.write('                                      "exec": [\n')
+                            newfile.write('                                          "pm.collectionVariables.set(\\"CurrentRequest\\", \\"details\\");"\n')
+                            newfile.write('                                          \n')
+                            newfile.write('                                      ]\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              }\n')
+                            newfile.write('                          ],\n')
+                            newfile.write('                          "request": {\n')
+                            newfile.write('                              "method": "POST",\n')
+                            newfile.write('                              "header": [\n')
+                            newfile.write('                                  {\n')
+                            newfile.write('                                      "key": "Content-Type",\n')
+                            newfile.write('                                      "value": "application/json"\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "body": {\n')
+                            newfile.write('                                  "mode": "raw",\n')
+                            newfile.write('                                  "raw": "{\\n    \\"id\\": 10000\\n}"\n')
+                            newfile.write('                              },\n')
+                            newfile.write('                              "url": {\n')
+                            newfile.write('                              "raw": "{{Url}}/' + pascal_to_snake(capital_start(moduleName)) + '/' + routeSnake + '/get",\n')
+                            newfile.write('                              "host": [\n')
+                            newfile.write('                                  "{{Url}}"\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "path": [\n')
+                            newfile.write('                                  "' + pascal_to_snake(capital_start(moduleName)) + '",\n')
+                            newfile.write('                                  "' + routeSnake + '",\n')
+                            newfile.write('                                  "get"\n')
+                            newfile.write('                              ]\n')
+                            newfile.write('                          }\n')
+                            newfile.write('                          },\n')
+                            newfile.write('                          "response": []\n')
+                            if i < len(actions.split(',')):
+                                newfile.write('                      },\n')
+                            else:
+                                newfile.write('                      }\n')
+                        
+                        if 'add' in actions:
+                            i = i + 1
+                            newfile.write('                      {\n')
+                            newfile.write('                          "name": "add' + depluralize(routePascal) + '",\n')
+                            newfile.write('                          "event": [\n')
+                            newfile.write('                              {\n')
+                            newfile.write('                                  "listen": "prerequest",\n')
+                            newfile.write('                                  "script": {\n')
+                            newfile.write('                                      "type": "text/javascript",\n')
+                            newfile.write('                                      "exec": [\n')
+                            newfile.write('                                          "pm.collectionVariables.set(\\"CurrentRequest\\", \\"details\\");"\n')
+                            newfile.write('                                          \n')
+                            newfile.write('                                      ]\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              }\n')
+                            newfile.write('                          ],\n')
+                            newfile.write('                          "request": {\n')
+                            newfile.write('                              "method": "POST",\n')
+                            newfile.write('                              "header": [\n')
+                            newfile.write('                                  {\n')
+                            newfile.write('                                      "key": "Content-Type",\n')
+                            newfile.write('                                      "value": "application/json"\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "body": {\n')
+                            newfile.write('                                  "mode": "raw",\n')
+                            newfile.write('                                  "raw": "{\\n    \\n}"\n')
+                            newfile.write('                              },\n')
+                            newfile.write('                              "url": {\n')
+                            newfile.write('                              "raw": "{{Url}}/' + pascal_to_snake(capital_start(moduleName)) + '/' + routeSnake + '/add",\n')
+                            newfile.write('                              "host": [\n')
+                            newfile.write('                                  "{{Url}}"\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "path": [\n')
+                            newfile.write('                                  "' + pascal_to_snake(capital_start(moduleName)) + '",\n')
+                            newfile.write('                                  "' + routeSnake + '",\n')
+                            newfile.write('                                  "add"\n')
+                            newfile.write('                              ]\n')
+                            newfile.write('                          }\n')
+                            newfile.write('                          },\n')
+                            newfile.write('                          "response": []\n')
+                            if i < len(actions.split(',')):
+                                newfile.write('                      },\n')
+                            else:
+                                newfile.write('                      }\n')
+                            
+                        if 'edit' in actions:
+                            i = i + 1
+                            newfile.write('                      {\n')
+                            newfile.write('                          "name": "edit' + depluralize(routePascal) + '",\n')
+                            newfile.write('                          "event": [\n')
+                            newfile.write('                              {\n')
+                            newfile.write('                                  "listen": "prerequest",\n')
+                            newfile.write('                                  "script": {\n')
+                            newfile.write('                                      "type": "text/javascript",\n')
+                            newfile.write('                                      "exec": [\n')
+                            newfile.write('                                          "pm.collectionVariables.set(\\"CurrentRequest\\", \\"details\\");"\n')
+                            newfile.write('                                          \n')
+                            newfile.write('                                      ]\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              }\n')
+                            newfile.write('                          ],\n')
+                            newfile.write('                          "request": {\n')
+                            newfile.write('                              "method": "PUT",\n')
+                            newfile.write('                              "header": [\n')
+                            newfile.write('                                  {\n')
+                            newfile.write('                                      "key": "Content-Type",\n')
+                            newfile.write('                                      "value": "application/json"\n')
+                            newfile.write('                                  }\n')
+                            newfile.write('                              ],\n')
+                            newfile.write('                              "body": {\n')
+                            newfile.write('                                  "mode": "raw",\n')
+                            newfile.write('                                  "raw": "{\\n    \\n}"\n')
+                            newfile.write('                              },\n')
+                            newfile.write('                              "url": {\n')
+                            newfile.write('                                "raw": "{{Url}}/' + pascal_to_snake(capital_start(moduleName)) + '/' + routeSnake + '/edit",\n')
+                            newfile.write('                                "host": [\n')
+                            newfile.write('                                    "{{Url}}"\n')
+                            newfile.write('                                ],\n')
+                            newfile.write('                                "path": [\n')
+                            newfile.write('                                    "' + pascal_to_snake(capital_start(moduleName)) + '",\n')
+                            newfile.write('                                    "' + routeSnake + '",\n')
+                            newfile.write('                                    "edit"\n')
+                            newfile.write('                                ]\n')
+                            newfile.write('                              }\n')
+                            newfile.write('                          },\n')
+                            newfile.write('                          "response": []\n')
+                            if i < len(actions.split(',')):
+                                newfile.write('                      },\n')
+                            else:
+                                newfile.write('                      }\n')
+                                
+                        newfile.write('                    ]\n')
+                        if k < len(text):
+                            newfile.write('                },\n')
+                        else:
+                            newfile.write('                }\n')
+                        
+                newfile.write('            ]\n')
+                newfile.write('        }\n')
+                newfile.write('    ],\n')
+                newfile.write('    "variable": [\n')
+                newfile.write('        {\n')
+                newfile.write('            "key": "Url",\n')
+                newfile.write('            "value": "http://localhost:3333"\n')
+                newfile.write('        }\n')
+                newfile.write('    ]\n')
+                newfile.write('}\n')
+        # /postman ################################################################################################
 
         
 folder_path = 'customRoutes2Routes/Route'
