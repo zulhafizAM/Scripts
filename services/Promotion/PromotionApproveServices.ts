@@ -1,29 +1,51 @@
 import db from '@adonisjs/lucid/services/db'
 import CommonServices from '#services/shared/common_service'
+import { AccessToken } from '@adonisjs/auth/access_tokens'
+import { DateTime } from 'luxon'
+import { inject } from '@adonisjs/core'
+import UserAccount from '#models/user_account'
+@inject()
 export default class PromotionApproveServices {
-    public async editApprove(
-        payload,
-    ): Promise<DefaultDataResponse<PromotionApproveResponse>> {
-        const transaction = await Database.transaction();
-        try {
-            let response = new DefaultDataResponse<PromotionApproveResponse>();
-            const approve = await Approve.query()
+    constructor(protected commonService: CommonServices) {}
+    async getApprove(
+        try {            const query = await Approve.query()
                 .where('id', payload.id)
-                .firstOrFail();
+                .firstOrFail()
+            let response = {
+                details: {
+                    id: Number(query.id),
+                },
+            }
+            return response
+        } catch (error) {
+            console.log(error)
+            throw error
+        }
+    }
+    async editApprove(
+        payload,
+        user: (UserAccount & { currentAccessToken: AccessToken }) | undefined
+    ){
+        const trx = await Database.transaction()
+        try {
+            let editApprove = await Approve.query()
+                .where('id', payload.id)
+                .firstOrFail()
+            editApprove.useTransaction(trx)
 
-            await approve.save();
+            await editApprove.save()
 
-            await transaction.commit();
+            await trx.commit()
             response = {
                 details: {
-                    id: Number(approve.id),
+                    id: Number(editApprove.id),
                 },
-            } as DefaultDataResponse<PromotionApproveResponse>;
-            return response;
+            }
+            return response
         } catch (error) {
-            await transaction.rollback();
-            console.log(error);
-            throw error;
+            await trx.rollback()
+            console.log(error)
+            throw error
         }
     }
 }

@@ -8,71 +8,62 @@ export default function promotionRoutes() {
         .group(() => {
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'get154s'])
+                    router.post('list', [PromotionsController, 'getPromotions'])
                 })
-                .prefix('154s')
+                .prefix('promotions')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getTbk12s'])
+                    router.post('get', [PromotionsController, 'getApplicant'])
                 })
-                .prefix('tbk12s')
+                .prefix('applicants')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getMains'])
+                    router.post('get', [PromotionsController, 'getApplication'])
+                    router.put('edit', [PromotionsController, 'editApplication'])
                 })
-                .prefix('mains')
+                .prefix('applications')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getEmployeeLists'])
+                    router.post('get', [PromotionsController, 'getRelatedRole'])
+                    router.put('edit', [PromotionsController, 'editRelatedRole'])
                 })
-                .prefix('employee_lists')
+                .prefix('related_roles')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getCertifications'])
-                    router.post('get', [PromotionsController, 'getCertification'])
-                    router.put('edit', [PromotionsController, 'editCertification'])
+                    router.post('get', [PromotionsController, 'getApplicantQualification'])
+                    router.put('edit', [PromotionsController, 'editApplicantQualification'])
                 })
-                .prefix('certifications')
+                .prefix('applicant_qualifications')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getPlacementMeetings'])
+                    router.post('get', [PromotionsController, 'getApprovalDetail'])
+                    router.put('edit', [PromotionsController, 'editApprovalDetail'])
                 })
-                .prefix('placement_meetings')
+                .prefix('approval_details')
             router
                 .group(() => {
-                    router.post('get', [PromotionsController, 'getPlacementMeetingDetail'])
-                    router.put('edit', [PromotionsController, 'editPlacementMeetingDetail'])
+                    router.post('get', [PromotionsController, 'getFirstSchedule'])
+                    router.put('edit', [PromotionsController, 'editFirstSchedule'])
                 })
-                .prefix('placement_meeting_details')
+                .prefix('first_schedules')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getPlacementMeetingSalaryAdjustments'])
-                    router.post('get', [PromotionsController, 'getPlacementMeetingSalaryAdjustment'])
+                    router.post('get', [PromotionsController, 'getSecondSchedule'])
+                    router.put('edit', [PromotionsController, 'editSecondSchedule'])
                 })
-                .prefix('placement_meeting_salary_adjustments')
+                .prefix('second_schedules')
             router
                 .group(() => {
-                    router.post('list', [PromotionsController, 'getEmployeePromotions'])
-                    router.post('get', [PromotionsController, 'getEmployeePromotion'])
-                    router.put('edit', [PromotionsController, 'editEmployeePromotion'])
+                    router.post('get', [PromotionsController, 'getOfferLetter'])
+                    router.put('edit', [PromotionsController, 'editOfferLetter'])
                 })
-                .prefix('employee_promotions')
+                .prefix('offer_letters')
             router
                 .group(() => {
-                    router.post('get', [PromotionsController, 'getDirectorCertify'])
-                    router.put('edit', [PromotionsController, 'editDirectorCertify'])
-                })
-                .prefix('director_certifies')
-            router
-                .group(() => {
+                    router.post('get', [PromotionsController, 'getApprove'])
                     router.put('edit', [PromotionsController, 'editApprove'])
                 })
                 .prefix('approves')
-            router
-                .group(() => {
-                    router.put('edit', [PromotionsController, 'editSupport'])
-                })
-                .prefix('supports')
         })
         .prefix('promotion')
         .use(middleware.auth({ guards: ['api'] }))

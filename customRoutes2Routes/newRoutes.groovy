@@ -1,18 +1,18 @@
 ﻿{
   "info": {
       "_postman_id": "your-collection-id",
-      "name": "Promotion Collection",
+      "name": "Clinic Collection",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
       {
-          "name": "Promotion",
+          "name": "Clinic",
           "item": [
               {
-                  "name": "154",
+                  "name": "Clinic",
                   "item": [
                       {
-                          "name": "get154s",
+                          "name": "getClinics",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -38,193 +38,14 @@
                                   "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/154/list",
+                              "raw": "{{Url}}/medical/clinic/clinic/list",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "154",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "Tbk12",
-                  "item": [
-                      {
-                          "name": "getTbk12s",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/tbk12/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "tbk12",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "Main",
-                  "item": [
-                      {
-                          "name": "getMains",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/main/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "main",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "EmployeeList",
-                  "item": [
-                      {
-                          "name": "getEmployeeLists",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/employee_list/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "employee_list",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "Certification",
-                  "item": [
-                      {
-                          "name": "getCertifications",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/certification/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "certification",
+                                  "medical",
+                                  "clinic",
+                                  "clinic",
                                   "list"
                               ]
                           }
@@ -232,7 +53,7 @@
                           "response": []
                       },
                       {
-                          "name": "getCertification",
+                          "name": "getClinic",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -258,13 +79,14 @@
                                   "raw": "{\n    \"id\": 10000\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/certification/get",
+                              "raw": "{{Url}}/medical/clinic/clinic/get",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "certification",
+                                  "medical",
+                                  "clinic",
+                                  "clinic",
                                   "get"
                               ]
                           }
@@ -272,7 +94,48 @@
                           "response": []
                       },
                       {
-                          "name": "editCertification",
+                          "name": "addClinic",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/clinic/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "clinic",
+                                  "add"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "editClinic",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -298,13 +161,14 @@
                                   "raw": "{\n    \n}"
                               },
                               "url": {
-                                "raw": "{{Url}}/promotion/certification/edit",
+                                "raw": "{{Url}}/medical/clinic/clinic/edit",
                                 "host": [
                                     "{{Url}}"
                                 ],
                                 "path": [
-                                    "promotion",
-                                    "certification",
+                                  "medical",
+                                    "clinic",
+                                    "clinic",
                                     "edit"
                                 ]
                               }
@@ -314,55 +178,10 @@
                     ]
                 },
               {
-                  "name": "PlacementMeeting",
+                  "name": "Date",
                   "item": [
                       {
-                          "name": "getPlacementMeetings",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/placement_meeting/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "placement_meeting",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "PlacementMeetingDetail",
-                  "item": [
-                      {
-                          "name": "getPlacementMeetingDetail",
+                          "name": "getDate",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -388,21 +207,27 @@
                                   "raw": "{\n    \"id\": 10000\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/placement_meeting_detail/get",
+                              "raw": "{{Url}}/medical/clinic/date/get",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "placement_meeting_detail",
+                                  "medical",
+                                  "clinic",
+                                  "date",
                                   "get"
                               ]
                           }
                           },
                           "response": []
-                      },
+                      }
+                    ]
+                },
+              {
+                  "name": "ClinicAccount",
+                  "item": [
                       {
-                          "name": "editPlacementMeetingDetail",
+                          "name": "addClinicAccount",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -410,51 +235,6 @@
                                       "type": "text/javascript",
                                       "exec": [
                                           "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "PUT",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \n}"
-                              },
-                              "url": {
-                                "raw": "{{Url}}/promotion/placement_meeting_detail/edit",
-                                "host": [
-                                    "{{Url}}"
-                                ],
-                                "path": [
-                                    "promotion",
-                                    "placement_meeting_detail",
-                                    "edit"
-                                ]
-                              }
-                          },
-                          "response": []
-                      }
-                    ]
-                },
-              {
-                  "name": "PlacementMeetingSalaryAdjustment",
-                  "item": [
-                      {
-                          "name": "getPlacementMeetingSalaryAdjustments",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
                                           
                                       ]
                                   }
@@ -470,24 +250,30 @@
                               ],
                               "body": {
                                   "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
+                                  "raw": "{\n    \n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/placement_meeting_salary_adjustment/list",
+                              "raw": "{{Url}}/medical/clinic/clinic_account/add",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "placement_meeting_salary_adjustment",
-                                  "list"
+                                  "medical",
+                                  "clinic",
+                                  "clinic_account",
+                                  "add"
                               ]
                           }
                           },
                           "response": []
-                      },
+                      }
+                    ]
+                },
+              {
+                  "name": "Profile",
+                  "item": [
                       {
-                          "name": "getPlacementMeetingSalaryAdjustment",
+                          "name": "getProfile",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -513,13 +299,14 @@
                                   "raw": "{\n    \"id\": 10000\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/placement_meeting_salary_adjustment/get",
+                              "raw": "{{Url}}/medical/clinic/profile/get",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "placement_meeting_salary_adjustment",
+                                  "medical",
+                                  "clinic",
+                                  "profile",
                                   "get"
                               ]
                           }
@@ -529,50 +316,10 @@
                     ]
                 },
               {
-                  "name": "EmployeePromotion",
+                  "name": "Claim",
                   "item": [
                       {
-                          "name": "getEmployeePromotions",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"listFilter\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "POST",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \"pageNum\": 1,\n    \"pageSize\": 5,\n    \"orderBy\": \"\",\n    \"orderType\": 0,\n    \"filter\": {\n        \"code\": \"\",\n        \"description\": \"\"\n    }\n}"
-                              },
-                              "url": {
-                              "raw": "{{Url}}/promotion/employee_promotion/list",
-                              "host": [
-                                  "{{Url}}"
-                              ],
-                              "path": [
-                                  "promotion",
-                                  "employee_promotion",
-                                  "list"
-                              ]
-                          }
-                          },
-                          "response": []
-                      },
-                      {
-                          "name": "getEmployeePromotion",
+                          "name": "getClaim",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -598,66 +345,27 @@
                                   "raw": "{\n    \"id\": 10000\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/employee_promotion/get",
+                              "raw": "{{Url}}/medical/clinic/claim/get",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "employee_promotion",
+                                  "medical",
+                                  "clinic",
+                                  "claim",
                                   "get"
                               ]
                           }
-                          },
-                          "response": []
-                      },
-                      {
-                          "name": "editEmployeePromotion",
-                          "event": [
-                              {
-                                  "listen": "prerequest",
-                                  "script": {
-                                      "type": "text/javascript",
-                                      "exec": [
-                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
-                                          
-                                      ]
-                                  }
-                              }
-                          ],
-                          "request": {
-                              "method": "PUT",
-                              "header": [
-                                  {
-                                      "key": "Content-Type",
-                                      "value": "application/json"
-                                  }
-                              ],
-                              "body": {
-                                  "mode": "raw",
-                                  "raw": "{\n    \n}"
-                              },
-                              "url": {
-                                "raw": "{{Url}}/promotion/employee_promotion/edit",
-                                "host": [
-                                    "{{Url}}"
-                                ],
-                                "path": [
-                                    "promotion",
-                                    "employee_promotion",
-                                    "edit"
-                                ]
-                              }
                           },
                           "response": []
                       }
                     ]
                 },
               {
-                  "name": "DirectorCertify",
+                  "name": "Treatment",
                   "item": [
                       {
-                          "name": "getDirectorCertify",
+                          "name": "getTreatment",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -683,13 +391,60 @@
                                   "raw": "{\n    \"id\": 10000\n}"
                               },
                               "url": {
-                              "raw": "{{Url}}/promotion/director_certify/get",
+                              "raw": "{{Url}}/medical/clinic/treatment/get",
                               "host": [
                                   "{{Url}}"
                               ],
                               "path": [
-                                  "promotion",
-                                  "director_certify",
+                                  "medical",
+                                  "clinic",
+                                  "treatment",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      }
+                    ]
+                },
+              {
+                  "name": "SecretaryApproval",
+                  "item": [
+                      {
+                          "name": "getSecretaryApproval",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/secretary_approval/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "secretary_approval",
                                   "get"
                               ]
                           }
@@ -697,7 +452,7 @@
                           "response": []
                       },
                       {
-                          "name": "editDirectorCertify",
+                          "name": "addSecretaryApproval",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -711,7 +466,7 @@
                               }
                           ],
                           "request": {
-                              "method": "PUT",
+                              "method": "POST",
                               "header": [
                                   {
                                       "key": "Content-Type",
@@ -723,26 +478,27 @@
                                   "raw": "{\n    \n}"
                               },
                               "url": {
-                                "raw": "{{Url}}/promotion/director_certify/edit",
-                                "host": [
-                                    "{{Url}}"
-                                ],
-                                "path": [
-                                    "promotion",
-                                    "director_certify",
-                                    "edit"
-                                ]
-                              }
+                              "raw": "{{Url}}/medical/clinic/secretary_approval/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "secretary_approval",
+                                  "add"
+                              ]
+                          }
                           },
                           "response": []
                       }
                     ]
                 },
               {
-                  "name": "Approve",
+                  "name": "SupporterApprover",
                   "item": [
                       {
-                          "name": "editApprove",
+                          "name": "getSupporterApprover",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -756,7 +512,48 @@
                               }
                           ],
                           "request": {
-                              "method": "PUT",
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/supporter_approver/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "supporter_approver",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "addSupporterApprover",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
                               "header": [
                                   {
                                       "key": "Content-Type",
@@ -768,26 +565,27 @@
                                   "raw": "{\n    \n}"
                               },
                               "url": {
-                                "raw": "{{Url}}/promotion/approve/edit",
-                                "host": [
-                                    "{{Url}}"
-                                ],
-                                "path": [
-                                    "promotion",
-                                    "approve",
-                                    "edit"
-                                ]
-                              }
+                              "raw": "{{Url}}/medical/clinic/supporter_approver/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "supporter_approver",
+                                  "add"
+                              ]
+                          }
                           },
                           "response": []
                       }
                     ]
                 },
               {
-                  "name": "Support",
+                  "name": "ApproverApproval",
                   "item": [
                       {
-                          "name": "editSupport",
+                          "name": "getApproverApproval",
                           "event": [
                               {
                                   "listen": "prerequest",
@@ -801,7 +599,48 @@
                               }
                           ],
                           "request": {
-                              "method": "PUT",
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/approver_approval/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "approver_approval",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "addApproverApproval",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
                               "header": [
                                   {
                                       "key": "Content-Type",
@@ -813,16 +652,278 @@
                                   "raw": "{\n    \n}"
                               },
                               "url": {
-                                "raw": "{{Url}}/promotion/support/edit",
-                                "host": [
-                                    "{{Url}}"
-                                ],
-                                "path": [
-                                    "promotion",
-                                    "support",
-                                    "edit"
-                                ]
+                              "raw": "{{Url}}/medical/clinic/approver_approval/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "approver_approval",
+                                  "add"
+                              ]
+                          }
+                          },
+                          "response": []
+                      }
+                    ]
+                },
+              {
+                  "name": "SupporterApproval",
+                  "item": [
+                      {
+                          "name": "getSupporterApproval",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
                               }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/supporter_approval/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "supporter_approval",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "addSupporterApproval",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/supporter_approval/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "supporter_approval",
+                                  "add"
+                              ]
+                          }
+                          },
+                          "response": []
+                      }
+                    ]
+                },
+              {
+                  "name": "Patient",
+                  "item": [
+                      {
+                          "name": "getPatient",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/patient/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "patient",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "addPatient",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/patient/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "patient",
+                                  "add"
+                              ]
+                          }
+                          },
+                          "response": []
+                      }
+                    ]
+                },
+              {
+                  "name": "Treatment",
+                  "item": [
+                      {
+                          "name": "getTreatment",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \"id\": 10000\n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/treatment/get",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "treatment",
+                                  "get"
+                              ]
+                          }
+                          },
+                          "response": []
+                      },
+                      {
+                          "name": "addTreatment",
+                          "event": [
+                              {
+                                  "listen": "prerequest",
+                                  "script": {
+                                      "type": "text/javascript",
+                                      "exec": [
+                                          "pm.collectionVariables.set(\"CurrentRequest\", \"details\");"
+                                          
+                                      ]
+                                  }
+                              }
+                          ],
+                          "request": {
+                              "method": "POST",
+                              "header": [
+                                  {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                  }
+                              ],
+                              "body": {
+                                  "mode": "raw",
+                                  "raw": "{\n    \n}"
+                              },
+                              "url": {
+                              "raw": "{{Url}}/medical/clinic/treatment/add",
+                              "host": [
+                                  "{{Url}}"
+                              ],
+                              "path": [
+                                  "medical",
+                                  "clinic",
+                                  "treatment",
+                                  "add"
+                              ]
+                          }
                           },
                           "response": []
                       }
